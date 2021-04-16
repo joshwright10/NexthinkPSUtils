@@ -1,0 +1,57 @@
+trigger:
+  branches:
+    include:
+      - master
+      - azurepipelines
+  paths:
+    exclude:
+      - "docs/*"
+      - ".vscode/*"
+      - README.md
+      - .gitignore
+      - header-mkdocs.yml
+      - mkdocs.yml
+
+pool:
+  vmImage: "windows-latest"
+
+stages:
+  - stage: Test
+    jobs:
+      - job: PesterTests
+        steps:
+          - task: PowerShell@2
+            displayName: "Execute Pester Tests"
+            inputs:
+              filePath: "build.ps1"
+              arguments: >
+                -Task "Test"
+              pwsh: false
+
+          - task: PublishTestResults@2
+            displayName: "Publish Test Results"
+            condition: always()
+            inputs:
+              testRunTitle: "Test Results for Pester"
+              buildPlatform: "Windows"
+              testResultsFormat: NUnit
+              testResultsFiles: "./pester-tests.xml"
+              failTaskOnFailedTests: true
+
+  - stage: PublishModule
+    dependsOn: Test
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    jobs:
+      - job: Publish
+        displayName: "Publish to PSGallery"
+        steps:
+          - task: PowerShell@2
+            displayName: "Publish Task"
+            inputs:
+              filePath: "build.ps1"
+              arguments: >
+                -Task "Publish"
+              pwsh: false
+            env:
+              PSGALLERYKEY: $(PSGALLERYKEY)
+              BuildRelease: $(BUILDRELEASE)
