@@ -1,0 +1,2262 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Office 365 Migration</Name>
+     <Dependencies>
+      <Dependency name="Office 365 - Devices in scope" type="metric" uid="42e0880e-ff7c-438f-8ac4-9ffb8c23429d"/>
+      <Dependency name="Office 365 - Devices running O365" type="metric" uid="c3603c82-6c77-4812-9d1c-461a3e563fb0"/>
+      <Dependency name="Office 365 - Devices still to migrate" type="metric" uid="3aa361e4-ac14-4da3-b308-f934dea87629"/>
+      <Dependency name="Office 365 - Post migration average satisfaction" type="metric" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+      <Dependency name="Office 365 - Users happy post-migration" type="metric" uid="6eb44d31-b919-40cb-b822-c6ae64be1287"/>
+      <Dependency name="Office 365 - Usage of ProPlus apps" type="metric" uid="84b741e7-9248-4c94-8b0b-82eae4f67d02"/>
+      <Dependency name="Office 365 - Usage of web apps" type="metric" uid="dece0095-349f-4af6-813e-65fad34d1af0"/>
+      <Dependency name="Office 365 - Early adopters" type="metric" uid="142953b4-f722-4d6f-a643-d47cc050c913"/>
+      <Dependency name="Office 365 - Devices with unsupported hardware" type="metric" uid="58369a44-3fe3-4ae5-b11f-438e397c6ce6"/>
+      <Dependency name="Office 365 - Devices with unsupported hardware for OneDrive" type="metric" uid="0aab5c49-9204-410b-8dea-0f10d10be88f"/>
+      <Dependency name="Office 365 - Devices with unsupported OS" type="metric" uid="b95d1f2e-03e7-4c74-a045-8e04508d382d"/>
+      <Dependency name="Office 365 - Devices with unsupported browsers" type="metric" uid="a43ccb13-b094-4d59-8375-1970c5c97c07"/>
+      <Dependency name="Office 365 - Devices missing .NET" type="metric" uid="b5566cab-ea04-4667-b39a-195949c1295e"/>
+      <Dependency name="Office 365 - Pre migration average satisfaction" type="metric" uid="40e9a061-5720-422e-9f5c-979270d6c24b"/>
+      <Dependency name="Office 365 - Users happy pre-migration" type="metric" uid="e6440209-80d8-47fc-aa46-8e2372d358bb"/>
+      <Dependency name="Office 365 - Users total respondents pre-migration" type="metric" uid="61ce6850-6d1c-4ee4-ae8e-be0870fcdb13"/>
+      <Dependency name="Office 365 - User satisfaction breakdown pre-migration" type="metric" uid="35133d73-237e-4acd-9b3d-be7d59d95a7b"/>
+      <Dependency name="Office 365 - Users total respondents post-migration" type="metric" uid="3e347282-492d-49fe-ad86-cd8551993e08"/>
+      <Dependency name="Office 365 - User satisfaction breakdown post-migration" type="metric" uid="dab465e1-0000-471c-b5e3-1997d58ddf57"/>
+      <Dependency name="Office 365 - Non O365 application crashes" type="metric" uid="82218490-85d7-4a4a-b776-fcbe7b1c6e0c"/>
+      <Dependency name="Office 365 - O365 application crashes" type="metric" uid="15258f70-2c32-435e-b688-a85ec1432a83"/>
+      <Dependency name="Office 365 - Non O365 application freezing" type="metric" uid="364639b3-4088-46ee-83a7-391acc4de05e"/>
+      <Dependency name="Office 365 - O365 application freezing" type="metric" uid="048b0684-3f68-482a-8722-d63b40f10704"/>
+      <Dependency name="Office 365 - Email User to migrate" type="metric" uid="0cc99749-b574-4b3a-b1c3-cac653f94a5f"/>
+      <Dependency name="Office 365 - Email User migrated" type="metric" uid="beb27533-b567-4b54-89ef-fa4324098a87"/>
+      <Dependency name="Devices with PST files" type="metric" uid="ab2e2e36-06d6-4f35-a3c6-bbe69189e41f"/>
+      <Dependency name="Average size PST files" type="metric" uid="37a9d2c0-b0c7-4104-9919-84bdd26da2ef"/>
+      <Dependency name="Devices with OST files" type="metric" uid="53f06758-2a85-40bb-bd94-df507f846388"/>
+      <Dependency name="Average size OST files" type="metric" uid="601246b9-23a4-46ab-830e-eb1b2437a29a"/>
+      <Dependency name="Devices with PST files from 1 to 5 GB" type="metric" uid="a8d43dbd-52ca-4fb2-a1fd-e9ad538ae7e3"/>
+      <Dependency name="Devices with PST files from 10 to 20 GB" type="metric" uid="0877cfb0-a4b7-4572-b078-2939609a5ea8"/>
+      <Dependency name="Devices with PST files from 5 to 10 GB" type="metric" uid="3ccef64b-3611-4325-a1f5-526cc14b4a89"/>
+      <Dependency name="Devices with PST files larger than 20 GB" type="metric" uid="4587094b-ca65-4d4f-999f-02b5fb513403"/>
+      <Dependency name="Devices with PST files less than 1 GB" type="metric" uid="008dc754-f0de-4a22-9e06-7d89ec4e67e9"/>
+      <Dependency name="Devices with OST files from 1 to 5 GB" type="metric" uid="d70d653b-e200-4abb-9889-666e5d5031cc"/>
+      <Dependency name="Devices with OST files from 10 to 20 GB" type="metric" uid="a547f4db-7145-4fe7-b45a-287785ef8f23"/>
+      <Dependency name="Devices with OST files from 5 to 10 GB" type="metric" uid="2f0f2f85-2215-4068-b8d7-79ed8b1a7d8d"/>
+      <Dependency name="Devices with OST files larger than 20 GB" type="metric" uid="c624b660-9541-447c-9541-22c6634d3dc5"/>
+      <Dependency name="Devices with OST files less than 1 GB" type="metric" uid="7d67a354-4b0e-4a2d-87ad-4755b76d704c"/>
+      <Dependency name="Total incoming network traffic of Outlook -Exchange" type="metric" uid="3d9d697c-47a1-420f-9258-462149c4d40b"/>
+      <Dependency name="Total outgoing network traffic of Outlook - Exchange" type="metric" uid="8441c2fa-2c34-4e7b-9138-5c79157be05e"/>
+      <Dependency name="Total incoming web traffic of sharepoint on prem" type="metric" uid="da2b913f-93ed-4885-ac4e-232f20ca4774"/>
+      <Dependency name="Total outgoing web traffic of sharepoint on prem" type="metric" uid="4fa32f5a-bf20-41a0-8e9e-409337c09565"/>
+      <Dependency name="Total incoming web traffic of Outlook 365" type="metric" uid="4a3979e4-36f6-4bbd-8314-ff2d6e0e3017"/>
+      <Dependency name="Total incoming web traffic of sharepoint" type="metric" uid="1b7cff00-2de8-46aa-a044-64a23c55025f"/>
+      <Dependency name="Total outgoing web traffic of sharepoint" type="metric" uid="bddd7679-36b1-41de-ad71-010276922da1"/>
+      <Dependency name="Office 365 Average web request duration" type="metric" uid="2b5556c3-a02c-4e0d-999c-aa0755a6fd29"/>
+      <Dependency name="Number of devices using Outlook" type="metric" uid="cb0bc4a0-02f7-4886-a838-38601b3a4239"/>
+      <Dependency name="Total incoming network traffic of Skype for Business" type="metric" uid="3abf8139-0ccc-4374-b388-eb5fa2001da9"/>
+      <Dependency name="Total outgoing network traffic of Skype for Business" type="metric" uid="d513e7ad-097c-4f6b-b7ab-a5f8b376730e"/>
+      <Dependency name="Number of devices using Skype for Business" type="metric" uid="9b1bd48b-207d-4926-abcc-6d92b3d09c11"/>
+      <Dependency name="Total incoming network traffic of OneDrive" type="metric" uid="17db91d5-70a0-4270-9512-4f7f53718eb9"/>
+      <Dependency name="Total outgoing network traffic of OneDrive" type="metric" uid="acaced6e-5152-4f79-a532-a8e45b7e9fee"/>
+      <Dependency name="Number of devices using OneDrive" type="metric" uid="fcb79d32-ee60-4ceb-94e6-febfc86ee2eb"/>
+      <Dependency name="Office 365 - Total incoming web traffic of Teams" type="metric" uid="8ab6464f-f51c-4760-9713-23b1fff626c6"/>
+      <Dependency name="Office 365 - Total outgoing web traffic of Teams" type="metric" uid="11f29513-c62b-4e52-9ca6-859800ddf18b"/>
+      <Dependency name="Number of devices using Teams" type="metric" uid="bad06eec-9a69-4c55-a3c1-55fafd1aa796"/>
+      <Dependency name="Number of devices using Sharepoint" type="metric" uid="4a2d7649-69e7-4720-ba68-7fd061b3d772"/>
+      <Dependency name="Office 365 - Users of Access" type="metric" uid="22e4cda5-ab75-4c18-84ff-6e4642902c16"/>
+      <Dependency name="Office 365 - Users of Excel" type="metric" uid="a3b68a6c-62bb-4284-b317-e6da68d87a04"/>
+      <Dependency name="Users of OneDrive" type="metric" uid="da77e7f8-10f0-4af9-98e8-e76960174d4c"/>
+      <Dependency name="Office 365 - Users of OneNote" type="metric" uid="041b1fe2-6d5c-4a34-9a9f-5e21d63a632d"/>
+      <Dependency name="Office 365 - Users of Outlook" type="metric" uid="c166a00a-24c6-49b6-8e3b-cac8776a1a69"/>
+      <Dependency name="Office 365 - Users of PowerPoint" type="metric" uid="b273119f-9bd9-445b-b834-9be138c0a5d0"/>
+      <Dependency name="Office 365 - Users of Publisher" type="metric" uid="f3f09e2c-76ac-4d15-8434-a90d38e6b27a"/>
+      <Dependency name="Users of Skype for Business" type="metric" uid="14bb28ac-ede2-4002-800e-45dbd85eedf6"/>
+      <Dependency name="Office 365 - Users of Word" type="metric" uid="2be89e9e-98a5-4bb7-8d50-bbba9c80d635"/>
+      <Dependency name="Office 365 - Users of Excel web app" type="metric" uid="e6d19d70-bb92-4c3d-b37a-a4f711befd65"/>
+      <Dependency name="Office 365 - Users of OneNote web app" type="metric" uid="1cc61f92-0504-49e2-ac76-8798a1417f13"/>
+      <Dependency name="Office 365 - Users of Outlook web app" type="metric" uid="5f1cea74-3592-4e69-bc84-c98af728b63b"/>
+      <Dependency name="Office 365 - Users of PowerPoint web app" type="metric" uid="79665b47-392c-45e9-a79b-f98e81897d78"/>
+      <Dependency name="Office 365 - Users of Word web app" type="metric" uid="2b1e8341-26cb-43c3-b200-fda0886237c0"/>
+      <Dependency name="Office 365 - Online Sharepoint users" type="metric" uid="2dfc1a58-2b4b-4e64-97d5-144832a99198"/>
+      <Dependency name="Office 365 - Online Sway users" type="metric" uid="1b0fc02c-4a16-4747-aaf0-e21291a402cb"/>
+      <Dependency name="Office 365 - Online Teams users" type="metric" uid="bd51d523-0899-48ba-bad4-e0a22778cbc7"/>
+      <Dependency name="Office 365 - Online Yammer users" type="metric" uid="a299965d-4de0-4f81-b4ad-8ab8d29906fe"/>
+      <Dependency name="Office 365 - Online OneDrive users" type="metric" uid="7df733a2-1981-425a-98cb-1e6e35e5a8dc"/>
+      <Dependency name="Office 365 - Users of OneDrive web app" type="metric" uid="964b1c71-a48c-4509-b7d4-d8ac83dec2e4"/>
+      <Dependency name="Office 365 - Number of crashes of O365 apps" type="metric" uid="96d7d46b-0995-42f6-8107-cb7345edc56a"/>
+      <Dependency name="Office 365 - Number of freezes of O365 apps" type="metric" uid="221e0b75-7eb6-4592-a113-9dc28a2b8463"/>
+      <Dependency name="Office 365 - Network availability of O365 apps" type="metric" uid="65d75dae-418f-4fa1-a51d-4c3daf8283df"/>
+      <Dependency name="Office 365 - Devices using a wrong proxy to connect to O365" type="metric" uid="7ccc5c59-1229-4aef-9ba8-880de278d918"/>
+      <Dependency name="Office 365 - Top 100 O365 binaries by application crash ratio" type="metric" uid="cf29ca07-1309-49b9-bfdf-af5c68be87cd"/>
+      <Dependency name="Office 365 - Top 100 O365 binaries by application freeze ratio" type="metric" uid="4c5831af-67cc-4767-892e-ccc1c54bf263"/>
+      <Dependency name="Office 365 - Top 100 O365 binaries by lowest network availability ratio" type="metric" uid="bee4e6c2-74eb-4f2b-80e8-ded18bed220d"/>
+      <Dependency name="Office 365 - Positive points" type="metric" uid="8ea1871e-0754-47b7-8407-642fc0783b58"/>
+      <Dependency name="Office 365 - Negative points" type="metric" uid="51471a70-1636-42ae-a395-d3ebb7af82c1"/>
+      <Dependency name="Office 365 - Devices running Office 2016" type="metric" uid="4ffbeb6f-3052-48c0-b3f7-795c0db54370"/>
+      <Dependency name="Office 365 - Devices running Office 2013" type="metric" uid="d5cf44bd-2e5a-4f1b-a090-f01aa658b47b"/>
+      <Dependency name="Office 365 - Devices running Office 2010" type="metric" uid="6d36ca82-14a8-4b4a-afc4-31f911fe0da2"/>
+      <Dependency name="Office 365 - Devices running Office 2007" type="metric" uid="578b7efe-45a5-44a5-808a-88303f016610"/>
+      <Dependency name="Office 365 - Devices running unknown Office version" type="metric" uid="c7acd086-860a-452b-a491-494cd5745730"/>
+      <Dependency name="Office 365 - Top 100 browsers used to access O365 apps" type="metric" uid="7d8ab61e-2e9a-427b-96ad-bdd7375d80f4"/>
+      <Dependency name="Office 365 - Top 100 Outlook binaries" type="metric" uid="e616e664-e9b1-4200-ac52-dc2350dc1c49"/>
+      <Dependency name="Office 365 - Top 100 Excel binaries" type="metric" uid="44d9449c-6acf-4626-9793-f8c586a79eb9"/>
+      <Dependency name="Office 365 - Top 100 Skype for Business binaries" type="metric" uid="e3d0a7ca-9867-47c5-a022-3729b45e51cb"/>
+      <Dependency name="Office 365 - Top 100 Word binaries" type="metric" uid="8a492498-314f-4a64-965f-213fb1c43dac"/>
+      <Dependency name="Office 365 - Top 100 PowerPoint binaries" type="metric" uid="c87c1495-aab6-42c9-82e4-f20344d02daa"/>
+      <Dependency name="Office 365 - Top 100 OneDrive binaries" type="metric" uid="5430a9da-b801-4b37-947a-45d6a17a45da"/>
+      <Dependency name="Office 365 - Top 100 OneNote binaries" type="metric" uid="2f97667e-6bd6-4332-9ba1-a033b05a98f7"/>
+      <Dependency name="Office 365 - Top 100 Publisher binaries" type="metric" uid="09b9016f-d029-47f4-8627-d311df0ef0ca"/>
+      <Dependency name="Office 365 - Top 100 Access binaries" type="metric" uid="00221ddc-3fc4-4416-9db1-4e07713c1806"/>
+      <Dependency name="Users of Skype for Business " type="metric" uid="d45bf1e1-29ba-420c-ab79-43fa54160237"/>
+      <Dependency name="Users of GoToMeeting" type="metric" uid="31e99344-b706-40dc-970f-9bdbf8f1a72d"/>
+      <Dependency name="Skype for Business - Lack of adoption breakdown" type="metric" uid="4955b2b2-f1d2-4cc3-85ea-386ff071cfc9"/>
+      <Dependency name="Endpoint performance - Services / Email / Response time" type="metric" uid="b728100d-fc7d-4c00-b231-2f13e53d31f2"/>
+      <Dependency name="Endpoint performance - Services / Email / Stability / Crashes" type="metric" uid="fa790630-1c49-4054-849a-58b451384f8f"/>
+      <Dependency name="Endpoint performance - Services / Email / Stability / Freezes" type="metric" uid="566f20c1-8d25-498e-aaae-3548698b320f"/>
+      <Dependency name="Endpoint performance - Devices / Storage / Health" type="metric" uid="b6b34ae9-4b84-4efa-89ba-6b6a6d6ae3b2"/>
+      <Dependency name="Endpoint performance - Services / SMB / Connectivity" type="metric" uid="d199ce56-e433-4abf-8907-ae570b20dac7"/>
+      <Dependency name="Endpoint performance - Services / SMB / Response time" type="metric" uid="c338f69f-e9b3-4319-ac6a-1a1499084071"/>
+      <Dependency name="Endpoint performance - Services / Software / Software stability / Software crashes" type="metric" uid="f31b601e-62c9-43cc-b679-cef0f87296e7"/>
+      <Dependency name="Endpoint performance - Services / Software / Software stability / Software freezes" type="metric" uid="69c4e284-59c9-490d-8440-1ae0b19df1fe"/>
+      <Dependency name="GoToMeeting cost saving" type="metric" uid="c97a7f25-368c-49a2-ac7b-721f58b90705"/>
+      <Dependency name="Number of devices with GoToMeeting with users not knowing about Skype for Business" type="metric" uid="fca40e90-1e1b-41f9-91c5-bb07d10e6327"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Office 365 Migration" uid="52199a6e-8b11-4c1a-bc9b-6bb2ea0990a0">
+        <dashboards>
+         <dashboard description="# Office 365 Migration &#13;&#10;The Office 365 migration pack will help you during your migration process, from planning to post-migration checks.  &#13;&#10; &#13;&#10;**Office 365 destinations** &#13;&#10;The full list of destinations is provided by Microsoft: &#13;&#10;https://docs.microsoft.com/en-us/office365/enterprise/office-365-endpoints  &#13;&#10;# Overview  &#13;&#10;Monitor the status of your Office 365 migration project.   &#13;&#10;**Total number of devices**  &#13;&#10;* Here you can see the number of devices that are in scope for the project (i.e. both migrated and not yet migrated devices).  &#13;&#10;* You can see how many are running Office 365 (as a ratio of the total and as an absolute number).  &#13;&#10;* Also the number of devices still to migrate.  &#13;&#10;* Below that you can find the evolution of the ratio over time.  &#13;&#10; &#13;&#10;**Satisfaction of users running Office 365**  &#13;&#10;On the top, you can see the average satisfaction of end-users running Office 365, and next to it the ratio of happy users (i.e. users who are either &quot;Very happy&quot; or &quot;Completely happy&quot; after the migration).  &#13;&#10; &#13;&#10;**Application usage: top executables and average execution duration** &#13;&#10;Here you can see if users are leveraging their Office 365 packages. By highlighting what users use, you can run a campaign to understand usage patterns and discover how you can fine tune licenses to save money.  You can find more details about this in the &quot;Run: User adoption&quot; dashboard.  &#13;&#10; &#13;&#10;::: configuration  &#13;&#10;In order to take full advantage of this content pack, categories, scores and metrics need to be adjusted.  &#13;&#10;**Please contact Nexthink Professional services if needed.** &#13;&#10;:::" index="1" name="Overview" uid="4993344f-84ac-43c7-87c8-3774169726b0">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c88952ea-ea3b-400f-acce-d4520a7f6a33" minHeight="166" minWidth="744" type="kpiWidget" widgetID="c88952ea-ea3b-400f-acce-d4520a7f6a33">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="744"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="88b86679-226a-4a96-8db4-e1835cdd8383" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="88b86679-226a-4a96-8db4-e1835cdd8383">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="a19469d2-5045-467c-b359-ede2e34e34c8" minHeight="166" minWidth="364" type="kpiWidget" widgetID="a19469d2-5045-467c-b359-ede2e34e34c8">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="571a5553-34c8-4970-a617-805305874614" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="571a5553-34c8-4970-a617-805305874614">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="a1a1589e-d06b-42cc-a6d2-2f34b2683829" minHeight="56" minWidth="296" type="titleWidget" widgetID="a1a1589e-d06b-42cc-a6d2-2f34b2683829">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e5663ad4-c44a-4d12-a202-20521f5bc860" minHeight="126" minWidth="364" type="kpiWidget" widgetID="e5663ad4-c44a-4d12-a202-20521f5bc860">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4b7d6565-90d1-421e-9a1a-58977e145b67" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="4b7d6565-90d1-421e-9a1a-58977e145b67">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="c88952ea-ea3b-400f-acce-d4520a7f6a33">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Total number of devices">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="In scope" ordering="0" serviceMetric="false" uid="42e0880e-ff7c-438f-8ac4-9ffb8c23429d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Running O365" ordering="1" serviceMetric="false" uid="c3603c82-6c77-4812-9d1c-461a3e563fb0"/>
+              <metric displayValue="RATIO" label="Running O365 (ratio)" ordering="2" serviceMetric="false" uid="c3603c82-6c77-4812-9d1c-461a3e563fb0"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Still to migrate" ordering="3" serviceMetric="false" uid="3aa361e4-ac14-4da3-b308-f934dea87629"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="88b86679-226a-4a96-8db4-e1835cdd8383">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="% devices running O365" ordering="0" serviceMetric="false" uid="c3603c82-6c77-4812-9d1c-461a3e563fb0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="a19469d2-5045-467c-b359-ede2e34e34c8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Satisfaction of users running Office 365">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Average satisfaction" ordering="3" serviceMetric="false" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="6eb44d31-b919-40cb-b822-c6ae64be1287"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="571a5553-34c8-4970-a617-805305874614">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Average satisfaction evolution" ordering="1" serviceMetric="false" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="a1a1589e-d06b-42cc-a6d2-2f34b2683829">
+            <titleConfig title="End-user adoption"/>
+           </widget>
+           <widget type="KPI" uid="e5663ad4-c44a-4d12-a202-20521f5bc860">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="RATIO" label="Usage of ProPlus application" ordering="1" serviceMetric="false" uid="84b741e7-9248-4c94-8b0b-82eae4f67d02"/>
+              <metric displayValue="RATIO" label="Usage of web apps" ordering="2" serviceMetric="false" uid="dece0095-349f-4af6-813e-65fad34d1af0"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4b7d6565-90d1-421e-9a1a-58977e145b67">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Usage of ProPlus application" ordering="0" serviceMetric="false" uid="84b741e7-9248-4c94-8b0b-82eae4f67d02"/>
+              <metric label="Usage of web apps" ordering="1" serviceMetric="false" uid="dece0095-349f-4af6-813e-65fad34d1af0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Readiness&#13;&#10;The readiness dashboard helps validate which devices are compatible with Office 365 and which users are willing to be early adopters.&#13;&#10;&#13;&#10;**Early adopters**&#13;&#10;The users who answered that they would like to be early adopters are listed here, so that they can be contacted.&#13;&#10;&#13;&#10;**Unsupported devices**&#13;&#10;The devices not ready with the reason why.&#13;&#10;Devices are unsupported for OneDrive if they are unsupported for Office 365 or do not have sufficient disk space." index="2" name="Planning: Readiness" uid="cb5ec872-3391-4d7f-b29b-42b5476fa365">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="5798d4ac-1f9d-494c-814b-db0757ca2a16" minHeight="166" minWidth="174" type="kpiWidget" widgetID="5798d4ac-1f9d-494c-814b-db0757ca2a16">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4a92b958-089c-4587-9a7e-a660a314ea65" minHeight="164" minWidth="300" type="barChartWidget" widgetID="4a92b958-089c-4587-9a7e-a660a314ea65">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="9a956d1d-cad9-4cb8-886d-ed34f1b3c12f" minHeight="56" minWidth="296" type="titleWidget" widgetID="9a956d1d-cad9-4cb8-886d-ed34f1b3c12f">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="8144aee4-9698-48a7-a75f-f73ae93bd37f" minHeight="126" minWidth="744" type="kpiWidget" widgetID="8144aee4-9698-48a7-a75f-f73ae93bd37f">
+                <preferredHeight value="126"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="f51c1215-73fe-4eb7-ae6e-19540cc6b304" minHeight="126" minWidth="174" type="kpiWidget" widgetID="f51c1215-73fe-4eb7-ae6e-19540cc6b304">
+                <preferredHeight value="126"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="5798d4ac-1f9d-494c-814b-db0757ca2a16">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="Early adopters">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Users willing to be early adopters" ordering="0" serviceMetric="false" uid="142953b4-f722-4d6f-a643-d47cc050c913"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4a92b958-089c-4587-9a7e-a660a314ea65">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Users willing to be early adopters" ordering="0" serviceMetric="false" uid="142953b4-f722-4d6f-a643-d47cc050c913"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="9a956d1d-cad9-4cb8-886d-ed34f1b3c12f">
+            <titleConfig title="Unsupported devices"/>
+           </widget>
+           <widget type="KPI" uid="8144aee4-9698-48a7-a75f-f73ae93bd37f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unsupported hardware" ordering="0" serviceMetric="false" uid="58369a44-3fe3-4ae5-b11f-438e397c6ce6"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unsupported hardware for OneDrive" ordering="1" serviceMetric="false" uid="0aab5c49-9204-410b-8dea-0f10d10be88f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unsupported OS" ordering="2" serviceMetric="false" uid="b95d1f2e-03e7-4c74-a045-8e04508d382d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unsupported browsers" ordering="3" serviceMetric="false" uid="a43ccb13-b094-4d59-8375-1970c5c97c07"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="f51c1215-73fe-4eb7-ae6e-19540cc6b304">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices missing .NET" ordering="1" serviceMetric="false" uid="b5566cab-ea04-4667-b39a-195949c1295e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# User satisfaction&#13;&#10;&#13;&#10;This dashboard aims at monitoring the impact of the migration on end-users satisfaction. &#13;&#10;&#13;&#10;**Overview** &#13;&#10;* On the top, you can see the average satisfaction of end-users using Office 365 compared to the ones not yet migrated or not using it, and next to it the number of happy users (i.e. users who are “Very happy” or “Completely happy” after the migration). &#13;&#10;* The respondents ratio and the total number of users having fully answered the campaign will be useful to evaluate if the average displayed is representative of the total population. This is typically relevant when drilling down in the hierarchy, where fewer users will influence the average more.&#13;&#10;  &#13;&#10;**Evolution and breakdowns** &#13;&#10;* The evolution of the average satisfaction is important to monitor as more and more users are migrated. It is also broken down through the hierarchy. &#13;&#10;* The feedback from end-users is broken down by level of satisfaction. This is to visualize the spread of satisfaction." index="3" name="Roll out: User satisfaction" uid="a7512b03-551b-4e47-863f-6ecedfffec77">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="eaf4666c-7cb7-4708-bc28-604c09fcad4a" minHeight="56" minWidth="296" type="titleWidget" widgetID="eaf4666c-7cb7-4708-bc28-604c09fcad4a">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="a3e640c0-355a-4c40-9b01-ae7ed585f2a5" minHeight="126" minWidth="554" type="kpiWidget" widgetID="a3e640c0-355a-4c40-9b01-ae7ed585f2a5">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="554"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="350c5281-3039-4568-b6d8-82c74255aad6" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="350c5281-3039-4568-b6d8-82c74255aad6">
+                          <preferredHeight value="310"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="74ff047d-2038-4f32-bb87-71ef72d084f2" minHeight="204" minWidth="300" type="barChartWidget" widgetID="74ff047d-2038-4f32-bb87-71ef72d084f2">
+                          <preferredHeight value="204"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="c9135964-d350-4205-9a6f-bc769eca1b53" minHeight="164" minWidth="300" type="barChartWidget" widgetID="c9135964-d350-4205-9a6f-bc769eca1b53">
+                        <preferredHeight value="164"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6d8b18d0-2230-458e-90df-b6617c94301e" minHeight="56" minWidth="296" type="titleWidget" widgetID="6d8b18d0-2230-458e-90df-b6617c94301e">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="88f04336-9d97-4936-b022-0c574109a6cc" minHeight="126" minWidth="554" type="kpiWidget" widgetID="88f04336-9d97-4936-b022-0c574109a6cc">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="554"/>
+                       </data>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="ccba7938-a54c-481e-b064-7e48d65a25d9" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="ccba7938-a54c-481e-b064-7e48d65a25d9">
+                          <preferredHeight value="310"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="532cd1fb-6405-4527-9cee-6dc92cbd4aab" minHeight="204" minWidth="300" type="barChartWidget" widgetID="532cd1fb-6405-4527-9cee-6dc92cbd4aab">
+                          <preferredHeight value="204"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="44a17e6b-dbe2-4220-ab2c-08a12cd495d8" minHeight="164" minWidth="300" type="barChartWidget" widgetID="44a17e6b-dbe2-4220-ab2c-08a12cd495d8">
+                      <preferredHeight value="164"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="095c55f5-af5b-45ab-9335-bdc242f8766b" minHeight="353" minWidth="324" type="tableWidget" widgetID="095c55f5-af5b-45ab-9335-bdc242f8766b">
+                  <preferredHeight value="353"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="d9e9910a-1f9b-4c0f-aec9-5bb3e0e86d3f" minHeight="353" minWidth="324" type="tableWidget" widgetID="d9e9910a-1f9b-4c0f-aec9-5bb3e0e86d3f">
+                  <preferredHeight value="353"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="c45eba39-9d98-475c-aad6-7cac4dfa9050" minHeight="353" minWidth="324" type="tableWidget" widgetID="c45eba39-9d98-475c-aad6-7cac4dfa9050">
+                <preferredHeight value="353"/>
+                <preferredWidth value="324"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="d8d3dc43-a583-44f4-982e-7de7af62cbb9" minHeight="353" minWidth="324" type="tableWidget" widgetID="d8d3dc43-a583-44f4-982e-7de7af62cbb9">
+                <preferredHeight value="353"/>
+                <preferredWidth value="324"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="eaf4666c-7cb7-4708-bc28-604c09fcad4a">
+            <titleConfig title="Pre-migration"/>
+           </widget>
+           <widget type="KPI" uid="a3e640c0-355a-4c40-9b01-ae7ed585f2a5">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Average satisfaction" ordering="0" serviceMetric="false" uid="40e9a061-5720-422e-9f5c-979270d6c24b"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="1" serviceMetric="false" uid="e6440209-80d8-47fc-aa46-8e2372d358bb"/>
+              <metric displayValue="RATIO" label="Total respondents" ordering="2" serviceMetric="false" uid="61ce6850-6d1c-4ee4-ae8e-be0870fcdb13"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="350c5281-3039-4568-b6d8-82c74255aad6">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Average satisfaction evolution" ordering="0" serviceMetric="false" uid="40e9a061-5720-422e-9f5c-979270d6c24b"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="74ff047d-2038-4f32-bb87-71ef72d084f2">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Average satisfaction - Pre-migration">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Office 365 - Pre migration average satisfaction" ordering="0" serviceMetric="false" uid="40e9a061-5720-422e-9f5c-979270d6c24b"/>
+             </metrics>
+             <scale scaleMaxValueType="euf_302530e75fc948c98ff5e2b2f2d3b39b_1_type" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="HIERARCHY" value="hierarchy"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c9135964-d350-4205-9a6f-bc769eca1b53">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_302530e75fc948c98ff5e2b2f2d3b39b_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Office 365 - User satisfaction breakdown pre-migration" ordering="0" serviceMetric="false" uid="35133d73-237e-4acd-9b3d-be7d59d95a7b"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_302530e75fc948c98ff5e2b2f2d3b39b_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="6d8b18d0-2230-458e-90df-b6617c94301e">
+            <titleConfig title="Post-migration"/>
+           </widget>
+           <widget type="KPI" uid="88f04336-9d97-4936-b022-0c574109a6cc">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Average satisfaction" ordering="3" serviceMetric="false" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="6eb44d31-b919-40cb-b822-c6ae64be1287"/>
+              <metric displayValue="RATIO" label="Total respondents" ordering="5" serviceMetric="false" uid="3e347282-492d-49fe-ad86-cd8551993e08"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="ccba7938-a54c-481e-b064-7e48d65a25d9">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Average satisfaction evolution" ordering="0" serviceMetric="false" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="532cd1fb-6405-4527-9cee-6dc92cbd4aab">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Average satisfaction - Post-migration">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Office 365 - Post migration average satisfaction" ordering="0" serviceMetric="false" uid="16b6b318-b35b-4f8a-84ac-1901a842b530"/>
+             </metrics>
+             <scale scaleMaxValueType="euf_258e5ec9bc4f4938b0f464f4f885dc43_0_type" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="HIERARCHY" value="hierarchy"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="44a17e6b-dbe2-4220-ab2c-08a12cd495d8">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_258e5ec9bc4f4938b0f464f4f885dc43_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="User satisfaction breakdown" ordering="0" serviceMetric="false" uid="dab465e1-0000-471c-b5e3-1997d58ddf57"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_258e5ec9bc4f4938b0f464f4f885dc43_0"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="095c55f5-af5b-45ab-9335-bdc242f8766b">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Application crash - Pre-migration">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="crashes" ordering="1" serviceMetric="false" uid="82218490-85d7-4a4a-b776-fcbe7b1c6e0c">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="O365 ProPlus applications"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="O365 ProPlus applications"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="d9e9910a-1f9b-4c0f-aec9-5bb3e0e86d3f">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Application crash - Post-migration">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="crashes" ordering="0" serviceMetric="false" uid="15258f70-2c32-435e-b688-a85ec1432a83">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="O365 ProPlus applications"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="O365 ProPlus applications"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c45eba39-9d98-475c-aad6-7cac4dfa9050">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Application freezes - Pre-migration">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="freezing" ordering="0" serviceMetric="false" uid="364639b3-4088-46ee-83a7-391acc4de05e">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="O365 ProPlus applications"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="O365 ProPlus applications"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="d8d3dc43-a583-44f4-982e-7de7af62cbb9">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Application freezes - Post-migration">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="freezing" ordering="0" serviceMetric="false" uid="048b0684-3f68-482a-8722-d63b40f10704">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="O365 ProPlus applications"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="O365 ProPlus applications"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Emails migration&#13;&#10;This dashboard focuses on devices which have not yet been migrated to Office 365. &#13;&#10;&#13;&#10;**Migration**&#13;&#10;Emails and related metadata (mailbox tree structure, agenda...) can be stored in OST and PST files on the end-user devices for different reasons (for instance for saving space on Exchange server).&#13;&#10;&#13;&#10;The migration to Office 365 can be the occasion to import some of these files to Office 365, so that these end-users can keep their history of emails, but to also to archive or delete some of them.&#13;&#10;&#13;&#10;This is also a way to migrate the end-users one by one in order to have more control on the migration process.&#13;&#10;&#13;&#10;**KPIs**&#13;&#10;This dashboard uses a remote action to look for all the PST and OST files on the end-user devices, as well as their size, to help you measuring the progress on the import of these files in Office 365.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;It is necessary to edit the target investigation of the Remote Action *Get MS Office Info*. &#13;&#10;**Please contact Nexthink Professional services if needed.**&#13;&#10;:::" index="5" name="Roll-out: Email migration" uid="a7dbbc99-7645-443a-93be-80547f919eb7">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="656b4c2a-aaa7-4278-a04c-1aa1deb91404" minHeight="56" minWidth="296" type="titleWidget" widgetID="656b4c2a-aaa7-4278-a04c-1aa1deb91404">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="03c388a7-adff-4b2e-ac58-80a3aed9cefe" minHeight="313" minWidth="474" type="tableWidget" widgetID="03c388a7-adff-4b2e-ac58-80a3aed9cefe">
+                    <preferredHeight value="313"/>
+                    <preferredWidth value="474"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="b21435d3-dc32-410e-997a-d9a6af7077e8" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="b21435d3-dc32-410e-997a-d9a6af7077e8">
+                    <preferredHeight value="274"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="c40e8f69-f17c-4a6c-8bba-baf158b676d3" minHeight="166" minWidth="364" type="kpiWidget" widgetID="c40e8f69-f17c-4a6c-8bba-baf158b676d3">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="3c98a534-9b8f-4661-bccc-a4316e1f1d80" minHeight="166" minWidth="364" type="kpiWidget" widgetID="3c98a534-9b8f-4661-bccc-a4316e1f1d80">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="00e58737-2cee-401e-8d3a-6a84597f5b4c" minHeight="164" minWidth="300" type="barChartWidget" widgetID="00e58737-2cee-401e-8d3a-6a84597f5b4c">
+                    <preferredHeight value="164"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="e11bc664-5e2f-487b-88b3-d6a4a694f9ab" minHeight="164" minWidth="300" type="barChartWidget" widgetID="e11bc664-5e2f-487b-88b3-d6a4a694f9ab">
+                    <preferredHeight value="164"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d8cfe4ae-d470-4251-b26a-a201b5d648c4" minHeight="164" minWidth="300" type="barChartWidget" widgetID="d8cfe4ae-d470-4251-b26a-a201b5d648c4">
+                <preferredHeight value="164"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="cf5ab528-e4e5-4d8f-9b99-dd3fc178681e" minHeight="164" minWidth="300" type="barChartWidget" widgetID="cf5ab528-e4e5-4d8f-9b99-dd3fc178681e">
+                <preferredHeight value="164"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="656b4c2a-aaa7-4278-a04c-1aa1deb91404">
+            <titleConfig title="User migration"/>
+           </widget>
+           <widget type="TABLE" uid="03c388a7-adff-4b2e-ac58-80a3aed9cefe">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Still to migrate" ordering="1" serviceMetric="false" uid="0cc99749-b574-4b3a-b1c3-cac653f94a5f">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Migrated" ordering="2" serviceMetric="false" uid="beb27533-b567-4b54-89ef-fa4324098a87">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="b21435d3-dc32-410e-997a-d9a6af7077e8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false" title="">
+             <metrics>
+              <metric label="Migrated" ordering="0" serviceMetric="false" uid="beb27533-b567-4b54-89ef-fa4324098a87"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="c40e8f69-f17c-4a6c-8bba-baf158b676d3">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="PST files - Pre-Migration">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with PST files" ordering="0" serviceMetric="false" uid="ab2e2e36-06d6-4f35-a3c6-bbe69189e41f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Average size" ordering="2" serviceMetric="false" uid="37a9d2c0-b0c7-4104-9919-84bdd26da2ef"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="3c98a534-9b8f-4661-bccc-a4316e1f1d80">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="OST files Pre-Migration">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with OST files" ordering="0" serviceMetric="false" uid="53f06758-2a85-40bb-bd94-df507f846388"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Average size" ordering="2" serviceMetric="false" uid="601246b9-23a4-46ab-830e-eb1b2437a29a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="00e58737-2cee-401e-8d3a-6a84597f5b4c">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="From 1 to 5 GB" ordering="0" serviceMetric="false" uid="a8d43dbd-52ca-4fb2-a1fd-e9ad538ae7e3"/>
+              <metric label="From 10 to 20 GB" ordering="1" serviceMetric="false" uid="0877cfb0-a4b7-4572-b078-2939609a5ea8"/>
+              <metric label="From 5 to 10 GB" ordering="2" serviceMetric="false" uid="3ccef64b-3611-4325-a1f5-526cc14b4a89"/>
+              <metric label="Larger than 20 GB" ordering="3" serviceMetric="false" uid="4587094b-ca65-4d4f-999f-02b5fb513403"/>
+              <metric label="Less than 1 GB" ordering="4" serviceMetric="false" uid="008dc754-f0de-4a22-9e06-7d89ec4e67e9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="e11bc664-5e2f-487b-88b3-d6a4a694f9ab">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="From 1 to 5 GB" ordering="0" serviceMetric="false" uid="d70d653b-e200-4abb-9889-666e5d5031cc"/>
+              <metric label="From 10 to 20 GB" ordering="1" serviceMetric="false" uid="a547f4db-7145-4fe7-b45a-287785ef8f23"/>
+              <metric label="From 5 to 10 GB" ordering="2" serviceMetric="false" uid="2f0f2f85-2215-4068-b8d7-79ed8b1a7d8d"/>
+              <metric label="Larger than 20 GB" ordering="3" serviceMetric="false" uid="c624b660-9541-447c-9541-22c6634d3dc5"/>
+              <metric label="Less than 1 GB" ordering="4" serviceMetric="false" uid="7d67a354-4b0e-4a2d-87ad-4755b76d704c"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d8cfe4ae-d470-4251-b26a-a201b5d648c4">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Devices with PST files" ordering="0" serviceMetric="false" uid="ab2e2e36-06d6-4f35-a3c6-bbe69189e41f"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="cf5ab528-e4e5-4d8f-9b99-dd3fc178681e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Devices with OST files" ordering="0" serviceMetric="false" uid="53f06758-2a85-40bb-bd94-df507f846388"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Network impact&#13;&#10;&#13;&#10;Using Office 365 may increase your organization’s Internet traffic. Email traffic with an Exchange hybrid deployment and directory synchronization activity will have the most impact on bandwidth, but some organizations may notice a general increase in Internet traffic after migrating users to Office 365. ([Source: Microsoft support](https://support.office.com/en-us/article/Network-and-migration-planning-for-Office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132?ui=en-US&amp;rs=en-US&amp;ad=US#estimatebandwidthrequirements))&#13;&#10;&#13;&#10;This dashboard presents the total network impact generated by the most demanding Office 365 applications, namely Outlook, Skype for Business, OneDrive and Teams;  " index="4" name="Roll-out: Network impact" uid="4473e723-4b7f-4658-8acc-17cfa5670a94">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d9b5520d-3a86-44e5-bc98-b710bad9e116" minHeight="209" minWidth="324" type="tableWidget" widgetID="d9b5520d-3a86-44e5-bc98-b710bad9e116">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="19c5b7a9-5928-4ff8-beda-1c7635b28543" minHeight="209" minWidth="324" type="tableWidget" widgetID="19c5b7a9-5928-4ff8-beda-1c7635b28543">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="H">
+                         <children>
+                          <child type="H">
+                           <children>
+                            <child type="H">
+                             <children>
+                              <child type="L">
+                               <children/>
+                               <data id="373231e8-f977-4aef-aa27-4591081b35dc" minHeight="353" minWidth="324" type="tableWidget" widgetID="373231e8-f977-4aef-aa27-4591081b35dc">
+                                <preferredHeight value="353"/>
+                                <preferredWidth value="324"/>
+                               </data>
+                              </child>
+                              <child type="L">
+                               <children/>
+                               <data id="4aebefae-9731-4608-b047-bf728430cf2d" minHeight="56" minWidth="296" type="titleWidget" widgetID="4aebefae-9731-4608-b047-bf728430cf2d">
+                                <preferredHeight value="56"/>
+                                <preferredWidth value="0"/>
+                               </data>
+                              </child>
+                             </children>
+                            </child>
+                            <child type="V">
+                             <children>
+                              <child type="L">
+                               <children/>
+                               <data id="90c43263-b410-4ea7-9974-dd301e4248a0" minHeight="193" minWidth="624" type="tableWidget" widgetID="90c43263-b410-4ea7-9974-dd301e4248a0">
+                                <preferredHeight value="193"/>
+                                <preferredWidth value="624"/>
+                               </data>
+                              </child>
+                              <child type="L">
+                               <children/>
+                               <data id="64beac3f-190c-4867-964b-00e51ac53f17" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="64beac3f-190c-4867-964b-00e51ac53f17">
+                                <preferredHeight value="310"/>
+                                <preferredWidth value="599"/>
+                               </data>
+                              </child>
+                             </children>
+                            </child>
+                           </children>
+                          </child>
+                          <child type="L">
+                           <children/>
+                           <data id="863b84c3-99fc-48c0-8e0f-d54c4671a04c" minHeight="56" minWidth="296" type="titleWidget" widgetID="863b84c3-99fc-48c0-8e0f-d54c4671a04c">
+                            <preferredHeight value="56"/>
+                            <preferredWidth value="0"/>
+                           </data>
+                          </child>
+                         </children>
+                        </child>
+                        <child type="V">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="bdedf1be-a51c-4139-9176-85045c15c2b7" minHeight="193" minWidth="624" type="tableWidget" widgetID="bdedf1be-a51c-4139-9176-85045c15c2b7">
+                            <preferredHeight value="193"/>
+                            <preferredWidth value="624"/>
+                           </data>
+                          </child>
+                          <child type="L">
+                           <children/>
+                           <data id="9a3c8430-41b0-403e-8ab7-f6e39e5a90ba" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="9a3c8430-41b0-403e-8ab7-f6e39e5a90ba">
+                            <preferredHeight value="310"/>
+                            <preferredWidth value="599"/>
+                           </data>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="6eab3719-7842-4959-9b3a-28432f13980f" minHeight="56" minWidth="296" type="titleWidget" widgetID="6eab3719-7842-4959-9b3a-28432f13980f">
+                          <preferredHeight value="56"/>
+                          <preferredWidth value="0"/>
+                         </data>
+                        </child>
+                        <child type="V">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="b32d150a-a5b6-44c0-a566-c03e12e1b012" minHeight="193" minWidth="624" type="tableWidget" widgetID="b32d150a-a5b6-44c0-a566-c03e12e1b012">
+                            <preferredHeight value="193"/>
+                            <preferredWidth value="624"/>
+                           </data>
+                          </child>
+                          <child type="L">
+                           <children/>
+                           <data id="a8650d6b-73d1-4ad8-986f-fc5d763dee5b" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="a8650d6b-73d1-4ad8-986f-fc5d763dee5b">
+                            <preferredHeight value="310"/>
+                            <preferredWidth value="599"/>
+                           </data>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="374bff7b-030b-4055-82d9-e0a3d53e4486" minHeight="56" minWidth="296" type="titleWidget" widgetID="374bff7b-030b-4055-82d9-e0a3d53e4486">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="61c8ba85-fe35-4e86-bfe4-57f379f6b280" minHeight="193" minWidth="624" type="tableWidget" widgetID="61c8ba85-fe35-4e86-bfe4-57f379f6b280">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="624"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="7a527897-06b0-4d60-872f-a451327deebf" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="7a527897-06b0-4d60-872f-a451327deebf">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="ba371c85-82bd-4bde-8117-b910692d9318" minHeight="56" minWidth="296" type="titleWidget" widgetID="ba371c85-82bd-4bde-8117-b910692d9318">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="26f8d184-5dbd-483b-8c99-fea9bd435b2e" minHeight="313" minWidth="624" type="tableWidget" widgetID="26f8d184-5dbd-483b-8c99-fea9bd435b2e">
+                <preferredHeight value="313"/>
+                <preferredWidth value="624"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="e62ef71f-e4f9-42c7-8d0e-21dfc81d228c" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="e62ef71f-e4f9-42c7-8d0e-21dfc81d228c">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="d9b5520d-3a86-44e5-bc98-b710bad9e116">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Total traffic - Pre-migration">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="1. Outlook (incoming)" ordering="0" serviceMetric="false" uid="3d9d697c-47a1-420f-9258-462149c4d40b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="2. Outlook (outgoing)" ordering="1" serviceMetric="false" uid="8441c2fa-2c34-4e7b-9138-5c79157be05e"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="3. SharePoint  (incoming)" ordering="2" serviceMetric="false" uid="da2b913f-93ed-4885-ac4e-232f20ca4774"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="4. SharePoint (outgoing)" ordering="3" serviceMetric="false" uid="4fa32f5a-bf20-41a0-8e9e-409337c09565"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="19c5b7a9-5928-4ff8-beda-1c7635b28543">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Total traffic - Post-migration">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="1. Outlook (incoming)" ordering="0" serviceMetric="false" uid="4a3979e4-36f6-4bbd-8314-ff2d6e0e3017"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="2. Outlook (outgoing)" ordering="1" serviceMetric="false" uid="8441c2fa-2c34-4e7b-9138-5c79157be05e"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="3. SharePoint (incoming)" ordering="2" serviceMetric="false" uid="1b7cff00-2de8-46aa-a044-64a23c55025f"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="4. SharePoint (outgoing)" ordering="3" serviceMetric="false" uid="bddd7679-36b1-41de-ad71-010276922da1"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="373231e8-f977-4aef-aa27-4591081b35dc">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Average web request duration">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label=" Average web request duration" ordering="0" serviceMetric="false" uid="2b5556c3-a02c-4e0d-999c-aa0755a6fd29"/>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="4aebefae-9731-4608-b047-bf728430cf2d">
+            <titleConfig title="Outlook"/>
+           </widget>
+           <widget type="TABLE" uid="90c43263-b410-4ea7-9974-dd301e4248a0">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Incoming" ordering="0" serviceMetric="false" uid="3d9d697c-47a1-420f-9258-462149c4d40b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Outgoing" ordering="1" serviceMetric="false" uid="8441c2fa-2c34-4e7b-9138-5c79157be05e"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="2" serviceMetric="false" uid="cb0bc4a0-02f7-4886-a838-38601b3a4239">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="64beac3f-190c-4867-964b-00e51ac53f17">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Incoming" ordering="0" serviceMetric="false" uid="3d9d697c-47a1-420f-9258-462149c4d40b"/>
+              <metric label="Outgoing" ordering="1" serviceMetric="false" uid="8441c2fa-2c34-4e7b-9138-5c79157be05e"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="863b84c3-99fc-48c0-8e0f-d54c4671a04c">
+            <titleConfig title="Skype for Business"/>
+           </widget>
+           <widget type="TABLE" uid="bdedf1be-a51c-4139-9176-85045c15c2b7">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Incoming" ordering="0" serviceMetric="false" uid="3abf8139-0ccc-4374-b388-eb5fa2001da9"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Outgoing" ordering="1" serviceMetric="false" uid="d513e7ad-097c-4f6b-b7ab-a5f8b376730e"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="2" serviceMetric="false" uid="9b1bd48b-207d-4926-abcc-6d92b3d09c11">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="9a3c8430-41b0-403e-8ab7-f6e39e5a90ba">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Incoming" ordering="0" serviceMetric="false" uid="3abf8139-0ccc-4374-b388-eb5fa2001da9"/>
+              <metric label="Outgoing" ordering="1" serviceMetric="false" uid="d513e7ad-097c-4f6b-b7ab-a5f8b376730e"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="6eab3719-7842-4959-9b3a-28432f13980f">
+            <titleConfig title="OneDrive"/>
+           </widget>
+           <widget type="TABLE" uid="b32d150a-a5b6-44c0-a566-c03e12e1b012">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Incoming" ordering="0" serviceMetric="false" uid="17db91d5-70a0-4270-9512-4f7f53718eb9"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Outgoing" ordering="1" serviceMetric="false" uid="acaced6e-5152-4f79-a532-a8e45b7e9fee"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="2" serviceMetric="false" uid="fcb79d32-ee60-4ceb-94e6-febfc86ee2eb">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="a8650d6b-73d1-4ad8-986f-fc5d763dee5b">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Incoming" ordering="0" serviceMetric="false" uid="17db91d5-70a0-4270-9512-4f7f53718eb9"/>
+              <metric label="Outgoing" ordering="1" serviceMetric="false" uid="acaced6e-5152-4f79-a532-a8e45b7e9fee"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="374bff7b-030b-4055-82d9-e0a3d53e4486">
+            <titleConfig title="Teams"/>
+           </widget>
+           <widget type="TABLE" uid="61c8ba85-fe35-4e86-bfe4-57f379f6b280">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Incoming" ordering="3" serviceMetric="false" uid="8ab6464f-f51c-4760-9713-23b1fff626c6"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Outgoing" ordering="4" serviceMetric="false" uid="11f29513-c62b-4e52-9ca6-859800ddf18b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="5" serviceMetric="false" uid="bad06eec-9a69-4c55-a3c1-55fafd1aa796">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="7a527897-06b0-4d60-872f-a451327deebf">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Incoming" ordering="2" serviceMetric="false" uid="8ab6464f-f51c-4760-9713-23b1fff626c6"/>
+              <metric label="Outgoing" ordering="3" serviceMetric="false" uid="11f29513-c62b-4e52-9ca6-859800ddf18b"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="ba371c85-82bd-4bde-8117-b910692d9318">
+            <titleConfig title="SharePoint Cloud"/>
+           </widget>
+           <widget type="TABLE" uid="26f8d184-5dbd-483b-8c99-fea9bd435b2e">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Incoming" ordering="0" serviceMetric="false" uid="1b7cff00-2de8-46aa-a044-64a23c55025f"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Outgoing" ordering="1" serviceMetric="false" uid="bddd7679-36b1-41de-ad71-010276922da1"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="2" serviceMetric="false" uid="4a2d7649-69e7-4720-ba68-7fd061b3d772">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e62ef71f-e4f9-42c7-8d0e-21dfc81d228c">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Incoming" ordering="0" serviceMetric="false" uid="1b7cff00-2de8-46aa-a044-64a23c55025f"/>
+              <metric label="Outgoing" ordering="1" serviceMetric="false" uid="bddd7679-36b1-41de-ad71-010276922da1"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# User adoption&#13;&#10;Moving to Office 365 can have a big impact on the business, especially if different productivity tools were used in the past. Moreover web apps can be used in certain scenarios to increase productivity and simplify access to common document types such as Word or PowerPoint. Monitoring user adoption is key to identifying potential issues and intervening with targeted information and education campaigns.&#13;&#10;&#13;&#10;* Classic apps are those which have been around for a long time, such as Word, PowerPoint, Outlook, OneNote and Excel. &#13;&#10;* New apps are more recent additions to the Office suite. &#13;&#10;&#13;&#10;::: tip&#13;&#10;**User adoption** is measured by the number of active users using an Office 365 application for at least 5 minutes in a day.&#13;&#10;:::&#13;&#10;&#13;&#10;::: configuration &#13;&#10;**Targeted users**&#13;&#10;This dashboard only includes those users who are scheduled to use Office 365. By default we consider all non-system users, however you can customize this list by [editing the O365 user categogy](nxt://Edit-NxCategory?Encoding=Url&amp;Name=O365&amp;Type=user).&#13;&#10;&#13;&#10;**OneDrive** &#13;&#10;The OneDrive domain must be explicitly configured by [editing the O365 domain category](nxt://Edit-NxCategory?Encoding=Url&amp;Name=O365&amp;Type=domain) and setting the **OneDrive** keyword.&#13;&#10;:::  " index="6" name="Run: User adoption" uid="a49c59cd-7d30-4070-ba72-a5d491d636bb">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="bfb13517-4784-44b6-9a89-c2b5002f2f5a" minHeight="126" minWidth="364" type="kpiWidget" widgetID="bfb13517-4784-44b6-9a89-c2b5002f2f5a">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="fd794c99-5fd1-4d78-90b4-aa11aa54c528" minHeight="233" minWidth="324" type="tableWidget" widgetID="fd794c99-5fd1-4d78-90b4-aa11aa54c528">
+                  <preferredHeight value="233"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="918e8086-0538-4f54-ae62-fbe5614089f4" minHeight="233" minWidth="324" type="tableWidget" widgetID="918e8086-0538-4f54-ae62-fbe5614089f4">
+                  <preferredHeight value="233"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="6ee89fa5-4968-4560-b99b-55770d5cac35" minHeight="233" minWidth="324" type="tableWidget" widgetID="6ee89fa5-4968-4560-b99b-55770d5cac35">
+                  <preferredHeight value="233"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="89076895-ccf7-439a-bcaa-334ad5749eb9" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="89076895-ccf7-439a-bcaa-334ad5749eb9">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="8ee221a3-3f69-4766-a965-0b1f2279eff5" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="8ee221a3-3f69-4766-a965-0b1f2279eff5">
+                    <preferredHeight value="350"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="c978a1ae-592d-4292-b9f6-0c9f8cf0721c" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="c978a1ae-592d-4292-b9f6-0c9f8cf0721c">
+                    <preferredHeight value="350"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="99b9db03-620f-4030-b07e-7595b02173db" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="99b9db03-620f-4030-b07e-7595b02173db">
+                    <preferredHeight value="350"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="9b732f01-089f-4e22-82c3-889bbecc009f" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="9b732f01-089f-4e22-82c3-889bbecc009f">
+                      <preferredHeight value="350"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="bcaad0f2-450d-4f2a-8361-ea08f17e5f10" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="bcaad0f2-450d-4f2a-8361-ea08f17e5f10">
+                      <preferredHeight value="350"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="bbffc451-fe05-4a0a-9e80-156dac14611d" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="bbffc451-fe05-4a0a-9e80-156dac14611d">
+                        <preferredHeight value="350"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="4511f9e8-c675-41a1-86a2-cbe3d1e111ff" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="4511f9e8-c675-41a1-86a2-cbe3d1e111ff">
+                        <preferredHeight value="350"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="0d7a84ff-9838-4658-a05a-3e8d8c3d4c67" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="0d7a84ff-9838-4658-a05a-3e8d8c3d4c67">
+                      <preferredHeight value="350"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="2dd8d562-6a08-4dcb-a154-a5bd768d9697" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="2dd8d562-6a08-4dcb-a154-a5bd768d9697">
+                        <preferredHeight value="350"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="af143a99-799b-4660-962b-eee9a5bee69f" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="af143a99-799b-4660-962b-eee9a5bee69f">
+                        <preferredHeight value="350"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="754527e8-8f88-4825-9ac1-7f3f151ccc29" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="754527e8-8f88-4825-9ac1-7f3f151ccc29">
+                      <preferredHeight value="350"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="bfb13517-4784-44b6-9a89-c2b5002f2f5a">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="RATIO" label="User adoption of installed apps" ordering="0" serviceMetric="false" uid="84b741e7-9248-4c94-8b0b-82eae4f67d02"/>
+              <metric displayValue="RATIO" label="User adoption of web apps" ordering="1" serviceMetric="false" uid="dece0095-349f-4af6-813e-65fad34d1af0"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="fd794c99-5fd1-4d78-90b4-aa11aa54c528">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Installed apps">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Access" ordering="0" serviceMetric="false" uid="22e4cda5-ab75-4c18-84ff-6e4642902c16">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Excel" ordering="1" serviceMetric="false" uid="a3b68a6c-62bb-4284-b317-e6da68d87a04">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="OneDrive" ordering="2" serviceMetric="false" uid="da77e7f8-10f0-4af9-98e8-e76960174d4c">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="OneNote" ordering="3" serviceMetric="false" uid="041b1fe2-6d5c-4a34-9a9f-5e21d63a632d">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Outlook" ordering="4" serviceMetric="false" uid="c166a00a-24c6-49b6-8e3b-cac8776a1a69">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="PowerPoint" ordering="5" serviceMetric="false" uid="b273119f-9bd9-445b-b834-9be138c0a5d0">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Publisher" ordering="6" serviceMetric="false" uid="f3f09e2c-76ac-4d15-8434-a90d38e6b27a">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Skype for Business" ordering="7" serviceMetric="false" uid="14bb28ac-ede2-4002-800e-45dbd85eedf6">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Word" ordering="8" serviceMetric="false" uid="2be89e9e-98a5-4bb7-8d50-bbba9c80d635">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="918e8086-0538-4f54-ae62-fbe5614089f4">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Classic web apps">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Excel" ordering="5" serviceMetric="false" uid="e6d19d70-bb92-4c3d-b37a-a4f711befd65">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="OneNote" ordering="7" serviceMetric="false" uid="1cc61f92-0504-49e2-ac76-8798a1417f13">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Outlook" ordering="8" serviceMetric="false" uid="5f1cea74-3592-4e69-bc84-c98af728b63b">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="PowerPoint" ordering="9" serviceMetric="false" uid="79665b47-392c-45e9-a79b-f98e81897d78">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Word" ordering="10" serviceMetric="false" uid="2b1e8341-26cb-43c3-b200-fda0886237c0">
+               <fields name="name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="6ee89fa5-4968-4560-b99b-55770d5cac35">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="New web apps">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="SharePoint" ordering="1" serviceMetric="false" uid="2dfc1a58-2b4b-4e64-97d5-144832a99198">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Sway" ordering="2" serviceMetric="false" uid="1b0fc02c-4a16-4747-aaf0-e21291a402cb">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Teams" ordering="3" serviceMetric="false" uid="bd51d523-0899-48ba-bad4-e0a22778cbc7">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Yammer" ordering="4" serviceMetric="false" uid="a299965d-4de0-4f81-b4ad-8ab8d29906fe">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="OneDrive" ordering="5" serviceMetric="false" uid="7df733a2-1981-425a-98cb-1e6e35e5a8dc">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="89076895-ccf7-439a-bcaa-334ad5749eb9">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Overall">
+             <metrics>
+              <metric label="Installed apps" ordering="0" serviceMetric="false" uid="84b741e7-9248-4c94-8b0b-82eae4f67d02"/>
+              <metric label="Web apps" ordering="1" serviceMetric="false" uid="dece0095-349f-4af6-813e-65fad34d1af0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="8ee221a3-3f69-4766-a965-0b1f2279eff5">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Outlook">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="c166a00a-24c6-49b6-8e3b-cac8776a1a69"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="5f1cea74-3592-4e69-bc84-c98af728b63b"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="c978a1ae-592d-4292-b9f6-0c9f8cf0721c">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Skype for Business">
+             <metrics>
+              <metric label="Skype for Business" ordering="0" serviceMetric="false" uid="14bb28ac-ede2-4002-800e-45dbd85eedf6"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="99b9db03-620f-4030-b07e-7595b02173db">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Word">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="2be89e9e-98a5-4bb7-8d50-bbba9c80d635"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="2b1e8341-26cb-43c3-b200-fda0886237c0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="9b732f01-089f-4e22-82c3-889bbecc009f">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Excel">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="a3b68a6c-62bb-4284-b317-e6da68d87a04"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="e6d19d70-bb92-4c3d-b37a-a4f711befd65"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="bcaad0f2-450d-4f2a-8361-ea08f17e5f10">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of PowerPoint">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="b273119f-9bd9-445b-b834-9be138c0a5d0"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="79665b47-392c-45e9-a79b-f98e81897d78"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="bbffc451-fe05-4a0a-9e80-156dac14611d">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of OneDrive">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="da77e7f8-10f0-4af9-98e8-e76960174d4c"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="964b1c71-a48c-4509-b7d4-d8ac83dec2e4"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4511f9e8-c675-41a1-86a2-cbe3d1e111ff">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of OneNote">
+             <metrics>
+              <metric label="Installed app" ordering="0" serviceMetric="false" uid="041b1fe2-6d5c-4a34-9a9f-5e21d63a632d"/>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="1cc61f92-0504-49e2-ac76-8798a1417f13"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="0d7a84ff-9838-4658-a05a-3e8d8c3d4c67">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Teams">
+             <metrics>
+              <metric label="Web app" ordering="1" serviceMetric="false" uid="bd51d523-0899-48ba-bad4-e0a22778cbc7"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2dd8d562-6a08-4dcb-a154-a5bd768d9697">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Publisher">
+             <metrics>
+              <metric label="Publisher" ordering="0" serviceMetric="false" uid="f3f09e2c-76ac-4d15-8434-a90d38e6b27a"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="af143a99-799b-4660-962b-eee9a5bee69f">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Sway">
+             <metrics>
+              <metric label="Web app" ordering="2" serviceMetric="false" uid="1b0fc02c-4a16-4747-aaf0-e21291a402cb"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="754527e8-8f88-4825-9ac1-7f3f151ccc29">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="Users of Access">
+             <metrics>
+              <metric label="Access" ordering="0" serviceMetric="false" uid="22e4cda5-ab75-4c18-84ff-6e4642902c16"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# User experience details&#13;&#10;&#13;&#10;This dashboard completes the *User experience - Overview* dashboard by providing more details about issues that users may be facing with Office 365.&#13;&#10;&#13;&#10; **Issues by location**&#13;&#10;A summary of the different Office 365 issues by location.&#13;&#10;&#13;&#10;**Details**&#13;&#10;The Office 365 binaries with highest crash and freeze ratios are listed, as well as those with lowest network availability." index="8" name="Run: User experience details" uid="c7666b41-ee35-4b6b-ad52-13bc5e382e82">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="0ded2ab8-ea43-4407-86db-90ea09bbacec" minHeight="233" minWidth="774" type="tableWidget" widgetID="0ded2ab8-ea43-4407-86db-90ea09bbacec">
+              <preferredHeight value="233"/>
+              <preferredWidth value="774"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="cd56ab0b-859e-444f-a5c5-a0085df3ca63" minHeight="233" minWidth="480" type="tableWidget" widgetID="cd56ab0b-859e-444f-a5c5-a0085df3ca63">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="ddff01ca-6669-4369-baa6-72f31d00f2fb" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="ddff01ca-6669-4369-baa6-72f31d00f2fb">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="40fdaf95-c772-4fe7-a4b0-2ec4f631d0ae" minHeight="233" minWidth="480" type="tableWidget" widgetID="40fdaf95-c772-4fe7-a4b0-2ec4f631d0ae">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="53c81006-9863-4a26-b61d-f826ce845e3d" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="53c81006-9863-4a26-b61d-f826ce845e3d">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="7f5b5c81-8e97-449c-9da5-5e3d935cc294" minHeight="233" minWidth="480" type="tableWidget" widgetID="7f5b5c81-8e97-449c-9da5-5e3d935cc294">
+                  <preferredHeight value="233"/>
+                  <preferredWidth value="480"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="9047869f-b0c6-44ee-8f82-8708940b12a8" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="9047869f-b0c6-44ee-8f82-8708940b12a8">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="0ded2ab8-ea43-4407-86db-90ea09bbacec">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Issues by location">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Crashes" ordering="0" serviceMetric="false" uid="96d7d46b-0995-42f6-8107-cb7345edc56a"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Freezes" ordering="1" serviceMetric="false" uid="221e0b75-7eb6-4592-a113-9dc28a2b8463"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Network availability" ordering="2" serviceMetric="false" uid="65d75dae-418f-4fa1-a51d-4c3daf8283df"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Devices using the wrong proxy" ordering="3" serviceMetric="false" uid="7ccc5c59-1229-4aef-9ba8-880de278d918">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="cd56ab0b-859e-444f-a5c5-a0085df3ca63">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="O365 binaries with worst crash ratios">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 O365 binaries by application crash ratio" ordering="0" serviceMetric="false" uid="cf29ca07-1309-49b9-bfdf-af5c68be87cd">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="ddff01ca-6669-4369-baa6-72f31d00f2fb">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Crashes" ordering="0" serviceMetric="false" uid="96d7d46b-0995-42f6-8107-cb7345edc56a"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="40fdaf95-c772-4fe7-a4b0-2ec4f631d0ae">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="O365 binaries with worst freeze ratios">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 O365 binaries by application freeze ratio" ordering="0" serviceMetric="false" uid="4c5831af-67cc-4767-892e-ccc1c54bf263">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="53c81006-9863-4a26-b61d-f826ce845e3d">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Freezes" ordering="0" serviceMetric="false" uid="221e0b75-7eb6-4592-a113-9dc28a2b8463"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="7f5b5c81-8e97-449c-9da5-5e3d935cc294">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="O365 binaries with lowest network availabilities">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 O365 binaries by lowest network availability ratio" ordering="0" serviceMetric="false" uid="bee4e6c2-74eb-4f2b-80e8-ded18bed220d">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="success_rate"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="9047869f-b0c6-44ee-8f82-8708940b12a8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Network availability" ordering="0" serviceMetric="false" uid="65d75dae-418f-4fa1-a51d-4c3daf8283df"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# User experience - Overview&#13;&#10;This dashboard helps you monitor your users' experiences with Office 365.  &#13;&#10;&#13;&#10;**Status**&#13;&#10;Data collected about the Office 365 stability and issues. &#13;&#10;&#13;&#10;**What users do and don't like** &#13;&#10;Collected by a campaign to better highlight what users think about Office 365 in order to help them leverage the product." index="7" name="Run: User experience overview" uid="488d84be-2307-40c6-b2af-bd8f40593bd3">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="0d8d3447-9108-4426-b4ba-c0d957899b61" minHeight="166" minWidth="744" type="kpiWidget" widgetID="0d8d3447-9108-4426-b4ba-c0d957899b61">
+              <preferredHeight value="166"/>
+              <preferredWidth value="744"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="21063c5b-2ab7-4344-a6d4-b56ab271e0f7" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="21063c5b-2ab7-4344-a6d4-b56ab271e0f7">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="ba0c503f-7375-4d30-980b-603a4f5227b8" minHeight="228" minWidth="300" type="barChartWidget" widgetID="ba0c503f-7375-4d30-980b-603a4f5227b8">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="8f6db977-20db-4070-ac24-e106cd0a4db6" minHeight="228" minWidth="300" type="barChartWidget" widgetID="8f6db977-20db-4070-ac24-e106cd0a4db6">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="0d8d3447-9108-4426-b4ba-c0d957899b61">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Overall status of O365 apps">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Crashes" ordering="0" serviceMetric="false" uid="96d7d46b-0995-42f6-8107-cb7345edc56a"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Freezes" ordering="1" serviceMetric="false" uid="221e0b75-7eb6-4592-a113-9dc28a2b8463"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Network availability" ordering="2" serviceMetric="false" uid="65d75dae-418f-4fa1-a51d-4c3daf8283df"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices using the wrong proxy to connect" ordering="3" serviceMetric="false" uid="7ccc5c59-1229-4aef-9ba8-880de278d918"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="21063c5b-2ab7-4344-a6d4-b56ab271e0f7">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Crashes" ordering="0" serviceMetric="false" uid="96d7d46b-0995-42f6-8107-cb7345edc56a"/>
+              <metric label="Freezes" ordering="1" serviceMetric="false" uid="221e0b75-7eb6-4592-a113-9dc28a2b8463"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ba0c503f-7375-4d30-980b-603a4f5227b8">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users like">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_258e5ec9bc4f4938b0f464f4f885dc43_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Office 365 - Positive points" ordering="0" serviceMetric="false" uid="8ea1871e-0754-47b7-8407-642fc0783b58"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8f6db977-20db-4070-ac24-e106cd0a4db6">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users don't like">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_258e5ec9bc4f4938b0f464f4f885dc43_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Office 365 - Negative points" ordering="0" serviceMetric="false" uid="51471a70-1636-42ae-a395-d3ebb7af82c1"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Version dispersion&#13;&#10;It is usually the case that different versions of Office are running throughout all the company. This dashboard helps with picturing the different versions in use for Office and for the different applications.&#13;&#10;&#13;&#10;The last table also lists the different browsers used to connect to the Office 365 online applications.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;If you want to monitor another Office suite, you can configure the metrics and categories accordingly.&#13;&#10;:::" index="9" name="Run: Version dispersion" uid="142fd78c-822b-4445-ba75-bdc26871ba3b">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="32901663-0ad3-4188-8d9e-9cf7c0164f3b" minHeight="166" minWidth="934" type="kpiWidget" widgetID="32901663-0ad3-4188-8d9e-9cf7c0164f3b">
+                <preferredHeight value="166"/>
+                <preferredWidth value="934"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="400c5875-b4d2-44ee-9513-20013e174340" minHeight="233" minWidth="630" type="tableWidget" widgetID="400c5875-b4d2-44ee-9513-20013e174340">
+                <preferredHeight value="233"/>
+                <preferredWidth value="630"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f5a3a032-9c39-4960-b799-adbc2282bb1a" minHeight="233" minWidth="480" type="tableWidget" widgetID="f5a3a032-9c39-4960-b799-adbc2282bb1a">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="cd55569d-b1d4-4147-8380-161b538371a8" minHeight="233" minWidth="480" type="tableWidget" widgetID="cd55569d-b1d4-4147-8380-161b538371a8">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="480"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="c01830e5-581b-49d8-abb8-ee9eb97f7c5f" minHeight="233" minWidth="480" type="tableWidget" widgetID="c01830e5-581b-49d8-abb8-ee9eb97f7c5f">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="480"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="6de0098b-8992-48c0-99d6-d677dd5066c7" minHeight="233" minWidth="480" type="tableWidget" widgetID="6de0098b-8992-48c0-99d6-d677dd5066c7">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="9e380c20-5182-4e3d-83ff-2b3440073364" minHeight="233" minWidth="480" type="tableWidget" widgetID="9e380c20-5182-4e3d-83ff-2b3440073364">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="480"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="52bdf733-324e-4002-abe0-65fd72d9f32e" minHeight="233" minWidth="480" type="tableWidget" widgetID="52bdf733-324e-4002-abe0-65fd72d9f32e">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="480"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="2b99e452-93c9-4ab4-9b56-a442f898e05d" minHeight="233" minWidth="480" type="tableWidget" widgetID="2b99e452-93c9-4ab4-9b56-a442f898e05d">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="ad12f7ae-0593-44a9-a789-eaeb0a0a8a82" minHeight="233" minWidth="480" type="tableWidget" widgetID="ad12f7ae-0593-44a9-a789-eaeb0a0a8a82">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="dd047db8-1ed5-43ac-a34f-16599f5e24ef" minHeight="233" minWidth="480" type="tableWidget" widgetID="dd047db8-1ed5-43ac-a34f-16599f5e24ef">
+                <preferredHeight value="233"/>
+                <preferredWidth value="480"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="32901663-0ad3-4188-8d9e-9cf7c0164f3b">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Office version of devices">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Office 2016" ordering="0" serviceMetric="false" uid="4ffbeb6f-3052-48c0-b3f7-795c0db54370"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Office 2013" ordering="1" serviceMetric="false" uid="d5cf44bd-2e5a-4f1b-a090-f01aa658b47b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Office 2010" ordering="2" serviceMetric="false" uid="6d36ca82-14a8-4b4a-afc4-31f911fe0da2"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Office 2007" ordering="3" serviceMetric="false" uid="578b7efe-45a5-44a5-808a-88303f016610"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unknown Office version" ordering="4" serviceMetric="false" uid="c7acd086-860a-452b-a491-494cd5745730"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="400c5875-b4d2-44ee-9513-20013e174340">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Top 100 browsers used to access O365 apps">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 browsers used to access O365 apps" ordering="0" serviceMetric="false" uid="7d8ab61e-2e9a-427b-96ad-bdd7375d80f4">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+               <fields name="O365" type="CATEGORY"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f5a3a032-9c39-4960-b799-adbc2282bb1a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Outlook binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Outlook binaries" ordering="0" serviceMetric="false" uid="e616e664-e9b1-4200-ac52-dc2350dc1c49">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="cd55569d-b1d4-4147-8380-161b538371a8">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Excel binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Excel binaries" ordering="0" serviceMetric="false" uid="44d9449c-6acf-4626-9793-f8c586a79eb9">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c01830e5-581b-49d8-abb8-ee9eb97f7c5f">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Skype for Business binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Skype for Business binaries" ordering="0" serviceMetric="false" uid="e3d0a7ca-9867-47c5-a022-3729b45e51cb">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="6de0098b-8992-48c0-99d6-d677dd5066c7">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Word binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Word binaries" ordering="0" serviceMetric="false" uid="8a492498-314f-4a64-965f-213fb1c43dac">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="9e380c20-5182-4e3d-83ff-2b3440073364">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Power Point binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 PowerPoint binaries" ordering="0" serviceMetric="false" uid="c87c1495-aab6-42c9-82e4-f20344d02daa">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="52bdf733-324e-4002-abe0-65fd72d9f32e">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="OneDrive binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 OneDrive binaries" ordering="0" serviceMetric="false" uid="5430a9da-b801-4b37-947a-45d6a17a45da">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="2b99e452-93c9-4ab4-9b56-a442f898e05d">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="One Note binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 OneNote binaries" ordering="0" serviceMetric="false" uid="2f97667e-6bd6-4332-9ba1-a033b05a98f7">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ad12f7ae-0593-44a9-a789-eaeb0a0a8a82">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Publisher binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Publisher binaries" ordering="0" serviceMetric="false" uid="09b9016f-d029-47f4-8627-d311df0ef0ca">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="dd047db8-1ed5-43ac-a34f-16599f5e24ef">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Access binaries">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 - Top 100 Access binaries" ordering="0" serviceMetric="false" uid="00221ddc-3fc4-4416-9db1-4e07713c1806">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Adoption of Skype for Business vs GoToMeeting&#13;&#10;Here we look at the adoption of Skype for Business compared to the adoption for GoToMeeting. &#13;&#10;&#13;&#10;Beyond that, we also look at end-user feedback on users' experiences with Skype for Business, and we identify why some users are using GoToMeeting in preference to Skype for Business.&#13;&#10;&#13;&#10;# Potential cost savings&#13;&#10;In this subsection we look at devices with GoToMeeting whose users don't know about Skype for Business.&#13;&#10;&#13;&#10;Given that each license for GoToMeeting costs $240 USD, we can calculate the potential cost savings which are achievable by informing users of the existence of and corporate preference for Skype for Business." index="10" name="Skype for Business vs GoToMeeting" uid="5e517638-f955-40eb-9ac4-c7ea8019347d">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="f9eb1d94-4c26-4c96-a89c-0bf1d9e4e5c0" minHeight="126" minWidth="364" type="kpiWidget" widgetID="f9eb1d94-4c26-4c96-a89c-0bf1d9e4e5c0">
+                <preferredHeight value="126"/>
+                <preferredWidth value="364"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="72c02f93-7784-4e92-a1b5-130f4abd6879" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="72c02f93-7784-4e92-a1b5-130f4abd6879">
+                <preferredHeight value="350"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8e19d9c6-890a-4e38-8206-acf6e8663c26" minHeight="204" minWidth="300" type="barChartWidget" widgetID="8e19d9c6-890a-4e38-8206-acf6e8663c26">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="40bd883b-6e2b-49a5-8dfb-ca090647198a" minHeight="209" minWidth="324" type="tableWidget" widgetID="40bd883b-6e2b-49a5-8dfb-ca090647198a">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="f9272be8-bc4d-4cf5-a470-658db4fac50c" minHeight="209" minWidth="324" type="tableWidget" widgetID="f9272be8-bc4d-4cf5-a470-658db4fac50c">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="65afd883-9733-4785-94a1-88af8e9a9d7d" minHeight="166" minWidth="364" type="kpiWidget" widgetID="65afd883-9733-4785-94a1-88af8e9a9d7d">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="ccfe9cc9-d024-41a8-ac54-7809dfc4e4e7" minHeight="116" minWidth="300" type="barChartWidget" widgetID="ccfe9cc9-d024-41a8-ac54-7809dfc4e4e7">
+                  <preferredHeight value="116"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="f9eb1d94-4c26-4c96-a89c-0bf1d9e4e5c0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Users of Skype for Business " ordering="0" serviceMetric="false" uid="d45bf1e1-29ba-420c-ab79-43fa54160237"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Users GoToMeeting" ordering="1" serviceMetric="false" uid="31e99344-b706-40dc-970f-9bdbf8f1a72d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="72c02f93-7784-4e92-a1b5-130f4abd6879">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Adoption over time">
+             <metrics>
+              <metric label="Skype for Business " ordering="1" serviceMetric="false" uid="d45bf1e1-29ba-420c-ab79-43fa54160237"/>
+              <metric label="GoToMeeting" ordering="2" serviceMetric="false" uid="31e99344-b706-40dc-970f-9bdbf8f1a72d"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8e19d9c6-890a-4e38-8206-acf6e8663c26">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Why users are using GoToMeeting">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5f608b3de6e84fa7a9423c22bc4940bb_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Skype for Business - Lack of adoption breakdown" ordering="1" serviceMetric="false" uid="4955b2b2-f1d2-4cc3-85ea-386ff071cfc9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="40bd883b-6e2b-49a5-8dfb-ca090647198a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Skype for Business quality - users using GoToMeeting">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Response time" ordering="2" serviceMetric="false" uid="b728100d-fc7d-4c00-b231-2f13e53d31f2"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Crashes" ordering="3" serviceMetric="false" uid="fa790630-1c49-4054-849a-58b451384f8f"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Freezes" ordering="4" serviceMetric="false" uid="566f20c1-8d25-498e-aaae-3548698b320f"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Connectivity" ordering="5" serviceMetric="false" uid="b6b34ae9-4b84-4efa-89ba-6b6a6d6ae3b2"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f9272be8-bc4d-4cf5-a470-658db4fac50c">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Skype for Business quality - all users">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Connectivity" ordering="0" serviceMetric="false" uid="d199ce56-e433-4abf-8907-ae570b20dac7"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Response time" ordering="1" serviceMetric="false" uid="c338f69f-e9b3-4319-ac6a-1a1499084071"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Software crashes" ordering="2" serviceMetric="false" uid="f31b601e-62c9-43cc-b679-cef0f87296e7"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Software freezes" ordering="3" serviceMetric="false" uid="69c4e284-59c9-490d-8440-1ae0b19df1fe"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="65afd883-9733-4785-94a1-88af8e9a9d7d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Potential cost savings per year">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="USD ($)" ordering="0" serviceMetric="false" uid="c97a7f25-368c-49a2-ac7b-721f58b90705"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of licenses ($240 USD per license)" ordering="1" serviceMetric="false" uid="fca40e90-1e1b-41f9-91c5-bb07d10e6327"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ccfe9cc9-d024-41a8-ac54-7809dfc4e4e7">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="3" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="GoToMeeting cost saving" ordering="0" serviceMetric="false" uid="c97a7f25-368c-49a2-ac7b-721f58b90705"/>
+             </metrics>
+             <scale scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

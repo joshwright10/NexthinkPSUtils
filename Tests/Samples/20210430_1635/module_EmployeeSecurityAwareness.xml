@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Employee Security Awareness</Name>
+     <Dependencies>
+      <Dependency name="Security Awareness Level" type="metric" uid="eadba35c-e836-4f74-9ce8-74a0a9529267"/>
+      <Dependency name="Security Awareness - Respondents" type="metric" uid="989e52ef-abb9-4f95-aa6a-7fef7b835126"/>
+      <Dependency name="Security Awareness - Users at Risk" type="metric" uid="04496ecc-7256-4e80-870f-75b6ff62836b"/>
+      <Dependency name="Security Awareness - Admin Rights breakdown" type="metric" uid="10dde759-9d88-4229-aee3-e7b91d33a06d"/>
+      <Dependency name="Security Awareness - Ransomware breakdown" type="metric" uid="45f8ad6d-bd67-480a-bc10-19f9752c2eaa"/>
+      <Dependency name="Security Awareness - Limiting Propagation breakdown" type="metric" uid="6c7a8582-f6a7-4514-ab1d-98e9280b01b5"/>
+      <Dependency name="Security Awareness - Malware Risk Mitigation breakdown" type="metric" uid="e3543b1a-4e22-4ab1-9133-1ae5f1d073ec"/>
+      <Dependency name="Security Awareness - Malware on Mobile breakdown" type="metric" uid="48a8c85e-7997-4864-b27c-1d18a7a2cf3e"/>
+      <Dependency name="Security Awareness - Admin Rights" type="metric" uid="4c24ced6-5a99-4cc4-a289-2d3c4d44c76d"/>
+      <Dependency name="Security Awareness - Email from Bank" type="metric" uid="2e8e7b18-f4e3-4c79-b689-bcca3e9f702f"/>
+      <Dependency name="Security Awareness - Ransomware" type="metric" uid="f1bcc818-0cdc-47a7-ac7c-095e63fafeed"/>
+      <Dependency name="Security Awareness - Ransomware and Antivirus" type="metric" uid="3dc3d4bd-c640-4afe-996b-0efa94d65d67"/>
+      <Dependency name="Security Awareness - Limiting Propagation" type="metric" uid="b01e0a20-6d4f-45f0-836b-53b20c913e53"/>
+      <Dependency name="Security Awareness - Mac OS Device" type="metric" uid="eeb633ed-c758-4884-af22-f8dff7a82d0b"/>
+      <Dependency name="Security Awareness - Malware Risk Mitigation" type="metric" uid="2a6c163c-1623-4758-a8ad-8a8dd2d5b2b7"/>
+      <Dependency name="Security Awareness - Malware" type="metric" uid="3ae9b9d4-4048-44dd-8e19-1ab7ac482869"/>
+      <Dependency name="Security Awareness - Malware on Mobiles" type="metric" uid="29b22ddb-c926-4bed-b2b6-dc8a4e2f6a42"/>
+      <Dependency name="Security Awareness - Malware Suspicion on Device" type="metric" uid="f3d7e084-cbc7-4856-b852-875cef05a558"/>
+      <Dependency name="Security Awareness - Email from Bank breakdown" type="metric" uid="b8afcc7e-c199-480c-85eb-528d83a3bdd6"/>
+      <Dependency name="Security Awareness - Ransomware and Antivirus breakdown" type="metric" uid="0daa1e6d-650f-444f-a214-2eeb0a6fa2d5"/>
+      <Dependency name="Security Awareness - Mac OS Device breakdown" type="metric" uid="f229fd1d-ba92-4f37-a0d3-0ea5c74eb479"/>
+      <Dependency name="Security Awareness - Malware breakdown" type="metric" uid="0e89f3fd-5370-4c55-86e0-8e4510268804"/>
+      <Dependency name="Security Awareness - Malware Suspicion on Device breakdown" type="metric" uid="c4272595-8948-4391-8962-212d92669ef9"/>
+      <Dependency name="Security Awareness - Phishing - Respondents" type="metric" uid="b6e112bc-cac4-4aca-9c12-248b09830e5f"/>
+      <Dependency name="Security Awareness - Phishing - Declined" type="metric" uid="7afa34c5-9ed2-4b38-87b0-eb59deb004d4"/>
+      <Dependency name="Security Awareness - Phishing - Breakdown" type="metric" uid="55efaef3-6359-48ad-ba0b-4f5fd1f51e37"/>
+      <Dependency name="Security Awareness - USB - Respondents" type="metric" uid="2fff0fd0-00a0-4d64-954f-3f49183b9ff1"/>
+      <Dependency name="Security Awareness - USB - Declined" type="metric" uid="b4d18c47-b70f-4064-b64d-2065801f9841"/>
+      <Dependency name="Security Awareness - USB - Breakdown" type="metric" uid="bf486605-0aa9-438d-a94d-d623dcdd7542"/>
+      <Dependency name="Security Awareness - Ransomware - Respondents" type="metric" uid="c36dcabd-b63e-41ca-ba93-4beec3886179"/>
+      <Dependency name="Security Awareness - Ransomware - Declined" type="metric" uid="f3b38945-f452-4675-87e5-4ea955ea4059"/>
+      <Dependency name="Security Awareness - Ransomware - Breakdown" type="metric" uid="fe94f027-c2c6-42fc-92d5-46857f7dd8e9"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Employee Security Awareness" uid="6a856527-507c-4e68-941e-de779d9f975d">
+        <dashboards>
+         <dashboard description="**Employee Security Awareness**&#13;&#10;&#13;&#10;This initial campaign consists in assessing employee's knowledge regarding common information security (IS) subjects. In combination with the &quot;User Risk&quot; module, the main objective is to identify potential users requiring advanced education on specific IS domains. &#13;&#10;&#13;&#10;**Covered subjects:**&#13;&#10;&#13;&#10;* Priviledged accounts&#13;&#10;* Phishing emails&#13;&#10;* Malwares / Ransomwares&#13;&#10;* Security on Mac OS&#13;&#10;* Security on mobiles&#13;&#10;* Software installation best practices&#13;&#10;* Incident response&#13;&#10;" index="1" name="Assess" uid="21177b8b-cd3d-4d71-b973-8a4833de4401">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d3d345d9-f55c-4255-b70e-45ee34ca2891" minHeight="166" minWidth="554" type="kpiWidget" widgetID="d3d345d9-f55c-4255-b70e-45ee34ca2891">
+                <preferredHeight value="166"/>
+                <preferredWidth value="554"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="e2830c98-1479-4c43-9431-a3bb1a612f08" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="e2830c98-1479-4c43-9431-a3bb1a612f08">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d4c3ea73-8097-451f-8bdf-29f2235d2839" minHeight="324" minWidth="300" type="barChartWidget" widgetID="d4c3ea73-8097-451f-8bdf-29f2235d2839">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="da58502d-2087-4f0d-b7f2-d82da670a6e0" minHeight="324" minWidth="300" type="barChartWidget" widgetID="da58502d-2087-4f0d-b7f2-d82da670a6e0">
+                      <preferredHeight value="324"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="596c953a-513a-450e-b80f-3c156b477fdc" minHeight="324" minWidth="300" type="barChartWidget" widgetID="596c953a-513a-450e-b80f-3c156b477fdc">
+                        <preferredHeight value="324"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="71860a2d-79a7-42b5-898e-99797dd10e23" minHeight="324" minWidth="300" type="barChartWidget" widgetID="71860a2d-79a7-42b5-898e-99797dd10e23">
+                          <preferredHeight value="324"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="edad82b0-a438-4a0e-a71d-5f68987122d7" minHeight="324" minWidth="300" type="barChartWidget" widgetID="edad82b0-a438-4a0e-a71d-5f68987122d7">
+                          <preferredHeight value="324"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="4e5011b9-b68f-41e5-9a4d-a40994d5835b" minHeight="166" minWidth="364" type="kpiWidget" widgetID="4e5011b9-b68f-41e5-9a4d-a40994d5835b">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="e9ac6362-7480-401a-89cd-d6db4d4b3763" minHeight="166" minWidth="364" type="kpiWidget" widgetID="e9ac6362-7480-401a-89cd-d6db4d4b3763">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="fedd70cb-b04c-4cb4-8e88-033dfb1c44b4" minHeight="166" minWidth="364" type="kpiWidget" widgetID="fedd70cb-b04c-4cb4-8e88-033dfb1c44b4">
+                        <preferredHeight value="166"/>
+                        <preferredWidth value="364"/>
+                       </data>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="71504a18-64a2-4bef-be95-b1197d16aac4" minHeight="166" minWidth="364" type="kpiWidget" widgetID="71504a18-64a2-4bef-be95-b1197d16aac4">
+                          <preferredHeight value="166"/>
+                          <preferredWidth value="364"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="fede09c6-4a65-42ce-9cf3-fddb31faef52" minHeight="166" minWidth="364" type="kpiWidget" widgetID="fede09c6-4a65-42ce-9cf3-fddb31faef52">
+                          <preferredHeight value="166"/>
+                          <preferredWidth value="364"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="61da8fdc-9c6e-4463-99f9-fa3acf00cd4a" minHeight="324" minWidth="300" type="barChartWidget" widgetID="61da8fdc-9c6e-4463-99f9-fa3acf00cd4a">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5210ee1b-718b-439e-b85b-162ba55f73d8" minHeight="324" minWidth="300" type="barChartWidget" widgetID="5210ee1b-718b-439e-b85b-162ba55f73d8">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="24711682-0f05-4727-a2b2-d4bc18741561" minHeight="324" minWidth="300" type="barChartWidget" widgetID="24711682-0f05-4727-a2b2-d4bc18741561">
+                      <preferredHeight value="324"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="c5e52cb8-4187-4813-9e86-d4025787f95e" minHeight="324" minWidth="300" type="barChartWidget" widgetID="c5e52cb8-4187-4813-9e86-d4025787f95e">
+                        <preferredHeight value="324"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="3acfee4a-e4a5-420b-b991-3631ac7546ed" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3acfee4a-e4a5-420b-b991-3631ac7546ed">
+                        <preferredHeight value="324"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="d3d345d9-f55c-4255-b70e-45ee34ca2891">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="General Figures">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Security Awareness Level" ordering="3" serviceMetric="false" uid="eadba35c-e836-4f74-9ce8-74a0a9529267"/>
+              <metric displayValue="RATIO" label="Respondents" ordering="4" serviceMetric="false" uid="989e52ef-abb9-4f95-aa6a-7fef7b835126"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Low Awareness Users" ordering="5" serviceMetric="false" uid="04496ecc-7256-4e80-870f-75b6ff62836b"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e2830c98-1479-4c43-9431-a3bb1a612f08">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Security Awareness Level" ordering="1" serviceMetric="false" uid="eadba35c-e836-4f74-9ce8-74a0a9529267"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d4c3ea73-8097-451f-8bdf-29f2235d2839">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="If I'm not administrator of my corporate computer:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Admin Rights breakdown" ordering="2" serviceMetric="false" uid="10dde759-9d88-4229-aee3-e7b91d33a06d"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="da58502d-2087-4f0d-b7f2-d82da670a6e0">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="A ransomware is:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Ransomware breakdown" ordering="3" serviceMetric="false" uid="45f8ad6d-bd67-480a-bc10-19f9752c2eaa"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="596c953a-513a-450e-b80f-3c156b477fdc">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What solution below can help in limiting the installation and the propagation of a malware?">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Limiting Propagation breakdown" ordering="1" serviceMetric="false" uid="6c7a8582-f6a7-4514-ab1d-98e9280b01b5"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="71860a2d-79a7-42b5-898e-99797dd10e23">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="To limit the risk of being infected by a malware, I can:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_6"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Malware Risk Mitigation breakdown" ordering="1" serviceMetric="false" uid="e3543b1a-4e22-4ab1-9133-1ae5f1d073ec"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="edad82b0-a438-4a0e-a71d-5f68987122d7">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Malwares on mobile phones:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_8"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Malware on Mobile breakdown" ordering="4" serviceMetric="false" uid="48a8c85e-7997-4864-b27c-1d18a7a2cf3e"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="4e5011b9-b68f-41e5-9a4d-a40994d5835b">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Scores">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Admin Rights" ordering="2" serviceMetric="false" uid="4c24ced6-5a99-4cc4-a289-2d3c4d44c76d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Email from Bank" ordering="3" serviceMetric="false" uid="2e8e7b18-f4e3-4c79-b689-bcca3e9f702f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="e9ac6362-7480-401a-89cd-d6db4d4b3763">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Scores">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Ransomware" ordering="3" serviceMetric="false" uid="f1bcc818-0cdc-47a7-ac7c-095e63fafeed"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Ransomware and Antivirus" ordering="4" serviceMetric="false" uid="3dc3d4bd-c640-4afe-996b-0efa94d65d67"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="fedd70cb-b04c-4cb4-8e88-033dfb1c44b4">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Scores">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Limiting Propagation" ordering="2" serviceMetric="false" uid="b01e0a20-6d4f-45f0-836b-53b20c913e53"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Mac OS Device" ordering="3" serviceMetric="false" uid="eeb633ed-c758-4884-af22-f8dff7a82d0b"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="71504a18-64a2-4bef-be95-b1197d16aac4">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Scores">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Malware Risk Mitigation" ordering="2" serviceMetric="false" uid="2a6c163c-1623-4758-a8ad-8a8dd2d5b2b7"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Malware" ordering="3" serviceMetric="false" uid="3ae9b9d4-4048-44dd-8e19-1ab7ac482869"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="fede09c6-4a65-42ce-9cf3-fddb31faef52">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Scores">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Malware on Mobiles" ordering="2" serviceMetric="false" uid="29b22ddb-c926-4bed-b2b6-dc8a4e2f6a42"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Malware Suspicion on Device" ordering="3" serviceMetric="false" uid="f3d7e084-cbc7-4856-b852-875cef05a558"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="61da8fdc-9c6e-4463-99f9-fa3acf00cd4a">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="I just received an important email from my Bank, asking me to click on a link.">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_7"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Email from Bank breakdown" ordering="3" serviceMetric="false" uid="b8afcc7e-c199-480c-85eb-528d83a3bdd6"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5210ee1b-718b-439e-b85b-162ba55f73d8">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Against ransomwares, my anti-virus is:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Ransomware and Antivirus breakdown" ordering="1" serviceMetric="false" uid="0daa1e6d-650f-444f-a214-2eeb0a6fa2d5"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="24711682-0f05-4727-a2b2-d4bc18741561">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="On a Mac OS device, malwares:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_5"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Mac OS Device breakdown" ordering="1" serviceMetric="false" uid="f229fd1d-ba92-4f37-a0d3-0ea5c74eb479"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c5e52cb8-4187-4813-9e86-d4025787f95e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="A malware is:">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Malware breakdown" ordering="1" serviceMetric="false" uid="0e89f3fd-5370-4c55-86e0-8e4510268804"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3acfee4a-e4a5-420b-b991-3631ac7546ed">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="I'm suspecting my device to be infected by a malware.">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_69589f35ace84953b5478a9eede3ed0e_9"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness - Malware Suspicion on Device breakdown" ordering="1" serviceMetric="false" uid="c4272595-8948-4391-8962-212d92669ef9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="2" name="Educate" uid="5d900b1c-de7c-42b6-885a-a9a05c9e76ee">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="1df939d1-4a0e-4077-867c-7cc7c49640ab" minHeight="174" minWidth="364" type="kpiWidget" widgetID="1df939d1-4a0e-4077-867c-7cc7c49640ab">
+                    <preferredHeight value="174"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="83eda050-d65f-4470-ab07-5fcd36d24925" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="83eda050-d65f-4470-ab07-5fcd36d24925">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="dd57304b-ab3b-4db0-b7e0-61995f481c01" minHeight="92" minWidth="300" type="barChartWidget" widgetID="dd57304b-ab3b-4db0-b7e0-61995f481c01">
+                  <preferredHeight value="92"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="434bf482-1cb4-4024-aad7-b242e483dc7c" minHeight="174" minWidth="364" type="kpiWidget" widgetID="434bf482-1cb4-4024-aad7-b242e483dc7c">
+                    <preferredHeight value="174"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="667cae9d-c296-4a21-8a9c-316cc31c4c18" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="667cae9d-c296-4a21-8a9c-316cc31c4c18">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="36fd2139-37e4-473e-9b22-5a104e622446" minHeight="92" minWidth="300" type="barChartWidget" widgetID="36fd2139-37e4-473e-9b22-5a104e622446">
+                  <preferredHeight value="92"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="685f0da8-c616-4c6e-8ccd-45bba66fa694" minHeight="174" minWidth="364" type="kpiWidget" widgetID="685f0da8-c616-4c6e-8ccd-45bba66fa694">
+                  <preferredHeight value="174"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="7d313b41-c58d-438b-93eb-e2d2494e5d95" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="7d313b41-c58d-438b-93eb-e2d2494e5d95">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="ca1a036e-617d-426d-a00a-6931efe88828" minHeight="92" minWidth="300" type="barChartWidget" widgetID="ca1a036e-617d-426d-a00a-6931efe88828">
+                <preferredHeight value="92"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="1df939d1-4a0e-4077-867c-7cc7c49640ab">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Phishing Awareness">
+             <metrics>
+              <metric displayValue="RATIO" label="Phishing - Respondents" ordering="2" serviceMetric="false" uid="b6e112bc-cac4-4aca-9c12-248b09830e5f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Phishing - Declined" ordering="3" serviceMetric="false" uid="7afa34c5-9ed2-4b38-87b0-eb59deb004d4"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="83eda050-d65f-4470-ab07-5fcd36d24925">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Phishing - Respondents" ordering="0" serviceMetric="false" uid="b6e112bc-cac4-4aca-9c12-248b09830e5f"/>
+              <metric label="Phishing - Declined" ordering="1" serviceMetric="false" uid="7afa34c5-9ed2-4b38-87b0-eb59deb004d4"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="dd57304b-ab3b-4db0-b7e0-61995f481c01">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_20321d6b768d47579e2f2c61295d4f7c_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness #2 - Phishing - Breakdown" ordering="0" serviceMetric="false" uid="55efaef3-6359-48ad-ba0b-4f5fd1f51e37"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="434bf482-1cb4-4024-aad7-b242e483dc7c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="USB Awareness">
+             <metrics>
+              <metric displayValue="RATIO" label="USB - Respondents" ordering="1" serviceMetric="false" uid="2fff0fd0-00a0-4d64-954f-3f49183b9ff1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="USB - Declined" ordering="2" serviceMetric="false" uid="b4d18c47-b70f-4064-b64d-2065801f9841"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="667cae9d-c296-4a21-8a9c-316cc31c4c18">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="USB - Respondents" ordering="0" serviceMetric="false" uid="2fff0fd0-00a0-4d64-954f-3f49183b9ff1"/>
+              <metric label="USB - Declined" ordering="1" serviceMetric="false" uid="b4d18c47-b70f-4064-b64d-2065801f9841"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="36fd2139-37e4-473e-9b22-5a104e622446">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_7279ee2144ff43dab12999d64107a934_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness #3 - USB - Breakdown" ordering="0" serviceMetric="false" uid="bf486605-0aa9-438d-a94d-d623dcdd7542"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="685f0da8-c616-4c6e-8ccd-45bba66fa694">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Ransomware Awareness">
+             <metrics>
+              <metric displayValue="RATIO" label="Ransomware - Respondents" ordering="1" serviceMetric="false" uid="c36dcabd-b63e-41ca-ba93-4beec3886179"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Ransomware - Declined" ordering="2" serviceMetric="false" uid="f3b38945-f452-4675-87e5-4ea955ea4059"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="7d313b41-c58d-438b-93eb-e2d2494e5d95">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Ransomware - Respondents" ordering="0" serviceMetric="false" uid="c36dcabd-b63e-41ca-ba93-4beec3886179"/>
+              <metric label="Ransomware - Declined" ordering="1" serviceMetric="false" uid="f3b38945-f452-4675-87e5-4ea955ea4059"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ca1a036e-617d-426d-a00a-6931efe88828">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_f3f2cd0543654b0a95ba54e1460b3897_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Security Awareness #4 - Ransomware - Breakdown" ordering="0" serviceMetric="false" uid="fe94f027-c2c6-42fc-92d5-46857f7dd8e9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

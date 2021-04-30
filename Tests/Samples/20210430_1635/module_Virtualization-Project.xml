@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Virtualization - Project</Name>
+     <Dependencies>
+      <Dependency name="Virtualization - Project - DEX" type="metric" uid="f684e042-68ae-4280-bc86-20078fcd93bc"/>
+      <Dependency name="Virtualization - Project - DEX - Number of devices" type="metric" uid="e6e35064-97e7-4659-ba94-d2c67884b937"/>
+      <Dependency name="Virtualization - Project - Count of All Domain User" type="metric" uid="af19bf69-28b5-48e4-8387-a312b0c33147"/>
+      <Dependency name="Virtualization - Project - Count of Active Physical Domain User" type="metric" uid="9283c315-c43c-4739-afd9-91cceb217562"/>
+      <Dependency name="Virtualization - Project - Count of Active Virtual Domain User" type="metric" uid="00be0aaa-1d96-4fcb-ab39-8e920e7ec7ea"/>
+      <Dependency name="Virtualization - Project - Count of All Active Domain User with more 3 physical devices" type="metric" uid="61ab0a23-6975-4f8b-ac49-13b9623730a8"/>
+      <Dependency name="Virtualization - Project - Count of Active Domain User with less than one physical device" type="metric" uid="9c62cd81-ae07-4f63-a35d-3fa60e39771a"/>
+      <Dependency name="Virtualization - Project - Count of Active Local User" type="metric" uid="c570de60-c26a-4cd1-8cda-04eae93d289b"/>
+      <Dependency name="Virtualization - Project - Count of Active Pilots Domain User" type="metric" uid="f0ae711e-bcb6-47e9-95f6-cdfecab07b96"/>
+      <Dependency name="Virtualization - Project - Domain User Persona Deskbound" type="metric" uid="0cf507d8-a7b4-4f66-a6b8-ca9f5c07949a"/>
+      <Dependency name="Virtualization - Project - Domain User Persona Highly Mobile" type="metric" uid="6bf6f982-43d2-4039-8382-768ac6e3455b"/>
+      <Dependency name="Virtualization - Project - Domain User Persona Mobile" type="metric" uid="2ce02076-b790-46d9-bdbf-daaeae02afe8"/>
+      <Dependency name="Virtualization - Project - Count of Applications on all devices" type="metric" uid="c7e95764-80b2-4a70-961f-f48fed8a825d"/>
+      <Dependency name="Virtualization - Project - Count of Applications on Physical devices" type="metric" uid="3d9980db-baf4-4117-b927-2732179a51dd"/>
+      <Dependency name="Virtualization - Project - Count of Applications with internet traffic on physical devices" type="metric" uid="d08b8d0e-036f-4a8f-a895-d6ec84e27cf4"/>
+      <Dependency name="Virtualization - Project - Count of Applications with less than one domain user on Physical devices" type="metric" uid="7b3f8261-19e7-4dbc-942b-0ae609534169"/>
+      <Dependency name="Virtualization - Project - Count of Applications on Pilots devices" type="metric" uid="c15d5046-2b1b-4fed-8785-40e10733e1c2"/>
+      <Dependency name="Virtualization - Project - Count of physical devices" type="metric" uid="28581b6f-4d5f-4e50-98e5-4bddf92b3109"/>
+      <Dependency name="Virtualization - Project - Count of physical devices unique domain user" type="metric" uid="e3d75166-1575-45c6-b77f-8cab1bbd83cd"/>
+      <Dependency name="Virtualization - Project - Count of physical devices without domain user" type="metric" uid="b269f3a5-8c70-4993-9c9b-2e1788b0c988"/>
+      <Dependency name="Virtualization - Project - Count of physical devices with more than two screens" type="metric" uid="6251d42e-75e0-4b09-b56b-0a447e6be3ca"/>
+      <Dependency name="Virtualization - Project - Count of Virtual devices" type="metric" uid="577cdaee-3e98-4b3b-ab7d-bc78d6778a67"/>
+      <Dependency name="Virtualization - Project - Count of Pilots devices" type="metric" uid="9014d4f5-4e96-441b-acf7-44bc59e59c4c"/>
+      <Dependency name="Virtualization - Project - Count of local Printer on physical devices" type="metric" uid="599af80f-bce8-49d3-8087-a80057dcd39b"/>
+      <Dependency name="Virtualization - Project - Application crash ratio on Pilot1" type="metric" uid="6b4275f1-f403-4b83-88bf-8a2e064f7ee3"/>
+      <Dependency name="Virtualization - Project - Application crash ratio on Pilot2" type="metric" uid="b627c548-7ebf-4635-a935-e14e6fd75a50"/>
+      <Dependency name="Virtualization - Project - Application freeze ratio on Pilot1" type="metric" uid="4ed25615-7f40-499f-a89d-d6845df79f92"/>
+      <Dependency name="Virtualization - Project - Application freeze ratio on Pilot2" type="metric" uid="03d7cc83-1b07-46c0-90c2-3d11c6f3328a"/>
+      <Dependency name="Virtualization - Project - Top applications with highest application thread CPU time ratio on Pilot1" type="metric" uid="5edcec0e-2ec6-464e-ad6d-a4443e2f6c8a"/>
+      <Dependency name="Virtualization - Project - Top applications freezing on Pilot1" type="metric" uid="a42bd1cf-afe3-487d-ad5c-8f951be287b3"/>
+      <Dependency name="Virtualization - Project - Top applications crashing on Pilot1" type="metric" uid="443aaa4a-e65a-4486-b707-fff09f220319"/>
+      <Dependency name="Virtualization - Project - Top applications with highest application thread CPU time ratio on Pilot2" type="metric" uid="721d7bce-9cf7-40e1-b7e6-115473ce3899"/>
+      <Dependency name="Virtualization - Project - Top applications freezing on Pilot2" type="metric" uid="56646069-6334-47c1-95b6-fdb1e9d54d7f"/>
+      <Dependency name="Virtualization - Project - Top applications crashing on Pilot2" type="metric" uid="aa4ec87c-7975-4c90-9406-0ceb38b5d873"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot 1" type="metric" uid="e822ef04-a8dd-47bd-805d-446fbc1d23f0"/>
+      <Dependency name="Virtualization - Project - Number Pilot 1" type="metric" uid="8580668f-a139-4f98-be53-42d1741d27dd"/>
+      <Dependency name="Virtualization - Project - Bad Citrix RTT on Pilot1" type="metric" uid="5c93239c-e662-4ebc-809b-4eaf682f6c2d"/>
+      <Dependency name="Virtualization - Project - Bad Virtual Latency on Pilot1" type="metric" uid="6d47bba7-4318-4db0-a89b-e0db084f690d"/>
+      <Dependency name="Virtualization - Project - High CPU Time for Pilot 1" type="metric" uid="5edf3b5e-049e-44dc-bbc6-eba2d7b2acdb"/>
+      <Dependency name="Virtualization - Project - High Memory Time on Pilot 1" type="metric" uid="4bc37a32-d98d-4841-ae77-273b8d5713dd"/>
+      <Dependency name="Virtualization - Project - High IO time of Pilot 1" type="metric" uid="963e01f4-1a58-4b67-a801-52c1772d1de6"/>
+      <Dependency name="Virtualization - Project - Low Successful Network Connections Pilot 1" type="metric" uid="518f5eb3-5c1c-4286-b3f0-d63f33b72a48"/>
+      <Dependency name="Virtualization - Project - High Network Response Time on Pilot 1" type="metric" uid="c333db36-bf3f-46aa-8328-0c8a068daa2a"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot 2" type="metric" uid="f8ec165e-c512-4101-8674-d987ebf69122"/>
+      <Dependency name="Virtualization - Project - Number Pilot 2" type="metric" uid="5ac2534a-6fc9-4ae6-a42c-61720bffc9e7"/>
+      <Dependency name="Virtualization - Project - Bad Citrix RTT on Pilot2" type="metric" uid="54e5d8c6-e7e6-4705-9152-37589bc714b1"/>
+      <Dependency name="Virtualization - Project - Bad Virtual Latency on Pilot2" type="metric" uid="8433ac2c-d37b-49a8-9b5f-cd5c01de63db"/>
+      <Dependency name="Virtualization - Project - High CPU Time for Pilot 2" type="metric" uid="fca6cf85-42fe-41f5-a216-7d520ac9a4e0"/>
+      <Dependency name="Virtualization - Project - High Memory Time on Pilot 2" type="metric" uid="f95225ac-39b4-4784-ad20-5122b5d119f4"/>
+      <Dependency name="Virtualization - Project - High IO time of Pilot 2" type="metric" uid="41240f00-4ddc-403a-8dbc-87488df09088"/>
+      <Dependency name="Virtualization - Project - Low Successful Network Connections Pilot 2" type="metric" uid="74f1bdca-39f8-40f6-a9ba-b050c773013e"/>
+      <Dependency name="Virtualization - Project - High Network Response Time on Pilot 2" type="metric" uid="de454f58-225a-433c-9605-d3c123b33970"/>
+      <Dependency name="Virtualization - Project - Bluescreen Crashes on Pilot 1" type="metric" uid="c7e83258-a678-4a67-b08a-b2cc1f21ef86"/>
+      <Dependency name="Virtualization - Project - with hard resets Pilot 1" type="metric" uid="490349b0-e267-4003-9e34-299110217a51"/>
+      <Dependency name="Virtualization - Project - Bluescreen Crashes on Pilot 2" type="metric" uid="364e45a5-cb11-4497-9857-22c059c1999f"/>
+      <Dependency name="Virtualization - Project - with hard resets Pilot 2" type="metric" uid="844dd749-f5d8-4987-b1d3-b69e7d41791a"/>
+      <Dependency name="Virtualization - Project - CPU Usage of Pilot 1" type="metric" uid="7dc700fb-c527-44c3-843c-c56fb2cc3f35"/>
+      <Dependency name="Virtualization - Project - CPU Usage of Pilot 2" type="metric" uid="1fd643ba-9735-4344-8a9d-a27489cea24c"/>
+      <Dependency name="Virtualization - Project - Memory Usage of Pilot 1" type="metric" uid="9ae60aca-a0d9-4af3-a6cf-75184db12f69"/>
+      <Dependency name="Virtualization - Project - Memory Usage of Pilot 2" type="metric" uid="3309b183-de5e-4c00-9e64-15418502c453"/>
+      <Dependency name="Virtualization - Project - Network Response Time of Pilot 1" type="metric" uid="a420e10a-5a5a-41fa-86f2-a7cd71c2d99f"/>
+      <Dependency name="Virtualization - Project - Network Response Time of Pilot 2" type="metric" uid="9e78bb7e-1538-4744-bc9a-c7adee97d5f2"/>
+      <Dependency name="Virtualization - Project - Average Citrix RTT on Pilot1" type="metric" uid="e4d844ed-5996-4dba-a102-d0d31fa1dfc5"/>
+      <Dependency name="Virtualization - Project - Average Citrix RTT on Pilot2" type="metric" uid="3364811e-3658-44d4-8561-c5d0ad890ccb"/>
+      <Dependency name="Virtualization - Project - Average Virtual Latency on Pilot1" type="metric" uid="928f5716-98e3-43c5-bd05-061b7d74fa91"/>
+      <Dependency name="Virtualization - Project - Average Virtual Latency on Pilot2" type="metric" uid="bde28e58-c7f0-4245-afbf-3abfc33e35e6"/>
+      <Dependency name="Virtualization - Project - Average Extended logon duration on Pilot 1" type="metric" uid="c56032a6-5440-4b0e-984d-a6e866107fb3"/>
+      <Dependency name="Virtualization - Project - Average Extended logon duration on Pilot 2" type="metric" uid="bbbab584-2bb5-401a-8df9-b66da4297093"/>
+      <Dependency name="Virtualization - Project - Average boot Time Pilot1" type="metric" uid="96132e0a-36f6-461f-94c8-20f0928e8f46"/>
+      <Dependency name="Virtualization - Project - Average boot Time Pilot2" type="metric" uid="d2ac3580-02af-41c6-b51a-d8a3d79f20de"/>
+      <Dependency name="Virtualization - Project - Application crash ratio on physical devices" type="metric" uid="ade987ac-83f3-40e8-ac44-71437ad1be71"/>
+      <Dependency name="Virtualization - Project - Application crash ratio on virtual devices" type="metric" uid="3b1580e5-e0c3-4d01-a38b-fda74e15fcf0"/>
+      <Dependency name="Virtualization - Project - Application freeze ratio on physical devices" type="metric" uid="d0e49fa2-e70f-4c29-893b-c87ff555b609"/>
+      <Dependency name="Virtualization - Project - Application freeze ratio on virtual devices" type="metric" uid="8709d9c0-d970-47e1-a594-d2d1cb40ec09"/>
+      <Dependency name="Virtualization - Project - Top applications with highest application thread CPU time ratio on virtual devices" type="metric" uid="96e167a0-d595-4b1e-be5a-d9c58aac3a6e"/>
+      <Dependency name="Virtualization - Project - Top applications freezing on virtual devices" type="metric" uid="eda0701c-bb9a-42ad-92d3-dc8d2b2390dd"/>
+      <Dependency name="Virtualization - Project - Top applications crashing on virtual devices" type="metric" uid="a4d5b009-1cc8-486f-8ae2-24cf83c0a938"/>
+      <Dependency name="Virtualization - Project - Top applications with highest application thread CPU time ratio on physical devices" type="metric" uid="c74e8f61-3cdd-49e3-b729-fe4f1bfda4c8"/>
+      <Dependency name="Virtualization - Project - Top applications freezing on physical devices" type="metric" uid="21a1b42f-8f65-49c2-b0ca-8dd130926087"/>
+      <Dependency name="Virtualization - Project - Top applications crashing on physical devices" type="metric" uid="a9e9b96d-f10d-4055-bf81-5b23bd7dbd15"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot" type="metric" uid="4093a8a6-301e-4280-b9dd-63bac7008a1d"/>
+      <Dependency name="Virtualization - Project - Number Pilot" type="metric" uid="f29b27cf-25d0-4a6b-abf3-0f30a09de687"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Business" type="metric" uid="4aee00cf-b7c0-4b19-9dfd-42184b17747b"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Device" type="metric" uid="65a124ee-2a91-4700-b8d7-e96621a441b3"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Employee" type="metric" uid="9f41c89e-df17-4e59-8ce7-543c2c0912db"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Productivity" type="metric" uid="bd7a4652-79f0-432e-a51f-13d88e2331ae"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Logon" type="metric" uid="cd4fe9b4-9fc2-4cb1-aafb-4144c6895279"/>
+      <Dependency name="Virtualization - Project - DEX on Pilot - Virtual Responsiveness" type="metric" uid="c33536b2-0c79-4edb-9e53-d4f86b9899c5"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems" type="metric" uid="35809eb6-ae50-4b12-9e2f-4ecc9e18808b"/>
+      <Dependency name="Virtualization - Project - Number Physical Systems" type="metric" uid="f541334f-f3be-47d0-bb2a-b57d4bbb617a"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Business" type="metric" uid="02d98509-0d0e-4b9b-8995-a237be3b9c0c"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Device" type="metric" uid="b62dfc37-a8cd-458b-b076-20c65b886790"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Employee" type="metric" uid="cccd7a24-7902-4c4c-9d2b-cdc3d18964b3"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Productivity" type="metric" uid="e19d94b3-ade5-4cad-b104-68b773ee56ea"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Logon" type="metric" uid="13ced328-25f1-4abe-bded-85e26f783d2a"/>
+      <Dependency name="Virtualization - Project - DEX on Physical Systems - Device Responsiveness" type="metric" uid="bd40fa8f-f41a-40e2-b3ad-77c7d59fe628"/>
+      <Dependency name="Virtualization - Project - CPU Usage of Physical Desktops" type="metric" uid="db945169-d214-427b-b4ee-4b53cc1e0d73"/>
+      <Dependency name="Virtualization - Project - CPU Usage of Virtual Desktops" type="metric" uid="3002adbb-d868-4e5a-88ab-e31d3ce6cdf7"/>
+      <Dependency name="Virtualization - Project - Memory Usage of Physical Desktops" type="metric" uid="21b7c424-f039-42f6-84ce-9612d5626c6a"/>
+      <Dependency name="Virtualization - Project - Memory Usage of Virtual Desktops" type="metric" uid="3fa042f9-c1f2-47a3-b882-4b689c969d2c"/>
+      <Dependency name="Virtualization - Project - Network Response Time of Physical Desktops" type="metric" uid="b4a11871-a105-46ee-89fc-23b4088d91fe"/>
+      <Dependency name="Virtualization - Project - Network Response Time of Virtual Desktops" type="metric" uid="5bd4691c-a8fe-4583-b827-22a8aa181afa"/>
+      <Dependency name="Virtualization - Project - Average Extended logon duration on Physical devices" type="metric" uid="fb16d6cb-6c2a-415d-ab0f-af9996f159e1"/>
+      <Dependency name="Virtualization - Project - Average Extended logon duration on Pilot devices" type="metric" uid="48355eca-48e3-414a-8850-5122af690355"/>
+      <Dependency name="Virtualization - Project - Average boot Time Physical" type="metric" uid="b0dd80b9-c099-44b3-9237-6c119f0ccd7f"/>
+      <Dependency name="Virtualization - Project - Average boot Time Pilots" type="metric" uid="c6834210-df3a-4ef6-903a-96393b1fb7f4"/>
+      <Dependency name="Virtualization - Project - with hard resets Physical Systems" type="metric" uid="d8bd6d45-915c-4e09-ba28-4f5e0a34768b"/>
+      <Dependency name="Virtualization - Project - with hard resets Pilot VDI Systems" type="metric" uid="8312772a-3562-406f-a0c0-af3c04c53ca9"/>
+      <Dependency name="Virtualization - Project - Pilot - Satisfaction Questionnaire - Satisfaction Score" type="metric" uid="58e05be8-c737-4fe3-aa36-8005508f1123"/>
+      <Dependency name="Virtualization - Project - Pilot - Happy Users" type="metric" uid="901aa0bf-0bc2-4dd4-9c0f-10eb809ebbd3"/>
+      <Dependency name="Virtualization - Project - Pilot - Number of Respondents" type="metric" uid="c0db387e-51df-422a-b581-34b017f1d22c"/>
+      <Dependency name="Virtualization - Project - Physical - Satisfaction Questionnaire - Satisfaction Score" type="metric" uid="a6afbe48-5929-486e-bd72-2655d4f0b0e5"/>
+      <Dependency name="Virtualization - Project - Physical - Happy Users" type="metric" uid="632067f2-fc79-4b93-9faa-be2b3726fc3b"/>
+      <Dependency name="Virtualization - Project - Physical - Number of Respondents" type="metric" uid="11b539be-f12c-40c9-80f9-a8a342578395"/>
+      <Dependency name="Virtualization - Project - Pilot - Satisfaction Distribution" type="metric" uid="f393203f-200c-4182-b0df-e12f5beb560f"/>
+      <Dependency name="Virtualization - Project - Physical - Satisfaction Distribution" type="metric" uid="15592cc0-0884-45fa-bcb2-aa5983f53919"/>
+      <Dependency name="Virtualization - Project - Pilot - User Satisfaction - Positive Points" type="metric" uid="46f6c376-f27b-4935-9f4a-fc556eac8697"/>
+      <Dependency name="Virtualization - Project - Physical - User Satisfaction - Positive Points" type="metric" uid="e2174f14-cb14-40f7-aa99-f2be0f744440"/>
+      <Dependency name="Virtualization - Project - Pilot - User Satisfaction - Negative Points" type="metric" uid="8d8b8e03-4eac-47e9-9053-b77b456956f9"/>
+      <Dependency name="Virtualization - Project - Physical - User Satisfaction - Negative Points" type="metric" uid="1a3fa7ee-39c9-4cfd-8799-5835e8e8d5b4"/>
+      <Dependency name="Virtualization - Project - Device physical by system crashes" type="metric" uid="a7955f9c-4c1b-4b36-8079-4c76efd81860"/>
+      <Dependency name="Virtualization - Project - Devices physical by Hard Resets" type="metric" uid="7c2b3107-174a-4f32-9b7f-10cf3b770bd4"/>
+      <Dependency name="Virtualization - Project - Physical devices System disk usage" type="metric" uid="21e83eba-0a78-4b65-af67-903c10fe1f96"/>
+      <Dependency name="Virtualization - Project - Application Usage - Light physical devices Applications" type="metric" uid="823fe032-1f09-4f45-b10e-9ec033bc6b7b"/>
+      <Dependency name="Virtualization - Project - Application on physical devices Usage - Heavy Applications" type="metric" uid="cfc701fa-4ad6-428a-8ddb-742690bb015b"/>
+      <Dependency name="Virtualization - Project - Most used physical devices Applications by domain users" type="metric" uid="3dd6b569-8a98-4ef0-adc4-6fcbe3f3311f"/>
+      <Dependency name="Virtualization - Project - Applications on physical devices using High CPU" type="metric" uid="9c37b373-ef21-4306-9268-a6fa06045cee"/>
+      <Dependency name="Virtualization - Project - Applications on physical devices With High Memory Usage" type="metric" uid="dc0eabb8-d91e-4039-9393-0607f913f05a"/>
+      <Dependency name="Virtualization - Project - Least used Physical  Applications by domain users" type="metric" uid="93da4c3c-ecda-4337-931c-4c6d25637666"/>
+      <Dependency name="Virtualization - Project - Number of Basic users" type="metric" uid="c5d6fb84-0827-4ab7-827b-ef56153e4256"/>
+      <Dependency name="Virtualization - Project - Number of Standard users" type="metric" uid="28772c1a-c8bd-42d1-b7b8-ae630995cdbe"/>
+      <Dependency name="Virtualization - Project - Number of Power users" type="metric" uid="cbc3e266-2641-44e3-b02d-198c828e1d1c"/>
+      <Dependency name="Virtualization - Project - Number of unknown persona" type="metric" uid="1e08612a-df3c-43f9-a380-69b242eb36d0"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Virtualization - Project" uid="34294fe5-adb9-4e65-bcb3-a585da4a6008">
+        <dashboards>
+         <dashboard description="# Virtualization Project &#13;&#10;The Virtualization Project pack will help you during your migration process, from planning to post-migration checks.  &#13;&#10; # Overview  &#13;&#10;See your landscape and monitor the status of your Virtualization migration project. &#13;&#10;&#13;&#10;**Total number of users**  &#13;&#10;* Here you can see the number of users that are in scope for the project (i.e. both migrated and not yet migrated devices).  &#13;&#10;* You can see how many users are on pilots' devices.&#13;&#10;* Also the number of users still to migrate in case of full VDI.  &#13;&#10;* Below that you can find the mobility profiles of users.  &#13;&#10;&#13;&#10;**Total number of Applications**  &#13;&#10;* Here you can see the number of applications that are in scope for the project (i.e. both migrated and not yet migrated devices).  &#13;&#10;* You can see how many applications are one device only.  &#13;&#10;* You can see how many applications have internet traffic (if the Proxy category is configured). &#13;&#10;&#13;&#10;**Total number of devices**  &#13;&#10;* Here you can see the number of devices that are in scope for the project (i.e. both migrated and not yet migrated devices).  &#13;&#10;* You can see how many devices are without active users.&#13;&#10;* You can focus on how many devices has more than two screens.&#13;&#10;* Also the number of devices still to migrate.  &#13;&#10;&#13;&#10;**Attached Devices**&#13;&#10;* Here you can see the local printer&#13;&#10; ::: tip&#13;&#10;Physical &gt;2 screens: devices with more than two screens could have those problems:&#13;&#10;* Need GPU on the Virtual infrastructure or more CPU.&#13;&#10;* Need specific hardware for the client part (Thin-client or another client)&#13;&#10;:::&#13;&#10;::: configuration  &#13;&#10;* In order to take full advantage of this content pack, categories, scores, and metrics need to be adjusted.&#13;&#10;* Proxy category is configured  &#13;&#10;:::" index="1" name="Overview" uid="5b39c33e-1f79-483d-a9f4-bf0258890c6e">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="V">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="a24258a2-6963-4d89-b756-66e8dfb64a65" minHeight="190" minWidth="318" type="kpiWidget" widgetID="a24258a2-6963-4d89-b756-66e8dfb64a65">
+                          <preferredHeight value="190"/>
+                          <preferredWidth value="318"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="01e45950-7e45-448d-9342-6b54f118c6c2" minHeight="321" minWidth="558" type="tableWidget" widgetID="01e45950-7e45-448d-9342-6b54f118c6c2">
+                          <preferredHeight value="321"/>
+                          <preferredWidth value="558"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="ef26ace2-48df-45b6-ba13-218768402460" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="ef26ace2-48df-45b6-ba13-218768402460">
+                        <preferredHeight value="362"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="d598a4ea-1269-4fbf-a590-7cf5f78322df" minHeight="56" minWidth="296" type="titleWidget" widgetID="d598a4ea-1269-4fbf-a590-7cf5f78322df">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="10d63cdb-6273-4fc5-8f4b-4f1cc382c0f0" minHeight="190" minWidth="1092" type="kpiWidget" widgetID="10d63cdb-6273-4fc5-8f4b-4f1cc382c0f0">
+                        <preferredHeight value="190"/>
+                        <preferredWidth value="1092"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="182e19b1-ed74-4b6b-bbad-b7a00b8988df" minHeight="190" minWidth="834" type="kpiWidget" widgetID="182e19b1-ed74-4b6b-bbad-b7a00b8988df">
+                        <preferredHeight value="190"/>
+                        <preferredWidth value="834"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="9322e1c6-4fc0-48eb-9b1f-42ad34eaddfe" minHeight="172" minWidth="300" type="barChartWidget" widgetID="9322e1c6-4fc0-48eb-9b1f-42ad34eaddfe">
+                      <preferredHeight value="172"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="cd51eb88-c678-47a1-a081-78025c1e1c2d" minHeight="56" minWidth="296" type="titleWidget" widgetID="cd51eb88-c678-47a1-a081-78025c1e1c2d">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="93b89969-71d6-49f8-8906-5f841e8658f6" minHeight="190" minWidth="1350" type="kpiWidget" widgetID="93b89969-71d6-49f8-8906-5f841e8658f6">
+                    <preferredHeight value="190"/>
+                    <preferredWidth value="1350"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="b1095257-609e-433a-9bd5-df829ff9d56f" minHeight="56" minWidth="296" type="titleWidget" widgetID="b1095257-609e-433a-9bd5-df829ff9d56f">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="8bfbc915-5592-42aa-a68b-d79ddd6b7ca0" minHeight="190" minWidth="1092" type="kpiWidget" widgetID="8bfbc915-5592-42aa-a68b-d79ddd6b7ca0">
+                    <preferredHeight value="190"/>
+                    <preferredWidth value="1092"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="33fdd240-55cb-40cb-b633-50644642dafa" minHeight="190" minWidth="576" type="kpiWidget" widgetID="33fdd240-55cb-40cb-b633-50644642dafa">
+                    <preferredHeight value="190"/>
+                    <preferredWidth value="576"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="ef2001a2-ec49-460a-b67b-bc8a93470efd" minHeight="56" minWidth="296" type="titleWidget" widgetID="ef2001a2-ec49-460a-b67b-bc8a93470efd">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="f8d8b9f1-ecf2-48a8-8675-79e6ad9b8121" minHeight="190" minWidth="318" type="kpiWidget" widgetID="f8d8b9f1-ecf2-48a8-8675-79e6ad9b8121">
+                <preferredHeight value="190"/>
+                <preferredWidth value="318"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="a24258a2-6963-4d89-b756-66e8dfb64a65">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Digital Experience Score" ordering="1" serviceMetric="false" uid="f684e042-68ae-4280-bc86-20078fcd93bc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="01e45950-7e45-448d-9342-6b54f118c6c2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Score by location">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Digital Experience Score" ordering="2" serviceMetric="false" uid="f684e042-68ae-4280-bc86-20078fcd93bc"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of Devices" ordering="3" serviceMetric="false" uid="e6e35064-97e7-4659-ba94-d2c67884b937">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="METRIC" value="f684e042-68ae-4280-bc86-20078fcd93bc_2"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="ef26ace2-48df-45b6-ba13-218768402460">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="">
+             <metrics>
+              <metric label="Digital Experience Score" ordering="1" serviceMetric="false" uid="f684e042-68ae-4280-bc86-20078fcd93bc"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="d598a4ea-1269-4fbf-a590-7cf5f78322df">
+            <titleConfig title="User"/>
+           </widget>
+           <widget type="KPI" uid="10d63cdb-6273-4fc5-8f4b-4f1cc382c0f0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Domain User" ordering="0" serviceMetric="false" uid="af19bf69-28b5-48e4-8387-a312b0c33147"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Active Physical Domain User" ordering="6" serviceMetric="false" uid="9283c315-c43c-4739-afd9-91cceb217562"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Active Virtual Domain User" ordering="7" serviceMetric="false" uid="00be0aaa-1d96-4fcb-ab39-8e920e7ec7ea"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Domain User &gt;3 physical devices" ordering="8" serviceMetric="false" uid="61ab0a23-6975-4f8b-ac49-13b9623730a8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="182e19b1-ed74-4b6b-bbad-b7a00b8988df">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Active Domain User &lt;1 physical device" ordering="9" serviceMetric="false" uid="9c62cd81-ae07-4f63-a35d-3fa60e39771a"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Active Local User" ordering="10" serviceMetric="false" uid="c570de60-c26a-4cd1-8cda-04eae93d289b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Active Pilots Domain User" ordering="11" serviceMetric="false" uid="f0ae711e-bcb6-47e9-95f6-cdfecab07b96"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="9322e1c6-4fc0-48eb-9b1f-42ad34eaddfe">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="3" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Desk-bound Users" ordering="0" serviceMetric="false" uid="0cf507d8-a7b4-4f66-a6b8-ca9f5c07949a"/>
+              <metric label="Highly Mobile  Users" ordering="1" serviceMetric="false" uid="6bf6f982-43d2-4039-8382-768ac6e3455b"/>
+              <metric label="Mobile  Users" ordering="2" serviceMetric="false" uid="2ce02076-b790-46d9-bdbf-daaeae02afe8"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="cd51eb88-c678-47a1-a081-78025c1e1c2d">
+            <titleConfig title="Applications"/>
+           </widget>
+           <widget type="KPI" uid="93b89969-71d6-49f8-8906-5f841e8658f6">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="All devices" ordering="0" serviceMetric="false" uid="c7e95764-80b2-4a70-961f-f48fed8a825d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="On Physical devices" ordering="1" serviceMetric="false" uid="3d9980db-baf4-4117-b927-2732179a51dd"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With internet traffic on physical devices" ordering="2" serviceMetric="false" uid="d08b8d0e-036f-4a8f-a895-d6ec84e27cf4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With &lt;1 domain user on Physical devices" ordering="3" serviceMetric="false" uid="7b3f8261-19e7-4dbc-942b-0ae609534169"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="On Pilots devices" ordering="4" serviceMetric="false" uid="c15d5046-2b1b-4fed-8785-40e10733e1c2"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TITLE" uid="b1095257-609e-433a-9bd5-df829ff9d56f">
+            <titleConfig title="Devices"/>
+           </widget>
+           <widget type="KPI" uid="8bfbc915-5592-42aa-a68b-d79ddd6b7ca0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical Devices" ordering="0" serviceMetric="false" uid="28581b6f-4d5f-4e50-98e5-4bddf92b3109"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical Unique domain user" ordering="1" serviceMetric="false" uid="e3d75166-1575-45c6-b77f-8cab1bbd83cd"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical Without domain users" ordering="2" serviceMetric="false" uid="b269f3a5-8c70-4993-9c9b-2e1788b0c988"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical &gt;2 screens" ordering="3" serviceMetric="false" uid="6251d42e-75e0-4b09-b56b-0a447e6be3ca"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="33fdd240-55cb-40cb-b633-50644642dafa">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Virtual devices" ordering="4" serviceMetric="false" uid="577cdaee-3e98-4b3b-ab7d-bc78d6778a67"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilots devices" ordering="5" serviceMetric="false" uid="9014d4f5-4e96-441b-acf7-44bc59e59c4c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TITLE" uid="ef2001a2-ec49-460a-b67b-bc8a93470efd">
+            <titleConfig title="Attached Devices"/>
+           </widget>
+           <widget type="KPI" uid="f8d8b9f1-ecf2-48a8-8675-79e6ad9b8121">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Local Printer on physical devices" ordering="0" serviceMetric="false" uid="599af80f-bce8-49d3-8087-a80057dcd39b"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Application experience&#13;&#10;This dashboard presents the experience of your users when using applications from their Pilots groups.&#13;&#10;&#13;&#10;# Overview &#13;&#10;* You can compare two types of virtual devices with this dashboard&#13;&#10;* You can compare the application crash and freeze ratios and pinpoint the applications causing the most issues.&#13;&#10;&#13;&#10;# Details&#13;&#10;&#13;&#10;Take look at applications with high CPU, freezes, and crashes.  &#13;&#10;&#13;&#10;::: tip&#13;&#10;* The **application crash ratio** and **application not responding event ratio** respectively indicate the number of application crashes and the number of application freezes per 100 executions.&#13;&#10;* Define a strategy to randomize all infrastructure maintenance tasks like antivirus, reporting or other tasks scheduled locally or on the infrastructure part.&#13;&#10;:::&#13;&#10;::: configuration  &#13;&#10;* In order to take full advantage of this content pack, categories, scores, and metrics need to be adjusted.&#13;&#10;:::" index="10" name="Pilot1 vs Pilot2 : Application experience" uid="5569af75-1366-4aa2-bea6-b27df85cb9e5">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="8fd117c4-19d9-4dd4-b448-6237dc107e8a" minHeight="56" minWidth="296" type="titleWidget" widgetID="8fd117c4-19d9-4dd4-b448-6237dc107e8a">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="2000122d-e086-4382-a43b-f9d246339af4" minHeight="238" minWidth="576" type="kpiWidget" widgetID="2000122d-e086-4382-a43b-f9d246339af4">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="f9f49520-33a8-4c26-a2cd-6753551e6c40" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="f9f49520-33a8-4c26-a2cd-6753551e6c40">
+                      <preferredHeight value="362"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="3947962b-9cb8-45e4-94b7-bef916aaa093" minHeight="238" minWidth="576" type="kpiWidget" widgetID="3947962b-9cb8-45e4-94b7-bef916aaa093">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="0b9eee6a-7517-4d56-b30e-0f32928b92d8" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="0b9eee6a-7517-4d56-b30e-0f32928b92d8">
+                      <preferredHeight value="362"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="3227478b-9804-45df-9526-6805f5767479" minHeight="56" minWidth="296" type="titleWidget" widgetID="3227478b-9804-45df-9526-6805f5767479">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="4ffeed97-5571-4a32-b3af-e45d4bcbc4db" minHeight="56" minWidth="296" type="titleWidget" widgetID="4ffeed97-5571-4a32-b3af-e45d4bcbc4db">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="5c6e6972-a417-4872-a3e1-b897562e845a" minHeight="56" minWidth="296" type="titleWidget" widgetID="5c6e6972-a417-4872-a3e1-b897562e845a">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="b16d29d6-f12f-44b7-bad6-d49e3a82b8b6" minHeight="321" minWidth="480" type="tableWidget" widgetID="b16d29d6-f12f-44b7-bad6-d49e3a82b8b6">
+                    <preferredHeight value="321"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="58f898fc-ca25-4073-9fb9-d6d606086a4a" minHeight="321" minWidth="480" type="tableWidget" widgetID="58f898fc-ca25-4073-9fb9-d6d606086a4a">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="eda72185-94d0-45ca-b2c2-4787145b09d2" minHeight="321" minWidth="480" type="tableWidget" widgetID="eda72185-94d0-45ca-b2c2-4787145b09d2">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ba19cc49-93d2-4d16-8773-647faaabc142" minHeight="321" minWidth="480" type="tableWidget" widgetID="ba19cc49-93d2-4d16-8773-647faaabc142">
+                    <preferredHeight value="321"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="64365a7f-3bed-4e16-85b2-14a7ad6e8733" minHeight="321" minWidth="480" type="tableWidget" widgetID="64365a7f-3bed-4e16-85b2-14a7ad6e8733">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="aa2739a0-bcb5-4d0b-95ab-978cadfcf6f2" minHeight="321" minWidth="480" type="tableWidget" widgetID="aa2739a0-bcb5-4d0b-95ab-978cadfcf6f2">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="8fd117c4-19d9-4dd4-b448-6237dc107e8a">
+            <titleConfig title="Overview"/>
+           </widget>
+           <widget type="KPI" uid="2000122d-e086-4382-a43b-f9d246339af4">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Application crash ratio">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot 1" ordering="4" serviceMetric="false" uid="6b4275f1-f403-4b83-88bf-8a2e064f7ee3"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot 2" ordering="5" serviceMetric="false" uid="b627c548-7ebf-4635-a935-e14e6fd75a50"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="f9f49520-33a8-4c26-a2cd-6753551e6c40">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Pilot 1" ordering="4" serviceMetric="false" uid="6b4275f1-f403-4b83-88bf-8a2e064f7ee3"/>
+              <metric label="Pilot 2" ordering="5" serviceMetric="false" uid="b627c548-7ebf-4635-a935-e14e6fd75a50"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="ratio" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="3947962b-9cb8-45e4-94b7-bef916aaa093">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Application freeze ratio">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot 1" ordering="4" serviceMetric="false" uid="4ed25615-7f40-499f-a89d-d6845df79f92"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot 2" ordering="5" serviceMetric="false" uid="03d7cc83-1b07-46c0-90c2-3d11c6f3328a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="0b9eee6a-7517-4d56-b30e-0f32928b92d8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Pilot 1" ordering="4" serviceMetric="false" uid="4ed25615-7f40-499f-a89d-d6845df79f92"/>
+              <metric label="Pilot 2" ordering="5" serviceMetric="false" uid="03d7cc83-1b07-46c0-90c2-3d11c6f3328a"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="3227478b-9804-45df-9526-6805f5767479">
+            <titleConfig title="Details"/>
+           </widget>
+           <widget type="TITLE" uid="4ffeed97-5571-4a32-b3af-e45d4bcbc4db">
+            <titleConfig title="Pilots 1 Landscape"/>
+           </widget>
+           <widget type="TITLE" uid="5c6e6972-a417-4872-a3e1-b897562e845a">
+            <titleConfig title="Pilot 2 Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="b16d29d6-f12f-44b7-bad6-d49e3a82b8b6">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications generating high thread CPU usage on Pilots 1 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top applications with highest application thread CPU time ratio on Pilot1" ordering="1" serviceMetric="false" uid="5edcec0e-2ec6-464e-ad6d-a4443e2f6c8a">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_application_thread_cpu_time_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="58f898fc-ca25-4073-9fb9-d6d606086a4a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications freezing most on Pilots 1 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top applications freezing on Pilot1" ordering="1" serviceMetric="false" uid="a42bd1cf-afe3-487d-ad5c-8f951be287b3">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="eda72185-94d0-45ca-b2c2-4787145b09d2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications crashing most on Pilots 1 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top applications crashing on Pilot1" ordering="1" serviceMetric="false" uid="443aaa4a-e65a-4486-b707-fff09f220319">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ba19cc49-93d2-4d16-8773-647faaabc142">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications generating high thread CPU usage on Pilot 2 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications with highest application thread CPU time ratio on Pilot2" ordering="1" serviceMetric="false" uid="721d7bce-9cf7-40e1-b7e6-115473ce3899">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_application_thread_cpu_time_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="64365a7f-3bed-4e16-85b2-14a7ad6e8733">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications freezing most on Pilot 2 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top applications freezing on Pilot2" ordering="1" serviceMetric="false" uid="56646069-6334-47c1-95b6-fdb1e9d54d7f">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="aa2739a0-bcb5-4d0b-95ab-978cadfcf6f2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications crashing most on Pilot 2 devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top applications crashing on Pilot2" ordering="1" serviceMetric="false" uid="aa4ec87c-7975-4c90-9406-0ceb38b5d873">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization: Project&#13;&#10;&#13;&#10;These dashboards target the current state of Pilot groups.&#13;&#10;&#13;&#10;# Analyze Device Performance - Pilot groups&#13;&#10;&#13;&#10;**Identify Overloaded VDI Desktops**&#13;&#10;* Devices that are overworked may be impacting user Productivity. Use this dashboard to see both the number of vdi that are experiencing issues and also the top offenders listed so they can be directly addressed.&#13;&#10;&#13;&#10;**Understand Network Issues on VDI Desktops**&#13;&#10;* Network issues for VDI desktops may cause desktop freezing, glitching or straightforward application pausing and should be addressed.  By combining this with a view on how much traffic is going to the  VDI infrastructure is talking to may reveal unexpected traffic volumes which could be a contributing factor.&#13;&#10;&#13;&#10;**Understanding VDI Availability**&#13;&#10;* Bluescreen crashes or Hard Resets are a clear indicator of unexpected behavior.  If this figure shows signs of having any significant amount of devices, it should be looked into.&#13;&#10;::: tip&#13;&#10;To get a live view, take look in the Finder in Virtualization services.&#13;&#10;:::&#13;&#10;::: configuration&#13;&#10;* Please populate pilot categories.&#13;&#10;* [Configuration guide](https://doc.nexthink.com/Documentation/Nexthink/latest/LibraryPacksConfiguration/VirtualizationPlanningandMigration)&#13;&#10;:::" index="8" name="Pilot1 vs Pilot2 : Performance" uid="427b9990-d414-4e90-8e37-70ccbb2aa492">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d2f856da-2a35-4f3e-908c-faa248c3a769" minHeight="56" minWidth="296" type="titleWidget" widgetID="d2f856da-2a35-4f3e-908c-faa248c3a769">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="e17cd9ab-0df8-4aaf-8317-95768f3ca47a" minHeight="321" minWidth="558" type="tableWidget" widgetID="e17cd9ab-0df8-4aaf-8317-95768f3ca47a">
+                    <preferredHeight value="321"/>
+                    <preferredWidth value="558"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="4c792e9b-8e63-4e7c-91b8-a35016b3727c" minHeight="238" minWidth="576" type="kpiWidget" widgetID="4c792e9b-8e63-4e7c-91b8-a35016b3727c">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="50d66476-2daa-42db-bd17-a263a6c0b7ca" minHeight="238" minWidth="834" type="kpiWidget" widgetID="50d66476-2daa-42db-bd17-a263a6c0b7ca">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="834"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="f56f24fa-cfd1-40ca-b9a8-27cbf56ed674" minHeight="238" minWidth="576" type="kpiWidget" widgetID="f56f24fa-cfd1-40ca-b9a8-27cbf56ed674">
+                    <preferredHeight value="238"/>
+                    <preferredWidth value="576"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="942bb86b-7366-4d2d-88d8-e3913c643beb" minHeight="56" minWidth="296" type="titleWidget" widgetID="942bb86b-7366-4d2d-88d8-e3913c643beb">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="2379f253-2f1a-417c-91f1-5e5c169f3d51" minHeight="321" minWidth="558" type="tableWidget" widgetID="2379f253-2f1a-417c-91f1-5e5c169f3d51">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="558"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="e6484491-1dae-41a0-a4c8-871ffc306404" minHeight="238" minWidth="576" type="kpiWidget" widgetID="e6484491-1dae-41a0-a4c8-871ffc306404">
+                        <preferredHeight value="238"/>
+                        <preferredWidth value="576"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="d102c0db-510e-48da-a751-126c0410db51" minHeight="238" minWidth="834" type="kpiWidget" widgetID="d102c0db-510e-48da-a751-126c0410db51">
+                        <preferredHeight value="238"/>
+                        <preferredWidth value="834"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="1530a06b-2f5f-490d-8d2c-946a56838a71" minHeight="238" minWidth="576" type="kpiWidget" widgetID="1530a06b-2f5f-490d-8d2c-946a56838a71">
+                  <preferredHeight value="238"/>
+                  <preferredWidth value="576"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="73bf711f-0459-4eee-9e26-e3ac514b6bcb" minHeight="238" minWidth="576" type="kpiWidget" widgetID="73bf711f-0459-4eee-9e26-e3ac514b6bcb">
+                <preferredHeight value="238"/>
+                <preferredWidth value="576"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="c3d58a89-d653-4d33-b128-02f62c84ff9d" minHeight="238" minWidth="576" type="kpiWidget" widgetID="c3d58a89-d653-4d33-b128-02f62c84ff9d">
+                <preferredHeight value="238"/>
+                <preferredWidth value="576"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="d2f856da-2a35-4f3e-908c-faa248c3a769">
+            <titleConfig title="Pilot 1 Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="e17cd9ab-0df8-4aaf-8317-95768f3ca47a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Digital Experience Score" ordering="5" serviceMetric="false" uid="e822ef04-a8dd-47bd-805d-446fbc1d23f0"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of Devices" ordering="6" serviceMetric="false" uid="8580668f-a139-4f98-be53-42d1741d27dd">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="4c792e9b-8e63-4e7c-91b8-a35016b3727c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with bad Experience">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Citrix RTT" ordering="2" serviceMetric="false" uid="5c93239c-e662-4ebc-809b-4eaf682f6c2d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Virtual Session Latency" ordering="3" serviceMetric="false" uid="6d47bba7-4318-4db0-a89b-e0db084f690d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="50d66476-2daa-42db-bd17-a263a6c0b7ca">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Resource Usage">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High CPU Time" ordering="3" serviceMetric="false" uid="5edf3b5e-049e-44dc-bbc6-eba2d7b2acdb"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Memory Time" ordering="4" serviceMetric="false" uid="4bc37a32-d98d-4841-ae77-273b8d5713dd"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High IO Time" ordering="5" serviceMetric="false" uid="963e01f4-1a58-4b67-a801-52c1772d1de6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="f56f24fa-cfd1-40ca-b9a8-27cbf56ed674">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Network Issues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Low Successful Network Connections" ordering="7" serviceMetric="false" uid="518f5eb3-5c1c-4286-b3f0-d63f33b72a48"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Network Response Time" ordering="8" serviceMetric="false" uid="c333db36-bf3f-46aa-8328-0c8a068daa2a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TITLE" uid="942bb86b-7366-4d2d-88d8-e3913c643beb">
+            <titleConfig title="Pilot 2 Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="2379f253-2f1a-417c-91f1-5e5c169f3d51">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Digital Experience Score" ordering="5" serviceMetric="false" uid="f8ec165e-c512-4101-8674-d987ebf69122"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of Devices" ordering="6" serviceMetric="false" uid="5ac2534a-6fc9-4ae6-a42c-61720bffc9e7">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="e6484491-1dae-41a0-a4c8-871ffc306404">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with bad Experience">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Citrix RTT" ordering="2" serviceMetric="false" uid="54e5d8c6-e7e6-4705-9152-37589bc714b1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Virtual Session Latency" ordering="3" serviceMetric="false" uid="8433ac2c-d37b-49a8-9b5f-cd5c01de63db"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="d102c0db-510e-48da-a751-126c0410db51">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Resource Usage">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High CPU Time" ordering="10" serviceMetric="false" uid="fca6cf85-42fe-41f5-a216-7d520ac9a4e0"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hi Memory Time" ordering="11" serviceMetric="false" uid="f95225ac-39b4-4784-ad20-5122b5d119f4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High IO Time" ordering="12" serviceMetric="false" uid="41240f00-4ddc-403a-8dbc-87488df09088"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="1530a06b-2f5f-490d-8d2c-946a56838a71">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="Network Issues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Low Successful Network Connections" ordering="4" serviceMetric="false" uid="74f1bdca-39f8-40f6-a9ba-b050c773013e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Network Response Time" ordering="5" serviceMetric="false" uid="de454f58-225a-433c-9605-d3c123b33970"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="73bf711f-0459-4eee-9e26-e3ac514b6bcb">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Stability">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Bluescreen Crashes" ordering="2" serviceMetric="false" uid="c7e83258-a678-4a67-b08a-b2cc1f21ef86"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hard Resets" ordering="3" serviceMetric="false" uid="490349b0-e267-4003-9e34-299110217a51"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="c3d58a89-d653-4d33-b128-02f62c84ff9d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Stability">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Bluescreen Crashes" ordering="4" serviceMetric="false" uid="364e45a5-cb11-4497-9857-22c059c1999f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hard Resets" ordering="5" serviceMetric="false" uid="844dd749-f5d8-4987-b1d3-b69e7d41791a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization: Project&#13;&#10;&#13;&#10;The dashboards target the current state of Pilot groups.&#13;&#10;&#13;&#10;# Analyze Device Performance of two pilots&#13;&#10;&#13;&#10;**Identify Overloaded VDI Desktops**&#13;&#10;* Devices that are overworked may be impacting user Productivity. Use this dashboard to see both the number of vdi that are experiencing issues and also the top offenders listed so they can be directly addressed.&#13;&#10;&#13;&#10;**Understand Network Issues on VDI Desktops**&#13;&#10;* Network issues for VDI desktops may cause desktop freezing, glitching or straightforward application pausing and should be addressed.  By combining this with a view on how much traffic is going to the VDI infrastructure is talking to may reveal unexpected traffic volumes which could be a contributing factor.&#13;&#10;&#13;&#10;**Understanding VDI Availability**&#13;&#10;* Bluescreen crashes or Hard Resets are a clear indicator of unexpected behavior.  If this figure shows signs of having any significant amount of devices, it should be looked into.&#13;&#10;&#13;&#10;::: tip&#13;&#10;To get a live view, take look in the Finder in Virtualization services.&#13;&#10;:::&#13;&#10;&#13;&#10;::: configuration&#13;&#10;* Please populate pilot categories.&#13;&#10;* [Configuration guide](https://doc.nexthink.com/Documentation/Nexthink/latest/LibraryPacksConfiguration/VirtualizationPlanningandMigration)&#13;&#10;:::" index="9" name="Pilot1 vs Pilot2 : Pilot Trend" uid="0995595b-4ea9-4037-927b-b4de36840e13">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="f42b8956-5c70-42c2-8862-46b827a3d91a" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="f42b8956-5c70-42c2-8862-46b827a3d91a">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="a1655a8b-f106-46f1-89fb-4bf9920ea93d" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="a1655a8b-f106-46f1-89fb-4bf9920ea93d">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="5f5a4f72-d896-4ff2-b9df-ee7307a03c9e" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="5f5a4f72-d896-4ff2-b9df-ee7307a03c9e">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="df0aca8c-0946-4367-9a64-fc4b318afad8" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="df0aca8c-0946-4367-9a64-fc4b318afad8">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="8c551ea1-9270-4b26-82e3-3c4dc431cb28" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="8c551ea1-9270-4b26-82e3-3c4dc431cb28">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="b78a6ad0-7229-49cd-ab00-28433563aac4" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="b78a6ad0-7229-49cd-ab00-28433563aac4">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="1aaf97ee-0ef2-4693-b359-00d42f5f4bff" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="1aaf97ee-0ef2-4693-b359-00d42f5f4bff">
+                <preferredHeight value="410"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="0724da53-ce04-45fb-80d2-b0f00ea96f76" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="0724da53-ce04-45fb-80d2-b0f00ea96f76">
+                <preferredHeight value="410"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="LINE_CHART" uid="f42b8956-5c70-42c2-8862-46b827a3d91a">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="CPU">
+             <metrics>
+              <metric label="Pilot 1" ordering="2" serviceMetric="false" uid="7dc700fb-c527-44c3-843c-c56fb2cc3f35"/>
+              <metric label="Pilot 2" ordering="3" serviceMetric="false" uid="1fd643ba-9735-4344-8a9d-a27489cea24c"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="a1655a8b-f106-46f1-89fb-4bf9920ea93d">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Memory">
+             <metrics>
+              <metric label="Pilot 1" ordering="2" serviceMetric="false" uid="9ae60aca-a0d9-4af3-a6cf-75184db12f69"/>
+              <metric label="Pilot 2" ordering="3" serviceMetric="false" uid="3309b183-de5e-4c00-9e64-15418502c453"/>
+             </metrics>
+             <scale scaleMaxValueType="volume" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="5f5a4f72-d896-4ff2-b9df-ee7307a03c9e">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Hard Reset">
+             <metrics>
+              <metric label="Pilot 1" ordering="0" serviceMetric="false" uid="490349b0-e267-4003-9e34-299110217a51"/>
+              <metric label="Pilot 2" ordering="1" serviceMetric="false" uid="844dd749-f5d8-4987-b1d3-b69e7d41791a"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="df0aca8c-0946-4367-9a64-fc4b318afad8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Network Performance">
+             <metrics>
+              <metric label="Pilot 1" ordering="4" serviceMetric="false" uid="a420e10a-5a5a-41fa-86f2-a7cd71c2d99f"/>
+              <metric label="Pilot 2" ordering="5" serviceMetric="false" uid="9e78bb7e-1538-4744-bc9a-c7adee97d5f2"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="8c551ea1-9270-4b26-82e3-3c4dc431cb28">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Citrix RTT">
+             <metrics>
+              <metric label="Pilot 1" ordering="2" serviceMetric="false" uid="e4d844ed-5996-4dba-a102-d0d31fa1dfc5"/>
+              <metric label="Pilot 2" ordering="3" serviceMetric="false" uid="3364811e-3658-44d4-8561-c5d0ad890ccb"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="b78a6ad0-7229-49cd-ab00-28433563aac4">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Virtual Latency">
+             <metrics>
+              <metric label="Pilot 1" ordering="2" serviceMetric="false" uid="928f5716-98e3-43c5-bd05-061b7d74fa91"/>
+              <metric label="Pilot 2" ordering="3" serviceMetric="false" uid="bde28e58-c7f0-4245-afbf-3abfc33e35e6"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="1aaf97ee-0ef2-4693-b359-00d42f5f4bff">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Extended Logon Duration">
+             <metrics>
+              <metric label="Pilot 1" ordering="3" serviceMetric="false" uid="c56032a6-5440-4b0e-984d-a6e866107fb3"/>
+              <metric label="Pilot 2" ordering="4" serviceMetric="false" uid="bbbab584-2bb5-401a-8df9-b66da4297093"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="0724da53-ce04-45fb-80d2-b0f00ea96f76">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Boot Time">
+             <metrics>
+              <metric label="Pilot 1" ordering="2" serviceMetric="false" uid="96132e0a-36f6-461f-94c8-20f0928e8f46"/>
+              <metric label="Pilot 2" ordering="3" serviceMetric="false" uid="d2ac3580-02af-41c6-b51a-d8a3d79f20de"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="w" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Application experience&#13;&#10;This dashboard presents the experience of your users when using applications from their physical and virtual devices.&#13;&#10;&#13;&#10;# Overview &#13;&#10;&#13;&#10;* You can compare the application crash and freeze ratios and pinpoint the applications causing the most issues.&#13;&#10;* You can predict witch application need more resources and can impact the user experience. &#13;&#10;&#13;&#10;# Details&#13;&#10;&#13;&#10;Take look at applications with high CPU, freezes, and crashes.  &#13;&#10;&#13;&#10;::: tip&#13;&#10;* The **application crash ratio** and **application not responding event ratio** respectively indicate the number of application crashes and the number of application freezes per 100 executions.&#13;&#10;* Define a strategy to randomize all infrastructure maintenance tasks like antivirus, reporting or other tasks scheduled locally or on the infrastructure part.&#13;&#10;:::" index="7" name="Pilots vs Physical : Application experience" uid="665e6eea-39c9-47e8-a28b-a542f879af01">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="be5e70f4-0215-4b08-9d5d-6518c9e4c17d" minHeight="56" minWidth="296" type="titleWidget" widgetID="be5e70f4-0215-4b08-9d5d-6518c9e4c17d">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="ea917a29-1efc-487d-aeda-8c342dc487ee" minHeight="166" minWidth="364" type="kpiWidget" widgetID="ea917a29-1efc-487d-aeda-8c342dc487ee">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="5dd3240f-934f-4266-aecb-c5c6cc5d0624" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="5dd3240f-934f-4266-aecb-c5c6cc5d0624">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="5658e796-9694-42c5-955b-281b6d66733a" minHeight="166" minWidth="364" type="kpiWidget" widgetID="5658e796-9694-42c5-955b-281b6d66733a">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="99d48e10-7aa0-41c5-9cc9-cebce6d7d5a0" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="99d48e10-7aa0-41c5-9cc9-cebce6d7d5a0">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ad23fc41-cdfe-4dbb-8db9-a336b3b1bbcb" minHeight="56" minWidth="296" type="titleWidget" widgetID="ad23fc41-cdfe-4dbb-8db9-a336b3b1bbcb">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="c1416c35-3ce3-43eb-bf21-085f6a0fecf2" minHeight="56" minWidth="296" type="titleWidget" widgetID="c1416c35-3ce3-43eb-bf21-085f6a0fecf2">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="c4d65c11-7c4e-4ee5-955d-b6c464e85365" minHeight="56" minWidth="296" type="titleWidget" widgetID="c4d65c11-7c4e-4ee5-955d-b6c464e85365">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="93d427ed-19bc-4201-a6e0-84bf29c50f46" minHeight="233" minWidth="480" type="tableWidget" widgetID="93d427ed-19bc-4201-a6e0-84bf29c50f46">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="acca5316-9c34-479f-b42b-ad2bdd6f5eb4" minHeight="233" minWidth="480" type="tableWidget" widgetID="acca5316-9c34-479f-b42b-ad2bdd6f5eb4">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="f0da6143-e2d2-4f20-b069-3e027b980fa8" minHeight="233" minWidth="480" type="tableWidget" widgetID="f0da6143-e2d2-4f20-b069-3e027b980fa8">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="0204aaf4-c20d-408f-b0d2-d04bce6c7ed3" minHeight="233" minWidth="480" type="tableWidget" widgetID="0204aaf4-c20d-408f-b0d2-d04bce6c7ed3">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="480"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="ce214202-8f63-4d27-aa5b-ae3c5edc07a7" minHeight="233" minWidth="480" type="tableWidget" widgetID="ce214202-8f63-4d27-aa5b-ae3c5edc07a7">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="3df5f0be-8635-44e0-9ae9-09c15bdc0a6e" minHeight="233" minWidth="480" type="tableWidget" widgetID="3df5f0be-8635-44e0-9ae9-09c15bdc0a6e">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="be5e70f4-0215-4b08-9d5d-6518c9e4c17d">
+            <titleConfig title="Overview"/>
+           </widget>
+           <widget type="KPI" uid="ea917a29-1efc-487d-aeda-8c342dc487ee">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Application crash ratio">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical" ordering="4" serviceMetric="false" uid="ade987ac-83f3-40e8-ac44-71437ad1be71"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Virtual" ordering="5" serviceMetric="false" uid="3b1580e5-e0c3-4d01-a38b-fda74e15fcf0"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="5dd3240f-934f-4266-aecb-c5c6cc5d0624">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Physical" ordering="4" serviceMetric="false" uid="ade987ac-83f3-40e8-ac44-71437ad1be71"/>
+              <metric label="Virtual" ordering="5" serviceMetric="false" uid="3b1580e5-e0c3-4d01-a38b-fda74e15fcf0"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="ratio" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="5658e796-9694-42c5-955b-281b6d66733a">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Application freeze ratio">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Physical" ordering="4" serviceMetric="false" uid="d0e49fa2-e70f-4c29-893b-c87ff555b609"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Virtual" ordering="5" serviceMetric="false" uid="8709d9c0-d970-47e1-a594-d2d1cb40ec09"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="99d48e10-7aa0-41c5-9cc9-cebce6d7d5a0">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Physical" ordering="4" serviceMetric="false" uid="d0e49fa2-e70f-4c29-893b-c87ff555b609"/>
+              <metric label="Virtual" ordering="5" serviceMetric="false" uid="8709d9c0-d970-47e1-a594-d2d1cb40ec09"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="ad23fc41-cdfe-4dbb-8db9-a336b3b1bbcb">
+            <titleConfig title="Details"/>
+           </widget>
+           <widget type="TITLE" uid="c1416c35-3ce3-43eb-bf21-085f6a0fecf2">
+            <titleConfig title="Pilots Landscape"/>
+           </widget>
+           <widget type="TITLE" uid="c4d65c11-7c4e-4ee5-955d-b6c464e85365">
+            <titleConfig title="Physical Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="93d427ed-19bc-4201-a6e0-84bf29c50f46">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications generating high thread CPU usage on virtual devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications with highest application thread CPU time ratio on virtual devices" ordering="1" serviceMetric="false" uid="96e167a0-d595-4b1e-be5a-d9c58aac3a6e">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_application_thread_cpu_time_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="acca5316-9c34-479f-b42b-ad2bdd6f5eb4">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications freezing most on virtual devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications freezing on virtual devices" ordering="1" serviceMetric="false" uid="eda0701c-bb9a-42ad-92d3-dc8d2b2390dd">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f0da6143-e2d2-4f20-b069-3e027b980fa8">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications crashing most on virtual devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications crashing on virtual devices" ordering="1" serviceMetric="false" uid="a4d5b009-1cc8-486f-8ae2-24cf83c0a938">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="0204aaf4-c20d-408f-b0d2-d04bce6c7ed3">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications generating high thread CPU usage on physical devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications with highest application thread CPU time ratio on physical devices" ordering="1" serviceMetric="false" uid="c74e8f61-3cdd-49e3-b729-fe4f1bfda4c8">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_application_thread_cpu_time_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ce214202-8f63-4d27-aa5b-ae3c5edc07a7">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications freezing most on physical devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications freezing on physical devices" ordering="1" serviceMetric="false" uid="21a1b42f-8f65-49c2-b0ca-8dd130926087">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="3df5f0be-8635-44e0-9ae9-09c15bdc0a6e">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications crashing most on physical devices">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Virtualization - Project - Top applications crashing on physical devices" ordering="1" serviceMetric="false" uid="a9e9b96d-f10d-4055-bf81-5b23bd7dbd15">
+               <fields name="name" type="FIELD"/>
+               <fields name="product_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization: Project&#13;&#10;&#13;&#10;These dashboards target the current state of Production vs Pilots.&#13;&#10;&#13;&#10;# Analyze Device Performance - Pilots vs Physical&#13;&#10;&#13;&#10;**Identify Overloaded VDI Desktops**&#13;&#10;* Digital Experience Score&#13;&#10;The Digital Experience Score measures the digital employee experience, defined as the ability of an employee to get things done by interacting with the IT environment in a safe and enjoyable manner.   &#13;&#10;&#13;&#10;* Devices that are overworked may be impacting user Productivity. Use this dashboard to see both the number of desktops that are experiencing issues and also the top offenders listed so they can be directly addressed.&#13;&#10;&#13;&#10;**Understand Network Issues on VDI Desktops**&#13;&#10;* Network issues for VDI desktops may cause desktop freezing, glitching or straightforward application pausing and should be addressed.  By combining this with a view on how much traffic is going to the  VDI infrastructure is talking to may reveal unexpected traffic volumes which could be a contributing factor.&#13;&#10;&#13;&#10;**Understanding VDI Availability**&#13;&#10;* Bluescreen crashes or Hard Resets are a clear indicator of unexpected behavior.  If this figure shows signs of having any significant amount of devices, it should be looked into.&#13;&#10;::: tip&#13;&#10;To get a live view, take look in the Finder in Virtualization services.&#13;&#10;:::&#13;&#10;::: configuration&#13;&#10;* Please populate pilot categories.&#13;&#10;* [Configuration guide](https://doc.nexthink.com/Documentation/Nexthink/latest/LibraryPacksConfiguration/VirtualizationPlanningandMigration)&#13;&#10;:::" index="5" name="Pilots vs Physical : Performance" uid="62058278-3a3a-470f-a3b7-42f1a6c3b58e">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="742ea493-d35e-497a-856d-276e7aece464" minHeight="56" minWidth="296" type="titleWidget" widgetID="742ea493-d35e-497a-856d-276e7aece464">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="63f8f4fe-7ae7-48d7-b6b5-50bfa6cb3fb0" minHeight="321" minWidth="558" type="tableWidget" widgetID="63f8f4fe-7ae7-48d7-b6b5-50bfa6cb3fb0">
+                  <preferredHeight value="321"/>
+                  <preferredWidth value="558"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d175f477-966b-4dbd-919e-464b248b31ba" minHeight="244" minWidth="300" type="barChartWidget" widgetID="d175f477-966b-4dbd-919e-464b248b31ba">
+                    <preferredHeight value="244"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="b83fbb23-d657-45a3-8edf-067ee749ccf5" minHeight="196" minWidth="300" type="barChartWidget" widgetID="b83fbb23-d657-45a3-8edf-067ee749ccf5">
+                    <preferredHeight value="196"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="c4b6b830-9512-4e16-8e8a-206362152ca9" minHeight="56" minWidth="296" type="titleWidget" widgetID="c4b6b830-9512-4e16-8e8a-206362152ca9">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="838a7393-f469-44f1-939c-778cd1f03028" minHeight="321" minWidth="558" type="tableWidget" widgetID="838a7393-f469-44f1-939c-778cd1f03028">
+                  <preferredHeight value="321"/>
+                  <preferredWidth value="558"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="29e91b51-d284-4c46-937c-8c3491f241fb" minHeight="244" minWidth="300" type="barChartWidget" widgetID="29e91b51-d284-4c46-937c-8c3491f241fb">
+                    <preferredHeight value="244"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="cd2c08fc-ff80-4d67-a91c-167389158045" minHeight="196" minWidth="300" type="barChartWidget" widgetID="cd2c08fc-ff80-4d67-a91c-167389158045">
+                    <preferredHeight value="196"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="742ea493-d35e-497a-856d-276e7aece464">
+            <titleConfig title="Pilots Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="63f8f4fe-7ae7-48d7-b6b5-50bfa6cb3fb0">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Digital Experience Score" ordering="5" serviceMetric="false" uid="4093a8a6-301e-4280-b9dd-63bac7008a1d"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of Devices" ordering="6" serviceMetric="false" uid="f29b27cf-25d0-4a6b-abf3-0f30a09de687">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d175f477-966b-4dbd-919e-464b248b31ba">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="4" sortByOrder="ASC" threshold="true" title="Digital Experience Score Details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Business Application" ordering="0" serviceMetric="false" uid="4aee00cf-b7c0-4b19-9dfd-42184b17747b"/>
+              <metric label="Device" ordering="1" serviceMetric="false" uid="65a124ee-2a91-4700-b8d7-e96621a441b3"/>
+              <metric label="Employee Satisfaction" ordering="2" serviceMetric="false" uid="9f41c89e-df17-4e59-8ce7-543c2c0912db"/>
+              <metric label="Productivity &amp; Collaboration" ordering="3" serviceMetric="false" uid="bd7a4652-79f0-432e-a51f-13d88e2331ae"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b83fbb23-d657-45a3-8edf-067ee749ccf5">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="ASC" threshold="true" title="Digital Experience Sub Score">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Logon" ordering="6" serviceMetric="false" uid="cd4fe9b4-9fc2-4cb1-aafb-4144c6895279"/>
+              <metric label="Virtual Responsiveness" ordering="7" serviceMetric="false" uid="c33536b2-0c79-4edb-9e53-d4f86b9899c5"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="c4b6b830-9512-4e16-8e8a-206362152ca9">
+            <titleConfig title="Physical Landscape"/>
+           </widget>
+           <widget type="TABLE" uid="838a7393-f469-44f1-939c-778cd1f03028">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Digital Experience Score" ordering="3" serviceMetric="false" uid="35809eb6-ae50-4b12-9e2f-4ecc9e18808b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of Devices" ordering="4" serviceMetric="false" uid="f541334f-f3be-47d0-bb2a-b57d4bbb617a">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+               <fields name="score_999ce1f8fda7de30758542778bed97d9" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="29e91b51-d284-4c46-937c-8c3491f241fb">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="4" sortByOrder="ASC" threshold="true" title="Digital Experience Score Details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Business Application" ordering="0" serviceMetric="false" uid="02d98509-0d0e-4b9b-8995-a237be3b9c0c"/>
+              <metric label="Device" ordering="1" serviceMetric="false" uid="b62dfc37-a8cd-458b-b076-20c65b886790"/>
+              <metric label="Employee Satisfaction" ordering="2" serviceMetric="false" uid="cccd7a24-7902-4c4c-9d2b-cdc3d18964b3"/>
+              <metric label="Productivity &amp; Collaboration" ordering="3" serviceMetric="false" uid="e19d94b3-ade5-4cad-b104-68b773ee56ea"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="cd2c08fc-ff80-4d67-a91c-167389158045">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="DESC" threshold="true" title="Digital Experience Sub Score">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Logon" ordering="6" serviceMetric="false" uid="13ced328-25f1-4abe-bded-85e26f783d2a"/>
+              <metric label="Device Responsiveness" ordering="7" serviceMetric="false" uid="bd40fa8f-f41a-40e2-b3ad-77c7d59fe628"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization: Project&#13;&#10;&#13;&#10;The dashboards target the current state of Production vs Pilots.&#13;&#10;&#13;&#10;# Analyze Device Performance - Virtual vs Physical&#13;&#10;&#13;&#10;**Identify Overloaded VDI Desktops**&#13;&#10;* Devices that are overworked may be impacting user Productivity. Use this dashboard to see both the number of desktops that are experiencing issues and also the top offenders listed so they can be directly addressed.&#13;&#10;&#13;&#10;**Understand Network Issues on VDI Desktops**&#13;&#10;* Network issues for VDI desktops may cause desktop freezing, glitching or straightforward application pausing and should be addressed.  By combining this with a view on how much traffic is going to the VDI infrastructure is talking to may reveal unexpected traffic volumes which could be a contributing factor.&#13;&#10;&#13;&#10;**Understanding VDI Availability**&#13;&#10;* Bluescreen crashes or Hard Resets are a clear indicator of unexpected behavior.  If this figure shows signs of having any significant amount of devices, it should be looked into.&#13;&#10;&#13;&#10;::: tip&#13;&#10;To get a live view, take look in the Finder in Virtualization services.&#13;&#10;:::&#13;&#10;" index="6" name="Pilots vs Physical : Pilot Trend" uid="54d3389b-4089-4773-b741-f6f012fe9800">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="4d654914-5970-43e7-a5dd-14af0735a6c0" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="4d654914-5970-43e7-a5dd-14af0735a6c0">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4ea3a57e-e45b-42a4-9f71-ee03cc8dc9f9" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="4ea3a57e-e45b-42a4-9f71-ee03cc8dc9f9">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="9c32aeed-4727-466c-908f-c636a258e71f" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="9c32aeed-4727-466c-908f-c636a258e71f">
+                <preferredHeight value="410"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d1a9d170-a80d-40e0-9569-9b16c6d0ee66" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="d1a9d170-a80d-40e0-9569-9b16c6d0ee66">
+                <preferredHeight value="410"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="2393e107-29d6-489b-a385-bafb059cd1d9" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="2393e107-29d6-489b-a385-bafb059cd1d9">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="ea3875e3-c3ed-493d-bf79-60283de3b3f2" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="ea3875e3-c3ed-493d-bf79-60283de3b3f2">
+                  <preferredHeight value="410"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="LINE_CHART" uid="4d654914-5970-43e7-a5dd-14af0735a6c0">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="CPU">
+             <metrics>
+              <metric label="Physical" ordering="0" serviceMetric="false" uid="db945169-d214-427b-b4ee-4b53cc1e0d73"/>
+              <metric label=" Virtual" ordering="1" serviceMetric="false" uid="3002adbb-d868-4e5a-88ab-e31d3ce6cdf7"/>
+             </metrics>
+             <scale scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4ea3a57e-e45b-42a4-9f71-ee03cc8dc9f9">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Memory">
+             <metrics>
+              <metric label="Physical" ordering="0" serviceMetric="false" uid="21b7c424-f039-42f6-84ce-9612d5626c6a"/>
+              <metric label="Virtual" ordering="1" serviceMetric="false" uid="3fa042f9-c1f2-47a3-b882-4b689c969d2c"/>
+             </metrics>
+             <scale scaleMaxValueType="volume" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="9c32aeed-4727-466c-908f-c636a258e71f">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Network Performance">
+             <metrics>
+              <metric label="Physical" ordering="0" serviceMetric="false" uid="b4a11871-a105-46ee-89fc-23b4088d91fe"/>
+              <metric label="Virtual" ordering="1" serviceMetric="false" uid="5bd4691c-a8fe-4583-b827-22a8aa181afa"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="d1a9d170-a80d-40e0-9569-9b16c6d0ee66">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Logon Duration">
+             <metrics>
+              <metric label="Physical" ordering="1" serviceMetric="false" uid="fb16d6cb-6c2a-415d-ab0f-af9996f159e1"/>
+              <metric label="Virtual" ordering="2" serviceMetric="false" uid="48355eca-48e3-414a-8850-5122af690355"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2393e107-29d6-489b-a385-bafb059cd1d9">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Boot Time">
+             <metrics>
+              <metric label="Physical" ordering="0" serviceMetric="false" uid="b0dd80b9-c099-44b3-9237-6c119f0ccd7f"/>
+              <metric label="Virtual" ordering="1" serviceMetric="false" uid="c6834210-df3a-4ef6-903a-96393b1fb7f4"/>
+             </metrics>
+             <scale scaleMaxValueType="duration_us" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="ea3875e3-c3ed-493d-bf79-60283de3b3f2">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Hard Reset">
+             <metrics>
+              <metric label="Physical" ordering="0" serviceMetric="false" uid="d8bd6d45-915c-4e09-ba28-4f5e0a34768b"/>
+              <metric label="Virtual" ordering="1" serviceMetric="false" uid="8312772a-3562-406f-a0c0-af3c04c53ca9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization: Project&#13;&#10;&#13;&#10;# Virtual vs Production: Satisfaction&#13;&#10;&#13;&#10;**Pre-deployment &amp; Post-deployment satisfaction on Virtualization**&#13;&#10;* Survey your Production employees before the deployment to define a baseline satisfaction of the current user experience on physical devices. Run the same survey after the pilot is ongoing.&#13;&#10;&#13;&#10;**Satisfaction breakdown**&#13;&#10;* See the distribution of the satisfaction.&#13;&#10;&#13;&#10;**What users like the most**&#13;&#10;* Compare the positive points before and after the deployment of the Virtualization.&#13;&#10;&#13;&#10;**What users dislike the most**&#13;&#10;* Compare the negative points before and after the deployment of the Virtualization.&#13;&#10;::: tip&#13;&#10;You can use survey to inform your users about the migration deployment (before the change to save documents) or to improve their knowledge.&#13;&#10;:::" index="4" name="Pilots vs Prod : Comparing Feedback" uid="dff51345-d9cb-4fd0-8d47-e35f5210c00b">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="78d84a92-a1c8-4636-ae8c-4ec9c025d41a" minHeight="56" minWidth="296" type="titleWidget" widgetID="78d84a92-a1c8-4636-ae8c-4ec9c025d41a">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="29b47f9c-03a4-4996-87aa-d36540c741c5" minHeight="56" minWidth="296" type="titleWidget" widgetID="29b47f9c-03a4-4996-87aa-d36540c741c5">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="29dbe5ac-eeb5-4e8c-a076-f6316a4949fd" minHeight="238" minWidth="1092" type="kpiWidget" widgetID="29dbe5ac-eeb5-4e8c-a076-f6316a4949fd">
+                    <preferredHeight value="238"/>
+                    <preferredWidth value="1092"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="3c710125-5691-4749-9efa-9287086463f7" minHeight="238" minWidth="1092" type="kpiWidget" widgetID="3c710125-5691-4749-9efa-9287086463f7">
+                    <preferredHeight value="238"/>
+                    <preferredWidth value="1092"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="070ebb3d-5dd8-44ed-a4ef-08398f3bbd7c" minHeight="268" minWidth="300" type="barChartWidget" widgetID="070ebb3d-5dd8-44ed-a4ef-08398f3bbd7c">
+                    <preferredHeight value="268"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="c7bd037a-8e02-4e8f-aa59-6692089d26e6" minHeight="268" minWidth="300" type="barChartWidget" widgetID="c7bd037a-8e02-4e8f-aa59-6692089d26e6">
+                    <preferredHeight value="268"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="29efcf88-e544-44ae-817b-b93a00661053" minHeight="316" minWidth="300" type="barChartWidget" widgetID="29efcf88-e544-44ae-817b-b93a00661053">
+                    <preferredHeight value="316"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="4e950b2a-1e6d-453e-844f-b97f8f0ff764" minHeight="316" minWidth="300" type="barChartWidget" widgetID="4e950b2a-1e6d-453e-844f-b97f8f0ff764">
+                    <preferredHeight value="316"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="8ba1f2d4-4ad1-43f2-b78f-12b51e07f9e3" minHeight="316" minWidth="300" type="barChartWidget" widgetID="8ba1f2d4-4ad1-43f2-b78f-12b51e07f9e3">
+                    <preferredHeight value="316"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="ab317d59-f0c7-401e-a302-579285ed8971" minHeight="316" minWidth="300" type="barChartWidget" widgetID="ab317d59-f0c7-401e-a302-579285ed8971">
+                    <preferredHeight value="316"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="78d84a92-a1c8-4636-ae8c-4ec9c025d41a">
+            <titleConfig title="Virtual Sentiment"/>
+           </widget>
+           <widget type="TITLE" uid="29b47f9c-03a4-4996-87aa-d36540c741c5">
+            <titleConfig title="Physical Sentiment"/>
+           </widget>
+           <widget type="KPI" uid="29dbe5ac-eeb5-4e8c-a076-f6316a4949fd">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Summary">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction Score" ordering="4" serviceMetric="false" uid="58e05be8-c737-4fe3-aa36-8005508f1123"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy Users" ordering="5" serviceMetric="false" uid="901aa0bf-0bc2-4dd4-9c0f-10eb809ebbd3"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of Respondents" ordering="6" serviceMetric="false" uid="c0db387e-51df-422a-b581-34b017f1d22c"/>
+              <metric displayValue="RATIO" label="Respondents Ratio" ordering="7" serviceMetric="false" uid="c0db387e-51df-422a-b581-34b017f1d22c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="3c710125-5691-4749-9efa-9287086463f7">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Summary">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction Score" ordering="11" serviceMetric="false" uid="a6afbe48-5929-486e-bd72-2655d4f0b0e5"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy Users" ordering="12" serviceMetric="false" uid="632067f2-fc79-4b93-9faa-be2b3726fc3b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of Respondents" ordering="13" serviceMetric="false" uid="11b539be-f12c-40c9-80f9-a8a342578395"/>
+              <metric displayValue="RATIO" label="Respondents Ratio" ordering="14" serviceMetric="false" uid="11b539be-f12c-40c9-80f9-a8a342578395"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="070ebb3d-5dd8-44ed-a4ef-08398f3bbd7c">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_257b9ed9c3ef4df1b7f88bf36d576d52_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Satisfaction Distribution" ordering="1" serviceMetric="false" uid="f393203f-200c-4182-b0df-e12f5beb560f"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c7bd037a-8e02-4e8f-aa59-6692089d26e6">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1cd6dad3f4b44487b5b31181b49b178e_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Satisfaction Breakdown" ordering="2" serviceMetric="false" uid="15592cc0-0884-45fa-bcb2-aa5983f53919"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="29efcf88-e544-44ae-817b-b93a00661053">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="ASC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_257b9ed9c3ef4df1b7f88bf36d576d52_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="User Satisfaction" ordering="1" serviceMetric="false" uid="46f6c376-f27b-4935-9f4a-fc556eac8697"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_257b9ed9c3ef4df1b7f88bf36d576d52_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4e950b2a-1e6d-453e-844f-b97f8f0ff764">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="ASC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1cd6dad3f4b44487b5b31181b49b178e_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Positive Points" ordering="2" serviceMetric="false" uid="e2174f14-cb14-40f7-aa99-f2be0f744440"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_1cd6dad3f4b44487b5b31181b49b178e_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8ba1f2d4-4ad1-43f2-b78f-12b51e07f9e3">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="ASC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_257b9ed9c3ef4df1b7f88bf36d576d52_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="User Dissatisfaction" ordering="1" serviceMetric="false" uid="8d8b8e03-4eac-47e9-9053-b77b456956f9"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_257b9ed9c3ef4df1b7f88bf36d576d52_2"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ab317d59-f0c7-401e-a302-579285ed8971">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="ASC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1cd6dad3f4b44487b5b31181b49b178e_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Negative Points" ordering="2" serviceMetric="false" uid="1a3fa7ee-39c9-4cfd-8799-5835e8e8d5b4"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_1cd6dad3f4b44487b5b31181b49b178e_2"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization Project &#13;&#10;The Virtualization Project pack will help you during your migration process, from planning to post-migration checks.  &#13;&#10; &#13;&#10;# Understand the current landscape &#13;&#10;See your landscape to detect how devices or applications profiles and issues. &#13;&#10;&#13;&#10;* Digital Experience Score&#13;&#10;The Digital Experience Score measures the digital employee experience, defined as the ability of an employee to get things done by interacting with the IT environment in a safe and enjoyable manner.   &#13;&#10;&#13;&#10;* Devices that are overworked may be impacting user Productivity. Use this dashboard to see both the number of desktops that are experiencing issues and also the top offenders listed so they can be directly addressed.&#13;&#10; ::: tip&#13;&#10;Disk system usage: Take a look at this information to check if your users are using the local system drive to store documents or to predict the impact on the target storage. You can investigate the details with a click on &quot;Investigate on the finder&quot;&#13;&#10;:::&#13;&#10;&#13;&#10;::: configuration  &#13;&#10;* In order to take full advantage of this content pack, categories, scores, and metrics need to be adjusted.&#13;&#10;:::" index="2" name="Understand Current Landscape" uid="f8557480-c191-4e45-a089-caaf56a96efb">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="6792a484-ccb4-42fa-9f69-0316bb87b243" minHeight="56" minWidth="296" type="titleWidget" widgetID="6792a484-ccb4-42fa-9f69-0316bb87b243">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="6b53d00a-a844-4a4d-a0ba-8b08c736b3dc" minHeight="273" minWidth="558" type="tableWidget" widgetID="6b53d00a-a844-4a4d-a0ba-8b08c736b3dc">
+                  <preferredHeight value="273"/>
+                  <preferredWidth value="558"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="b5000726-3c44-490f-a609-db0685aa78ae" minHeight="244" minWidth="300" type="barChartWidget" widgetID="b5000726-3c44-490f-a609-db0685aa78ae">
+                    <preferredHeight value="244"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="3539e7cd-ea74-4b50-bc6f-a18323a9bd94" minHeight="196" minWidth="300" type="barChartWidget" widgetID="3539e7cd-ea74-4b50-bc6f-a18323a9bd94">
+                    <preferredHeight value="196"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="4c96edd6-d934-4393-8d7d-ff114fde60cc" minHeight="56" minWidth="296" type="titleWidget" widgetID="4c96edd6-d934-4393-8d7d-ff114fde60cc">
+                        <preferredHeight value="56"/>
+                        <preferredWidth value="0"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="885e4e48-52d9-44f2-a2cb-96e0905f9139" minHeight="273" minWidth="558" type="tableWidget" widgetID="885e4e48-52d9-44f2-a2cb-96e0905f9139">
+                        <preferredHeight value="273"/>
+                        <preferredWidth value="558"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="ea4c8c43-f9d6-47a1-a84e-dcda77b0c2e2" minHeight="56" minWidth="296" type="titleWidget" widgetID="ea4c8c43-f9d6-47a1-a84e-dcda77b0c2e2">
+                        <preferredHeight value="56"/>
+                        <preferredWidth value="0"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="bb528898-5f85-4d0a-a499-46855b70d8d3" minHeight="340" minWidth="300" type="barChartWidget" widgetID="bb528898-5f85-4d0a-a499-46855b70d8d3">
+                        <preferredHeight value="340"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="f3f58966-66ca-4e55-835f-c047af5ed916" minHeight="56" minWidth="296" type="titleWidget" widgetID="f3f58966-66ca-4e55-835f-c047af5ed916">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="7a1d8b8a-383b-493f-9b8c-29b73d3e4141" minHeight="238" minWidth="576" type="kpiWidget" widgetID="7a1d8b8a-383b-493f-9b8c-29b73d3e4141">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="1df8f4e5-8096-46b7-a86e-a502746b8381" minHeight="321" minWidth="480" type="tableWidget" widgetID="1df8f4e5-8096-46b7-a86e-a502746b8381">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="a6e72ab0-7de9-4e3e-bb40-31366fabcfb5" minHeight="238" minWidth="576" type="kpiWidget" widgetID="a6e72ab0-7de9-4e3e-bb40-31366fabcfb5">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="086a9d3b-4cf8-4ad2-94ae-c39155ce3dda" minHeight="321" minWidth="480" type="tableWidget" widgetID="086a9d3b-4cf8-4ad2-94ae-c39155ce3dda">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="6792a484-ccb4-42fa-9f69-0316bb87b243">
+            <titleConfig title="Digital Experience"/>
+           </widget>
+           <widget type="TABLE" uid="6b53d00a-a844-4a4d-a0ba-8b08c736b3dc">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Digital Experience Score" ordering="3" serviceMetric="false" uid="35809eb6-ae50-4b12-9e2f-4ecc9e18808b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of Devices" ordering="4" serviceMetric="false" uid="f541334f-f3be-47d0-bb2a-b57d4bbb617a">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="os_name" type="FIELD"/>
+               <fields name="score_999ce1f8fda7de30758542778bed97d9" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b5000726-3c44-490f-a609-db0685aa78ae">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="4" sortByOrder="ASC" threshold="true" title="Digital Experience Score">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Business Application" ordering="0" serviceMetric="false" uid="02d98509-0d0e-4b9b-8995-a237be3b9c0c"/>
+              <metric label="Device" ordering="1" serviceMetric="false" uid="b62dfc37-a8cd-458b-b076-20c65b886790"/>
+              <metric label="Employee Satisfaction" ordering="2" serviceMetric="false" uid="cccd7a24-7902-4c4c-9d2b-cdc3d18964b3"/>
+              <metric label="Productivity &amp; Collaboration" ordering="3" serviceMetric="false" uid="e19d94b3-ade5-4cad-b104-68b773ee56ea"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3539e7cd-ea74-4b50-bc6f-a18323a9bd94">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="2" sortByOrder="ASC" threshold="true" title="Digital Experience Sub Score">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Logon" ordering="6" serviceMetric="false" uid="13ced328-25f1-4abe-bded-85e26f783d2a"/>
+              <metric label="Device Responsiveness" ordering="8" serviceMetric="false" uid="bd40fa8f-f41a-40e2-b3ad-77c7d59fe628"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="4c96edd6-d934-4393-8d7d-ff114fde60cc">
+            <titleConfig title="Devices stability"/>
+           </widget>
+           <widget type="TABLE" uid="885e4e48-52d9-44f2-a2cb-96e0905f9139">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="System Crashes" ordering="1" serviceMetric="false" uid="a7955f9c-4c1b-4b36-8079-4c76efd81860"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Hard Resets" ordering="2" serviceMetric="false" uid="7c2b3107-174a-4f32-9b7f-10cf3b770bd4"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="model"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="model"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="ea4c8c43-f9d6-47a1-a84e-dcda77b0c2e2">
+            <titleConfig title="Number of Devices by Disk Space usage in percentage"/>
+           </widget>
+           <widget type="BAR_CHART" uid="bb528898-5f85-4d0a-a499-46855b70d8d3">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Virtualization - Project - Disk Size"/>
+             </groupBy>
+             <metrics>
+              <metric label="Disk Usage" ordering="0" serviceMetric="false" uid="21e83eba-0a78-4b65-af67-903c10fe1f96"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="Virtualization - Project - Disk Size"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="f3f58966-66ca-4e55-835f-c047af5ed916">
+            <titleConfig title="Applications"/>
+           </widget>
+           <widget type="KPI" uid="7a1d8b8a-383b-493f-9b8c-29b73d3e4141">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Application Profiles">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Lightly Used  Apps" ordering="0" serviceMetric="false" uid="823fe032-1f09-4f45-b10e-9ec033bc6b7b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Heavily Used Apps" ordering="1" serviceMetric="false" uid="cfc701fa-4ad6-428a-8ddb-742690bb015b"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="1df8f4e5-8096-46b7-a86e-a502746b8381">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Most Used Apps">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Application Popularity" ordering="0" serviceMetric="false" uid="3dd6b569-8a98-4ef0-adc4-6fcbe3f3311f">
+               <fields name="name" type="FIELD"/>
+               <fields name="description" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="process_duration"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="a6e72ab0-7de9-4e3e-bb40-31366fabcfb5">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Application Resource Usage">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High CPU Apps" ordering="0" serviceMetric="false" uid="9c37b373-ef21-4306-9268-a6fa06045cee"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High Memory Apps" ordering="1" serviceMetric="false" uid="dc0eabb8-d91e-4039-9393-0607f913f05a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="086a9d3b-4cf8-4ad2-94ae-c39155ce3dda">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Least Used Apps">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Application Usage" ordering="0" serviceMetric="false" uid="93da4c3c-ecda-4337-931c-4c6d25637666">
+               <fields name="name" type="FIELD"/>
+               <fields name="description" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="process_duration"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Virtualization Project &#13;&#10;The Virtualization Project pack will help you during your migration process, from planning to post-migration checks.  &#13;&#10; &#13;&#10;# Understand User Persona's&#13;&#10;Here you can take an overview of mobility and resource usage.&#13;&#10;&#13;&#10;**Mobility**&#13;&#10;Mobility is based on the score &quot;Virtualization User Mobility&quot;. This score is calculated from device type (Laptop, Desktop), the number of devices per user and other metrics.&#13;&#10;&#13;&#10;**Ressource usage**&#13;&#10; Here you can see information about the profile of the usage of the device.&#13;&#10;  ::: tip&#13;&#10;Define your strategy for the deployment of your users. In the case of VDI, if users with a physical device are going on a thin client without a VDI attribution, he could be blocked.&#13;&#10;:::&#13;&#10;::: configuration  &#13;&#10;* In order to take full advantage of this content pack, categories, scores, and metrics need to be adjusted.&#13;&#10;* Installation of Persona's is required &#13;&#10;:::" index="3" name="Understand User Persona's" uid="e2f545d6-d676-4fe5-95b6-04d71af409da">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="210c7afb-4cf2-4176-9a0c-53395c94e449" minHeight="56" minWidth="296" type="titleWidget" widgetID="210c7afb-4cf2-4176-9a0c-53395c94e449">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="2f704f07-f32d-4574-9a6d-052232d115ea" minHeight="514" minWidth="318" type="kpiWidget" widgetID="2f704f07-f32d-4574-9a6d-052232d115ea">
+                      <preferredHeight value="514"/>
+                      <preferredWidth value="318"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="c89ab829-90e4-4020-8bd1-9aea0dd98bd3" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="c89ab829-90e4-4020-8bd1-9aea0dd98bd3">
+                      <preferredHeight value="362"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4bdb4d08-2fcc-4173-ac06-4ad994b27d84" minHeight="172" minWidth="300" type="barChartWidget" widgetID="4bdb4d08-2fcc-4173-ac06-4ad994b27d84">
+                  <preferredHeight value="172"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="45cc6d87-b108-4ad4-9cbc-22cd9ef97041" minHeight="56" minWidth="296" type="titleWidget" widgetID="45cc6d87-b108-4ad4-9cbc-22cd9ef97041">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="6c9ea8ee-7c70-4374-9f20-d652410c027c" minHeight="514" minWidth="318" type="kpiWidget" widgetID="6c9ea8ee-7c70-4374-9f20-d652410c027c">
+                  <preferredHeight value="514"/>
+                  <preferredWidth value="318"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="e2e41166-6679-42cc-9a2e-57318836f75a" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="e2e41166-6679-42cc-9a2e-57318836f75a">
+                  <preferredHeight value="362"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="b9ee98dc-89fc-44d1-99c3-dbc70d162216" minHeight="196" minWidth="300" type="barChartWidget" widgetID="b9ee98dc-89fc-44d1-99c3-dbc70d162216">
+                <preferredHeight value="196"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="210c7afb-4cf2-4176-9a0c-53395c94e449">
+            <titleConfig title="Mobility"/>
+           </widget>
+           <widget type="KPI" uid="2f704f07-f32d-4574-9a6d-052232d115ea">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Desk-bound users" ordering="3" serviceMetric="false" uid="0cf507d8-a7b4-4f66-a6b8-ca9f5c07949a"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Highly Mobile users" ordering="4" serviceMetric="false" uid="6bf6f982-43d2-4039-8382-768ac6e3455b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Mobile users" ordering="5" serviceMetric="false" uid="2ce02076-b790-46d9-bdbf-daaeae02afe8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="c89ab829-90e4-4020-8bd1-9aea0dd98bd3">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Desk-bound users" ordering="5" serviceMetric="false" uid="0cf507d8-a7b4-4f66-a6b8-ca9f5c07949a"/>
+              <metric label="Highly Mobile users" ordering="6" serviceMetric="false" uid="6bf6f982-43d2-4039-8382-768ac6e3455b"/>
+              <metric label="Mobile users" ordering="7" serviceMetric="false" uid="2ce02076-b790-46d9-bdbf-daaeae02afe8"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4bdb4d08-2fcc-4173-ac06-4ad994b27d84">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="3" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Desk-bound users" ordering="6" serviceMetric="false" uid="0cf507d8-a7b4-4f66-a6b8-ca9f5c07949a"/>
+              <metric label="Highly Mobile  Users" ordering="7" serviceMetric="false" uid="6bf6f982-43d2-4039-8382-768ac6e3455b"/>
+              <metric label="Mobile  Users" ordering="8" serviceMetric="false" uid="2ce02076-b790-46d9-bdbf-daaeae02afe8"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="45cc6d87-b108-4ad4-9cbc-22cd9ef97041">
+            <titleConfig title="Resource usage"/>
+           </widget>
+           <widget type="KPI" uid="6c9ea8ee-7c70-4374-9f20-d652410c027c">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Basic users" ordering="0" serviceMetric="false" uid="c5d6fb84-0827-4ab7-827b-ef56153e4256"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Standard users" ordering="1" serviceMetric="false" uid="28772c1a-c8bd-42d1-b7b8-ae630995cdbe"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Power users" ordering="2" serviceMetric="false" uid="cbc3e266-2641-44e3-b02d-198c828e1d1c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e2e41166-6679-42cc-9a2e-57318836f75a">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Standard users" ordering="0" serviceMetric="false" uid="28772c1a-c8bd-42d1-b7b8-ae630995cdbe"/>
+              <metric label="Basic users" ordering="1" serviceMetric="false" uid="c5d6fb84-0827-4ab7-827b-ef56153e4256"/>
+              <metric label="Power users" ordering="2" serviceMetric="false" uid="cbc3e266-2641-44e3-b02d-198c828e1d1c"/>
+              <metric label="Unknown persona" ordering="4" serviceMetric="false" uid="1e08612a-df3c-43f9-a380-69b242eb36d0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b9ee98dc-89fc-44d1-99c3-dbc70d162216">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="4" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Power users" ordering="0" serviceMetric="false" uid="cbc3e266-2641-44e3-b02d-198c828e1d1c"/>
+              <metric label="Standard users" ordering="1" serviceMetric="false" uid="28772c1a-c8bd-42d1-b7b8-ae630995cdbe"/>
+              <metric label="Basic users" ordering="2" serviceMetric="false" uid="c5d6fb84-0827-4ab7-827b-ef56153e4256"/>
+              <metric label="Unknown persona" ordering="3" serviceMetric="false" uid="1e08612a-df3c-43f9-a380-69b242eb36d0"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="METRICS" value="metrics"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Collector Management</Name>
+     <Dependencies>
+      <Dependency name="Collectors having issues communicating with Engine (TCP)" type="metric" uid="ef65da4e-b2d2-461f-b052-8ec1a10f0449"/>
+      <Dependency name="Collectors with crashes" type="metric" uid="bf8e6c67-3cda-4b9b-9b32-7b805e89553f"/>
+      <Dependency name="Legacy Collectors" type="metric" uid="8d381fc8-6451-4836-b285-26cc17c8bda3"/>
+      <Dependency name="Number of Collectors" type="metric" uid="5224032f-f78b-4d1b-b8c6-07d40f72bf0e"/>
+      <Dependency name="Endpoint Collectors per version and OS" type="metric" uid="fd3741fa-bdb6-46c0-9fac-065a7064dc33"/>
+      <Dependency name="Server Collectors per version and OS" type="metric" uid="b9cc84ec-00da-4000-8f6b-3b5fcad412d8"/>
+      <Dependency name="Main Collectors per version and OS" type="metric" uid="e15ed752-25cf-46be-829f-ca3c9f148119"/>
+      <Dependency name="Pilot Collectors per version and OS" type="metric" uid="c0f26e1e-8fbc-4c28-83f3-01ef4e0196fb"/>
+      <Dependency name="Manually updated Collectors" type="metric" uid="702d0a12-d90d-47f5-bd64-5cc635aba333"/>
+      <Dependency name="Up-to-date main Collectors" type="metric" uid="1f7d1caf-b6a9-4410-8a31-70b5c213d2e2"/>
+      <Dependency name="Up-to-date pilot Collectors" type="metric" uid="b3a44718-8c33-4cf3-9d20-2b6296b4ffcf"/>
+      <Dependency name="Pilot Collectors OS coverage" type="metric" uid="ee186674-34cf-4d55-a4f2-4b2b5bcf1353"/>
+      <Dependency name="Number of Collectors &gt;= V6.6" type="metric" uid="5610f23a-7fcc-4a77-aef0-a66031da7b55"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Collector Management" uid="365e9e80-59fe-471c-b471-9750081edba1">
+        <dashboards>
+         <dashboard description="# Auto-update&#13;&#10;::: warning&#13;&#10;This dashboard only takes into account Collectors with a version greater or equal to V6.6 and makes sense only if the auto-update of the Collectors is switched on in the Web Console. &#13;&#10;:::&#13;&#10;&#13;&#10;This dashboard focuses on Collectors that are automatically updated and lets you check the progress of the updates. Auto-update Collectors are split into two update groups:&#13;&#10;* **pilot**: this group is used to test new versions of Collectors on a limited set of devices prior to updating on a larger scale.&#13;&#10;* **main**: this group contains all Collectors that are not in the *pilot* group.&#13;&#10;&#13;&#10;::: tip&#13;&#10;It is a good idea to test new versions of Collector on devices running different operating systems. It is therefore important to define well your *pilot* update group. The &quot;OS coverage of pilot Collectors&quot; widget helps you with this.&#13;&#10;:::&#13;&#10;&#13;&#10;::: configuration&#13;&#10;To be auto-updated, a Collector must have:&#13;&#10;* a version greater or equal to V6.6&#13;&#10;* an update group set to *main* or *pilot*.&#13;&#10;&#13;&#10;Additionally, the auto-update feature must be switched on in the Web Console and the Engine(s) must be federated.&#13;&#10;:::" index="2" name="Auto-update" uid="9f63cb88-da94-4bf4-a34f-e87e8f80e9e3">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="750c32fb-0a23-4059-b7c6-28d0cee9b15f" minHeight="126" minWidth="554" type="kpiWidget" widgetID="750c32fb-0a23-4059-b7c6-28d0cee9b15f">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="1735c7fd-8679-44b2-816a-dc961152b629" minHeight="126" minWidth="364" type="kpiWidget" widgetID="1735c7fd-8679-44b2-816a-dc961152b629">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="4df59518-e91c-4778-abc6-3afe72d3623e" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="4df59518-e91c-4778-abc6-3afe72d3623e">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="6d43b834-c357-424a-90b3-cd66a058e05e" minHeight="361" minWidth="474" type="tableWidget" widgetID="6d43b834-c357-424a-90b3-cd66a058e05e">
+                  <preferredHeight value="361"/>
+                  <preferredWidth value="474"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="612fbf41-13d8-4d3b-982e-99d42aae55f5" minHeight="265" minWidth="599" type="tableWidget" widgetID="612fbf41-13d8-4d3b-982e-99d42aae55f5">
+                  <preferredHeight value="265"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="d4bb370a-1e0b-4f29-a5e6-ccfa4ebc5827" minHeight="265" minWidth="599" type="tableWidget" widgetID="d4bb370a-1e0b-4f29-a5e6-ccfa4ebc5827">
+                <preferredHeight value="265"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="750c32fb-0a23-4059-b7c6-28d0cee9b15f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Main Collectors" ordering="3" serviceMetric="false" uid="e15ed752-25cf-46be-829f-ca3c9f148119"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot Collectors" ordering="4" serviceMetric="false" uid="c0f26e1e-8fbc-4c28-83f3-01ef4e0196fb"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Manually updated Collectors" ordering="5" serviceMetric="false" uid="702d0a12-d90d-47f5-bd64-5cc635aba333"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="1735c7fd-8679-44b2-816a-dc961152b629">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="RATIO" label="Up-to-date main Collectors" ordering="0" serviceMetric="false" uid="1f7d1caf-b6a9-4410-8a31-70b5c213d2e2"/>
+              <metric displayValue="RATIO" label="Up-to-date pilot Collectors" ordering="1" serviceMetric="false" uid="b3a44718-8c33-4cf3-9d20-2b6296b4ffcf"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4df59518-e91c-4778-abc6-3afe72d3623e">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Up-to-date main Collectors" ordering="0" serviceMetric="false" uid="1f7d1caf-b6a9-4410-8a31-70b5c213d2e2"/>
+              <metric label="Up-to-date pilot Collectors" ordering="1" serviceMetric="false" uid="b3a44718-8c33-4cf3-9d20-2b6296b4ffcf"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="6d43b834-c357-424a-90b3-cd66a058e05e">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="OS coverage of pilot Collectors">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Pilot coverage" ordering="0" serviceMetric="false" uid="ee186674-34cf-4d55-a4f2-4b2b5bcf1353">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Total number of Collectors" ordering="2" serviceMetric="false" uid="5610f23a-7fcc-4a77-aef0-a66031da7b55">
+               <fields name="name" type="FIELD"/>
+               <fields name="driver_version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="5610f23a-7fcc-4a77-aef0-a66031da7b55_2"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="612fbf41-13d8-4d3b-982e-99d42aae55f5">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Main Collectors">
+             <columns option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </columns>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Main Collectors per version and OS" ordering="1" serviceMetric="false" uid="e15ed752-25cf-46be-829f-ca3c9f148119">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="driver_version"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="d4bb370a-1e0b-4f29-a5e6-ccfa4ebc5827">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Pilot Collectors">
+             <columns option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </columns>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Pilot Collectors per version and OS" ordering="1" serviceMetric="false" uid="c0f26e1e-8fbc-4c28-83f3-01ef4e0196fb">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="driver_version"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Collector Management&#13;&#10;This collection of dashboards provides you with valuable information regarding the Nexthink Collectors installed in your infrastructure and their updates.&#13;&#10;&#13;&#10;# Inventory&#13;&#10;This dashboard gives you a summary of all Collectors installed on endpoints and servers as well as their versions and on which operating systems they are running.&#13;&#10;&#13;&#10;::: tip&#13;&#10;To find out which of your devices do not have a Collector installed, you can use the [Device Discovery](http://doc.nexthink.com/Documentation/Nexthink/latest/InstallationAndConfiguration/UpdatingtheCollector#Discovering_devices) feature in [Nexthink Finder](nxt://New-NxFinder).&#13;&#10;:::" index="1" name="Inventory" uid="86a64592-408e-4952-92d8-a10d0558ec09">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="948a6128-d4ee-4b7d-b3c7-c19ecac047de" minHeight="126" minWidth="174" type="kpiWidget" widgetID="948a6128-d4ee-4b7d-b3c7-c19ecac047de">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="28527f18-cf74-4d56-b05a-dc1f3f824c92" minHeight="126" minWidth="364" type="kpiWidget" widgetID="28527f18-cf74-4d56-b05a-dc1f3f824c92">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="02b42388-b141-434b-96e8-c2dd3ba38de6" minHeight="332" minWidth="300" type="barChartWidget" widgetID="02b42388-b141-434b-96e8-c2dd3ba38de6">
+                  <preferredHeight value="332"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b894b3ca-96c2-4ea5-8b86-ec7e90fbe008" minHeight="332" minWidth="300" type="barChartWidget" widgetID="b894b3ca-96c2-4ea5-8b86-ec7e90fbe008">
+                  <preferredHeight value="332"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="272a5345-1275-4634-bb46-258ca0329155" minHeight="385" minWidth="599" type="tableWidget" widgetID="272a5345-1275-4634-bb46-258ca0329155">
+                <preferredHeight value="385"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="f810d033-e604-4f95-9734-7e71cdf64c7d" minHeight="385" minWidth="599" type="tableWidget" widgetID="f810d033-e604-4f95-9734-7e71cdf64c7d">
+                <preferredHeight value="385"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="948a6128-d4ee-4b7d-b3c7-c19ecac047de">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total number of Collectors" ordering="0" serviceMetric="false" uid="5224032f-f78b-4d1b-b8c6-07d40f72bf0e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="28527f18-cf74-4d56-b05a-dc1f3f824c92">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="On endpoints" ordering="0" serviceMetric="false" uid="fd3741fa-bdb6-46c0-9fac-065a7064dc33"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="On servers" ordering="1" serviceMetric="false" uid="b9cc84ec-00da-4000-8f6b-3b5fcad412d8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="02b42388-b141-434b-96e8-c2dd3ba38de6">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="By version">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </groupBy>
+             <metrics>
+              <metric label="Number of Collectors" ordering="0" serviceMetric="false" uid="5224032f-f78b-4d1b-b8c6-07d40f72bf0e"/>
+             </metrics>
+             <scale scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b894b3ca-96c2-4ea5-8b86-ec7e90fbe008">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="false" title="By location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Number of Collectors" ordering="0" serviceMetric="false" uid="5224032f-f78b-4d1b-b8c6-07d40f72bf0e"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="HIERARCHY" value="hierarchy"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="272a5345-1275-4634-bb46-258ca0329155">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Collectors on endpoints">
+             <columns option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </columns>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of Collectors per version and OS" ordering="0" serviceMetric="false" uid="fd3741fa-bdb6-46c0-9fac-065a7064dc33">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="driver_version"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f810d033-e604-4f95-9734-7e71cdf64c7d">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Collectors on servers">
+             <columns option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </columns>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of server Collectors per version and OS" ordering="0" serviceMetric="false" uid="b9cc84ec-00da-4000-8f6b-3b5fcad412d8">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="driver_version"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Troubleshooting&#13;&#10;This dashboard gives information that is useful for troubleshooting in the event that Collectors are not automatically updating as they should:&#13;&#10;* Collectors (&gt; V6.6) that were not able to communicate with an Engine through the TCP channel during the current time period. This channel is used by Collector to check if new versions are available.&#13;&#10;* Collectors that had one of their components crash during the selected time frame.&#13;&#10;* Legacy Collectors (i.e., &lt; V6.6) that cannot be updated automatically." index="3" name="Troubleshooting" uid="40d7e7ca-477c-4804-8adc-5556876a5d1b">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d957e7a9-1472-4e3d-87b0-c6a3222d7861" minHeight="174" minWidth="174" type="kpiWidget" widgetID="d957e7a9-1472-4e3d-87b0-c6a3222d7861">
+                <preferredHeight value="174"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="350f5ae4-35b4-45dc-96f1-dfd9ca22a4e4" minHeight="164" minWidth="300" type="barChartWidget" widgetID="350f5ae4-35b4-45dc-96f1-dfd9ca22a4e4">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4bb53bee-3eee-45b4-93a5-730874ea9996" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="4bb53bee-3eee-45b4-93a5-730874ea9996">
+                  <preferredHeight value="274"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="1bc8adf0-118a-4f88-a4e5-8c6bc4135e10" minHeight="174" minWidth="174" type="kpiWidget" widgetID="1bc8adf0-118a-4f88-a4e5-8c6bc4135e10">
+                    <preferredHeight value="174"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="a87f97ac-d109-4787-933c-bcdcfe4b4fcf" minHeight="164" minWidth="300" type="barChartWidget" widgetID="a87f97ac-d109-4787-933c-bcdcfe4b4fcf">
+                      <preferredHeight value="164"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="b7d6a8c8-db12-4b17-909c-5b541d9344c7" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="b7d6a8c8-db12-4b17-909c-5b541d9344c7">
+                      <preferredHeight value="274"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="dcd597f5-8235-431a-9414-b3972690c415" minHeight="174" minWidth="174" type="kpiWidget" widgetID="dcd597f5-8235-431a-9414-b3972690c415">
+                  <preferredHeight value="174"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="567136d1-614d-43f5-9f52-f457fa478e6c" minHeight="164" minWidth="300" type="barChartWidget" widgetID="567136d1-614d-43f5-9f52-f457fa478e6c">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="e5354e50-a5bb-401e-8755-b6e0c9d936f0" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="e5354e50-a5bb-401e-8755-b6e0c9d936f0">
+                  <preferredHeight value="274"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="d957e7a9-1472-4e3d-87b0-c6a3222d7861">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Collectors having issues communicating with Engine (TCP)">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of Collectors" ordering="0" serviceMetric="false" uid="ef65da4e-b2d2-461f-b052-8ec1a10f0449"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="350f5ae4-35b4-45dc-96f1-dfd9ca22a4e4">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </groupBy>
+             <metrics>
+              <metric label="Collectors having issues communicating with Engine (TCP)" ordering="0" serviceMetric="false" uid="ef65da4e-b2d2-461f-b052-8ec1a10f0449"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4bb53bee-3eee-45b4-93a5-730874ea9996">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false" title="">
+             <metrics>
+              <metric label="Collectors having issues communicating with Engine (TCP)" ordering="0" serviceMetric="false" uid="ef65da4e-b2d2-461f-b052-8ec1a10f0449"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="1bc8adf0-118a-4f88-a4e5-8c6bc4135e10">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Collectors having one of their components that crashed">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of Collectors" ordering="0" serviceMetric="false" uid="bf8e6c67-3cda-4b9b-9b32-7b805e89553f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a87f97ac-d109-4787-933c-bcdcfe4b4fcf">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </groupBy>
+             <metrics>
+              <metric label="Collectors with crashes" ordering="0" serviceMetric="false" uid="bf8e6c67-3cda-4b9b-9b32-7b805e89553f"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="b7d6a8c8-db12-4b17-909c-5b541d9344c7">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false">
+             <metrics>
+              <metric label="Collectors with crashes" ordering="0" serviceMetric="false" uid="bf8e6c67-3cda-4b9b-9b32-7b805e89553f"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="dcd597f5-8235-431a-9414-b3972690c415">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Legacy Collectors (&lt; V6.6)">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of Collectors" ordering="0" serviceMetric="false" uid="8d381fc8-6451-4836-b285-26cc17c8bda3"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="567136d1-614d-43f5-9f52-f457fa478e6c">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="driver_version"/>
+             </groupBy>
+             <metrics>
+              <metric label="Legacy Collectors" ordering="0" serviceMetric="false" uid="8d381fc8-6451-4836-b285-26cc17c8bda3"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e5354e50-a5bb-401e-8755-b6e0c9d936f0">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false" title="">
+             <metrics>
+              <metric label="Legacy Collectors" ordering="0" serviceMetric="false" uid="8d381fc8-6451-4836-b285-26cc17c8bda3"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

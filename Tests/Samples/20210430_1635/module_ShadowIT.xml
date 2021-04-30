@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Shadow IT</Name>
+     <Dependencies>
+      <Dependency name="Users using Office 365 (standard tool)" type="metric" uid="87d7ed37-c66c-4b2e-b9f3-9eed5a16ac5d"/>
+      <Dependency name="Users using non-standard tools" type="metric" uid="93743097-de1f-4467-bb44-21734395083e"/>
+      <Dependency name="Users using Dropbox" type="metric" uid="ab9ccebe-42ab-4258-9690-198799013b92"/>
+      <Dependency name="Users using Box" type="metric" uid="f049597d-df32-46c3-b983-501c2c6a73c0"/>
+      <Dependency name="Users using Copy" type="metric" uid="2882c9e1-1a2c-435d-9974-25e3212e5ecc"/>
+      <Dependency name="Users using Google Drive" type="metric" uid="5131aecb-0988-455d-ad3c-8d6a1315a47d"/>
+      <Dependency name="Users using OneDrive" type="metric" uid="273214c2-4db5-464a-8045-6bdffba7b353"/>
+      <Dependency name="Users using Google Talk" type="metric" uid="48f6c444-d78f-4b55-bd02-8fed6104533c"/>
+      <Dependency name="Users using GoToMeeting" type="metric" uid="ecbd7a5c-4c3a-4c9c-8762-7d961c6a04a3"/>
+      <Dependency name="Users using Lync" type="metric" uid="60736c74-47c2-4afa-a97f-e8aad1046135"/>
+      <Dependency name="Users using Skype" type="metric" uid="599ce34a-0a7a-47af-9f84-b85536ed2742"/>
+      <Dependency name="Users using Webex" type="metric" uid="dfa1af74-e01c-4f31-9a98-4fa29da78d8a"/>
+      <Dependency name="Users using Basecamp" type="metric" uid="64b2457e-e51f-43ae-825e-92e179af9d60"/>
+      <Dependency name="Users using Evernote" type="metric" uid="2219647c-cf23-4a09-bec9-fbff13d46382"/>
+      <Dependency name="Users using Google Docs" type="metric" uid="dcf877f1-2d3b-4562-8f07-8f8cd8030895"/>
+      <Dependency name="Users using iCloud" type="metric" uid="e5e7dd72-d39f-4ad7-bcb7-ae55b026b700"/>
+      <Dependency name="Users using Office 365" type="metric" uid="ae27c8a6-8c13-4eb8-8d62-4a2da00970eb"/>
+      <Dependency name="Users using Concur" type="metric" uid="b398cfac-396e-45c8-92da-1cd9feccb012"/>
+      <Dependency name="Users using Marketo" type="metric" uid="58378391-211a-4824-8dab-48205480ebdc"/>
+      <Dependency name="Users using Netsuite" type="metric" uid="40a1c53b-840f-499f-86a9-9fd6f721552e"/>
+      <Dependency name="Users using Salesforce" type="metric" uid="a8650de9-358e-4596-9316-93e291261be3"/>
+      <Dependency name="Users using Workday" type="metric" uid="cd28fa44-3f50-4224-b5d6-9216a01ea889"/>
+      <Dependency name="Users using proxy avoidance and hacking services" type="metric" uid="9868fed6-53f6-455c-ad96-0e2725fd73d1"/>
+      <Dependency name="Users using proxy bypass" type="metric" uid="bc98f820-1789-4d1b-9880-3b7d35e9c6b6"/>
+      <Dependency name="Users using Tor" type="metric" uid="e30350ad-1736-4385-82f9-377a746d92af"/>
+      <Dependency name="Top 100 domains with highest outgoing web traffic" type="metric" uid="6d2f5dcb-62f1-4d04-8738-edc70a35bbd8"/>
+      <Dependency name="Top 100 domains with highest outgoing web traffic per device" type="metric" uid="8409563b-d7c4-4751-be62-851ab7c85274"/>
+      <Dependency name="Top 100 applications with highest outgoing network traffic" type="metric" uid="a55fa1d4-3fcb-4afb-920e-b9c48f31089a"/>
+      <Dependency name="Top 100 applications with highest outgoing network traffic per device" type="metric" uid="28b6c831-3cad-4d84-b6ee-a82965dc47d9"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Shadow IT" uid="7a1fcc0f-03ba-4f8a-a328-d4f46db8dcba">
+        <dashboards>
+         <dashboard description="# Corporate tool adoption&#13;&#10;&#13;&#10;This dashboard proposes an example for monitoring the adoption of a standard corporate tool compared to non-standard alternatives. In this case Office 365 is the standard tool and its use is compared to iCloud, Basecamp, Evernote and Google Docs.&#13;&#10;&#13;&#10;Using this dashboard you can track the success of your user education campaign, policy enforcement activities and other measures you are applying to encourage use of the corporate solution. &#13;&#10;&#13;&#10;You can customize this dashboard and create similar ones to track your Shadow IT mitigation efforts.&#13;&#10;" index="3" name="Corporate tool adoption" uid="6db3c535-28e7-4544-81cf-d085423b166f">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="f9616973-12e2-40ee-8fea-404cc0149ec9" minHeight="56" minWidth="296" type="titleWidget" widgetID="f9616973-12e2-40ee-8fea-404cc0149ec9">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="652fd284-6ba3-4016-934a-557055aca9cd" minHeight="268" minWidth="174" type="kpiWidget" widgetID="652fd284-6ba3-4016-934a-557055aca9cd">
+                  <preferredHeight value="268"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="10b4091e-9126-4ea2-8815-1ab1bad2c0d8" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="10b4091e-9126-4ea2-8815-1ab1bad2c0d8">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="ddde62de-6fa4-4060-ae7d-b6725f8b7f12" minHeight="313" minWidth="474" type="tableWidget" widgetID="ddde62de-6fa4-4060-ae7d-b6725f8b7f12">
+                <preferredHeight value="313"/>
+                <preferredWidth value="474"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="f9616973-12e2-40ee-8fea-404cc0149ec9">
+            <titleConfig title="Users with Office 365 vs non-standard tools"/>
+           </widget>
+           <widget type="KPI" uid="652fd284-6ba3-4016-934a-557055aca9cd">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="RATIO" label="Office 365 adoption" ordering="4" serviceMetric="false" uid="87d7ed37-c66c-4b2e-b9f3-9eed5a16ac5d"/>
+              <metric displayValue="RATIO" label="Non-standard tools" ordering="5" serviceMetric="false" uid="93743097-de1f-4467-bb44-21734395083e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="10b4091e-9126-4ea2-8815-1ab1bad2c0d8">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Office 365 adoption" ordering="4" serviceMetric="false" uid="87d7ed37-c66c-4b2e-b9f3-9eed5a16ac5d"/>
+              <metric label="Non-standard tools" ordering="5" serviceMetric="false" uid="93743097-de1f-4467-bb44-21734395083e"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="ddde62de-6fa4-4060-ae7d-b6725f8b7f12">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Office 365 adoption" ordering="4" serviceMetric="false" uid="87d7ed37-c66c-4b2e-b9f3-9eed5a16ac5d">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Non-standard tools" ordering="5" serviceMetric="false" uid="93743097-de1f-4467-bb44-21734395083e">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# About Shadow IT&#13;&#10;&#13;&#10;Shadow IT is a term often used to describe IT systems and IT solutions built and used inside organizations without explicit organizational approval. Find out more about Shadow IT on the [Nexthink blog](http://blog.nexthink.com/library-07-january-2015-shadow-it/) and [Wikipedia](https://en.wikipedia.org/wiki/Shadow_IT).&#13;&#10;&#13;&#10;# Discovery and tracking&#13;&#10;&#13;&#10;This dashboard allow you to find out common business applications used without IT approval.  &#13;&#10;&#13;&#10;**Data storage**: these services allow users to store and share documents in the cloud. These services might not comply with your corporate policies and could increase the risk of corporate data leaks.&#13;&#10;&#13;&#10;**Conferencing and VoIP**: these tools are generally used to facilitate communication between employees or with third parties. Risks associated with their use is generally limited although many of them provide features that might be forbidden in your company, such as screen sharing or remote screen control. Moreover use of these tools generally requires the purchase of additional licenses bring costs that could be avoided.&#13;&#10;&#13;&#10;**Productivity**: these tools are used to edit and share documents in the cloud. They can facilitate collaborative editing of content but present similar risks as data storage services.&#13;&#10;&#13;&#10;**Business**: these are business tools used to accomplish specific tasks such as tracking customers or managing marketing activities. Sensitive data might be stored in these services, for instance your customer list and contact information.&#13;&#10;&#13;&#10;# Are other Shadow IT tools used in my organization?&#13;&#10;&#13;&#10;You can use Finder to identify additional Shadow IT services used within your organization by running the following investigations:&#13;&#10;* Business applications&#13;&#10;* Email services&#13;&#10;* Instant messaging services&#13;&#10;* Network storage services&#13;&#10;* VoIP services&#13;&#10;" index="1" name="Discovery and tracking" uid="39e2dcb1-4fb1-4a09-9782-464503af15a5">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="85175fc5-306c-493e-a13b-75f52b42bf9a" minHeight="56" minWidth="296" type="titleWidget" widgetID="85175fc5-306c-493e-a13b-75f52b42bf9a">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="b70b4789-993a-4498-a7d7-e0ffc4cb2194" minHeight="193" minWidth="324" type="tableWidget" widgetID="b70b4789-993a-4498-a7d7-e0ffc4cb2194">
+                    <preferredHeight value="193"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="be5fcc43-564b-4d95-ba67-8b684e731763" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="be5fcc43-564b-4d95-ba67-8b684e731763">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="2bfda07c-f713-4a01-898a-17221653d9c0" minHeight="56" minWidth="296" type="titleWidget" widgetID="2bfda07c-f713-4a01-898a-17221653d9c0">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="b7e5111f-1ef4-440e-802d-9d1868a04aba" minHeight="193" minWidth="324" type="tableWidget" widgetID="b7e5111f-1ef4-440e-802d-9d1868a04aba">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="06628a00-a2ac-46ae-ad83-47f35c07e41b" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="06628a00-a2ac-46ae-ad83-47f35c07e41b">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="040df699-7444-4853-9f8a-9e6bf3769c48" minHeight="56" minWidth="296" type="titleWidget" widgetID="040df699-7444-4853-9f8a-9e6bf3769c48">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f318aa7e-e315-4298-a8e3-e2296eadd5e9" minHeight="193" minWidth="324" type="tableWidget" widgetID="f318aa7e-e315-4298-a8e3-e2296eadd5e9">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="00af15a9-3d39-42f0-a2a2-16d848055370" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="00af15a9-3d39-42f0-a2a2-16d848055370">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="2920b9a9-19a5-4562-ab33-bc610454d775" minHeight="56" minWidth="296" type="titleWidget" widgetID="2920b9a9-19a5-4562-ab33-bc610454d775">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c1888aac-8406-4899-965a-bc608dfcca55" minHeight="193" minWidth="324" type="tableWidget" widgetID="c1888aac-8406-4899-965a-bc608dfcca55">
+                  <preferredHeight value="193"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="19117292-e3b0-44d4-9068-975cebace3cf" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="19117292-e3b0-44d4-9068-975cebace3cf">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="85175fc5-306c-493e-a13b-75f52b42bf9a">
+            <titleConfig title="Data storage - Number of users"/>
+           </widget>
+           <widget type="TABLE" uid="b70b4789-993a-4498-a7d7-e0ffc4cb2194">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Dropbox" ordering="0" serviceMetric="false" uid="ab9ccebe-42ab-4258-9690-198799013b92">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Box" ordering="1" serviceMetric="false" uid="f049597d-df32-46c3-b983-501c2c6a73c0">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Copy" ordering="2" serviceMetric="false" uid="2882c9e1-1a2c-435d-9974-25e3212e5ecc">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Google Drive" ordering="3" serviceMetric="false" uid="5131aecb-0988-455d-ad3c-8d6a1315a47d">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="OneDrive" ordering="4" serviceMetric="false" uid="273214c2-4db5-464a-8045-6bdffba7b353">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="be5fcc43-564b-4d95-ba67-8b684e731763">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Box" ordering="0" serviceMetric="false" uid="f049597d-df32-46c3-b983-501c2c6a73c0"/>
+              <metric label="Copy" ordering="4" serviceMetric="false" uid="2882c9e1-1a2c-435d-9974-25e3212e5ecc"/>
+              <metric label="Dropbox" ordering="5" serviceMetric="false" uid="ab9ccebe-42ab-4258-9690-198799013b92"/>
+              <metric label="Google Drive" ordering="6" serviceMetric="false" uid="5131aecb-0988-455d-ad3c-8d6a1315a47d"/>
+              <metric label="OneDrive" ordering="7" serviceMetric="false" uid="273214c2-4db5-464a-8045-6bdffba7b353"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="2bfda07c-f713-4a01-898a-17221653d9c0">
+            <titleConfig title="Conferencing and VoIP - Number of users"/>
+           </widget>
+           <widget type="TABLE" uid="b7e5111f-1ef4-440e-802d-9d1868a04aba">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Google Talk" ordering="0" serviceMetric="false" uid="48f6c444-d78f-4b55-bd02-8fed6104533c">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="GoToMeeting" ordering="1" serviceMetric="false" uid="ecbd7a5c-4c3a-4c9c-8762-7d961c6a04a3">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Lync" ordering="2" serviceMetric="false" uid="60736c74-47c2-4afa-a97f-e8aad1046135">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Skype" ordering="3" serviceMetric="false" uid="599ce34a-0a7a-47af-9f84-b85536ed2742">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Webex" ordering="4" serviceMetric="false" uid="dfa1af74-e01c-4f31-9a98-4fa29da78d8a">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="06628a00-a2ac-46ae-ad83-47f35c07e41b">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="GoToMeeting" ordering="1" serviceMetric="false" uid="ecbd7a5c-4c3a-4c9c-8762-7d961c6a04a3"/>
+              <metric label="Google Talk" ordering="5" serviceMetric="false" uid="48f6c444-d78f-4b55-bd02-8fed6104533c"/>
+              <metric label="Lync" ordering="6" serviceMetric="false" uid="60736c74-47c2-4afa-a97f-e8aad1046135"/>
+              <metric label="Skype" ordering="7" serviceMetric="false" uid="599ce34a-0a7a-47af-9f84-b85536ed2742"/>
+              <metric label="Webex" ordering="8" serviceMetric="false" uid="dfa1af74-e01c-4f31-9a98-4fa29da78d8a"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="040df699-7444-4853-9f8a-9e6bf3769c48">
+            <titleConfig title="Productivity - Number of users"/>
+           </widget>
+           <widget type="TABLE" uid="f318aa7e-e315-4298-a8e3-e2296eadd5e9">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Basecamp" ordering="0" serviceMetric="false" uid="64b2457e-e51f-43ae-825e-92e179af9d60">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Evernote" ordering="1" serviceMetric="false" uid="2219647c-cf23-4a09-bec9-fbff13d46382">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Google Docs" ordering="2" serviceMetric="false" uid="dcf877f1-2d3b-4562-8f07-8f8cd8030895">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="iCloud" ordering="3" serviceMetric="false" uid="e5e7dd72-d39f-4ad7-bcb7-ae55b026b700">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Office 365" ordering="4" serviceMetric="false" uid="ae27c8a6-8c13-4eb8-8d62-4a2da00970eb">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="00af15a9-3d39-42f0-a2a2-16d848055370">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Basecamp" ordering="0" serviceMetric="false" uid="64b2457e-e51f-43ae-825e-92e179af9d60"/>
+              <metric label="Evernote" ordering="1" serviceMetric="false" uid="2219647c-cf23-4a09-bec9-fbff13d46382"/>
+              <metric label="Google Docs" ordering="2" serviceMetric="false" uid="dcf877f1-2d3b-4562-8f07-8f8cd8030895"/>
+              <metric label="Office 365" ordering="4" serviceMetric="false" uid="ae27c8a6-8c13-4eb8-8d62-4a2da00970eb"/>
+              <metric label="iCloud" ordering="5" serviceMetric="false" uid="e5e7dd72-d39f-4ad7-bcb7-ae55b026b700"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="2920b9a9-19a5-4562-ab33-bc610454d775">
+            <titleConfig title="Business - Number of users"/>
+           </widget>
+           <widget type="TABLE" uid="c1888aac-8406-4899-965a-bc608dfcca55">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Concur" ordering="0" serviceMetric="false" uid="b398cfac-396e-45c8-92da-1cd9feccb012">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Marketo" ordering="1" serviceMetric="false" uid="58378391-211a-4824-8dab-48205480ebdc">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Netsuite" ordering="2" serviceMetric="false" uid="40a1c53b-840f-499f-86a9-9fd6f721552e">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Salesforce" ordering="3" serviceMetric="false" uid="a8650de9-358e-4596-9316-93e291261be3">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Workday" ordering="4" serviceMetric="false" uid="cd28fa44-3f50-4224-b5d6-9216a01ea889">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="19117292-e3b0-44d4-9068-975cebace3cf">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Concur" ordering="0" serviceMetric="false" uid="b398cfac-396e-45c8-92da-1cd9feccb012"/>
+              <metric label="Marketo" ordering="1" serviceMetric="false" uid="58378391-211a-4824-8dab-48205480ebdc"/>
+              <metric label="Netsuite" ordering="2" serviceMetric="false" uid="40a1c53b-840f-499f-86a9-9fd6f721552e"/>
+              <metric label="Salesforce" ordering="3" serviceMetric="false" uid="a8650de9-358e-4596-9316-93e291261be3"/>
+              <metric label="Workday" ordering="4" serviceMetric="false" uid="cd28fa44-3f50-4224-b5d6-9216a01ea889"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Risks&#13;&#10;&#13;&#10;This dashboard allows you to identify potential risks associated with the use of third-party services.&#13;&#10;&#13;&#10;**Use behaviour**: the three metrics presented in this section allow you to identify users who are attempting (knowingly or not) to bypass your corporate security measures to connect to the Internet.&#13;&#10;* Proxy avoidance and hacking services can be used to circumvent corporate or governmental control of web sites being visited&#13;&#10;* Proxy bypass: users who are bypassing your corporate proxy. &#13;&#10;Tip: configure this metric to match your corporate infrastructure and proxy policies.&#13;&#10;* Tor is a free software implementation of second-generation onion routing, a system enabling its users to communicate anonymously on the Internet. Tor can present security risks.&#13;&#10;&#13;&#10;**High outgoing volume domains**: monitor these domains to quickly identify potential leaks of corporate data.&#13;&#10;&#13;&#10;**High outgoing volume apps**: monitor these applications to quickly identify potential leaks of corporate data.&#13;&#10;&#13;&#10;::: process&#13;&#10;Configure these metrics to exclude known or safe domains and applications&#13;&#10;* [Top 100 domains with highest outgoing web traffic][1]&#13;&#10;* [Top 100 domains with highest outgoing web traffic per device][2]&#13;&#10;* [Top 100 applications with highest outgoing network traffic][3]&#13;&#10;* [Top 100 applications with highest outgoing network traffic per device][4]&#13;&#10;:::&#13;&#10;&#13;&#10;[1]: nxt://Edit-NxMetric?Encoding=Url&amp;Name=Top%20100%20domains%20with%20highest%20outgoing%20web%20traffic&#13;&#10;&#13;&#10;[2]: nxt://Edit-NxMetric?Encoding=Url&amp;Name=Top%20100%20domains%20with%20highest%20outgoing%20web%20traffic%20per%20device&#13;&#10;&#13;&#10;[3]: nxt://Edit-NxMetric?Encoding=Url&amp;Name=Top%20100%20applications%20with%20highest%20outgoing%20network%20traffic&#13;&#10;&#13;&#10;[4]: nxt://Edit-NxMetric?Encoding=Url&amp;Name=Top%20100%20applications%20with%20highest%20outgoing%20network%20traffic%20per%20device" index="2" name="Risks" uid="f3b03f23-83c0-4cdd-a797-e1ac306fca58">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="4541bfb6-358a-4c5f-bfd2-b69a944c2d95" minHeight="193" minWidth="599" type="tableWidget" widgetID="4541bfb6-358a-4c5f-bfd2-b69a944c2d95">
+                <preferredHeight value="193"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="2dc1bdff-d106-42a2-8449-a840311b7006" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="2dc1bdff-d106-42a2-8449-a840311b7006">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="5cd368fa-23df-4fe8-a5f9-a6783692cc03" minHeight="361" minWidth="475" type="tableWidget" widgetID="5cd368fa-23df-4fe8-a5f9-a6783692cc03">
+                  <preferredHeight value="361"/>
+                  <preferredWidth value="475"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="2c663264-1a52-4392-baa3-8cf0e85791d3" minHeight="361" minWidth="475" type="tableWidget" widgetID="2c663264-1a52-4392-baa3-8cf0e85791d3">
+                  <preferredHeight value="361"/>
+                  <preferredWidth value="475"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="39404e61-f1c4-4b25-9aba-e2bf1a34dfc7" minHeight="361" minWidth="475" type="tableWidget" widgetID="39404e61-f1c4-4b25-9aba-e2bf1a34dfc7">
+                  <preferredHeight value="361"/>
+                  <preferredWidth value="475"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="dfdb1ca1-28eb-4f93-bab3-46dbb1f4fda5" minHeight="361" minWidth="475" type="tableWidget" widgetID="dfdb1ca1-28eb-4f93-bab3-46dbb1f4fda5">
+                  <preferredHeight value="361"/>
+                  <preferredWidth value="475"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="4541bfb6-358a-4c5f-bfd2-b69a944c2d95">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="User behavior - Number of users">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Proxy avoidance and hacking services" ordering="0" serviceMetric="false" uid="9868fed6-53f6-455c-ad96-0e2725fd73d1">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Proxy bypass" ordering="1" serviceMetric="false" uid="bc98f820-1789-4d1b-9880-3b7d35e9c6b6">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Tor" ordering="2" serviceMetric="false" uid="e30350ad-1736-4385-82f9-377a746d92af">
+               <fields name="name" type="FIELD"/>
+               <fields name="type" type="FIELD"/>
+               <fields name="dn" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="title" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2dc1bdff-d106-42a2-8449-a840311b7006">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Proxy avoidance and hacking services" ordering="0" serviceMetric="false" uid="9868fed6-53f6-455c-ad96-0e2725fd73d1"/>
+              <metric label="Proxy bypass" ordering="1" serviceMetric="false" uid="bc98f820-1789-4d1b-9880-3b7d35e9c6b6"/>
+              <metric label="Tor" ordering="2" serviceMetric="false" uid="e30350ad-1736-4385-82f9-377a746d92af"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="5cd368fa-23df-4fe8-a5f9-a6783692cc03">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="High outgoing volume domains (overall)">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 domains with highest outgoing web traffic: High outgoing volume domains" ordering="1" serviceMetric="false" uid="6d2f5dcb-62f1-4d04-8738-edc70a35bbd8">
+               <fields name="name" type="FIELD"/>
+               <fields name="domain_category" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="request_size"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="2c663264-1a52-4392-baa3-8cf0e85791d3">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="High outgoing volume domains (per device)">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 domains with highest outgoing web traffic per device" ordering="0" serviceMetric="false" uid="8409563b-d7c4-4751-be62-851ab7c85274">
+               <fields name="name" type="FIELD"/>
+               <fields name="domain_category" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="device_average_request_size"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="39404e61-f1c4-4b25-9aba-e2bf1a34dfc7">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="High outgoing volume apps (overall)">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 applications with highest outgoing network traffic: High outgoing volume apps" ordering="2" serviceMetric="false" uid="a55fa1d4-3fcb-4afb-920e-b9c48f31089a">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="out"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="dfdb1ca1-28eb-4f93-bab3-46dbb1f4fda5">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="High outgoing volume apps (per device)">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 applications with highest outgoing network traffic per device" ordering="1" serviceMetric="false" uid="28b6c831-3cad-4d84-b6ee-a82965dc47d9">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="device_average_out"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

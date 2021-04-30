@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InvestigationsTree SyntaxVersion="2">
+  <Folder Name="investigations">
+    <Folder Name="Nexthink Library">
+      <Folder Name="Auto-isolation">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Devices running high-threat binaries with suspicious traffic</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>platform</string>
+            <string>name</string>
+            <string>entity</string>
+            <string>last_time</string>
+            <string>last_ip_address</string>
+            <string>computer_type</string>
+            <string>model</string>
+            <string>os_name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList>
+            <string>traffic</string>
+          </AggregateList>
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>binary</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Threat level:high"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+          <LastMinutes>30</LastMinutes>
+        </Investigation>
+      </Folder>
+      <Folder Name="Battery health">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Devices with poor battery health</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>entity</string>
+            <string>action_200f647eaf11e5396fbb92385886ce33</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList>
+            <string>up_duration</string>
+          </AggregateList>
+          <ObjectConditionList />
+          <OrderBy>up_duration</OrderBy>
+          <On>2018-04-16</On>
+          <OrderDirection>desc</OrderDirection>
+          <Limit>10</Limit>
+        </Investigation>
+      </Folder>
+      <Folder Name="Cleanup disk">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Cleanup disk target devices</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>id</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>system_drive_free</Field>
+              <Comparer>&lt;=</Comparer>
+              <Value>20GB</Value>
+              <Operand>volume</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_3d8bf3801e3419932dae6dea8efd5032</Field>
+              <Comparer>!=</Comparer>
+              <Value>"Declined"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_3d8bf3801e3419932dae6dea8efd5032</Field>
+              <Comparer>!=</Comparer>
+              <Value>"Light"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_3d8bf3801e3419932dae6dea8efd5032</Field>
+              <Comparer>!=</Comparer>
+              <Value>"Deep"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 AND 2 AND 3 AND 4</ObjectsConditionsExpression>
+          <LastHours>1</LastHours>
+        </Investigation>
+      </Folder>
+      <Folder Name="EUF">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Laptop satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 01"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 01"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 01"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>computer_type</Field>
+              <Comparer>=</Comparer>
+              <Value>laptop</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2 OR 3) AND 4</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Desktop satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 02"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 02"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 02"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>computer_type</Field>
+              <Comparer>=</Comparer>
+              <Value>desktop</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2 OR 3) AND 4</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Mobile device satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 03"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 03"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 03"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Email satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 04"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 04"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 04"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>binary</Object>
+              <Field>tags</Field>
+              <Comparer>!=</Comparer>
+              <Value>"Email version:"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2 OR 3) AND 4</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Unified communication satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 05"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 05"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 01"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Storage satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 06"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 06"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 02"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Software satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 07"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 01"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 03"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Network satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 08"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 02"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 04"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Printing satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 09"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 03"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 01"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+          <AggregateCondition IsTemplate="false">
+            <Aggregate>printouts</Aggregate>
+            <Comparer>=</Comparer>
+            <Value>1</Value>
+          </AggregateCondition>
+          <LastDays>1</LastDays>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: Meeting room satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 10"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 04"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 02"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+          <LastDays>1</LastDays>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: IT help desk satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 11"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 05"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 03"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+          <LastDays>1</LastDays>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>EUF: IT documentation satisfaction</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:large - group 12"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:medium - group 06"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"IT satisfaction recipient:small - group 04"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+          <LastDays>1</LastDays>
+        </Investigation>
+      </Folder>
+      <Folder Name="Microsoft Teams">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Teams users pre-deployment</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+            <string>dn</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>sid</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Teams User campaigns recipients:Pre-deployment"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Teams users post-deployement</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+            <string>dn</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>sid</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"teams.exe"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Teams User campaigns recipients:Post-deployment"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Teams users with audio or video calls in the last hour</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>3478</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>3479</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>3480</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>3481</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"teams.exe"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Teams User campaigns recipients:Post-deployment"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2 OR 3 OR 4) AND 5 AND 6</ObjectsConditionsExpression>
+          <LastHours>1</LastHours>
+        </Investigation>
+      </Folder>
+      <Folder Name="OneDrive">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Dropbox users</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>domain</Object>
+              <Field>name</Field>
+              <Comparer>like</Comparer>
+              <Value>"*dropbox*"</Value>
+              <Operand>pattern</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>product</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"Dropbox"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"dropbox.exe"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Users with OneDrive installed</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>binary</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"O365 applications:OneDrive"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>OneDrive version for Windows devices</Label>
+          <Object>binary</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>application_name</string>
+            <string>version</string>
+            <string>product_name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList>
+            <string>sources</string>
+          </AggregateList>
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>like</Comparer>
+              <Value>"*onedrive.exe"</Value>
+              <Operand>pattern</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+      </Folder>
+      <Folder Name="Outlook crashes">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Devices with Outlook crash</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>entity</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>execution_error</Object>
+              <Field>status</Field>
+              <Comparer>=</Comparer>
+              <Value>crash</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+          <LastMinutes>10</LastMinutes>
+        </Investigation>
+      </Folder>
+      <Folder Name="Security Awareness Program">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Security Awareness Targets</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>=</Comparer>
+              <Value>domain</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>User having a risk score above 5 or a security awareness score below 5</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>score_7e7ef74aad064179a1703a9ab6cfa530</Field>
+              <Comparer>&lt;=</Comparer>
+              <Value>5.00000</Value>
+              <Operand>float</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>score_cf9b80ceee42431bb42212518946dcc0</Field>
+              <Comparer>&gt;=</Comparer>
+              <Value>5.00000</Value>
+              <Operand>float</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Security Awareness Target - All Users</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList />
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>User having a risk score above 5</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>score_cf9b80ceee42431bb42212518946dcc0</Field>
+              <Comparer>&gt;=</Comparer>
+              <Value>5.00000</Value>
+              <Operand>float</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>User having a security awareness score below 5</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>score_7e7ef74aad064179a1703a9ab6cfa530</Field>
+              <Comparer>&lt;=</Comparer>
+              <Value>5.00000</Value>
+              <Operand>float</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+      </Folder>
+      <Folder Name="Remote Worker Experience">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Remote Worker Experience - Users working from home</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+            <Platform>mac_os</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+            <string>dn</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>sid</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Remote Worker vs Office Worker:Remotely Connected Worker"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Remote Worker vs Office Worker Device:Remotely Connected Worker"</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 OR 2</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Remote Worker Experience - Information</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+            <Platform>mac_os</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+            <string>dn</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>sid</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList />
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Remote Worker Experience - Users working remotely</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+            <Platform>mac_os</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>type</string>
+            <string>display_name</string>
+            <string>title</string>
+            <string>department</string>
+            <string>dn</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>sid</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Remote Worker vs Office Worker:Remotely Connected Worker"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Remote Worker vs Office Worker Device:Remotely Connected Worker"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>system</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>unknown</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2) AND 3 AND 4</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Remote Worker Experience - MS Teams service outage</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+            <Platform>mac_os</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>sid</string>
+            <string>name</string>
+            <string>dn</string>
+            <string>display_name</string>
+            <string>department</string>
+            <string>title</string>
+            <string>type</string>
+            <string>first_time</string>
+            <string>last_time</string>
+            <string>days_since_last_time</string>
+            <string>uid</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"teams.exe"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>application</Object>
+              <Field>name</Field>
+              <Comparer>=</Comparer>
+              <Value>"teams"</Value>
+              <Operand>string</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>system</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>unknown</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>(1 OR 2) AND 3 AND 4</ObjectsConditionsExpression>
+          <LastHours>5</LastHours>
+        </Investigation>
+      </Folder>
+      <Folder Name="Office 365 advanced">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Device with Office 365 network access tested</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>platform</string>
+            <string>entity</string>
+            <string>last_ip_address</string>
+            <string>computer_type</string>
+            <string>os_name</string>
+            <string>last_time</string>
+            <string>model</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_f4c9ecee95c3b6d961128bd10b43d088_num_days</Field>
+              <Comparer>&gt;=</Comparer>
+              <Value>0</Value>
+              <Operand>integer</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_f4c9ecee95c3b6d961128bd10b43d088_target_status</Field>
+              <Comparer>=</Comparer>
+              <Value>executed</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Device without Office 365 required connectivity</Label>
+          <Object>source</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+            <string>platform</string>
+            <string>entity</string>
+            <string>last_ip_address</string>
+            <string>computer_type</string>
+            <string>os_name</string>
+            <string>last_time</string>
+            <string>model</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>action_94a4ee05f64d9a67d339de1cf0ff4172</Field>
+              <Comparer>=</Comparer>
+              <Value>false</Value>
+              <Operand>boolean</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+      </Folder>
+      <Folder Name="Virtualization - Project">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>Virtualization - Connection VDI/Clients (Citrix, WVD, VMware)</Label>
+          <Object>connection</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description>Investigate the network connection between your VDI and your clients.3389 : Microsoft2598 and 1494 : Citrix4172 and 22443 : Vmware</Description>
+          <FieldList>
+            <string>time</string>
+            <string>type</string>
+            <string>status</string>
+            <string>lifespan</string>
+            <string>source_name</string>
+            <string>source</string>
+            <string>product_name</string>
+            <string>application_name</string>
+            <string>port_number</string>
+            <string>destination</string>
+            <string>sync_ack</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>source</Object>
+              <Field>tags</Field>
+              <Comparer>=</Comparer>
+              <Value>"Hardware type:virtual desktop"</Value>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>3389</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>2598</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>1494</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>4172</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+            <ObjectCondition IsTemplate="false">
+              <Object>port</Object>
+              <Field>number</Field>
+              <Comparer>=</Comparer>
+              <Value>22443</Value>
+              <Operand>port_number</Operand>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1 AND (2 OR 3 OR 4 OR 5 OR 6)</ObjectsConditionsExpression>
+        </Investigation>
+      </Folder>
+      <Folder Name="Persona">
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>All Users</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>system</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+        <Investigation DataModelVersion="13" SyntaxVersion="3">
+          <Label>All Users</Label>
+          <Object>user</Object>
+          <Platforms>
+            <Platform>windows</Platform>
+          </Platforms>
+          <Description />
+          <FieldList>
+            <string>name</string>
+          </FieldList>
+          <CategoryList />
+          <AggregateList />
+          <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+              <Object>user</Object>
+              <Field>type</Field>
+              <Comparer>!=</Comparer>
+              <Value>system</Value>
+            </ObjectCondition>
+          </ObjectConditionList>
+          <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        </Investigation>
+      </Folder>
+    </Folder>
+    <Folder Name="Proactive &amp; Targeted End-User Communication">
+      <Investigation DataModelVersion="13" SyntaxVersion="3">
+        <Label>Users experiencing SAP connection issues</Label>
+        <Object>user</Object>
+        <Platforms>
+          <Platform>windows</Platform>
+        </Platforms>
+        <Description />
+        <FieldList>
+          <string>name</string>
+        </FieldList>
+        <CategoryList />
+        <AggregateList>
+          <string>request_success_rate</string>
+        </AggregateList>
+        <ObjectConditionList>
+          <ObjectCondition IsTemplate="false">
+            <Object>web_service</Object>
+            <Field>name</Field>
+            <Comparer>=</Comparer>
+            <Value>"SAP"</Value>
+            <Operand>web_service_name</Operand>
+          </ObjectCondition>
+          <ObjectCondition IsTemplate="false">
+            <Object>web_request</Object>
+            <Field>http_status</Field>
+            <Comparer>!=</Comparer>
+            <Value>200</Value>
+            <Operand>integer</Operand>
+          </ObjectCondition>
+        </ObjectConditionList>
+        <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+        <LastDays>1</LastDays>
+      </Investigation>
+      <Investigation DataModelVersion="13" SyntaxVersion="3">
+        <Label>Users experiencing SAP connection issues - Got notified</Label>
+        <Object>user</Object>
+        <Platforms>
+          <Platform>windows</Platform>
+        </Platforms>
+        <Description />
+        <FieldList>
+          <string>name</string>
+        </FieldList>
+        <CategoryList />
+        <AggregateList>
+          <string>request_success_rate</string>
+        </AggregateList>
+        <ObjectConditionList>
+          <ObjectCondition IsTemplate="false">
+            <Object>user</Object>
+            <Field>euf_e3cb3d3efe3a4807a6cfda1cd8e3c521_status</Field>
+            <Comparer>!=</Comparer>
+            <Value>declined</Value>
+          </ObjectCondition>
+        </ObjectConditionList>
+        <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        <LastDays>1</LastDays>
+      </Investigation>
+    </Folder>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>All domain users</Label>
+      <Object>user</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>days_since_last_time</Field>
+          <Comparer>&lt;=</Comparer>
+          <Value>30</Value>
+          <Operand>integer</Operand>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Local admin accounts</Label>
+      <Object>user</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description>List of all domain user accounts seen during last 1 day</Description>
+      <FieldList>
+        <string>name</string>
+        <string>type</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>local_privileges</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>name</Field>
+          <Comparer>unlike</Comparer>
+          <Value>"Local Service"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>name</Field>
+          <Comparer>unlike</Comparer>
+          <Value>"Local System"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>name</Field>
+          <Comparer>unlike</Comparer>
+          <Value>"Network Service"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>type</Field>
+          <Comparer>=</Comparer>
+          <Value>local</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2 AND 3 AND 4</ObjectsConditionsExpression>
+      <AggregateCondition IsTemplate="false">
+        <Aggregate>local_privileges</Aggregate>
+        <Comparer>=</Comparer>
+        <Value>admin</Value>
+      </AggregateCondition>
+      <LastDays>7</LastDays>
+      <BetweenTimes>
+        <From>07:00</From>
+        <To>07:30</To>
+      </BetweenTimes>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Office 365 users</Label>
+      <Object>user</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>product</Object>
+          <Field>name</Field>
+          <Comparer>like</Comparer>
+          <Value>"Microsoft Office*"</Value>
+          <Operand>pattern</Operand>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>type</Field>
+          <Comparer>!=</Comparer>
+          <Value>system</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Users with application crashes</Label>
+      <Object>user</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>type</string>
+        <string>display_name</string>
+        <string>title</string>
+        <string>department</string>
+        <string>last_time</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>crashes</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>execution_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>crash</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <OrderBy>crashes</OrderBy>
+      <LastDays>1</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>100</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Users with more than 5 devices</Label>
+      <Object>user</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description>List of user accounts with most desktops</Description>
+      <FieldList>
+        <string>name</string>
+        <string>first_time</string>
+        <string>last_time</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>sources</string>
+        <string>products</string>
+        <string>applications</string>
+        <string>binaries</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>user</Object>
+          <Field>type</Field>
+          <Comparer>!=</Comparer>
+          <Value>system</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <AggregateCondition IsTemplate="false">
+        <Aggregate>sources</Aggregate>
+        <Comparer>&gt;=</Comparer>
+        <Value>5</Value>
+      </AggregateCondition>
+      <OrderBy>sources</OrderBy>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>1000</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Access to Terminal Servers</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>ram</string>
+        <string>os_name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>connection_bitrate_in</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>port</Object>
+          <Field>number</Field>
+          <Comparer>=</Comparer>
+          <Value>3389</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>All blocked mobile devices</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>mobile</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>model</string>
+        <string>os_name</string>
+        <string>eas_access_state</string>
+        <string>eas_access_state_reason</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>source</Object>
+          <Field>eas_access_state</Field>
+          <Comparer>=</Comparer>
+          <Value>blocked</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Device health LOW</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>computer_type</string>
+        <string>last_ip_address</string>
+        <string>group_name</string>
+        <string>last_boot_time</string>
+        <string>last_login_time</string>
+        <string>os_name</string>
+        <string>internet</string>
+        <string>updates</string>
+        <string>av2_display_name</string>
+        <string>av2_rtp_status</string>
+        <string>as2_rtp_status</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>source_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>bluescreen</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>source_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>smart</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>source_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>improper_shutdown</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 OR 2 OR 3</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Devices with application crashes</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>entity</string>
+        <string>name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>crashes</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>execution_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>crash</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <OrderBy>crashes</OrderBy>
+      <LastDays>1</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>100</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Indicator of compromise</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>computer_type</string>
+        <string>last_ip_address</string>
+        <string>group_name</string>
+        <string>last_boot_time</string>
+        <string>last_login_time</string>
+        <string>os_name</string>
+        <string>internet</string>
+        <string>updates</string>
+        <string>av2_display_name</string>
+        <string>av2_rtp_status</string>
+        <string>as2_rtp_status</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>binary</Object>
+          <Field>tags</Field>
+          <Comparer>=</Comparer>
+          <Value>"Threat level:high"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Non-approved mobile devices</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>mobile</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>model</string>
+        <string>os_name</string>
+        <string>eas_access_state</string>
+        <string>eas_access_state_reason</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>source</Object>
+          <Field>eas_access_state</Field>
+          <Comparer>=</Comparer>
+          <Value>blocked</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>source</Object>
+          <Field>eas_access_state_reason</Field>
+          <Comparer>=</Comparer>
+          <Value>individual</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Server with Collector</Label>
+      <Object>source</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>platform</string>
+        <string>entity</string>
+        <string>last_time</string>
+        <string>computer_type</string>
+        <string>manufacturer</string>
+        <string>model</string>
+        <string>cpu_model</string>
+        <string>os_name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>source</Object>
+          <Field>ip_addresses</Field>
+          <Comparer>=</Comparer>
+          <Value>172.18.2.221</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Applications with 100% failed connections</Label>
+      <Object>product</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>company</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>success_rate</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>connection</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>closed</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>connection</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>established</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 OR 2</ObjectsConditionsExpression>
+      <AggregateCondition IsTemplate="false">
+        <Aggregate>connections</Aggregate>
+        <Comparer>=</Comparer>
+        <Value>0</Value>
+      </AggregateCondition>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Apps with DNS connections not Corp DNS</Label>
+      <Object>product</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>company</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>sources</string>
+        <string>binaries</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>destination</Object>
+          <Field>tags</Field>
+          <Comparer>!=</Comparer>
+          <Value>"Server type:DNS Servers"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>port</Object>
+          <Field>number</Field>
+          <Comparer>=</Comparer>
+          <Value>53</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>port</Object>
+          <Field>type</Field>
+          <Comparer>=</Comparer>
+          <Value>udp</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>application</Object>
+          <Field>name</Field>
+          <Comparer>!=</Comparer>
+          <Value>"svchost.exe"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2 AND 3 AND 4</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Applications health LOW</Label>
+      <Object>application</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>product_name</string>
+        <string>package_names</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>sources</string>
+        <string>binaries</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>execution_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>freeze</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>execution_error</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>crash</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 OR 2</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Apps on NetDrive or USB</Label>
+      <Object>binary</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description>List of binaries launched from the network during the last 7 days</Description>
+      <FieldList>
+        <string>application_name</string>
+        <string>version</string>
+        <string>file_size</string>
+        <string>paths</string>
+        <string>visible_windows</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>processes</string>
+        <string>connections</string>
+        <string>in</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>binary</Object>
+          <Field>paths</Field>
+          <Comparer>=</Comparer>
+          <Value>net_drive</Value>
+          <Operand>path_type</Operand>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>binary</Object>
+          <Field>paths</Field>
+          <Comparer>=</Comparer>
+          <Value>removable_drive</Value>
+          <Operand>path_type</Operand>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 OR 2</ObjectsConditionsExpression>
+      <OrderBy>processes</OrderBy>
+      <LastDays>7</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>100</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Exe on USB with Connections</Label>
+      <Object>binary</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>application_name</string>
+        <string>version</string>
+        <string>file_size</string>
+        <string>product_name</string>
+        <string>visible_windows</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>binary</Object>
+          <Field>paths</Field>
+          <Comparer>=</Comparer>
+          <Value>removable_drive</Value>
+          <Operand>path_type</Operand>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>destination</Object>
+          <Field>ip_address</Field>
+          <Comparer>!=external</Comparer>
+          <Value />
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Packages recently removed</Label>
+      <Object>setup</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description>List of all packages removed during last 7 days</Description>
+      <FieldList>
+        <string>time</string>
+        <string>status</string>
+        <string>package_type</string>
+        <string>package_name</string>
+        <string>package_version</string>
+        <string>package_company</string>
+        <string>source_id</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>setup</Object>
+          <Field>status</Field>
+          <Comparer>=</Comparer>
+          <Value>uninstalled</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <OrderBy>time</OrderBy>
+      <LastDays>1</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>9999</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Last Windows Updates</Label>
+      <Object>setup</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>time</string>
+        <string>status</string>
+        <string>package_type</string>
+        <string>package_name</string>
+        <string>package_version</string>
+        <string>package_company</string>
+        <string>package_parent_name</string>
+        <string>source_name</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>package</Object>
+          <Field>parent_name</Field>
+          <Comparer>=</Comparer>
+          <Value>"Windows Update"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <OrderBy>time</OrderBy>
+      <LastDays>1</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>100</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Ports used by most applications</Label>
+      <Object>port</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description>List of ports used by most applications during last 7 days</Description>
+      <FieldList>
+        <string>number</string>
+        <string>type</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>products</string>
+        <string>in</string>
+        <string>out</string>
+      </AggregateList>
+      <ObjectConditionList />
+      <OrderBy>products</OrderBy>
+      <LastDays>7</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>1000</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Servers accessed with Excel</Label>
+      <Object>destination</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>first_time</string>
+        <string>last_time</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>application</Object>
+          <Field>name</Field>
+          <Comparer>=</Comparer>
+          <Value>"excel.exe"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      <LastDays>7</LastDays>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Abnormal Domains accessed with Outlook</Label>
+      <Object>domain</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>name</string>
+        <string>main</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>first_activity</string>
+        <string>last_activity</string>
+        <string>requests</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>application</Object>
+          <Field>name</Field>
+          <Comparer>like</Comparer>
+          <Value>"*outlook.exe*"</Value>
+          <Operand>pattern</Operand>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>domain</Object>
+          <Field>tags</Field>
+          <Comparer>=</Comparer>
+          <Value>"Compliance:forbidden domains"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>domain</Object>
+          <Field>tags</Field>
+          <Comparer>=</Comparer>
+          <Value>"Unwanted domains:Unwanted"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>domain</Object>
+          <Field>tags</Field>
+          <Comparer>=</Comparer>
+          <Value>"DEX - Domain:"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND (2 OR 3) AND 4</ObjectsConditionsExpression>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Non corporate email traffic</Label>
+      <Object>connection</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>lifespan</string>
+        <string>time</string>
+        <string>status</string>
+        <string>sync_ack</string>
+        <string>type</string>
+        <string>source_name</string>
+        <string>source</string>
+        <string>destination</string>
+        <string>port_number</string>
+        <string>product_name</string>
+        <string>application_name</string>
+        <string>last_time</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList />
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>port</Object>
+          <Field>number</Field>
+          <Comparer>=</Comparer>
+          <Value>25</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>destination</Object>
+          <Field>tags</Field>
+          <Comparer>!=</Comparer>
+          <Value>"Server type:Exchange CAS"</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>port</Object>
+          <Field>number</Field>
+          <Comparer>=</Comparer>
+          <Value>110</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>(1 OR 3) AND 2</ObjectsConditionsExpression>
+      <OrderBy>time</OrderBy>
+      <LastDays>7</LastDays>
+      <OrderDirection>desc</OrderDirection>
+      <Limit>100</Limit>
+    </Investigation>
+    <Investigation DataModelVersion="13" SyntaxVersion="3">
+      <Label>Local Printers</Label>
+      <Object>printer</Object>
+      <Platforms>
+        <Platform>windows</Platform>
+      </Platforms>
+      <Description />
+      <FieldList>
+        <string>display_name</string>
+        <string>model</string>
+        <string>location</string>
+        <string>type</string>
+      </FieldList>
+      <CategoryList />
+      <AggregateList>
+        <string>users</string>
+      </AggregateList>
+      <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+          <Object>printer</Object>
+          <Field>type</Field>
+          <Comparer>=</Comparer>
+          <Value>local</Value>
+        </ObjectCondition>
+        <ObjectCondition IsTemplate="false">
+          <Object>printer</Object>
+          <Field>display_name</Field>
+          <Comparer>unlike</Comparer>
+          <Value>"*PDF*"</Value>
+        </ObjectCondition>
+      </ObjectConditionList>
+      <ObjectsConditionsExpression>1 AND 2</ObjectsConditionsExpression>
+      <LastDays>1</LastDays>
+    </Investigation>
+  </Folder>
+</InvestigationsTree>

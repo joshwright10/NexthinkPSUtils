@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Client Change Management</Name>
+     <Dependencies>
+      <Dependency name="&quot;Without change&quot; devices" type="metric" uid="9c63efe6-94da-49be-b65b-661e4918409b"/>
+      <Dependency name="&quot;Pilot&quot; devices" type="metric" uid="15d67999-c506-4790-9bcc-64e533921e51"/>
+      <Dependency name="&quot;With change&quot; devices" type="metric" uid="d051a1e7-4230-4685-969f-affe0a22d0c7"/>
+      <Dependency name="High CPU time of &quot;without change&quot; devices" type="metric" uid="5906dad2-c55e-4ff8-9235-b828a1e6df20"/>
+      <Dependency name="High CPU time of &quot;pilot&quot; devices" type="metric" uid="a0f8dbef-a287-416f-8792-dba2760cf689"/>
+      <Dependency name="High CPU time of &quot;with change&quot; devices" type="metric" uid="218bf2ed-de09-4f1f-90ec-de855e21eaaf"/>
+      <Dependency name="High memory time of &quot;without change&quot; devices" type="metric" uid="5f5e04d1-eafe-48a9-8199-8df198e942ce"/>
+      <Dependency name="High memory time of &quot;pilot&quot; devices" type="metric" uid="0ea9dcbc-695a-4e47-a366-5d6d6b5a9fd1"/>
+      <Dependency name="High memory time of &quot;with change&quot; devices" type="metric" uid="e6742427-02cb-4b9a-891c-958932e76a51"/>
+      <Dependency name="Application crash ratio of &quot;without change&quot; devices" type="metric" uid="8168e691-0e68-462e-b45a-03ebc2fb1279"/>
+      <Dependency name="Application crash ratio of &quot;pilot&quot; devices" type="metric" uid="0b5c4e52-b65e-44d7-b697-dc8e15eacd74"/>
+      <Dependency name="Application crash ratio of &quot;with change&quot; devices" type="metric" uid="7242aa62-b9b8-4952-89ed-08cbea2c692d"/>
+      <Dependency name="Application not responding event ratio of &quot;without change&quot; devices" type="metric" uid="dd7c261e-1cad-4060-b90a-071cf05c6a08"/>
+      <Dependency name="Application not responding event ratio of &quot;pilot&quot; devices" type="metric" uid="86912352-1edc-4dee-a2a0-ff7ceafa0945"/>
+      <Dependency name="Application not responding event ratio of &quot;with change&quot; devices" type="metric" uid="7ce7e8d1-02f4-4749-bbe6-94b1371c159c"/>
+      <Dependency name="Average boot duration of &quot;without change&quot; devices" type="metric" uid="57669ec6-72e6-4a7c-8113-3425aaec5c49"/>
+      <Dependency name="Average boot duration of &quot;pilot&quot; devices" type="metric" uid="c7de4925-6f66-4ed8-979f-ba625cbd5ba9"/>
+      <Dependency name="Average boot duration of &quot;with change&quot; devices" type="metric" uid="7f33b65d-2729-45f8-aa09-3ebf606baea3"/>
+      <Dependency name="Average logon duration of &quot;without change&quot; devices" type="metric" uid="c80783f0-6794-4e69-b624-b7ee0bfc2c58"/>
+      <Dependency name="Average logon duration of &quot;pilot&quot; devices" type="metric" uid="02f9d954-5925-4e19-84d9-775cc990a060"/>
+      <Dependency name="Average logon duration of &quot;with change&quot; devices" type="metric" uid="84e1c2f5-d861-45f9-a79d-5db0df1d2bf0"/>
+      <Dependency name="Average extended logon duration of &quot;without change&quot; devices" type="metric" uid="fe3aec6d-acc2-49b4-a0ee-4573f08a767b"/>
+      <Dependency name="Average extended logon duration of &quot;pilot&quot; devices" type="metric" uid="cb29a94f-16e9-474d-b654-668ff5aeebee"/>
+      <Dependency name="Average extended logon duration of &quot;with change&quot; devices" type="metric" uid="a8ad3e15-5ca0-4e4c-93a9-6ba45dcd8117"/>
+      <Dependency name="Number of devices running the &quot;old&quot; application" type="metric" uid="94535826-94b0-4065-a808-6c989664b439"/>
+      <Dependency name="Number of devices running the &quot;new&quot; application" type="metric" uid="e6919fe0-f428-4080-ad23-30948cbddb37"/>
+      <Dependency name="Cumulated execution duration per device of the &quot;old&quot; application" type="metric" uid="763ef2c3-b551-4a9a-826f-bf0b26befbe4"/>
+      <Dependency name="Cumulated execution duration per device of the &quot;new&quot; application" type="metric" uid="548d754b-6dbb-403a-91f8-e19efd28d8d0"/>
+      <Dependency name="Application crash ratio of the &quot;old&quot; application" type="metric" uid="8ec3e841-4200-4d67-b451-f101d8071606"/>
+      <Dependency name="Application crash ratio of the &quot;new&quot; application" type="metric" uid="c7095ef7-abd0-4650-97ef-c4bf805eae7f"/>
+      <Dependency name="Application not responding event ratio of the &quot;old&quot; application" type="metric" uid="34e6a0f0-ac54-4be4-aba1-b7e7a3bf2db8"/>
+      <Dependency name="Application not responding event ratio of the &quot;new&quot; application" type="metric" uid="a0c76d70-cd97-40f6-a448-7fa64cb96aa7"/>
+      <Dependency name="Network traffic per device of the &quot;old&quot; application" type="metric" uid="901ab957-589b-4d7f-85e1-bd6072dfcc76"/>
+      <Dependency name="Network traffic per device of the &quot;new&quot; application" type="metric" uid="216a3768-befa-41f7-94dc-08ccfaa5cba4"/>
+      <Dependency name="Web traffic per device of the &quot;old&quot; application" type="metric" uid="a721c73b-9b13-44b4-8358-934cd14172e6"/>
+      <Dependency name="Web traffic per device of the &quot;new&quot; application" type="metric" uid="f626fca7-d70a-44f5-81bd-8144b56cce2d"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Client Change Management" uid="eff78a31-7c3f-4616-a84d-b8fc9a72b676">
+        <dashboards>
+         <dashboard description="# Application-level dashboard&#13;&#10;This dashboard allows you to compare important metrics between an old application and a new one. This is useful when deploying a new version of an application or when replacing an application by another one.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;You have to define the old and new application by configuring the [Change Management](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Client%20change%20management&amp;Type=binary) category on binaries.&#13;&#10;:::" index="3" name="Application level" uid="a7d99330-190f-4a83-bb75-4fb25e9157eb">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="99892274-3677-4604-b2e7-1b603e499ca8" minHeight="56" minWidth="296" type="titleWidget" widgetID="99892274-3677-4604-b2e7-1b603e499ca8">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="89258321-0023-4252-a3e8-add500871387" minHeight="126" minWidth="364" type="kpiWidget" widgetID="89258321-0023-4252-a3e8-add500871387">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="596d5bfb-a33f-4b23-88b1-6ebe88f32afa" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="596d5bfb-a33f-4b23-88b1-6ebe88f32afa">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f5038988-939a-4b7e-a6f4-4220d4b99491" minHeight="56" minWidth="296" type="titleWidget" widgetID="f5038988-939a-4b7e-a6f4-4220d4b99491">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="ab27aecb-e565-4fa8-988b-89ccb0aaf4de" minHeight="126" minWidth="364" type="kpiWidget" widgetID="ab27aecb-e565-4fa8-988b-89ccb0aaf4de">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="364"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="45257db9-e939-4299-8345-3ff903b4c623" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="45257db9-e939-4299-8345-3ff903b4c623">
+                        <preferredHeight value="310"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f8658261-644a-4bdd-98b3-f0c8e56d171c" minHeight="56" minWidth="296" type="titleWidget" widgetID="f8658261-644a-4bdd-98b3-f0c8e56d171c">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="0f1855c5-c99f-42db-94d3-e8175fe119d6" minHeight="126" minWidth="364" type="kpiWidget" widgetID="0f1855c5-c99f-42db-94d3-e8175fe119d6">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="364"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="f60e61c4-aee4-4b5c-88f4-7d531a338ad6" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="f60e61c4-aee4-4b5c-88f4-7d531a338ad6">
+                        <preferredHeight value="310"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="2f6b32fe-d7c9-428f-b30d-3bf543fc54a7" minHeight="56" minWidth="296" type="titleWidget" widgetID="2f6b32fe-d7c9-428f-b30d-3bf543fc54a7">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="e060762f-ad35-4026-9235-360e8383011f" minHeight="126" minWidth="364" type="kpiWidget" widgetID="e060762f-ad35-4026-9235-360e8383011f">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="364"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="3e17c7ed-9cea-4f99-8ff7-872fb23e73dd" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="3e17c7ed-9cea-4f99-8ff7-872fb23e73dd">
+                        <preferredHeight value="310"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ebc63b2c-94bc-4b66-9639-c57bda268236" minHeight="56" minWidth="296" type="titleWidget" widgetID="ebc63b2c-94bc-4b66-9639-c57bda268236">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="1626e0ef-683f-48eb-ab20-65005a24655f" minHeight="126" minWidth="364" type="kpiWidget" widgetID="1626e0ef-683f-48eb-ab20-65005a24655f">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="68df6233-3cb7-4f71-bb62-5e2517bebae3" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="68df6233-3cb7-4f71-bb62-5e2517bebae3">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="48ae177c-9699-4aac-a075-04924195e73d" minHeight="56" minWidth="296" type="titleWidget" widgetID="48ae177c-9699-4aac-a075-04924195e73d">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="9f8c7fbf-aa88-4642-a485-9b260d8d94aa" minHeight="126" minWidth="364" type="kpiWidget" widgetID="9f8c7fbf-aa88-4642-a485-9b260d8d94aa">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="2a83e76d-0374-4e10-8da0-229c24781a2a" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="2a83e76d-0374-4e10-8da0-229c24781a2a">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="99892274-3677-4604-b2e7-1b603e499ca8">
+            <titleConfig title="Number of devices"/>
+           </widget>
+           <widget type="KPI" uid="89258321-0023-4252-a3e8-add500871387">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="94535826-94b0-4065-a808-6c989664b439"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="e6919fe0-f428-4080-ad23-30948cbddb37"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="596d5bfb-a33f-4b23-88b1-6ebe88f32afa">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="0" serviceMetric="false" uid="94535826-94b0-4065-a808-6c989664b439"/>
+              <metric label="New application" ordering="1" serviceMetric="false" uid="e6919fe0-f428-4080-ad23-30948cbddb37"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="f5038988-939a-4b7e-a6f4-4220d4b99491">
+            <titleConfig title="Execution duration per device"/>
+           </widget>
+           <widget type="KPI" uid="ab27aecb-e565-4fa8-988b-89ccb0aaf4de">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="763ef2c3-b551-4a9a-826f-bf0b26befbe4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="548d754b-6dbb-403a-91f8-e19efd28d8d0"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="45257db9-e939-4299-8345-3ff903b4c623">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="0" serviceMetric="false" uid="763ef2c3-b551-4a9a-826f-bf0b26befbe4"/>
+              <metric label="New application" ordering="1" serviceMetric="false" uid="548d754b-6dbb-403a-91f8-e19efd28d8d0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="f8658261-644a-4bdd-98b3-f0c8e56d171c">
+            <titleConfig title="Application crash ratio"/>
+           </widget>
+           <widget type="KPI" uid="0f1855c5-c99f-42db-94d3-e8175fe119d6">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="8ec3e841-4200-4d67-b451-f101d8071606"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="c7095ef7-abd0-4650-97ef-c4bf805eae7f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="f60e61c4-aee4-4b5c-88f4-7d531a338ad6">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="0" serviceMetric="false" uid="8ec3e841-4200-4d67-b451-f101d8071606"/>
+              <metric label="New application" ordering="1" serviceMetric="false" uid="c7095ef7-abd0-4650-97ef-c4bf805eae7f"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="2f6b32fe-d7c9-428f-b30d-3bf543fc54a7">
+            <titleConfig title="Application freeze ratio"/>
+           </widget>
+           <widget type="KPI" uid="e060762f-ad35-4026-9235-360e8383011f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="34e6a0f0-ac54-4be4-aba1-b7e7a3bf2db8"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="a0c76d70-cd97-40f6-a448-7fa64cb96aa7"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="3e17c7ed-9cea-4f99-8ff7-872fb23e73dd">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="0" serviceMetric="false" uid="34e6a0f0-ac54-4be4-aba1-b7e7a3bf2db8"/>
+              <metric label="New application" ordering="1" serviceMetric="false" uid="a0c76d70-cd97-40f6-a448-7fa64cb96aa7"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="ebc63b2c-94bc-4b66-9639-c57bda268236">
+            <titleConfig title="Network traffic per device"/>
+           </widget>
+           <widget type="KPI" uid="1626e0ef-683f-48eb-ab20-65005a24655f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="901ab957-589b-4d7f-85e1-bd6072dfcc76"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="216a3768-befa-41f7-94dc-08ccfaa5cba4"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="68df6233-3cb7-4f71-bb62-5e2517bebae3">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="2" serviceMetric="false" uid="901ab957-589b-4d7f-85e1-bd6072dfcc76"/>
+              <metric label="New application" ordering="3" serviceMetric="false" uid="216a3768-befa-41f7-94dc-08ccfaa5cba4"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="48ae177c-9699-4aac-a075-04924195e73d">
+            <titleConfig title="Web traffic per device"/>
+           </widget>
+           <widget type="KPI" uid="9f8c7fbf-aa88-4642-a485-9b260d8d94aa">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Old application" ordering="0" serviceMetric="false" uid="a721c73b-9b13-44b4-8358-934cd14172e6"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="New application" ordering="1" serviceMetric="false" uid="f626fca7-d70a-44f5-81bd-8144b56cce2d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2a83e76d-0374-4e10-8da0-229c24781a2a">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Old application" ordering="0" serviceMetric="false" uid="a721c73b-9b13-44b4-8358-934cd14172e6"/>
+              <metric label="New application" ordering="1" serviceMetric="false" uid="f626fca7-d70a-44f5-81bd-8144b56cce2d"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Client Change Management&#13;&#10;This module helps you check the effects of changes you apply to your clients and ensure that there are no undesirable consequences. Changes could include the deployment of a new operating system, security patches, new applications and so on.&#13;&#10;&#13;&#10;# Device-level dashboard&#13;&#10;In this dashboard, you can track important metrics for three distinct populations of devices:&#13;&#10;- **Without change**: devices on which the change has not been made yet.&#13;&#10;- **Pilot**: devices on which the change is being tested.&#13;&#10;- **With change**: devices on which the change has been made.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;You have to define the three populations by configuring the [Client Change Management](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Client%20change%20management&amp;Type=device) category on devices.&#13;&#10;:::" index="2" name="Device level" uid="3d5c20ca-56c5-4396-8e4b-2ada534f435e">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="01f542c4-7f30-4a6f-a41b-d7cdfaef9c8c" minHeight="56" minWidth="296" type="titleWidget" widgetID="01f542c4-7f30-4a6f-a41b-d7cdfaef9c8c">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="V">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="273e6927-3e40-4fdf-a329-f8dcad748585" minHeight="126" minWidth="554" type="kpiWidget" widgetID="273e6927-3e40-4fdf-a329-f8dcad748585">
+                            <preferredHeight value="126"/>
+                            <preferredWidth value="554"/>
+                           </data>
+                          </child>
+                          <child type="L">
+                           <children/>
+                           <data id="a044c5cf-8383-42e6-bd54-bf7a582246e5" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="a044c5cf-8383-42e6-bd54-bf7a582246e5">
+                            <preferredHeight value="310"/>
+                            <preferredWidth value="599"/>
+                           </data>
+                          </child>
+                         </children>
+                        </child>
+                        <child type="H">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="81561d28-83e6-49e5-a3f6-35fd2fa21438" minHeight="56" minWidth="296" type="titleWidget" widgetID="81561d28-83e6-49e5-a3f6-35fd2fa21438">
+                            <preferredHeight value="56"/>
+                            <preferredWidth value="0"/>
+                           </data>
+                          </child>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="514f4177-de63-4b54-bb07-aa081cf9f1ae" minHeight="126" minWidth="554" type="kpiWidget" widgetID="514f4177-de63-4b54-bb07-aa081cf9f1ae">
+                              <preferredHeight value="126"/>
+                              <preferredWidth value="554"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="d412b520-361c-419a-9287-3cdf501e7c55" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="d412b520-361c-419a-9287-3cdf501e7c55">
+                              <preferredHeight value="310"/>
+                              <preferredWidth value="599"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="H">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="f40a4a1c-6cd6-48e0-a866-bbab5ba0389c" minHeight="56" minWidth="296" type="titleWidget" widgetID="f40a4a1c-6cd6-48e0-a866-bbab5ba0389c">
+                            <preferredHeight value="56"/>
+                            <preferredWidth value="0"/>
+                           </data>
+                          </child>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="1d250ed0-cf04-49e4-9a90-08d47431f20d" minHeight="126" minWidth="554" type="kpiWidget" widgetID="1d250ed0-cf04-49e4-9a90-08d47431f20d">
+                              <preferredHeight value="126"/>
+                              <preferredWidth value="554"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="2b3a6bb8-689c-4be7-b521-fca40937925d" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="2b3a6bb8-689c-4be7-b521-fca40937925d">
+                              <preferredHeight value="310"/>
+                              <preferredWidth value="599"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                         </children>
+                        </child>
+                        <child type="H">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="62facdc8-7952-4c68-84b4-1605a1fdf781" minHeight="56" minWidth="296" type="titleWidget" widgetID="62facdc8-7952-4c68-84b4-1605a1fdf781">
+                            <preferredHeight value="56"/>
+                            <preferredWidth value="0"/>
+                           </data>
+                          </child>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="72797bef-2d8c-4618-bb8b-17e88a323d72" minHeight="126" minWidth="554" type="kpiWidget" widgetID="72797bef-2d8c-4618-bb8b-17e88a323d72">
+                              <preferredHeight value="126"/>
+                              <preferredWidth value="554"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="e1a6aa77-b025-45af-a8f5-4a27eda1dc14" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="e1a6aa77-b025-45af-a8f5-4a27eda1dc14">
+                              <preferredHeight value="310"/>
+                              <preferredWidth value="599"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="4abb0bb5-0f19-49cd-92c6-398d2212492f" minHeight="56" minWidth="296" type="titleWidget" widgetID="4abb0bb5-0f19-49cd-92c6-398d2212492f">
+                        <preferredHeight value="56"/>
+                        <preferredWidth value="0"/>
+                       </data>
+                      </child>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="86509bfa-5f92-429f-93d4-28dc92caabc1" minHeight="126" minWidth="554" type="kpiWidget" widgetID="86509bfa-5f92-429f-93d4-28dc92caabc1">
+                          <preferredHeight value="126"/>
+                          <preferredWidth value="554"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="5b74f5aa-ac67-443e-979e-8e88f1cbde37" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="5b74f5aa-ac67-443e-979e-8e88f1cbde37">
+                          <preferredHeight value="310"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="024445e3-31ee-4524-8074-571b36d508ab" minHeight="56" minWidth="296" type="titleWidget" widgetID="024445e3-31ee-4524-8074-571b36d508ab">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="b3fc7847-baa8-44fb-8371-76c1c69bfef0" minHeight="126" minWidth="554" type="kpiWidget" widgetID="b3fc7847-baa8-44fb-8371-76c1c69bfef0">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="554"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="748ac209-b9bf-41e0-b53d-dedc1ca27a56" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="748ac209-b9bf-41e0-b53d-dedc1ca27a56">
+                        <preferredHeight value="310"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="9882a3eb-9f6e-4228-9a85-b098621fa104" minHeight="56" minWidth="296" type="titleWidget" widgetID="9882a3eb-9f6e-4228-9a85-b098621fa104">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f4e7973b-6ceb-40aa-bd0a-74db2d7451c1" minHeight="126" minWidth="554" type="kpiWidget" widgetID="f4e7973b-6ceb-40aa-bd0a-74db2d7451c1">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="554"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="86a511e8-1e78-4bc7-8352-0af919752a95" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="86a511e8-1e78-4bc7-8352-0af919752a95">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="27c4c67c-f902-4d19-8bf5-1d408194bd4f" minHeight="56" minWidth="296" type="titleWidget" widgetID="27c4c67c-f902-4d19-8bf5-1d408194bd4f">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5123fd2d-171d-45cd-a849-32b0ab9603cb" minHeight="126" minWidth="554" type="kpiWidget" widgetID="5123fd2d-171d-45cd-a849-32b0ab9603cb">
+                    <preferredHeight value="126"/>
+                    <preferredWidth value="554"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="bb077fdc-56ac-44ea-b9c0-a7887d01c9eb" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="bb077fdc-56ac-44ea-b9c0-a7887d01c9eb">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="01f542c4-7f30-4a6f-a41b-d7cdfaef9c8c">
+            <titleConfig title="Number of devices"/>
+           </widget>
+           <widget type="KPI" uid="273e6927-3e40-4fdf-a329-f8dcad748585">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="9c63efe6-94da-49be-b65b-661e4918409b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="15d67999-c506-4790-9bcc-64e533921e51"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="d051a1e7-4230-4685-969f-affe0a22d0c7"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="a044c5cf-8383-42e6-bd54-bf7a582246e5">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="9c63efe6-94da-49be-b65b-661e4918409b"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="15d67999-c506-4790-9bcc-64e533921e51"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="d051a1e7-4230-4685-969f-affe0a22d0c7"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="81561d28-83e6-49e5-a3f6-35fd2fa21438">
+            <titleConfig title="High CPU time"/>
+           </widget>
+           <widget type="KPI" uid="514f4177-de63-4b54-bb07-aa081cf9f1ae">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="5906dad2-c55e-4ff8-9235-b828a1e6df20"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="a0f8dbef-a287-416f-8792-dba2760cf689"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="218bf2ed-de09-4f1f-90ec-de855e21eaaf"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="d412b520-361c-419a-9287-3cdf501e7c55">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="5906dad2-c55e-4ff8-9235-b828a1e6df20"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="a0f8dbef-a287-416f-8792-dba2760cf689"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="218bf2ed-de09-4f1f-90ec-de855e21eaaf"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="f40a4a1c-6cd6-48e0-a866-bbab5ba0389c">
+            <titleConfig title="High memory time"/>
+           </widget>
+           <widget type="KPI" uid="1d250ed0-cf04-49e4-9a90-08d47431f20d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="5f5e04d1-eafe-48a9-8199-8df198e942ce"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="0ea9dcbc-695a-4e47-a366-5d6d6b5a9fd1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="e6742427-02cb-4b9a-891c-958932e76a51"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2b3a6bb8-689c-4be7-b521-fca40937925d">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="5f5e04d1-eafe-48a9-8199-8df198e942ce"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="0ea9dcbc-695a-4e47-a366-5d6d6b5a9fd1"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="e6742427-02cb-4b9a-891c-958932e76a51"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="62facdc8-7952-4c68-84b4-1605a1fdf781">
+            <titleConfig title="Application crash ratio"/>
+           </widget>
+           <widget type="KPI" uid="72797bef-2d8c-4618-bb8b-17e88a323d72">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="8168e691-0e68-462e-b45a-03ebc2fb1279"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="0b5c4e52-b65e-44d7-b697-dc8e15eacd74"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="7242aa62-b9b8-4952-89ed-08cbea2c692d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e1a6aa77-b025-45af-a8f5-4a27eda1dc14">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="8168e691-0e68-462e-b45a-03ebc2fb1279"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="0b5c4e52-b65e-44d7-b697-dc8e15eacd74"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="7242aa62-b9b8-4952-89ed-08cbea2c692d"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="4abb0bb5-0f19-49cd-92c6-398d2212492f">
+            <titleConfig title="Application freeze ratio"/>
+           </widget>
+           <widget type="KPI" uid="86509bfa-5f92-429f-93d4-28dc92caabc1">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="dd7c261e-1cad-4060-b90a-071cf05c6a08"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="86912352-1edc-4dee-a2a0-ff7ceafa0945"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="7ce7e8d1-02f4-4749-bbe6-94b1371c159c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="5b74f5aa-ac67-443e-979e-8e88f1cbde37">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="dd7c261e-1cad-4060-b90a-071cf05c6a08"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="86912352-1edc-4dee-a2a0-ff7ceafa0945"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="7ce7e8d1-02f4-4749-bbe6-94b1371c159c"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="024445e3-31ee-4524-8074-571b36d508ab">
+            <titleConfig title="Average boot duration"/>
+           </widget>
+           <widget type="KPI" uid="b3fc7847-baa8-44fb-8371-76c1c69bfef0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="57669ec6-72e6-4a7c-8113-3425aaec5c49"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="c7de4925-6f66-4ed8-979f-ba625cbd5ba9"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="7f33b65d-2729-45f8-aa09-3ebf606baea3"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="748ac209-b9bf-41e0-b53d-dedc1ca27a56">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="57669ec6-72e6-4a7c-8113-3425aaec5c49"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="c7de4925-6f66-4ed8-979f-ba625cbd5ba9"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="7f33b65d-2729-45f8-aa09-3ebf606baea3"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="9882a3eb-9f6e-4228-9a85-b098621fa104">
+            <titleConfig title="Average logon duration"/>
+           </widget>
+           <widget type="KPI" uid="f4e7973b-6ceb-40aa-bd0a-74db2d7451c1">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="c80783f0-6794-4e69-b624-b7ee0bfc2c58"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="02f9d954-5925-4e19-84d9-775cc990a060"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="84e1c2f5-d861-45f9-a79d-5db0df1d2bf0"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="86a511e8-1e78-4bc7-8352-0af919752a95">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="0" serviceMetric="false" uid="c80783f0-6794-4e69-b624-b7ee0bfc2c58"/>
+              <metric label="Pilot" ordering="1" serviceMetric="false" uid="02f9d954-5925-4e19-84d9-775cc990a060"/>
+              <metric label="With change" ordering="2" serviceMetric="false" uid="84e1c2f5-d861-45f9-a79d-5db0df1d2bf0"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="27c4c67c-f902-4d19-8bf5-1d408194bd4f">
+            <titleConfig title="Average extended logon duration"/>
+           </widget>
+           <widget type="KPI" uid="5123fd2d-171d-45cd-a849-32b0ab9603cb">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Without change" ordering="0" serviceMetric="false" uid="fe3aec6d-acc2-49b4-a0ee-4573f08a767b"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pilot" ordering="1" serviceMetric="false" uid="cb29a94f-16e9-474d-b654-668ff5aeebee"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="With change" ordering="2" serviceMetric="false" uid="a8ad3e15-5ca0-4e4c-93a9-6ba45dcd8117"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="bb077fdc-56ac-44ea-b9c0-a7887d01c9eb">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Without change" ordering="4" serviceMetric="false" uid="fe3aec6d-acc2-49b4-a0ee-4573f08a767b"/>
+              <metric label="Pilot" ordering="5" serviceMetric="false" uid="cb29a94f-16e9-474d-b654-668ff5aeebee"/>
+              <metric label="With change" ordering="6" serviceMetric="false" uid="a8ad3e15-5ca0-4e4c-93a9-6ba45dcd8117"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>MS Teams: Health</Name>
+     <Dependencies>
+      <Dependency name="Teams - Devices running Teams - Production" type="metric" uid="809daa80-bd4d-4d22-8109-5542d2bec741"/>
+      <Dependency name="Teams - Versions deployed - Production" type="metric" uid="97978a91-f03b-4ae2-ba72-583f028a62c9"/>
+      <Dependency name="Teams - Top 10 versions deployed - Production" type="metric" uid="e3ba2360-e8aa-4b83-8dd7-3e4a5d2ff842"/>
+      <Dependency name="Teams - Devices with application crashes - Production" type="metric" uid="b0aafb47-d1ed-4ffa-a880-ea83c1d54d64"/>
+      <Dependency name="Teams - Top 10 devices with application crashes - Production" type="metric" uid="49bb9a18-3e1e-4042-bb1c-555aab614f16"/>
+      <Dependency name="Teams - Devices with application freezes - Production" type="metric" uid="8fb9196a-30e3-452a-a0f7-28f8ca460a29"/>
+      <Dependency name="Teams - Devices with failed web requests by version - Production" type="metric" uid="15498dfc-1e6e-41d3-9bf2-d590616a448d"/>
+      <Dependency name="Teams - Top 20 users by total chat web traffic - Production" type="metric" uid="8c7237b4-e36e-491f-a79a-aeec5e6e15f9"/>
+      <Dependency name="Teams - Top 20 users by audio or video nb of connections - Production" type="metric" uid="98d64d0a-852d-4f6b-b277-ed18ae2fa74e"/>
+      <Dependency name="Teams - Devices with CPU usage ratio above 25% - Production" type="metric" uid="9a69626d-8e9b-46d4-b5cb-83a7610b8a18"/>
+      <Dependency name="Teams - Top 20 devices with high CPU usage ratio - Production" type="metric" uid="9357c7c7-4542-436b-b2a8-8da1390936bb"/>
+      <Dependency name="Teams - Devices with memory usage per execution above 150MB - Production" type="metric" uid="6d224ed9-3614-4f19-bc0d-88f44533aadf"/>
+      <Dependency name="Teams - Top 20 devices with high memory usage - Production" type="metric" uid="2ae7afb0-852c-4531-8463-bd2183255f44"/>
+      <Dependency name="Teams - Devices with high network response time - Production" type="metric" uid="53d2563d-f980-46e3-b724-e5835a172fb4"/>
+      <Dependency name="Teams - Top 20 devices with high network response time - Production" type="metric" uid="528364ad-0bce-4e4c-9d02-1ed1f37fbf25"/>
+      <Dependency name="Teams - Inbound network traffic - Production" type="metric" uid="a2c04dc3-f68c-4369-8d5d-1928a51754f1"/>
+      <Dependency name="Teams - Outbound network traffic - Production" type="metric" uid="54c730d5-1209-4e46-81ed-503d52041727"/>
+      <Dependency name="Teams - Top 20 devices with high network traffic - Production" type="metric" uid="a3d1edf5-3676-44be-a3ea-ef43a799b4fd"/>
+      <Dependency name="Teams - Network throughput - Production" type="metric" uid="f7b8c40c-29b2-43d5-a835-e4812d901df7"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="MS Teams: Health" uid="793b8f3d-b57b-4e56-b869-04ea1bf02b7e">
+        <dashboards>
+         <dashboard description="# Microsoft Teams: Health&#13;&#10;This pack measures gives an overall view of all systems across Production running Teams to help you get a quick status of the landscape.&#13;&#10;&#13;&#10;The two Dashboards Target the current state of Production.&#13;&#10;&#13;&#10;# Overview&#13;&#10;&#13;&#10;**Deployment**&#13;&#10;* This shows how many devices are running Teams and what percentage of the total systems that is. Also broken down by location this gives a quick view of Teams deployment across the landscape.&#13;&#10;&#13;&#10;* Use the 'Versions Deployed' to know the number of *different* version of Microsoft Teams deployed and this is broken down by to actual values on the right.  Teams should retain to current or current minus one version so follow up any below this.  Note that this also seperates the x32 and x64 versions so there is a possibility two entries with the same version may appear, the file size indicator is an additional indicator of differing versions.&#13;&#10;&#13;&#10;**Availability**&#13;&#10;* This area shows the overall stability of Teams.  Use the number of crashes, freeze and devices having trouble connecting to see any immediate problems or potential issues if the clients or the service is experiencing difficulty.  &#13;&#10;&#13;&#10;* You can also see the top devices with number of crashes to help you determine those devices that are having problems.&#13;&#10;&#13;&#10;**Popularity**&#13;&#10;* This shows your most active users in Teams. Use this figure as a starting point if you want to gain feedback or insight from your most active users in terms of why they find Teams so engaging.  Note that these are technical measures of traffic and do not indicate the actual number of messages sent or calls made exactly.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;**No configuration is needed for this dashboard as is**&#13;&#10;&#13;&#10;Note: This dashboard can be extended for Customers licensed for Nexthink Act. **Please contact Nexthink Professional Services if needed.** &#13;&#10;:::" index="3" name="Overview" uid="8713cf8e-8610-4af7-a2d4-89eff181e06d">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6895b7cb-f755-44cc-883b-f947bb8f414c" minHeight="56" minWidth="296" type="titleWidget" widgetID="6895b7cb-f755-44cc-883b-f947bb8f414c">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="1084975f-ea09-40ca-ba9f-aca05515dc2f" minHeight="268" minWidth="174" type="kpiWidget" widgetID="1084975f-ea09-40ca-ba9f-aca05515dc2f">
+                      <preferredHeight value="268"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="1058f396-6a43-43ac-a6c0-dd70e831e1ed" minHeight="126" minWidth="174" type="kpiWidget" widgetID="1058f396-6a43-43ac-a6c0-dd70e831e1ed">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="26d05fbc-b905-496d-8473-2d9fbec9842b" minHeight="233" minWidth="630" type="tableWidget" widgetID="26d05fbc-b905-496d-8473-2d9fbec9842b">
+                    <preferredHeight value="233"/>
+                    <preferredWidth value="630"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="24581406-c79f-407f-9c7b-071f43c462ee" minHeight="204" minWidth="300" type="barChartWidget" widgetID="24581406-c79f-407f-9c7b-071f43c462ee">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="e66eeac7-056e-45f4-8c85-c1137f1b78f5" minHeight="56" minWidth="296" type="titleWidget" widgetID="e66eeac7-056e-45f4-8c85-c1137f1b78f5">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="befe8ba9-f01b-4852-af37-e8524cc00ad9" minHeight="126" minWidth="364" type="kpiWidget" widgetID="befe8ba9-f01b-4852-af37-e8524cc00ad9">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="b543c364-4a29-4872-88c0-82ac4f7ea9d5" minHeight="193" minWidth="330" type="tableWidget" widgetID="b543c364-4a29-4872-88c0-82ac4f7ea9d5">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="330"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="842e5b00-e09f-4cca-bd3f-499908886729" minHeight="166" minWidth="364" type="kpiWidget" widgetID="842e5b00-e09f-4cca-bd3f-499908886729">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="174f25aa-57f8-457e-9066-6dd8125628d8" minHeight="166" minWidth="364" type="kpiWidget" widgetID="174f25aa-57f8-457e-9066-6dd8125628d8">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="5befad8d-9042-44f7-8bb3-caff95326404" minHeight="233" minWidth="330" type="tableWidget" widgetID="5befad8d-9042-44f7-8bb3-caff95326404">
+                <preferredHeight value="233"/>
+                <preferredWidth value="330"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="18a1c258-2d7b-4095-9ee8-4c5bc44e5c56" minHeight="233" minWidth="330" type="tableWidget" widgetID="18a1c258-2d7b-4095-9ee8-4c5bc44e5c56">
+                <preferredHeight value="233"/>
+                <preferredWidth value="330"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="6895b7cb-f755-44cc-883b-f947bb8f414c">
+            <titleConfig title="Devices running Teams"/>
+           </widget>
+           <widget type="KPI" uid="1084975f-ea09-40ca-ba9f-aca05515dc2f">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Nb devices" ordering="0" serviceMetric="false" uid="809daa80-bd4d-4d22-8109-5542d2bec741"/>
+              <metric displayValue="RATIO" label="% devices" ordering="1" serviceMetric="false" uid="809daa80-bd4d-4d22-8109-5542d2bec741"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="1058f396-6a43-43ac-a6c0-dd70e831e1ed">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Nb versions deployed" ordering="2" serviceMetric="false" uid="97978a91-f03b-4ae2-ba72-583f028a62c9"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="26d05fbc-b905-496d-8473-2d9fbec9842b">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Nb devices by version">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Teams - Deployment - Top 10 Versions Deployed - Production" ordering="1" serviceMetric="false" uid="e3ba2360-e8aa-4b83-8dd7-3e4a5d2ff842">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+               <fields name="file_size" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="24581406-c79f-407f-9c7b-071f43c462ee">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Nb devices by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Teams - Devices running Teams - Production" ordering="0" serviceMetric="false" uid="809daa80-bd4d-4d22-8109-5542d2bec741"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TITLE" uid="e66eeac7-056e-45f4-8c85-c1137f1b78f5">
+            <titleConfig title="Application crashes"/>
+           </widget>
+           <widget type="KPI" uid="befe8ba9-f01b-4852-af37-e8524cc00ad9">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Nb devices" ordering="0" serviceMetric="false" uid="b0aafb47-d1ed-4ffa-a880-ea83c1d54d64"/>
+              <metric displayValue="RATIO" label="% devices" ordering="1" serviceMetric="false" uid="b0aafb47-d1ed-4ffa-a880-ea83c1d54d64"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="b543c364-4a29-4872-88c0-82ac4f7ea9d5">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top Application Crashes" ordering="1" serviceMetric="false" uid="49bb9a18-3e1e-4042-bb1c-555aab614f16">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="842e5b00-e09f-4cca-bd3f-499908886729">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Application freezes">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Nb devices" ordering="0" serviceMetric="false" uid="8fb9196a-30e3-452a-a0f7-28f8ca460a29"/>
+              <metric displayValue="RATIO" label="% devices" ordering="1" serviceMetric="false" uid="8fb9196a-30e3-452a-a0f7-28f8ca460a29"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="174f25aa-57f8-457e-9066-6dd8125628d8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Failed web requests">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Nb devices" ordering="0" serviceMetric="false" uid="15498dfc-1e6e-41d3-9bf2-d590616a448d"/>
+              <metric displayValue="RATIO" label="% devices" ordering="1" serviceMetric="false" uid="15498dfc-1e6e-41d3-9bf2-d590616a448d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="5befad8d-9042-44f7-8bb3-caff95326404">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Top users by total chat web traffic">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Teams - Top 20 users by total web traffic - Production" ordering="0" serviceMetric="false" uid="8c7237b4-e36e-491f-a79a-aeec5e6e15f9">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="request_traffic"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="18a1c258-2d7b-4095-9ee8-4c5bc44e5c56">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Top users by number of audio &amp; video TCP connections">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top Users of Audio or Video" ordering="0" serviceMetric="false" uid="98d64d0a-852d-4f6b-b277-ed18ae2fa74e">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="connections"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Microsoft Teams: Performance&#13;&#10;This pack measures gives an overall view of all systems across Production running Teams to help you get a quick status of the landscape.&#13;&#10;&#13;&#10;The two Dashboards Target the current state of Production.&#13;&#10;&#13;&#10;# Overview&#13;&#10;&#13;&#10;**CPU**&#13;&#10;* This shows systems that have got high CPU usage by the Teams process which should be investigated, the top systems are listed along with the regional breakdown. &#13;&#10;&#13;&#10;**Memory**&#13;&#10;* This shows systems that have got high memory for Teams which should be investigated, the top systems are listed along with the regional breakdown.&#13;&#10;&#13;&#10;**Network Response Time**&#13;&#10;* This shows systems that a high network response time for the Teams process which should be investigated, the top systems are listed along with the regional breakdown.  Slow network response times should be investigated as to whether this is a Microsoft issue or an internal one.&#13;&#10;&#13;&#10;**Network Throughput**&#13;&#10;* Teams uses the network in both directions, in and out.  The graph gives an immediate view of the overall traffic going via the Teams process and below the total network throughput on a device by device basis.  Any very high values indicate people transferring or receiving a lot of data which could saturate a network link.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;**No configuration is needed for this dashboard**&#13;&#10;:::" index="4" name="Performance" uid="1dcabbb4-d8fd-4b1d-939f-6053f196e604">
+          <layout type="V">
+           <children>
+            <child type="V">
+             <children>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="fe3e1ce3-677e-41d0-9cd5-0522e96c314f" minHeight="166" minWidth="174" type="kpiWidget" widgetID="fe3e1ce3-677e-41d0-9cd5-0522e96c314f">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="990d5ae4-768a-4be7-ac8e-8d32fc88ef54" minHeight="193" minWidth="330" type="tableWidget" widgetID="990d5ae4-768a-4be7-ac8e-8d32fc88ef54">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="330"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="5b0be560-7bfd-4499-b143-3018d0b3ef7c" minHeight="204" minWidth="300" type="barChartWidget" widgetID="5b0be560-7bfd-4499-b143-3018d0b3ef7c">
+                      <preferredHeight value="204"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="afc051bd-9b4a-4c7b-b2cd-e33205ca62a4" minHeight="166" minWidth="174" type="kpiWidget" widgetID="afc051bd-9b4a-4c7b-b2cd-e33205ca62a4">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="ba710152-1b6a-4e8d-8de2-d6fbf5a4b151" minHeight="193" minWidth="330" type="tableWidget" widgetID="ba710152-1b6a-4e8d-8de2-d6fbf5a4b151">
+                      <preferredHeight value="193"/>
+                      <preferredWidth value="330"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="7953ef86-44b4-40bb-8b32-d0814261629a" minHeight="204" minWidth="300" type="barChartWidget" widgetID="7953ef86-44b4-40bb-8b32-d0814261629a">
+                      <preferredHeight value="204"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c84ef853-dfbd-447a-b82e-ded22d8665b6" minHeight="166" minWidth="174" type="kpiWidget" widgetID="c84ef853-dfbd-447a-b82e-ded22d8665b6">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="17752b5d-f11c-4b75-9b96-4499a0cebefb" minHeight="193" minWidth="330" type="tableWidget" widgetID="17752b5d-f11c-4b75-9b96-4499a0cebefb">
+                    <preferredHeight value="193"/>
+                    <preferredWidth value="330"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="a2c7806f-3a55-428a-8673-0ed000b4fcb4" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a2c7806f-3a55-428a-8673-0ed000b4fcb4">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="427358fa-1728-4faa-afdf-694fb496d8d3" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="427358fa-1728-4faa-afdf-694fb496d8d3">
+                <preferredHeight value="350"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="fae6d890-edf6-4ce3-8397-1768f5e09c4f" minHeight="193" minWidth="330" type="tableWidget" widgetID="fae6d890-edf6-4ce3-8397-1768f5e09c4f">
+                  <preferredHeight value="193"/>
+                  <preferredWidth value="330"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="ac59edbd-150e-4a7e-862c-77a6501bbf04" minHeight="204" minWidth="300" type="barChartWidget" widgetID="ac59edbd-150e-4a7e-862c-77a6501bbf04">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="fe3e1ce3-677e-41d0-9cd5-0522e96c314f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="CPU">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with high CPU" ordering="0" serviceMetric="false" uid="9a69626d-8e9b-46d4-b5cb-83a7610b8a18"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="990d5ae4-768a-4be7-ac8e-8d32fc88ef54">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Teams - Top 20 devices with high CPU usage ratio - Production" ordering="2" serviceMetric="false" uid="9357c7c7-4542-436b-b2a8-8da1390936bb">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="process_cpu_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5b0be560-7bfd-4499-b143-3018d0b3ef7c">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="By Location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Teams - Performance - CPU Usage Above 10% - Production" ordering="0" serviceMetric="false" uid="9a69626d-8e9b-46d4-b5cb-83a7610b8a18"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="afc051bd-9b4a-4c7b-b2cd-e33205ca62a4">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Memory">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with high memory" ordering="0" serviceMetric="false" uid="6d224ed9-3614-4f19-bc0d-88f44533aadf"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="ba710152-1b6a-4e8d-8de2-d6fbf5a4b151">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Teams - Top 20 devices with high memory usage - Production" ordering="2" serviceMetric="false" uid="2ae7afb0-852c-4531-8463-bd2183255f44">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="process_memory_usage"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="7953ef86-44b4-40bb-8b32-d0814261629a">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="By Location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Teams - Performance - Memory Utilization &gt; 150MB - Production" ordering="0" serviceMetric="false" uid="6d224ed9-3614-4f19-bc0d-88f44533aadf"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="c84ef853-dfbd-447a-b82e-ded22d8665b6">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Network response time">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with high network response time" ordering="0" serviceMetric="false" uid="53d2563d-f980-46e3-b724-e5835a172fb4"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="17752b5d-f11c-4b75-9b96-4499a0cebefb">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Network Response Time" ordering="0" serviceMetric="false" uid="528364ad-0bce-4e4c-9d02-1ed1f37fbf25">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sync_ack"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a2c7806f-3a55-428a-8673-0ed000b4fcb4">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="By Location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Teams - Performance - High Network Response Time - Production" ordering="0" serviceMetric="false" uid="53d2563d-f980-46e3-b724-e5835a172fb4"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="427358fa-1728-4faa-afdf-694fb496d8d3">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Network throughput">
+             <metrics>
+              <metric label="Incoming" ordering="0" serviceMetric="false" uid="a2c04dc3-f68c-4369-8d5d-1928a51754f1"/>
+              <metric label="Outgoing" ordering="1" serviceMetric="false" uid="54c730d5-1209-4e46-81ed-503d52041727"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="fae6d890-edf6-4ce3-8397-1768f5e09c4f">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Teams - Performance - Top 10 Network Traffic - Production" ordering="2" serviceMetric="false" uid="a3d1edf5-3676-44be-a3ea-ef43a799b4fd">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="traffic"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ac59edbd-150e-4a7e-862c-77a6501bbf04">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="By Location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Teams - Performance - Network Throughput - Production" ordering="0" serviceMetric="false" uid="f7b8c40c-29b2-43d5-a835-e4812d901df7"/>
+             </metrics>
+             <scale scaleMaxValueType="volume" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

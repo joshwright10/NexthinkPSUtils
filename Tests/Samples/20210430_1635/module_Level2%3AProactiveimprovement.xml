@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Level 2: Proactive improvement</Name>
+     <Dependencies>
+      <Dependency name="L2 - Boot &amp; Logon score by device type" type="metric" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+      <Dependency name="L2 - Percentage of devices with Boot &amp; Logon score &gt; 7" type="metric" uid="a33fc158-e7e1-44c0-962a-0fd5d6896a10"/>
+      <Dependency name="L2 - Boot &amp; Logon / Days since last reboot score by model" type="metric" uid="943d62e8-35ce-4c40-b46f-c7ae21530123"/>
+      <Dependency name="L2 - Boot &amp; Logon / Extended logon duration score by model" type="metric" uid="a712d217-e13b-4c81-bd53-98ee302b1519"/>
+      <Dependency name="L2 - Boot &amp; Logon / Logon duration score by model" type="metric" uid="47e67205-d989-433d-b9f1-b9e26b8abd0b"/>
+      <Dependency name="L2 - Boot &amp; Logon score by model" type="metric" uid="fa02fcca-4a11-4d20-8ec3-997ae260a398"/>
+      <Dependency name="L2 - Boot &amp; Logon score by OS" type="metric" uid="90222816-3b0d-4115-9536-bbe6faf7d331"/>
+      <Dependency name="L2 - Hardware score by device type" type="metric" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+      <Dependency name="L2 - Percentage of devices with Hardware score &gt; 7" type="metric" uid="9f53db0f-698d-4474-bf40-6815d679bdf2"/>
+      <Dependency name="L2 - Hardware / Disk health score by model" type="metric" uid="30aeb4c2-4b0f-46e3-9c2a-fec182da091a"/>
+      <Dependency name="L2 - Hardware / System drive free space score by model" type="metric" uid="a793c73e-5520-49b7-8fe6-bccd82c4dc22"/>
+      <Dependency name="L2 - Hardware score by model" type="metric" uid="25ac4bb3-8de4-422c-9984-cf43208338bd"/>
+      <Dependency name="L2 - Hardware score by OS" type="metric" uid="63a5801e-9da2-4e6a-9f57-5f6423205e44"/>
+      <Dependency name="L2 - Infrastructure score by device type" type="metric" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+      <Dependency name="L2 - Percentage of devices with Infrastructure score &gt; 7" type="metric" uid="787a60ae-6548-4f1e-8965-17dfe01ecdee"/>
+      <Dependency name="L2 - Infrastructure / Network connectivity score by model" type="metric" uid="572ac85b-9475-4dcd-b7d3-f8b5ccbdedb6"/>
+      <Dependency name="L2 - Infrastructure / Network response time score by model" type="metric" uid="4725659f-85a2-4f66-9aee-03a607c3c60b"/>
+      <Dependency name="L2 - Infrastructure score by model" type="metric" uid="dbd81b9b-27bf-457a-a2dd-033ebc5144d6"/>
+      <Dependency name="L2 - Infrastructure score by OS" type="metric" uid="a49e9e73-a446-4e33-bfc7-e68fc299a7c6"/>
+      <Dependency name="L2 - Software stability score by device type" type="metric" uid="2fdba0b8-46ba-4e47-8130-07a7aa54ef42"/>
+      <Dependency name="L2 - Percentage of devices with Software stability score &gt; 7" type="metric" uid="f91c424a-8d2a-48f8-b6e6-8311b4f36fcf"/>
+      <Dependency name="L2 - Software score by device type" type="metric" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+      <Dependency name="L2 - Software stability / Software crashes score by model" type="metric" uid="fc75841c-224b-43fd-b85f-5588bd74e6a1"/>
+      <Dependency name="L2 - Software stability / Software freezes score by model" type="metric" uid="641adc2d-4f53-48c1-ac45-740229d51718"/>
+      <Dependency name="L2 - Software stability score by model" type="metric" uid="e54d9010-e1b7-4a37-bbed-bb09160def79"/>
+      <Dependency name="L2 - Software stability score by OS" type="metric" uid="7c28f31f-d85a-4591-8ded-0895c1d4e4e0"/>
+      <Dependency name="L2 - Score by device type" type="metric" uid="cf1abca4-04bc-4f80-b2f8-9c59e67a2ba9"/>
+      <Dependency name="L2 - Percentage of devices with score &gt; 7" type="metric" uid="0b1788b1-82e9-4b6a-89e2-e72a894110c7"/>
+      <Dependency name="L2 - Performance score by device type" type="metric" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+      <Dependency name="L2 - Security score by device type" type="metric" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+      <Dependency name="L2 - Stability score by device type" type="metric" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+      <Dependency name="L2 - Score by model" type="metric" uid="37cfdf9e-5270-44a2-83e4-fe5b0e573cfd"/>
+      <Dependency name="L2 - Score by OS" type="metric" uid="7c2a7e1e-8627-49cf-8b00-5132a911f561"/>
+      <Dependency name="L2 - Percentage of devices with Performance score &gt; 7" type="metric" uid="2eee16e8-3d34-43cf-922e-ba66927cbcfb"/>
+      <Dependency name="L2 - Performance / CPU usage score by model" type="metric" uid="e08f02db-17c7-465e-b56a-ad5004b86818"/>
+      <Dependency name="L2 - Performance / Memory usage score by model" type="metric" uid="7233d086-87cc-4822-9a5f-f5582fa99a80"/>
+      <Dependency name="L2 - Performance score by model" type="metric" uid="b6bde104-6f75-4fee-985b-9f1ae3d3c699"/>
+      <Dependency name="L2 - Performance score by OS" type="metric" uid="b8b2a2c8-8f52-4a08-a41d-9acf88e2c3d2"/>
+      <Dependency name="L2 - Percentage of devices with Security score &gt; 7" type="metric" uid="f6a00a04-a2be-4791-a5eb-93cee27ef2c6"/>
+      <Dependency name="L2 - Security / Antivirus RTP score by model" type="metric" uid="33c469bc-5fb1-42fa-a002-7e52b4d438e3"/>
+      <Dependency name="L2 - Security / Antivirus up-to-date score by model" type="metric" uid="e206ec7d-55aa-464c-afa7-6cdcfac39636"/>
+      <Dependency name="L2 - Security / Corporate antivirus score by model" type="metric" uid="45dba6bf-1b99-4a00-90f7-721fa16345d9"/>
+      <Dependency name="L2 - Security / Corporate firewall score by model" type="metric" uid="b1fa6bd0-8e34-41c6-ab4b-0b610827a0e7"/>
+      <Dependency name="L2 - Security / Firewall FTP score by model" type="metric" uid="52fe032a-8689-4361-89ba-08f6ced9fc5e"/>
+      <Dependency name="L2 - Security score by model" type="metric" uid="72402902-9234-4b4f-a95f-363829afea1f"/>
+      <Dependency name="L2 - Security score by OS" type="metric" uid="0587bcc1-99a6-49c6-9d0b-f64ce901bec3"/>
+      <Dependency name="L2 - Percentage of devices with Software score &gt; 7" type="metric" uid="3f97a4e3-1d98-438d-9db0-439c97be6ffb"/>
+      <Dependency name="L2 - Software / Corporate browser score by model" type="metric" uid="3d6ed2b3-721f-49e5-a272-cd59567cd00f"/>
+      <Dependency name="L2 - Software / OS up-to-date score by model" type="metric" uid="00ed8345-e423-4c19-8f91-0ed7fac25a31"/>
+      <Dependency name="L2 - Software / WMI score by model" type="metric" uid="88cf28ab-4f73-4b7b-b9e8-f5b510d69611"/>
+      <Dependency name="L2 - Software score by model" type="metric" uid="d07da0af-dc7c-4be6-a742-e86ebc9a0d55"/>
+      <Dependency name="L2 - Software score by OS" type="metric" uid="9d390126-938f-4683-abcc-678cc815fed3"/>
+      <Dependency name="L2 - Percentage of devices with Stability score &gt; 7" type="metric" uid="03ae0ac9-a5d4-4f77-8815-97649531564e"/>
+      <Dependency name="L2 - Stability / BSODs score by model" type="metric" uid="0061731c-0051-476f-abbe-66823a34e401"/>
+      <Dependency name="L2 - Stability / Hard resets score by model" type="metric" uid="f124288f-efbe-4976-ba24-f6965a439fd5"/>
+      <Dependency name="L2 - Stability score by model" type="metric" uid="7a0f6514-c612-4ae1-abfa-23be121d2ab7"/>
+      <Dependency name="L2 - Stability score by OS" type="metric" uid="523c6041-8f2a-4750-8290-0aebd8a2cd6c"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Level 2: Proactive improvement" uid="aefd0749-3377-41d4-ada8-a578c480106b">
+        <dashboards>
+         <dashboard description="# Boot &amp; Logon&#13;&#10;&#13;&#10;The performance is composed of the average of the following sub-scores:&#13;&#10;* **Number of days since last reboot**&#13;&#10;If the number of days since last reboot is:&#13;&#10; • More than 14 days ➔ 0&#13;&#10; • 10-14d ➔ 3 to 0&#13;&#10; • 7-10d ➔ 7 to 3&#13;&#10; • 0-7d ➔ 10 to 7&#13;&#10;* **Logon duration**&#13;&#10;If average logon duration is:&#13;&#10; • More than 60 seconds ➔ 0&#13;&#10; • 30-60s ➔ 7 to 3&#13;&#10; • 0-30s ➔ 10 to 7&#13;&#10;* **Extended logon duration**&#13;&#10;If average extended logon duration is:&#13;&#10; • More than 360 seconds ➔ 0&#13;&#10; • 120-360s ➔ 3 to 0&#13;&#10; • 42-120s ➔ 7 to 3&#13;&#10; • 0-42s ➔ 10 to 7&#13;&#10;" index="5" name="Boot &amp; Logon" uid="b43bf65a-16de-43fb-b0a6-acdcce17fdcb">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="b5241b21-a14b-416e-ba0b-c8ddbe71021c" minHeight="268" minWidth="174" type="kpiWidget" widgetID="b5241b21-a14b-416e-ba0b-c8ddbe71021c">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="a10de93e-d470-4501-afa2-a0c3d9805c82" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="a10de93e-d470-4501-afa2-a0c3d9805c82">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="e1582916-7c98-4c79-b04d-95e1f6634fc8" minHeight="204" minWidth="300" type="barChartWidget" widgetID="e1582916-7c98-4c79-b04d-95e1f6634fc8">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="112656bb-0df8-4147-9b1a-0b3817260468" minHeight="324" minWidth="300" type="barChartWidget" widgetID="112656bb-0df8-4147-9b1a-0b3817260468">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="b6680e6b-fc86-4e9d-8186-ad89e11c5397" minHeight="324" minWidth="300" type="barChartWidget" widgetID="b6680e6b-fc86-4e9d-8186-ad89e11c5397">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="3ef8f220-88de-46c4-9b6e-c3c4b3817ad6" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3ef8f220-88de-46c4-9b6e-c3c4b3817ad6">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="53e63615-a00e-4467-9fd4-c7240595a9d1" minHeight="324" minWidth="300" type="barChartWidget" widgetID="53e63615-a00e-4467-9fd4-c7240595a9d1">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="b5241b21-a14b-416e-ba0b-c8ddbe71021c">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Boot &amp; Logon score" ordering="8" serviceMetric="false" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="9" serviceMetric="false" uid="a33fc158-e7e1-44c0-962a-0fd5d6896a10"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="a10de93e-d470-4501-afa2-a0c3d9805c82">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Trend">
+             <metrics>
+              <metric label="Boot &amp; Logon score" ordering="4" serviceMetric="false" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="e1582916-7c98-4c79-b04d-95e1f6634fc8">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Days since last reboot" ordering="10" serviceMetric="false" uid="943d62e8-35ce-4c40-b46f-c7ae21530123"/>
+              <metric label="Extended logon duration" ordering="11" serviceMetric="false" uid="a712d217-e13b-4c81-bd53-98ee302b1519"/>
+              <metric label="Logon duration score" ordering="12" serviceMetric="false" uid="47e67205-d989-433d-b9f1-b9e26b8abd0b"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="112656bb-0df8-4147-9b1a-0b3817260468">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="L2 - Boot &amp; Logon score by device type" ordering="4" serviceMetric="false" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b6680e6b-fc86-4e9d-8186-ad89e11c5397">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Boot &amp; Logon score by model" ordering="4" serviceMetric="false" uid="fa02fcca-4a11-4d20-8ec3-997ae260a398"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3ef8f220-88de-46c4-9b6e-c3c4b3817ad6">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Boot &amp; Logon score by OS" ordering="4" serviceMetric="false" uid="90222816-3b0d-4115-9536-bbe6faf7d331"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="53e63615-a00e-4467-9fd4-c7240595a9d1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Boot &amp; Logon score by device type" ordering="4" serviceMetric="false" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Hardware checklist&#13;&#10;&#13;&#10;The hardware checklist is composed of the average of the following sub-scores:&#13;&#10;* **Disk health**&#13;&#10;If S.M.A.R.T index is: &#13;&#10; • 0-79% ➔ 0&#13;&#10; • 80-99% ➔ 5&#13;&#10; • 100% ➔ 10 &#13;&#10; • unknown ➔ &quot;-&quot;  &#13;&#10;* **System drive free space**&#13;&#10;If system drive free space is: &#13;&#10; • 0-5GB ➔ 0&#13;&#10; • 5-20GB ➔ 3 to 7&#13;&#10; • 20GB or more ➔ 7 to 10&#13;&#10; • unknown ➔ &quot;-&quot;&#13;&#10;" index="2" name="Hardware" uid="622adba3-83d8-4403-8b2f-dd1caa4b7366">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="7337b3c8-b90b-4828-a631-d2aa57a02ae4" minHeight="268" minWidth="174" type="kpiWidget" widgetID="7337b3c8-b90b-4828-a631-d2aa57a02ae4">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="30943479-bdec-407b-8dca-1e510f4160eb" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="30943479-bdec-407b-8dca-1e510f4160eb">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="64af873a-800e-40c3-85f6-d662350404b1" minHeight="324" minWidth="300" type="barChartWidget" widgetID="64af873a-800e-40c3-85f6-d662350404b1">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="2b0f0569-e92b-4aa0-9d91-39506ccabc47" minHeight="324" minWidth="300" type="barChartWidget" widgetID="2b0f0569-e92b-4aa0-9d91-39506ccabc47">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="6c746245-442d-4e6f-90e3-68b6e8bbc113" minHeight="324" minWidth="300" type="barChartWidget" widgetID="6c746245-442d-4e6f-90e3-68b6e8bbc113">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="aea6762a-1eac-4b6a-9e46-c58af4260fed" minHeight="324" minWidth="300" type="barChartWidget" widgetID="aea6762a-1eac-4b6a-9e46-c58af4260fed">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="310667a5-0de6-43cf-832c-7a2b46b971be" minHeight="324" minWidth="300" type="barChartWidget" widgetID="310667a5-0de6-43cf-832c-7a2b46b971be">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="7337b3c8-b90b-4828-a631-d2aa57a02ae4">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hardware score" ordering="0" serviceMetric="false" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="1" serviceMetric="false" uid="9f53db0f-698d-4474-bf40-6815d679bdf2"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="30943479-bdec-407b-8dca-1e510f4160eb">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="Trend">
+             <metrics>
+              <metric label="Hardware score" ordering="0" serviceMetric="false" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="64af873a-800e-40c3-85f6-d662350404b1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Disk health" ordering="1" serviceMetric="false" uid="30aeb4c2-4b0f-46e3-9c2a-fec182da091a"/>
+              <metric label="System drive free space" ordering="3" serviceMetric="false" uid="a793c73e-5520-49b7-8fe6-bccd82c4dc22"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="2b0f0569-e92b-4aa0-9d91-39506ccabc47">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Hardware score by device type" ordering="0" serviceMetric="false" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="6c746245-442d-4e6f-90e3-68b6e8bbc113">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Hardware score by model" ordering="0" serviceMetric="false" uid="25ac4bb3-8de4-422c-9984-cf43208338bd"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="aea6762a-1eac-4b6a-9e46-c58af4260fed">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Hardware score by OS" ordering="0" serviceMetric="false" uid="63a5801e-9da2-4e6a-9f57-5f6423205e44"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="310667a5-0de6-43cf-832c-7a2b46b971be">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Hardware score by device type" ordering="0" serviceMetric="false" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Infrastructure checklist&#13;&#10;&#13;&#10;The infrastructure checklist is composed of the average of the following sub-scores:&#13;&#10;* **Network connectivity**&#13;&#10;If the successful connection ratio for the last 7 days is: &#13;&#10; • 95-0% ➔ 3 to 0&#13;&#10; • 98-95% ➔ 7 to 3&#13;&#10; • 100-98% ➔ 10 to 7&#13;&#10; • unknown ➔ &quot;-&quot;&#13;&#10;* **Network response time**&#13;&#10;If antivirus RTP is: &#13;&#10; • 150ms or more ➔ 0&#13;&#10; • 80-150ms ➔ 7 to 3&#13;&#10; • 0-80ms ➔ 10 to 7&#13;&#10; • unknown ➔ &quot;-&quot;" index="9" name="Infrastructure" uid="8eed08b0-fe57-442e-b4a1-3c68ec096c81">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="eedaafaf-25b1-4b27-b3f4-5667daaaff8a" minHeight="268" minWidth="174" type="kpiWidget" widgetID="eedaafaf-25b1-4b27-b3f4-5667daaaff8a">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="36216aa3-0063-4bde-a2df-57e9292182f4" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="36216aa3-0063-4bde-a2df-57e9292182f4">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="6d10fd6e-336f-4fdf-8c57-e18361c56c77" minHeight="324" minWidth="300" type="barChartWidget" widgetID="6d10fd6e-336f-4fdf-8c57-e18361c56c77">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d467e2c7-52bf-43a7-bda7-e5fceb2afa62" minHeight="324" minWidth="300" type="barChartWidget" widgetID="d467e2c7-52bf-43a7-bda7-e5fceb2afa62">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="051d60be-1489-4e8b-b846-ed5b2802830d" minHeight="324" minWidth="300" type="barChartWidget" widgetID="051d60be-1489-4e8b-b846-ed5b2802830d">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="0c386e3c-08a2-4e09-a299-f3ddd4e9477c" minHeight="324" minWidth="300" type="barChartWidget" widgetID="0c386e3c-08a2-4e09-a299-f3ddd4e9477c">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="7661866b-fb14-4b7c-a49e-a28cbb518bf6" minHeight="324" minWidth="300" type="barChartWidget" widgetID="7661866b-fb14-4b7c-a49e-a28cbb518bf6">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="eedaafaf-25b1-4b27-b3f4-5667daaaff8a">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Infrastructure score" ordering="0" serviceMetric="false" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="1" serviceMetric="false" uid="787a60ae-6548-4f1e-8965-17dfe01ecdee"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="36216aa3-0063-4bde-a2df-57e9292182f4">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="Trend">
+             <metrics>
+              <metric label="Infrastructure score" ordering="0" serviceMetric="false" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="6d10fd6e-336f-4fdf-8c57-e18361c56c77">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Network connectivity" ordering="0" serviceMetric="false" uid="572ac85b-9475-4dcd-b7d3-f8b5ccbdedb6"/>
+              <metric label="Network response time" ordering="1" serviceMetric="false" uid="4725659f-85a2-4f66-9aee-03a607c3c60b"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d467e2c7-52bf-43a7-bda7-e5fceb2afa62">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Infrastructure score by device type" ordering="0" serviceMetric="false" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="051d60be-1489-4e8b-b846-ed5b2802830d">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Infrastructure score by model" ordering="0" serviceMetric="false" uid="dbd81b9b-27bf-457a-a2dd-033ebc5144d6"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0c386e3c-08a2-4e09-a299-f3ddd4e9477c">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Infrastructure score by OS" ordering="0" serviceMetric="false" uid="a49e9e73-a446-4e33-bfc7-e68fc299a7c6"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="7661866b-fb14-4b7c-a49e-a28cbb518bf6">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Infrastructure score by device type" ordering="0" serviceMetric="false" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Level 2: Proactive improvement&#13;&#10;&#13;&#10;This module provides device performance metrics. These allow you to quickly spot areas of improvement and take action.&#13;&#10;&#13;&#10;The **trends** help you follow the evolution of the performance scores and check if the overall performance is improving or regressing.&#13;&#10;&#13;&#10;Proactively ensuring that devices meet the requirements of the Level 2: Proactive improvement checklist can help to reduce the number of incidents, which will in turn reduce the workload on the Support team. &#13;&#10;&#13;&#10;This helps Support agents to quickly spot issues and troubleshoot the most common incidents, potentially reducing the number of tickets that are escalated to L2 support. Furthermore, ensuring that endpoints meet the requirements can help avoid L2 support losing time when tickets are escalated.&#13;&#10;&#13;&#10;# Overview&#13;&#10;Starting from the **overview** dashboard, you can compare the Level 2: Proactive improvement checklist **by location**, **device model**, **OS** and **device type**.&#13;&#10;&#13;&#10;The **details** widget shows which areas (e.g. hardware or software) require more attention.&#13;&#10;&#13;&#10;The **trends** help you follow the evolution of the averages for individual scores and check if more or fewer devices are meeting the Level 2: Proactive improvement requirements. &#13;&#10;&#13;&#10;&#13;&#10;# Level 2: Proactive improvement scores&#13;&#10;The Level 2: Proactive improvement score is the average of 8 sub-scores:&#13;&#10;* **Hardware:** Disk health, system drive free space&#13;&#10;* **Software:** OS up-to-date, WMI, browser&#13;&#10;* **Security:**  Antivirus, firewall&#13;&#10;* **Boot &amp; Logon:**  Days since last reboot, Logon duration, Extended Logon duration&#13;&#10;* **Performance:** CPU usage, memory usage&#13;&#10;* **Stability:** BSODs, Hard resets&#13;&#10;* **Software stability:** Software crashes, software freezes&#13;&#10;* **Infrastructure:** Network connectivity, network response time" index="1" name="Overview" uid="d762efcc-31d2-4b57-8f46-9b3ea9ba7766">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="eb86dfc7-bb9c-43d1-98bb-a1a74e1ea702" minHeight="268" minWidth="174" type="kpiWidget" widgetID="eb86dfc7-bb9c-43d1-98bb-a1a74e1ea702">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="539680d3-f073-4ce1-a8cb-2bbdd6468249" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="539680d3-f073-4ce1-a8cb-2bbdd6468249">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="836c422a-4238-4567-a3cb-a74d3ee0c86e" minHeight="324" minWidth="300" type="barChartWidget" widgetID="836c422a-4238-4567-a3cb-a74d3ee0c86e">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="f75a3926-dd2b-4545-92b5-2e16eff6735e" minHeight="324" minWidth="300" type="barChartWidget" widgetID="f75a3926-dd2b-4545-92b5-2e16eff6735e">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="af8a7746-c1a7-4d40-9988-3b6c39737b25" minHeight="324" minWidth="300" type="barChartWidget" widgetID="af8a7746-c1a7-4d40-9988-3b6c39737b25">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="510ee273-95d1-4451-af4a-e2243192feb9" minHeight="324" minWidth="300" type="barChartWidget" widgetID="510ee273-95d1-4451-af4a-e2243192feb9">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="724f513c-60fc-4784-8d47-07680ae34f4e" minHeight="324" minWidth="300" type="barChartWidget" widgetID="724f513c-60fc-4784-8d47-07680ae34f4e">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="eb86dfc7-bb9c-43d1-98bb-a1a74e1ea702">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Overall performance score" ordering="0" serviceMetric="false" uid="cf1abca4-04bc-4f80-b2f8-9c59e67a2ba9"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="2" serviceMetric="false" uid="0b1788b1-82e9-4b6a-89e2-e72a894110c7"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="539680d3-f073-4ce1-a8cb-2bbdd6468249">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="Trend">
+             <metrics>
+              <metric label="Overall performance score" ordering="0" serviceMetric="false" uid="cf1abca4-04bc-4f80-b2f8-9c59e67a2ba9"/>
+             </metrics>
+             <scale scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="836c422a-4238-4567-a3cb-a74d3ee0c86e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Boot &amp; Logon" ordering="8" serviceMetric="false" uid="f1592fb9-12f3-4b58-9650-c927ef60f05d"/>
+              <metric label="Hardware" ordering="9" serviceMetric="false" uid="3e9753c2-63a8-463f-9358-b59fa70fc327"/>
+              <metric label="Infrastructure" ordering="10" serviceMetric="false" uid="9ef94356-0859-4ea9-ae9a-8d0fe86b69e3"/>
+              <metric label="Performance" ordering="11" serviceMetric="false" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+              <metric label="Security" ordering="13" serviceMetric="false" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+              <metric label="Software" ordering="14" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+              <metric label="Software stability" ordering="15" serviceMetric="false" uid="2fdba0b8-46ba-4e47-8130-07a7aa54ef42"/>
+              <metric label="Stability" ordering="16" serviceMetric="false" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f75a3926-dd2b-4545-92b5-2e16eff6735e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist score by device type" ordering="0" serviceMetric="false" uid="cf1abca4-04bc-4f80-b2f8-9c59e67a2ba9"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="af8a7746-c1a7-4d40-9988-3b6c39737b25">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist score by model" ordering="0" serviceMetric="false" uid="37cfdf9e-5270-44a2-83e4-fe5b0e573cfd"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="510ee273-95d1-4451-af4a-e2243192feb9">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist score by OS" ordering="0" serviceMetric="false" uid="7c2a7e1e-8627-49cf-8b00-5132a911f561"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="724f513c-60fc-4784-8d47-07680ae34f4e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist score by device type" ordering="0" serviceMetric="false" uid="cf1abca4-04bc-4f80-b2f8-9c59e67a2ba9"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Performance&#13;&#10;&#13;&#10;The performance is composed of the average of the following sub-scores:&#13;&#10;* **CPU usage**&#13;&#10;If overall high CPU time ratio is:&#13;&#10; • 30-100% ➔ 0&#13;&#10; • 20-30% ➔ 7 to 3&#13;&#10; • 0-20% ➔ 10 to 7&#13;&#10;* **Memory usage**&#13;&#10;If overall high memory time ratio is:&#13;&#10; • 40-100% ➔ 0&#13;&#10; • 20-40% ➔ 7 to 3&#13;&#10; • 0-20% ➔ 10 to 7&#13;&#10;" index="6" name="Performance" uid="517d2db0-bd44-444b-b048-0f8e430f91b6">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="8999fdf2-58b1-4e78-84d9-49a5fc64f935" minHeight="268" minWidth="174" type="kpiWidget" widgetID="8999fdf2-58b1-4e78-84d9-49a5fc64f935">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="f6b04386-ba5b-4d66-b4ae-fcb917da5488" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="f6b04386-ba5b-4d66-b4ae-fcb917da5488">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="5a1b42c1-8ab3-441c-a830-311a67189fdf" minHeight="324" minWidth="300" type="barChartWidget" widgetID="5a1b42c1-8ab3-441c-a830-311a67189fdf">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="1b41e6df-96fe-489f-99f9-37d770e01bf5" minHeight="324" minWidth="300" type="barChartWidget" widgetID="1b41e6df-96fe-489f-99f9-37d770e01bf5">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="3d7b8125-4a0f-4774-a493-e100b87c61e1" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3d7b8125-4a0f-4774-a493-e100b87c61e1">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="da9c65a2-074d-4364-9e20-cd43dfa17d9b" minHeight="324" minWidth="300" type="barChartWidget" widgetID="da9c65a2-074d-4364-9e20-cd43dfa17d9b">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="efdfc3c9-a57a-4d50-b803-3b6c7b27adc4" minHeight="324" minWidth="300" type="barChartWidget" widgetID="efdfc3c9-a57a-4d50-b803-3b6c7b27adc4">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="8999fdf2-58b1-4e78-84d9-49a5fc64f935">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Performance score" ordering="2" serviceMetric="false" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="3" serviceMetric="false" uid="2eee16e8-3d34-43cf-922e-ba66927cbcfb"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="f6b04386-ba5b-4d66-b4ae-fcb917da5488">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Trend">
+             <metrics>
+              <metric label="Performance score" ordering="1" serviceMetric="false" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5a1b42c1-8ab3-441c-a830-311a67189fdf">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="CPU usage" ordering="4" serviceMetric="false" uid="e08f02db-17c7-465e-b56a-ad5004b86818"/>
+              <metric label="Memory usage" ordering="5" serviceMetric="false" uid="7233d086-87cc-4822-9a5f-f5582fa99a80"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="1b41e6df-96fe-489f-99f9-37d770e01bf5">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Performance score by device type" ordering="1" serviceMetric="false" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3d7b8125-4a0f-4774-a493-e100b87c61e1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Performance score by model" ordering="1" serviceMetric="false" uid="b6bde104-6f75-4fee-985b-9f1ae3d3c699"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="da9c65a2-074d-4364-9e20-cd43dfa17d9b">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Performance score by OS" ordering="1" serviceMetric="false" uid="b8b2a2c8-8f52-4a08-a41d-9acf88e2c3d2"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="efdfc3c9-a57a-4d50-b803-3b6c7b27adc4">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Performance score by device type" ordering="1" serviceMetric="false" uid="6e86bd99-be25-4076-83af-94b6f4af7c9b"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Security checklist&#13;&#10;&#13;&#10;The security checklist is composed of the average of the following sub-scores:&#13;&#10;* **Corporate antivirus**&#13;&#10;Is corporate antivirus is: &#13;&#10; • No ➔ 0&#13;&#10; • Yes ➔ 10&#13;&#10;* **Antivirus RTP status**&#13;&#10;If antivirus RTP (real-time protection) is: &#13;&#10; • Disabled or unknown status ➔ 0&#13;&#10; • Enabled ➔ 10&#13;&#10;* **Antivirus update status**&#13;&#10;If antivirus is:&#13;&#10; • Not up-to-date or unknown ➔ 0&#13;&#10; • Up-to-date ➔ 10&#13;&#10;* **Corporate firewall**&#13;&#10;Is corporate firewall is: &#13;&#10; • No ➔ 0&#13;&#10; • Yes ➔ 10&#13;&#10;* **Firewall RTP status**&#13;&#10;If firewall RTP (real-time protection) is: &#13;&#10; • Disabled or unknown status ➔ 0&#13;&#10; • Enabled ➔ 10&#13;&#10; " index="4" name="Security" uid="e6fb4901-14b8-4532-9f0c-ed4f7c4aeef1">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="bc2665f0-0449-41a1-882b-cf6332cee38a" minHeight="268" minWidth="174" type="kpiWidget" widgetID="bc2665f0-0449-41a1-882b-cf6332cee38a">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="a184fccc-1084-4c9c-947b-ef7df7d60e0e" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="a184fccc-1084-4c9c-947b-ef7df7d60e0e">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="f8c43d86-beda-41f2-ab15-3c274bc2d9a1" minHeight="324" minWidth="300" type="barChartWidget" widgetID="f8c43d86-beda-41f2-ab15-3c274bc2d9a1">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="07775505-2b27-4840-9a72-133932bb48c1" minHeight="324" minWidth="300" type="barChartWidget" widgetID="07775505-2b27-4840-9a72-133932bb48c1">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8fcc88e3-71c9-474a-8e7c-2f99dba197bd" minHeight="324" minWidth="300" type="barChartWidget" widgetID="8fcc88e3-71c9-474a-8e7c-2f99dba197bd">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5c87f668-7687-4734-bd19-df4a54193ea4" minHeight="324" minWidth="300" type="barChartWidget" widgetID="5c87f668-7687-4734-bd19-df4a54193ea4">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="372d3090-5ab5-4470-9dd0-0f015040326f" minHeight="324" minWidth="300" type="barChartWidget" widgetID="372d3090-5ab5-4470-9dd0-0f015040326f">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="bc2665f0-0449-41a1-882b-cf6332cee38a">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Security score" ordering="0" serviceMetric="false" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="1" serviceMetric="false" uid="f6a00a04-a2be-4791-a5eb-93cee27ef2c6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="a184fccc-1084-4c9c-947b-ef7df7d60e0e">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="Trend">
+             <metrics>
+              <metric label="Security score" ordering="0" serviceMetric="false" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f8c43d86-beda-41f2-ab15-3c274bc2d9a1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Antivirus RTP" ordering="0" serviceMetric="false" uid="33c469bc-5fb1-42fa-a002-7e52b4d438e3"/>
+              <metric label="Antivirus up-to-date" ordering="1" serviceMetric="false" uid="e206ec7d-55aa-464c-afa7-6cdcfac39636"/>
+              <metric label="Corporate antivirus" ordering="2" serviceMetric="false" uid="45dba6bf-1b99-4a00-90f7-721fa16345d9"/>
+              <metric label="Corporate firewall" ordering="3" serviceMetric="false" uid="b1fa6bd0-8e34-41c6-ab4b-0b610827a0e7"/>
+              <metric label="Firewall FTP" ordering="5" serviceMetric="false" uid="52fe032a-8689-4361-89ba-08f6ced9fc5e"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="07775505-2b27-4840-9a72-133932bb48c1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Security score by device type" ordering="0" serviceMetric="false" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8fcc88e3-71c9-474a-8e7c-2f99dba197bd">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Security score by model" ordering="0" serviceMetric="false" uid="72402902-9234-4b4f-a95f-363829afea1f"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5c87f668-7687-4734-bd19-df4a54193ea4">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Security score by OS" ordering="1" serviceMetric="false" uid="0587bcc1-99a6-49c6-9d0b-f64ce901bec3"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="372d3090-5ab5-4470-9dd0-0f015040326f">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Security score by device type" ordering="0" serviceMetric="false" uid="7d9a03bd-eee4-4d58-8026-75293555ed8a"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Software checklist&#13;&#10;&#13;&#10;The software checklist is composed of the average of the following sub-scores:&#13;&#10;* **OS update status**&#13;&#10;If OS was last updated: &#13;&#10; • More than four weeks ago ➔ 0&#13;&#10; • Three to four weeks ago ➔ 3&#13;&#10; • Two to three weeks ago ➔ 5&#13;&#10; • One to two weeks ago ➔ 7&#13;&#10; • In the past week ➔ 10&#13;&#10;* **Corporate browser**&#13;&#10;If:&#13;&#10; • Non-corporate browser used ➔ 0&#13;&#10; • Only corporate browser used ➔ 10&#13;&#10;* **WMI**&#13;&#10;If the WMI status is:&#13;&#10; • failure ➔ 0&#13;&#10; • ok ➔ 10" index="3" name="Software" uid="4b3e6de6-d6c6-4a47-bc63-1f5be9e57629">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="231836bb-a7ec-4e46-a26d-272aeafe7d4f" minHeight="268" minWidth="174" type="kpiWidget" widgetID="231836bb-a7ec-4e46-a26d-272aeafe7d4f">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="14e8f18d-c066-401d-acc1-384299dbb50b" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="14e8f18d-c066-401d-acc1-384299dbb50b">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="abbee563-ad88-46fe-9d0a-b073404026fc" minHeight="324" minWidth="300" type="barChartWidget" widgetID="abbee563-ad88-46fe-9d0a-b073404026fc">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="75a25966-7823-4f3b-8a0d-b5c9900b60c5" minHeight="324" minWidth="300" type="barChartWidget" widgetID="75a25966-7823-4f3b-8a0d-b5c9900b60c5">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="009c7536-fb2e-45d4-a1f9-9d351c185574" minHeight="324" minWidth="300" type="barChartWidget" widgetID="009c7536-fb2e-45d4-a1f9-9d351c185574">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="fbaac0d3-2edf-4a0a-ae85-aa3a94128dab" minHeight="324" minWidth="300" type="barChartWidget" widgetID="fbaac0d3-2edf-4a0a-ae85-aa3a94128dab">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="13f4c580-9bee-42e6-b7e2-af7dd6a0aa65" minHeight="324" minWidth="300" type="barChartWidget" widgetID="13f4c580-9bee-42e6-b7e2-af7dd6a0aa65">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="231836bb-a7ec-4e46-a26d-272aeafe7d4f">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Software score" ordering="0" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="1" serviceMetric="false" uid="3f97a4e3-1d98-438d-9db0-439c97be6ffb"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="14e8f18d-c066-401d-acc1-384299dbb50b">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="true" title="Trend">
+             <metrics>
+              <metric label="Software score" ordering="0" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="abbee563-ad88-46fe-9d0a-b073404026fc">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Corporate browser" ordering="0" serviceMetric="false" uid="3d6ed2b3-721f-49e5-a272-cd59567cd00f"/>
+              <metric label="OS up-to-date" ordering="4" serviceMetric="false" uid="00ed8345-e423-4c19-8f91-0ed7fac25a31"/>
+              <metric label="WMI" ordering="8" serviceMetric="false" uid="88cf28ab-4f73-4b7b-b9e8-f5b510d69611"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="75a25966-7823-4f3b-8a0d-b5c9900b60c5">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Software score by device type" ordering="0" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="009c7536-fb2e-45d4-a1f9-9d351c185574">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Software score by model" ordering="0" serviceMetric="false" uid="d07da0af-dc7c-4be6-a742-e86ebc9a0d55"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="fbaac0d3-2edf-4a0a-ae85-aa3a94128dab">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Software score by OS" ordering="0" serviceMetric="false" uid="9d390126-938f-4683-abcc-678cc815fed3"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="13f4c580-9bee-42e6-b7e2-af7dd6a0aa65">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="Level 2: Proactive improvement checklist / Software score by device type" ordering="0" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Software stability&#13;&#10;&#13;&#10;The performance is composed of the average of the following sub-scores:&#13;&#10;* **Software crashes**&#13;&#10;If the number of application crashes last 7 days is:&#13;&#10; • More than 5 ➔ 0&#13;&#10; • 3-5 ➔ 3 to 0&#13;&#10; • 1-3 ➔ 7 to 3&#13;&#10; • 0 ➔ 10&#13;&#10;* **Software freezes**&#13;&#10;If the number of application freezes last 7 days is:&#13;&#10; • More than 5 ➔ 0&#13;&#10; • 3-5 ➔ 3 to 0&#13;&#10; • 1-3 ➔ 7 to 3&#13;&#10; • 0 ➔ 10&#13;&#10;" index="8" name="Software stability" uid="3f3866e4-825b-4ee2-aafd-822228cc241f">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="b9625470-4c2a-4d08-a36b-c0d13a08369f" minHeight="268" minWidth="174" type="kpiWidget" widgetID="b9625470-4c2a-4d08-a36b-c0d13a08369f">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="340fd153-af73-4014-b27f-2baed3311494" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="340fd153-af73-4014-b27f-2baed3311494">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="567cb1f0-0c9d-4b84-a6c9-3d34a3125d80" minHeight="204" minWidth="300" type="barChartWidget" widgetID="567cb1f0-0c9d-4b84-a6c9-3d34a3125d80">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="00666ac2-6917-4aa1-b374-f523b9e80a48" minHeight="324" minWidth="300" type="barChartWidget" widgetID="00666ac2-6917-4aa1-b374-f523b9e80a48">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d897a326-6d8c-4222-9eb1-eadb6c1f99eb" minHeight="324" minWidth="300" type="barChartWidget" widgetID="d897a326-6d8c-4222-9eb1-eadb6c1f99eb">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="3d70cc9e-ce8a-4ba1-8352-1059c3d1fe09" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3d70cc9e-ce8a-4ba1-8352-1059c3d1fe09">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="8e7ca3ff-d84b-4106-a5d2-9c880bea9dbe" minHeight="324" minWidth="300" type="barChartWidget" widgetID="8e7ca3ff-d84b-4106-a5d2-9c880bea9dbe">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="b9625470-4c2a-4d08-a36b-c0d13a08369f">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Software stability score" ordering="6" serviceMetric="false" uid="2fdba0b8-46ba-4e47-8130-07a7aa54ef42"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="7" serviceMetric="false" uid="f91c424a-8d2a-48f8-b6e6-8311b4f36fcf"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="340fd153-af73-4014-b27f-2baed3311494">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Trend">
+             <metrics>
+              <metric label="Software stability score" ordering="3" serviceMetric="false" uid="776fba23-6078-4b1e-ab7b-ad8c4faf136c"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="567cb1f0-0c9d-4b84-a6c9-3d34a3125d80">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Software crashes" ordering="8" serviceMetric="false" uid="fc75841c-224b-43fd-b85f-5588bd74e6a1"/>
+              <metric label="Software freezes" ordering="9" serviceMetric="false" uid="641adc2d-4f53-48c1-ac45-740229d51718"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="00666ac2-6917-4aa1-b374-f523b9e80a48">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="L2 - Software stability score by device type" ordering="3" serviceMetric="false" uid="2fdba0b8-46ba-4e47-8130-07a7aa54ef42"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d897a326-6d8c-4222-9eb1-eadb6c1f99eb">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Software stability score by model" ordering="3" serviceMetric="false" uid="e54d9010-e1b7-4a37-bbed-bb09160def79"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3d70cc9e-ce8a-4ba1-8352-1059c3d1fe09">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Software stability score by OS" ordering="3" serviceMetric="false" uid="7c28f31f-d85a-4591-8ded-0895c1d4e4e0"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8e7ca3ff-d84b-4106-a5d2-9c880bea9dbe">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Software stability score by device type" ordering="3" serviceMetric="false" uid="2fdba0b8-46ba-4e47-8130-07a7aa54ef42"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Stability&#13;&#10;&#13;&#10;The performance is composed of the average of the following sub-scores:&#13;&#10;* **Hard resets**&#13;&#10;If overall number of hard resets is:&#13;&#10; • More than 3 ➔ 0&#13;&#10; • 3 ➔ 3&#13;&#10; • 2 ➔ 5&#13;&#10; • 1 ➔ 7&#13;&#10; • 0 ➔ 10&#13;&#10;* **BSODs**&#13;&#10;If overall number of Blue Screens Of Death is:&#13;&#10; • More than 3 ➔ 0&#13;&#10; • 3 ➔ 3&#13;&#10; • 2 ➔ 5&#13;&#10; • 1 ➔ 7&#13;&#10; • 0 ➔ 10&#13;&#10;" index="7" name="Stability" uid="cdbf4561-4c6e-4692-ae14-3dc5e3c3bc66">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="a2154c8f-e3ff-412c-973f-1bef02eb765a" minHeight="268" minWidth="174" type="kpiWidget" widgetID="a2154c8f-e3ff-412c-973f-1bef02eb765a">
+                <preferredHeight value="268"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e7a96563-f8ef-4d05-a300-2a9fe30984b2" minHeight="250" minWidth="300" type="lineChartWidget" widgetID="e7a96563-f8ef-4d05-a300-2a9fe30984b2">
+                  <preferredHeight value="350"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="873cf756-a005-42a5-a8ff-76ce13a61e1a" minHeight="204" minWidth="300" type="barChartWidget" widgetID="873cf756-a005-42a5-a8ff-76ce13a61e1a">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="be9fb980-a0ac-4e87-a20b-4466224a1088" minHeight="324" minWidth="300" type="barChartWidget" widgetID="be9fb980-a0ac-4e87-a20b-4466224a1088">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c2c1b363-8362-49d4-9e47-c553e3f3d5ca" minHeight="324" minWidth="300" type="barChartWidget" widgetID="c2c1b363-8362-49d4-9e47-c553e3f3d5ca">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="9d3097fa-82ff-4338-b473-ca847a597802" minHeight="324" minWidth="300" type="barChartWidget" widgetID="9d3097fa-82ff-4338-b473-ca847a597802">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="506da065-3963-4baf-b096-7d008a9cf492" minHeight="324" minWidth="300" type="barChartWidget" widgetID="506da065-3963-4baf-b096-7d008a9cf492">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="a2154c8f-e3ff-412c-973f-1bef02eb765a">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Stability score" ordering="4" serviceMetric="false" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+              <metric displayValue="RATIO" label="Percentage of devices &gt; 7" ordering="5" serviceMetric="false" uid="03ae0ac9-a5d4-4f77-8815-97649531564e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="e7a96563-f8ef-4d05-a300-2a9fe30984b2">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Trend">
+             <metrics>
+              <metric label="Stability score" ordering="2" serviceMetric="false" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+             </metrics>
+             <scale scaleMaxValue="10" scaleMaxValueType="float" scaleMaxValueUnit="" scaleMinValue="0" scaleType="fixed"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="873cf756-a005-42a5-a8ff-76ce13a61e1a">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Average score details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="BSODs" ordering="6" serviceMetric="false" uid="0061731c-0051-476f-abbe-66823a34e401"/>
+              <metric label="Hard resets" ordering="7" serviceMetric="false" uid="f124288f-efbe-4976-ba24-f6965a439fd5"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="be9fb980-a0ac-4e87-a20b-4466224a1088">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="L2 - Stability score by device type" ordering="2" serviceMetric="false" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c2c1b363-8362-49d4-9e47-c553e3f3d5ca">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by model">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="Model"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Stability score by model" ordering="2" serviceMetric="false" uid="7a0f6514-c612-4ae1-abfa-23be121d2ab7"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="9d3097fa-82ff-4338-b473-ca847a597802">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by OS">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="CATEGORY" value="OS name"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Stability score by OS" ordering="2" serviceMetric="false" uid="523c6041-8f2a-4750-8290-0aebd8a2cd6c"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="506da065-3963-4baf-b096-7d008a9cf492">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="ASC" threshold="true" title="Average by device type">
+             <groupBy type="breakdown">
+              <breakdown object="source" type="FIELD" value="computer_type"/>
+             </groupBy>
+             <metrics>
+              <metric label="L2 - Stability score by device type" ordering="2" serviceMetric="false" uid="6e8c032e-979c-4f1a-910e-45102df64195"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceTree SyntaxVersion="1">
+  <Folder Name="services">
+    <Folder Name="Business Applications">
+      <Service SyntaxVersion="3" Name="SAP" Description="" ServiceType="Web" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <Any />
+        </Destination>
+        <Domain>
+          <Name Value="sap.intra.aonnetworks.com" />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.05</Value>
+          <Value>0.1</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="ERP" Description="ERP service usage" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <IpNetwork Value="172.16.1.0/24" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.05</Value>
+          <Value>0.1</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Exchange CAS" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Name Value="outlook.exe" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="Exchange CAS" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.01</Value>
+          <Value>0.02</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Customer Portal" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Mail" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="Notes" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+    </Folder>
+    <Folder Name="Doc Mgmt System (DMS)">
+      <Service SyntaxVersion="3" Name="Document Mgmt" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="Ged_Prod" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Document Mgmt Web" Description="" ServiceType="Web" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="Ged_Prod" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errorsAndWarnings">
+          <Value>0.02</Value>
+          <Value>0.05</Value>
+        </Thresholds>
+      </Service>
+    </Folder>
+    <Folder Name="Infrastructure">
+      <Service SyntaxVersion="3" Name="Active Directory" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="Active Directory" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Tag Category="Port kind" Keyword="Active Directory" />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errorsAndWarnings">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Single Sign-On" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Any />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="DNS Servers" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.03</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+    </Folder>
+    <Folder Name="Java Applications">
+      <Service SyntaxVersion="3" Name="Oracle Netsuite" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Tag Category="Port kind" Keyword="Iliade-ECR" />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Projectplace" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Tag Category="Port kind" Keyword="Iliade-GAS" />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+    </Folder>
+    <Folder Name="SasS">
+      <Service SyntaxVersion="3" Name="Outlook - O365" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Tag Category="Port kind" Keyword="Odyssée" />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="OneDrive - O365" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="ServiceNow" Description="" ServiceType="Network" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Tag Category="Port kind" Keyword="Iliade-GIA" />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+      <Service SyntaxVersion="3" Name="Expense Mgmt" Description="" ServiceType="Web" Status="enabled">
+        <Executable>
+          <Tag Category="Application type" Keyword="Java" />
+        </Executable>
+        <Destination>
+          <Tag Category="Server type" Keyword="WAS_EPR" />
+        </Destination>
+        <Domain>
+          <Any />
+        </Domain>
+        <Port>
+          <Any />
+        </Port>
+        <Source>
+          <Any />
+        </Source>
+        <UrlPath>
+          <Any />
+        </UrlPath>
+        <Thresholds IssueDefinition="errors">
+          <Value>0.1</Value>
+          <Value>0.2</Value>
+        </Thresholds>
+      </Service>
+    </Folder>
+  </Folder>
+</ServiceTree>

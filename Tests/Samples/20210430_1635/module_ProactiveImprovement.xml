@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Proactive Improvement</Name>
+     <Dependencies>
+      <Dependency name="Java versions by versions and executable name" type="metric" uid="ae00394c-d57b-4c16-aad5-022ff49eb069"/>
+      <Dependency name="Devices by major Java version" type="metric" uid="a5795b77-ceaa-42b7-800f-d0f9346a64ee"/>
+      <Dependency name="Top 100 Java binaries with highest number of devices" type="metric" uid="e2202207-c6ee-4b90-a7a2-bb54ccb6e935"/>
+      <Dependency name="Outlook versions by versions and executable name" type="metric" uid="844f19d7-c5bd-4d2d-afb7-d0f5db584987"/>
+      <Dependency name="Devices by major Outlook version" type="metric" uid="6cda1076-8c31-4547-ae90-8801279f1dbd"/>
+      <Dependency name="Top 100 Outlook binaries with highest number of devices" type="metric" uid="eaf63be4-567d-42fa-9926-fc03912828d0"/>
+      <Dependency name="Adobe Acrobat versions by versions and executable name" type="metric" uid="717dbb5c-ae40-4235-8682-266f328cd427"/>
+      <Dependency name="Devices by major Adobe Acrobat version" type="metric" uid="80377fe0-4155-44b9-b1bd-e17849ea548a"/>
+      <Dependency name="Top 100 Adobe Acrobat binaries with highest number of devices" type="metric" uid="7eb73f89-85a3-4b96-b5b8-065bbfb9e119"/>
+      <Dependency name="Devices with high hardware performance" type="metric" uid="8a7bc7b1-3564-48b6-ad65-ccd8314d85b0"/>
+      <Dependency name="Devices with medium hardware performance" type="metric" uid="1397485f-c220-4f15-90e4-1a01ce645c2f"/>
+      <Dependency name="Devices with low hardware performance" type="metric" uid="05327c02-5f7f-47db-9aac-a138f43047a3"/>
+      <Dependency name="Devices with high CPU time" type="metric" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78"/>
+      <Dependency name="Devices with high memory time" type="metric" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8"/>
+      <Dependency name="Devices with high total drive usage by hardware performance" type="metric" uid="311c17b4-3e32-48a8-ab04-097fed6a4ddc"/>
+      <Dependency name="Top 100 devices with highest high CPU time" type="metric" uid="58ebe326-3308-49d0-b112-508e4a7a6bda"/>
+      <Dependency name="Top 100 devices with highest high memory time" type="metric" uid="7c12ae8a-3f85-47d9-b593-628d10321814"/>
+      <Dependency name="Top 100 applications crashing most often" type="metric" uid="f8ad7f0f-e86b-4f87-944e-de130dfb368e"/>
+      <Dependency name="Top 100 applications freezing most often" type="metric" uid="469a9dc8-3a13-49e6-a917-f19f986de77e"/>
+      <Dependency name="Top 100 applications with highest average network response time" type="metric" uid="d5dafe7b-1310-4d9e-a36a-b67060a33053"/>
+      <Dependency name="Top 100 applications with most CPU issues" type="metric" uid="d5fd56f8-e7be-41cf-a1f5-f0d09d20381f"/>
+      <Dependency name="Users with malware" type="metric" uid="61c47e48-9b28-447b-acbc-d7081ee8e8c4"/>
+      <Dependency name="Users with protection issues" type="metric" uid="f033aaa5-189e-4d94-9551-18cf5a0dc7f2"/>
+      <Dependency name="Users on devices with out-of-support OS" type="metric" uid="b372318b-9e28-4ed6-b46a-354a0de19725"/>
+      <Dependency name="Users accessing dangerous domains" type="metric" uid="e45f95bc-7ee0-4113-a425-28393a1c5855"/>
+      <Dependency name="Users with high average network response time" type="metric" uid="af47264c-186f-4f1b-84c6-b3dc62b7ee32"/>
+      <Dependency name="Users with many failed web requests" type="metric" uid="30c73d39-dee7-4409-8d53-725257cc8108"/>
+      <Dependency name="Users with low network availability" type="metric" uid="62480ebc-2a6b-471b-80d2-65349cce2321"/>
+      <Dependency name="Users with many failed network connections" type="metric" uid="14de4d72-b8e3-4729-b912-7beb7cc3a377"/>
+      <Dependency name="Devices with BSODs or hard resets" type="metric" uid="9e41a241-36d0-43d8-9b81-6793c376b311"/>
+      <Dependency name="Devices with application crashes/freezes" type="metric" uid="8d725beb-0392-4448-9532-f909c177eb38"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Proactive Improvement" uid="fdf069c3-72d8-45e4-9e7d-b7a3450715f8">
+        <dashboards>
+         <dashboard description="# Application consistency&#13;&#10;This dashboard presents the version dispersion of three major applications: Java, Microsoft Outlook and Adobe Acrobat. Assuring that each user has the right version of an application can prevent them from running into problems.&#13;&#10;&#13;&#10;::: tip&#13;&#10;You can extend this dashboard to measure the version dispersion of other applications by duplicating the metrics in Finder and creating the corresponding widgets here.&#13;&#10;:::" index="3" name="Application consistency" uid="c70bd1c9-2f1e-4e1e-bd2a-d97b3e0bdb35">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="507332ba-0748-4414-b8a7-411e9c76cc4e" minHeight="56" minWidth="296" type="titleWidget" widgetID="507332ba-0748-4414-b8a7-411e9c76cc4e">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="9225f423-34c1-41bb-a9b4-68e6aeb92d59" minHeight="126" minWidth="174" type="kpiWidget" widgetID="9225f423-34c1-41bb-a9b4-68e6aeb92d59">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="3af93012-fe17-4fae-b190-9f5a560ea35c" minHeight="233" minWidth="324" type="tableWidget" widgetID="3af93012-fe17-4fae-b190-9f5a560ea35c">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="adf0eff5-c7eb-424c-acec-3ecf26cf3dbf" minHeight="233" minWidth="480" type="tableWidget" widgetID="adf0eff5-c7eb-424c-acec-3ecf26cf3dbf">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="480"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="c335f12d-af6c-4708-b890-c125ff811bcc" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="c335f12d-af6c-4708-b890-c125ff811bcc">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5f783a7e-0130-48a4-ba12-7361b6558344" minHeight="56" minWidth="296" type="titleWidget" widgetID="5f783a7e-0130-48a4-ba12-7361b6558344">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="63096a9f-5803-4d0e-9ff7-199766de40db" minHeight="126" minWidth="174" type="kpiWidget" widgetID="63096a9f-5803-4d0e-9ff7-199766de40db">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="753a3948-57d4-447a-a05f-74aa7382e778" minHeight="233" minWidth="324" type="tableWidget" widgetID="753a3948-57d4-447a-a05f-74aa7382e778">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="324"/>
+                       </data>
+                      </child>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="67a57116-9c3a-4dd1-b676-387b7978fd11" minHeight="233" minWidth="480" type="tableWidget" widgetID="67a57116-9c3a-4dd1-b676-387b7978fd11">
+                          <preferredHeight value="233"/>
+                          <preferredWidth value="480"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="10b8bec3-3313-4633-af0b-b7422411ca25" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="10b8bec3-3313-4633-af0b-b7422411ca25">
+                          <preferredHeight value="310"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="753179e7-61f5-42ba-b1f9-687b64c82c0c" minHeight="56" minWidth="296" type="titleWidget" widgetID="753179e7-61f5-42ba-b1f9-687b64c82c0c">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="9a001261-1b17-4554-af5d-e13b46e5ff84" minHeight="126" minWidth="174" type="kpiWidget" widgetID="9a001261-1b17-4554-af5d-e13b46e5ff84">
+                    <preferredHeight value="126"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="1d4e934c-90ff-4e2b-ad84-33264ef24b83" minHeight="233" minWidth="324" type="tableWidget" widgetID="1d4e934c-90ff-4e2b-ad84-33264ef24b83">
+                      <preferredHeight value="233"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="63622cba-4612-430a-8092-336a9dcc69e1" minHeight="233" minWidth="480" type="tableWidget" widgetID="63622cba-4612-430a-8092-336a9dcc69e1">
+                        <preferredHeight value="233"/>
+                        <preferredWidth value="480"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="96979782-016e-4a3f-90e4-2422e887dac2" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="96979782-016e-4a3f-90e4-2422e887dac2">
+                        <preferredHeight value="310"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="507332ba-0748-4414-b8a7-411e9c76cc4e">
+            <titleConfig title="Dispersion of Java"/>
+           </widget>
+           <widget type="KPI" uid="9225f423-34c1-41bb-a9b4-68e6aeb92d59">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of minor versions" ordering="1" serviceMetric="false" uid="ae00394c-d57b-4c16-aad5-022ff49eb069"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="3af93012-fe17-4fae-b190-9f5a560ea35c">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Major versions">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="0" serviceMetric="false" uid="a5795b77-ceaa-42b7-800f-d0f9346a64ee">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="Major version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="Major version"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="adf0eff5-c7eb-424c-acec-3ecf26cf3dbf">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Usage of minor versions">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 Java binaries with highest number of devices" ordering="0" serviceMetric="false" uid="e2202207-c6ee-4b90-a7a2-bb54ccb6e935">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="c335f12d-af6c-4708-b890-c125ff811bcc">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Number of minor versions" ordering="1" serviceMetric="false" uid="ae00394c-d57b-4c16-aad5-022ff49eb069"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="5f783a7e-0130-48a4-ba12-7361b6558344">
+            <titleConfig title="Dispersion of Outlook"/>
+           </widget>
+           <widget type="KPI" uid="63096a9f-5803-4d0e-9ff7-199766de40db">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of minor versions" ordering="0" serviceMetric="false" uid="844f19d7-c5bd-4d2d-afb7-d0f5db584987"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="753a3948-57d4-447a-a05f-74aa7382e778">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Major versions">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="0" serviceMetric="false" uid="6cda1076-8c31-4547-ae90-8801279f1dbd">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="Major version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="Major version"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="67a57116-9c3a-4dd1-b676-387b7978fd11">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Usage of minor versions">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 Outlook binaries with highest number of devices" ordering="0" serviceMetric="false" uid="eaf63be4-567d-42fa-9926-fc03912828d0">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="10b8bec3-3313-4633-af0b-b7422411ca25">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Number of minor versions" ordering="0" serviceMetric="false" uid="844f19d7-c5bd-4d2d-afb7-d0f5db584987"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="753179e7-61f5-42ba-b1f9-687b64c82c0c">
+            <titleConfig title="Dispersion of Adobe Acrobat"/>
+           </widget>
+           <widget type="KPI" uid="9a001261-1b17-4554-af5d-e13b46e5ff84">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Number of minor versions" ordering="0" serviceMetric="false" uid="717dbb5c-ae40-4235-8682-266f328cd427"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="1d4e934c-90ff-4e2b-ad84-33264ef24b83">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="true" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Major versions">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="0" serviceMetric="false" uid="80377fe0-4155-44b9-b1bd-e17849ea548a">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="Major version"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="Major version"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="63622cba-4612-430a-8092-336a9dcc69e1">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Usage of minor versions">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Copy of Top 100 Adobe Acrobat binaries with highest number of devices" ordering="0" serviceMetric="false" uid="7eb73f89-85a3-4b96-b5b8-065bbfb9e119">
+               <fields name="application_name" type="FIELD"/>
+               <fields name="version" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sources"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="96979782-016e-4a3f-90e4-2422e887dac2">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Number of minor versions" ordering="0" serviceMetric="false" uid="717dbb5c-ae40-4235-8682-266f328cd427"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Application health&#13;&#10;This dashboard displays the applications experiencing the most issues. Issues taken into account are:&#13;&#10;- Crashes&#13;&#10;- Freezes&#13;&#10;- Long network response times&#13;&#10;- High application thread CPU" index="2" name="Application health" uid="f85105e7-3133-4f0d-9e90-7ca6ab353380">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="fb2924d2-fccb-4bac-99ce-90eb5819b4ce" minHeight="241" minWidth="480" type="tableWidget" widgetID="fb2924d2-fccb-4bac-99ce-90eb5819b4ce">
+                  <preferredHeight value="241"/>
+                  <preferredWidth value="480"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="838721d8-bc88-4ba0-a50f-529aafe92354" minHeight="241" minWidth="480" type="tableWidget" widgetID="838721d8-bc88-4ba0-a50f-529aafe92354">
+                  <preferredHeight value="241"/>
+                  <preferredWidth value="480"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="f62469c3-c231-4943-9d60-8f07df67c18a" minHeight="241" minWidth="480" type="tableWidget" widgetID="f62469c3-c231-4943-9d60-8f07df67c18a">
+                <preferredHeight value="241"/>
+                <preferredWidth value="480"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="L">
+             <children/>
+             <data id="ae004f64-523b-4831-b8d0-66a320fd478a" minHeight="241" minWidth="480" type="tableWidget" widgetID="ae004f64-523b-4831-b8d0-66a320fd478a">
+              <preferredHeight value="241"/>
+              <preferredWidth value="480"/>
+             </data>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="fb2924d2-fccb-4bac-99ce-90eb5819b4ce">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications crashing the most often">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 applications crashing most often" ordering="0" serviceMetric="false" uid="f8ad7f0f-e86b-4f87-944e-de130dfb368e">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="crashes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="838721d8-bc88-4ba0-a50f-529aafe92354">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications freezing the most often">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 applications freezing most often" ordering="0" serviceMetric="false" uid="469a9dc8-3a13-49e6-a917-f19f986de77e">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="freezes_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f62469c3-c231-4943-9d60-8f07df67c18a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications with highest average network response time">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 Applications with highest average network response time" ordering="0" serviceMetric="false" uid="d5dafe7b-1310-4d9e-a36a-b67060a33053">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="sync_ack"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ae004f64-523b-4831-b8d0-66a320fd478a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Applications with most CPU issues">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 applications with most CPU issues" ordering="0" serviceMetric="false" uid="d5fd56f8-e7be-41cf-a1f5-f0d09d20381f">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_application_thread_cpu_time_ratio"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Proactive Improvement&#13;&#10;This module gives you a set of metrics that help you to improve your service before issues arise or users complain. These are split into the following dashboards:&#13;&#10;- **Hardware ratings**: investigate the performance of your devices, discovering users impacted by low-performing devices.&#13;&#10;- **Application health and consistency**: uncover the applications causing the most issues for users, and ascertain the version dispersion of three primary software packages.&#13;&#10;- **User experience**: discover major impactors to security, system stability and networking on your end-users' devices. &#13;&#10;&#13;&#10;# Hardware ratings&#13;&#10;In this dashboard, devices are rated according to their hardware (CPU, memory, graphical card and hard disk are taken into account).&#13;&#10;Devices experiencing performance issues are also reported:&#13;&#10;- Devices using a lot of CPU more than 10% of the time&#13;&#10;- Devices using a lot of memory more than 30% of the time&#13;&#10;- Devices using more than 80% of their hard drive" index="1" name="Hardware ratings" uid="fd7092bb-cc60-411c-bb16-6522f8058cfe">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d69f5b1e-6c1a-4dd2-bff7-abda97d612ef" minHeight="174" minWidth="554" type="kpiWidget" widgetID="d69f5b1e-6c1a-4dd2-bff7-abda97d612ef">
+                  <preferredHeight value="174"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ba206acc-1468-49c2-917b-9ecc02be3855" minHeight="193" minWidth="624" type="tableWidget" widgetID="ba206acc-1468-49c2-917b-9ecc02be3855">
+                    <preferredHeight value="193"/>
+                    <preferredWidth value="624"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="36020443-467e-4e83-9f6a-edb56c0484ec" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="36020443-467e-4e83-9f6a-edb56c0484ec">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="765ceebf-a3a8-46d0-a490-7c73c49ad26c" minHeight="174" minWidth="554" type="kpiWidget" widgetID="765ceebf-a3a8-46d0-a490-7c73c49ad26c">
+                  <preferredHeight value="174"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ac2c4a76-e385-466f-9a13-9e2e29f426ec" minHeight="193" minWidth="624" type="tableWidget" widgetID="ac2c4a76-e385-466f-9a13-9e2e29f426ec">
+                    <preferredHeight value="193"/>
+                    <preferredWidth value="624"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="22204340-ec67-4ead-9ae1-d1e0c5228524" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="22204340-ec67-4ead-9ae1-d1e0c5228524">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="dca4d053-f79a-420f-ba11-efea9b34779c" minHeight="361" minWidth="630" type="tableWidget" widgetID="dca4d053-f79a-420f-ba11-efea9b34779c">
+                <preferredHeight value="361"/>
+                <preferredWidth value="630"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="6d78de37-3f1a-4b41-a953-dac46b56c94c" minHeight="361" minWidth="630" type="tableWidget" widgetID="6d78de37-3f1a-4b41-a953-dac46b56c94c">
+                <preferredHeight value="361"/>
+                <preferredWidth value="630"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="d69f5b1e-6c1a-4dd2-bff7-abda97d612ef">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Device hardware rating">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High" ordering="0" serviceMetric="false" uid="8a7bc7b1-3564-48b6-ad65-ccd8314d85b0"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Medium" ordering="1" serviceMetric="false" uid="1397485f-c220-4f15-90e4-1a01ce645c2f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Low" ordering="2" serviceMetric="false" uid="05327c02-5f7f-47db-9aac-a138f43047a3"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="ba206acc-1468-49c2-917b-9ecc02be3855">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="High" ordering="1" serviceMetric="false" uid="8a7bc7b1-3564-48b6-ad65-ccd8314d85b0">
+               <fields name="name" type="FIELD"/>
+               <fields name="cpu_model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="gpu_ram" type="FIELD"/>
+               <fields name="all_drives_total" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Medium" ordering="3" serviceMetric="false" uid="1397485f-c220-4f15-90e4-1a01ce645c2f">
+               <fields name="name" type="FIELD"/>
+               <fields name="cpu_model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="gpu_ram" type="FIELD"/>
+               <fields name="all_drives_total" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Low" ordering="4" serviceMetric="false" uid="05327c02-5f7f-47db-9aac-a138f43047a3">
+               <fields name="name" type="FIELD"/>
+               <fields name="cpu_model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="gpu_ram" type="FIELD"/>
+               <fields name="all_drives_total" type="FIELD"/>
+               <fields name="system_drive_total" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="36020443-467e-4e83-9f6a-edb56c0484ec">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="High" ordering="1" serviceMetric="false" uid="8a7bc7b1-3564-48b6-ad65-ccd8314d85b0"/>
+              <metric label="Medium" ordering="2" serviceMetric="false" uid="1397485f-c220-4f15-90e4-1a01ce645c2f"/>
+              <metric label="Low" ordering="3" serviceMetric="false" uid="05327c02-5f7f-47db-9aac-a138f43047a3"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="765ceebf-a3a8-46d0-a490-7c73c49ad26c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with performance issues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High CPU time" ordering="0" serviceMetric="false" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High memory time" ordering="1" serviceMetric="false" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High total drive usage" ordering="2" serviceMetric="false" uid="311c17b4-3e32-48a8-ab04-097fed6a4ddc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="ac2c4a76-e385-466f-9a13-9e2e29f426ec">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="High CPU time" ordering="0" serviceMetric="false" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="Hardware rating" type="CATEGORY"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="High memory time" ordering="1" serviceMetric="false" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="Hardware rating" type="CATEGORY"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="High total drive usage" ordering="2" serviceMetric="false" uid="311c17b4-3e32-48a8-ab04-097fed6a4ddc">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="all_drives_usage" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="22204340-ec67-4ead-9ae1-d1e0c5228524">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="High CPU time" ordering="0" serviceMetric="false" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78"/>
+              <metric label="High memory time" ordering="1" serviceMetric="false" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8"/>
+              <metric label="High total drive usage" ordering="2" serviceMetric="false" uid="311c17b4-3e32-48a8-ab04-097fed6a4ddc"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="dca4d053-f79a-420f-ba11-efea9b34779c">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Devices with highest high CPU time">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 devices with highest high CPU time" ordering="1" serviceMetric="false" uid="58ebe326-3308-49d0-b112-508e4a7a6bda">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="Hardware rating" type="CATEGORY"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_device_overall_cpu_ratio"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="6d78de37-3f1a-4b41-a953-dac46b56c94c">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Devices with highest high memory time">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Top 100 Devices with highest high memory time" ordering="0" serviceMetric="false" uid="7c12ae8a-3f85-47d9-b593-628d10321814">
+               <fields name="name" type="FIELD"/>
+               <fields name="entity" type="FIELD"/>
+               <fields name="Hardware rating" type="CATEGORY"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="high_memory"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# User experience&#13;&#10;This dashboard lists various issues that may impact your IT infrastructure and/or your end-users. They are broken down into 3 sections:&#13;&#10;* **security issues**: malwares, OSs without support, antivirus/firewall issues, dangerous domains being accessed.&#13;&#10;* **networking issues**: high network response time, large amounts of failed connections/web requests&#13;&#10;* **stability issues on devices**: bluescreens, hard resets, application crashes and freezes, high consumption of CPU and memory" index="4" name="User experience" uid="7bdd857b-c1c8-42b9-a873-cc6e8415d079">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="e4ec3f67-6409-4ee5-9d3b-dc8e2627a318" minHeight="56" minWidth="296" type="titleWidget" widgetID="e4ec3f67-6409-4ee5-9d3b-dc8e2627a318">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="e9e1e59c-e873-4bb4-be6f-9787e190b0f0" minHeight="268" minWidth="174" type="kpiWidget" widgetID="e9e1e59c-e873-4bb4-be6f-9787e190b0f0">
+                    <preferredHeight value="268"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="4e56b169-d911-4d5e-b096-3102f73cbebb" minHeight="268" minWidth="174" type="kpiWidget" widgetID="4e56b169-d911-4d5e-b096-3102f73cbebb">
+                    <preferredHeight value="268"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="44a87b47-5eb1-434d-8e81-21ef60b720c4" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="44a87b47-5eb1-434d-8e81-21ef60b720c4">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8c4e0206-898c-4640-9746-5c8d44f25768" minHeight="56" minWidth="296" type="titleWidget" widgetID="8c4e0206-898c-4640-9746-5c8d44f25768">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f6a99ef6-94b8-4a81-9a78-4d1075d36d51" minHeight="268" minWidth="174" type="kpiWidget" widgetID="f6a99ef6-94b8-4a81-9a78-4d1075d36d51">
+                      <preferredHeight value="268"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="e03d4ffd-581e-4449-b3da-1fedbff71550" minHeight="268" minWidth="174" type="kpiWidget" widgetID="e03d4ffd-581e-4449-b3da-1fedbff71550">
+                      <preferredHeight value="268"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="142e8735-9230-42ac-abde-0c8c6194edb8" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="142e8735-9230-42ac-abde-0c8c6194edb8">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e48bd115-76be-4844-91de-962b177884be" minHeight="56" minWidth="296" type="titleWidget" widgetID="e48bd115-76be-4844-91de-962b177884be">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="764c6c27-667e-44b0-b5bb-88a278b76342" minHeight="268" minWidth="174" type="kpiWidget" widgetID="764c6c27-667e-44b0-b5bb-88a278b76342">
+                      <preferredHeight value="268"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="f893cb9a-7434-468b-a00e-79fd2645277e" minHeight="268" minWidth="174" type="kpiWidget" widgetID="f893cb9a-7434-468b-a00e-79fd2645277e">
+                      <preferredHeight value="268"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="5bdb22a8-e5f1-4596-b85d-bf956c6bf5fd" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="5bdb22a8-e5f1-4596-b85d-bf956c6bf5fd">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="e4ec3f67-6409-4ee5-9d3b-dc8e2627a318">
+            <titleConfig title="Users with security issues"/>
+           </widget>
+           <widget type="KPI" uid="e9e1e59c-e873-4bb4-be6f-9787e190b0f0">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Malware on system" ordering="0" serviceMetric="false" uid="61c47e48-9b28-447b-acbc-d7081ee8e8c4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="AV, Firewall or Windows protection issues" ordering="2" serviceMetric="false" uid="f033aaa5-189e-4d94-9551-18cf5a0dc7f2"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="4e56b169-d911-4d5e-b096-3102f73cbebb">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Out-of-support OS" ordering="8" serviceMetric="false" uid="b372318b-9e28-4ed6-b46a-354a0de19725"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Accessing dangerous domains" ordering="11" serviceMetric="false" uid="e45f95bc-7ee0-4113-a425-28393a1c5855"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="44a87b47-5eb1-434d-8e81-21ef60b720c4">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Malware on system" ordering="5" serviceMetric="false" uid="61c47e48-9b28-447b-acbc-d7081ee8e8c4"/>
+              <metric label="Out-of-support OS" ordering="6" serviceMetric="false" uid="b372318b-9e28-4ed6-b46a-354a0de19725"/>
+              <metric label="AV, firewall or Windows protection issues" ordering="7" serviceMetric="false" uid="f033aaa5-189e-4d94-9551-18cf5a0dc7f2"/>
+              <metric label="Accessing dangerous domains" ordering="8" serviceMetric="false" uid="e45f95bc-7ee0-4113-a425-28393a1c5855"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="8c4e0206-898c-4640-9746-5c8d44f25768">
+            <titleConfig title="Users with networking issues"/>
+           </widget>
+           <widget type="KPI" uid="f6a99ef6-94b8-4a81-9a78-4d1075d36d51">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="High average network response time" ordering="2" serviceMetric="false" uid="af47264c-186f-4f1b-84c6-b3dc62b7ee32"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Many failed web requests" ordering="4" serviceMetric="false" uid="30c73d39-dee7-4409-8d53-725257cc8108"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="e03d4ffd-581e-4449-b3da-1fedbff71550">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Low network availability" ordering="1" serviceMetric="false" uid="62480ebc-2a6b-471b-80d2-65349cce2321"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Many failed network connections" ordering="2" serviceMetric="false" uid="14de4d72-b8e3-4729-b912-7beb7cc3a377"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="142e8735-9230-42ac-abde-0c8c6194edb8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="High average network response time" ordering="2" serviceMetric="false" uid="af47264c-186f-4f1b-84c6-b3dc62b7ee32"/>
+              <metric label="Low network availability" ordering="3" serviceMetric="false" uid="62480ebc-2a6b-471b-80d2-65349cce2321"/>
+              <metric label="Many failed web requests" ordering="4" serviceMetric="false" uid="30c73d39-dee7-4409-8d53-725257cc8108"/>
+              <metric label="Many failed network connections" ordering="5" serviceMetric="false" uid="14de4d72-b8e3-4729-b912-7beb7cc3a377"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="e48bd115-76be-4844-91de-962b177884be">
+            <titleConfig title="Devices with stability issues"/>
+           </widget>
+           <widget type="KPI" uid="764c6c27-667e-44b0-b5bb-88a278b76342">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="BSODs or hard resets" ordering="3" serviceMetric="false" uid="9e41a241-36d0-43d8-9b81-6793c376b311"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High CPU time" ordering="5" serviceMetric="false" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="f893cb9a-7434-468b-a00e-79fd2645277e">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Application crashes/freezes" ordering="0" serviceMetric="false" uid="8d725beb-0392-4448-9532-f909c177eb38"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="High memory time" ordering="1" serviceMetric="false" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="5bdb22a8-e5f1-4596-b85d-bf956c6bf5fd">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="BSODs or hard resets" ordering="3" serviceMetric="false" uid="9e41a241-36d0-43d8-9b81-6793c376b311"/>
+              <metric label="Application crashes/freezes" ordering="4" serviceMetric="false" uid="8d725beb-0392-4448-9532-f909c177eb38"/>
+              <metric label="High CPU time" ordering="5" serviceMetric="false" uid="ac4e39f1-33f1-44cd-b188-d91c03a4ee78"/>
+              <metric label="High memory time" ordering="6" serviceMetric="false" uid="9053dfc6-11ef-46d8-8f9d-87c6c89faaa8"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

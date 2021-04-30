@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Persona Insight</Name>
+     <Dependencies>
+      <Dependency name="Personas - Persona Insights - DEX - Resource Intensive User" type="metric" uid="6a37caae-0684-4ce2-b6b0-8cade43c21f0"/>
+      <Dependency name="Personas - Persona Insights - DEX - Power Worker" type="metric" uid="3ccb8e1e-6eef-499e-87f8-a3f69e9f0778"/>
+      <Dependency name="Personas - Persona Insights - DEX - Cloud Storage Consumer" type="metric" uid="b7e55a7f-415e-4b6e-bb45-370f8ff7f917"/>
+      <Dependency name="Personas - Persona Insights - DEX - Virtualization User" type="metric" uid="74c5db31-7b13-4051-9682-e3dbe28a3468"/>
+      <Dependency name="Personas - Persona Insights - DEX - Productive and Motivated" type="metric" uid="648a1508-da78-48c3-be45-3333da1cad0e"/>
+      <Dependency name="Personas - Persona Insights - DEX - Real Time Collaborator" type="metric" uid="0519832a-e74b-4aa5-b29b-9255cdb927bb"/>
+      <Dependency name="Personas - Persona Insights - DEX - Non Collaborator" type="metric" uid="b7bbcb62-02e9-4985-89f5-6bb2f17115ba"/>
+      <Dependency name="Personas - Persona Insights - DEX -  Asynchronous Collaborator" type="metric" uid="b16bc6b3-9c91-42a0-a2c5-2a8ffddf5511"/>
+      <Dependency name="Personas - Persona Insights - DEX - Knowledge Worker" type="metric" uid="3185dc14-a392-40a9-bbaa-16635182f271"/>
+      <Dependency name="Personas - Persona Insights - DEX - Office User" type="metric" uid="e1c1635d-0e88-49be-8171-331ede310f15"/>
+      <Dependency name="Personas - Persona Insights - DEX - Browser User" type="metric" uid="e168bfee-0f09-43c2-adac-bb1a77f3ddc3"/>
+      <Dependency name="Personas - Persona Insights - DEX - Web Apps Consumer" type="metric" uid="72523c00-dd0c-4b10-8bbe-632abe0e737d"/>
+      <Dependency name="Personas - Persona Insights - DEX - Not Engaged" type="metric" uid="ef6ea115-44bc-4fc1-b8b3-06148c606038"/>
+      <Dependency name="Personas - Persona Insights - DEX - Engaged" type="metric" uid="31ec015f-168f-4d16-bc31-6c0729a95654"/>
+      <Dependency name="Personas - Persona Insights - DEX - Not Satisfied" type="metric" uid="82c5bcc3-2fb9-4ec2-bc5c-0ff05d2ffbcf"/>
+      <Dependency name="Personas - Persona Insights - DEX - Satisfied" type="metric" uid="35fcc8a0-616e-42af-98fc-eff0bac1b6b0"/>
+      <Dependency name="Personas - Persona Insights - DEX - Needs Attention" type="metric" uid="0c7f67a7-61d3-4590-8e1b-e0ad0cca4b30"/>
+      <Dependency name="Persona  - Persona Insights  - DEX of Data Scientist" type="metric" uid="98a206d1-784b-4fa2-bae4-d9e6b92b6da4"/>
+      <Dependency name="Persona - Persona Insights - Developers - DEX of Developer - By Persona" type="metric" uid="e18474c1-bbdd-478a-97ff-ed72e8354747"/>
+      <Dependency name="Persona - Persona Insights - DEX of Salesperson" type="metric" uid="8bf88034-226f-4079-b373-670e7a88116b"/>
+      <Dependency name="Persona - Persona Insights - DEX of Designer" type="metric" uid="139e24d8-2f73-4dff-ab57-ff1be46962a6"/>
+      <Dependency name="Personas - Traits - Work Style - Admin Rights" type="metric" uid="0cd789c9-63aa-41d9-86b5-e8eba1768fb4"/>
+      <Dependency name="Personas - Traits - Work Style - Recently Seen Employee" type="metric" uid="56932b5d-9415-4a18-b2b8-0a3ec90b395b"/>
+      <Dependency name="Personas - Traits - Work Style - Shadow IT" type="metric" uid="ce4f4ff1-2a98-48d3-bb28-bd0ae06495e5"/>
+      <Dependency name="Personas - Traits - Pulse Survey - Responsive" type="metric" uid="ee315323-5ee0-4317-aaee-f0b16d2fc35f"/>
+      <Dependency name="Personas - Traits - Pulse Survey - Satisfied with Learning and Growth" type="metric" uid="be2c5a01-a463-42c6-9700-a396ee00782d"/>
+      <Dependency name="Personas - Traits - Pulse Survey - Satisfied with Recognition and Increments" type="metric" uid="93c2d3ce-88f4-45fe-a8c3-93f7e6c0c5aa"/>
+      <Dependency name="Personas - Traits - Pulse Survey - Satisfied with Work Location" type="metric" uid="fffa935b-17db-42ad-b59a-249b9534d5d8"/>
+      <Dependency name="Personas - Traits - Pulse Survey - Satisfied with Work-Life Balance" type="metric" uid="8204506f-53d3-416b-91bf-22f92e35c5c1"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - Collaboration Program Consumer" type="metric" uid="ce986d7b-c923-43d8-995c-64e588cc1ba6"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - GoToMeeting Consumer" type="metric" uid="43aa346e-7df1-4ba7-8739-e8384d0a6893"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - Microsoft Teams Consumer" type="metric" uid="fe39f86e-10e1-4ad7-8b86-8b3718d6e5db"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - Microsoft Whiteboard Consumer" type="metric" uid="1272dd40-bcae-472d-8a9d-c766fedd3812"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - Skype Consumer" type="metric" uid="2aeaa961-38e5-478c-9be0-362d274c3331"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - WebEx Consumer" type="metric" uid="78aac4a8-7f80-48a5-b898-046ee52779d4"/>
+      <Dependency name="Personas - Traits - Collaboration Tools - Zoom Consumer" type="metric" uid="13a77a90-d448-482b-b450-8bcbd16f987c"/>
+      <Dependency name="Personas - Traits - Email Tools - Email Client Consumer" type="metric" uid="7ec26164-8a7f-42f3-b89f-a298e40e99e2"/>
+      <Dependency name="Personas - Traits - Email Tools - Microsoft Outlook Consumer" type="metric" uid="e0acdcc8-96c5-4db9-8e84-2a9177e802ea"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Document Management Solution Consumer" type="metric" uid="9dda846c-da4d-4700-bf13-5a5f87102083"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Microsoft Access Consumer" type="metric" uid="eefb7e09-9877-42d2-8eff-aaa55af72468"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Microsoft Planner Consumer" type="metric" uid="c6c4b397-14e6-4f86-bcc9-64fd2c26b629"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Microsoft Project Consumer" type="metric" uid="eb784b64-0050-40e0-bac2-e0983dbcd993"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Microsoft Publisher Consumer" type="metric" uid="abfa882a-cdec-4072-adad-b4299ae6551d"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Microsoft Visio Consumer" type="metric" uid="360d35ab-7ba6-4c1e-9ce8-61e6b871f13b"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Note Taking Solution Consumer" type="metric" uid="af8b5c6b-f133-4581-bffb-91928365b071"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Presentation Program Consumer" type="metric" uid="fc37c518-3262-4404-904d-fd90d50750f9"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Spreadsheet Program Consumer" type="metric" uid="53b5715e-c7b5-442e-a65a-2bd24cc2d570"/>
+      <Dependency name="Personas - Traits - Productivity Tools - Word Processor Consumer" type="metric" uid="ef01a33e-e760-4b9c-b60f-a21ea38f9902"/>
+      <Dependency name="Personas - Traits - Developer Tools - Backend Tools Consumer" type="metric" uid="4911c89b-f2a4-4c41-a9d8-a8f450aa5c6d"/>
+      <Dependency name="Personas - Traits - Developer Tools - Frontend Tools Consumer" type="metric" uid="d6f3000c-699e-45cb-bd7d-b092ec51a1fc"/>
+      <Dependency name="Personas - Traits - Designer Tools - Adobe Acrobat Consumer" type="metric" uid="03d2bc61-c23a-4998-94d1-277a7fdd6e62"/>
+      <Dependency name="Personas - Traits - Designer Tools - Adobe Acrobat Distiller Consumer" type="metric" uid="de997c96-3baa-4818-b67b-c40f2d8a2631"/>
+      <Dependency name="Personas - Traits - Designer Tools - Adobe Illustrator Consumer" type="metric" uid="26d2e235-213b-4148-ac12-1a142a0b743a"/>
+      <Dependency name="Personas - Traits - Designer Tools - Adobe Photoshop Consumer" type="metric" uid="20950c8e-428a-460e-bcf6-2fed20f36ece"/>
+      <Dependency name="Personas - Traits - Data Scientist Tools - Microsoft PowerBI Consumer" type="metric" uid="c2ca75a0-5d9a-4399-beba-afed59ad4a1e"/>
+      <Dependency name="Personas - Traits - Data Scientist Tools - Oracle BI Consumer" type="metric" uid="419f5cf3-d29c-4e84-8437-66621891b9e5"/>
+      <Dependency name="Personas - Traits - Data Scientist Tools - Tableau Consumer" type="metric" uid="3ec0188f-6045-467f-be7d-b617f85358ac"/>
+      <Dependency name="Personas - Traits - Sales Tools - Salesforce Consumer" type="metric" uid="12c987c8-4424-42b5-b6c4-a50184603431"/>
+      <Dependency name="Personas - Traits - Cloud Storage Tools - Dropbox Consumer" type="metric" uid="33226b31-975e-4439-8473-cd2f43ae9905"/>
+      <Dependency name="Personas - Traits - Cloud Storage Tools - File Sharing Program Consumer" type="metric" uid="73322385-e2dd-4735-9169-b873fe00e5f0"/>
+      <Dependency name="Personas - Traits - Cloud Storage Tools - Google Drive Consumer" type="metric" uid="4fee677f-0601-4710-955b-0df45d6aef94"/>
+      <Dependency name="Personas - Traits - Cloud Storage Tools - Microsoft OneDrive Consumer" type="metric" uid="932f59d9-0fed-4ab1-981f-1966f50ce5b7"/>
+      <Dependency name="Personas - Traits - Browser Apps - Chrome Consumer" type="metric" uid="ad05ce90-5b4e-40f0-b09f-ed90511f1a07"/>
+      <Dependency name="Personas - Traits - Browser Apps - Firefox Consumer" type="metric" uid="935bde1f-207b-4e4c-b7c9-86d21f67fe66"/>
+      <Dependency name="Personas - Traits - Browser Apps - Microsoft Edge Consumer" type="metric" uid="17554cf5-e8cc-44a3-b24b-1c5fa562dcea"/>
+      <Dependency name="Personas - Traits - Browser Apps - Microsoft Internet Explorer Consumer" type="metric" uid="75f8b9a2-2c3b-4cfa-a1f4-6df4c8f169f0"/>
+      <Dependency name="Personas - Traits - Virtualization - Heavy SBC Consumer" type="metric" uid="f497f0fc-8299-4a17-b8a6-d5195c08fb7f"/>
+      <Dependency name="Personas - Traits - Virtualization - Heavy VDI Consumer" type="metric" uid="f1d145dd-d64c-4aed-954a-d24bbd8f09e4"/>
+      <Dependency name="Personas - Traits - Web Apps - Business Service Consumer" type="metric" uid="6065c2e5-165b-4a19-bdb6-fc8106198e9f"/>
+      <Dependency name="Personas - Traits - Web Apps - Non-Business Service Consumer" type="metric" uid="a5b111bd-2158-443c-b045-659235bf11eb"/>
+      <Dependency name="Personas - Traits - Web Apps - Online Learning Consumer" type="metric" uid="bf7547bb-364c-4ad1-b863-e9fe7d65f912"/>
+      <Dependency name="Personas - Traits - Web Apps - Research Platform Consumer" type="metric" uid="6218d04f-39d2-4afc-afc8-542b85d2dcdf"/>
+      <Dependency name="Personas - Traits - Web Apps - Social Platform Consumer" type="metric" uid="226ffb7c-5cf7-4c6c-b08c-f327bb58a34d"/>
+      <Dependency name="Personas - Traits - Hardware Configuration - Deskbound Employee" type="metric" uid="af5e6df5-45e4-4946-9919-2e7ebc209863"/>
+      <Dependency name="Personas - Traits - Hardware Configuration - Laptop Based Employee" type="metric" uid="7102f962-150e-41d1-8ee7-4aaadd13e1a3"/>
+      <Dependency name="Personas - Traits - Hardware Configuration - Multiple Device Consumer" type="metric" uid="d850c3d9-f434-47c9-99cc-8e7f492b9794"/>
+      <Dependency name="Personas - Traits - Hardware Configuration - Multiple Screen Consumer" type="metric" uid="62d2ee6d-d885-4189-85b3-348938bdf9b3"/>
+      <Dependency name="Personas - Traits - OS Configuration - Windows User" type="metric" uid="49ab38c6-0172-4989-b305-cb2dd5434040"/>
+      <Dependency name="Personas - Traits - Resource Usage - CPU Intensive" type="metric" uid="578ddaf9-fd13-4745-9f8b-5a34945850cb"/>
+      <Dependency name="Personas - Traits - Resource Usage - Device Usage" type="metric" uid="305c4841-221b-4314-b840-f5882c094535"/>
+      <Dependency name="Personas - Traits - Resource Usage - Memory Intensive" type="metric" uid="a7fe6e0d-89c3-40be-ae00-af788ef257b2"/>
+      <Dependency name="Personas - Traits - Resource Usage - Multiple Apps Usage" type="metric" uid="41cb4a55-2a01-4170-b930-54540f79bef0"/>
+      <Dependency name="Personas - Traits - Resource Usage - Network Traffic Consumer" type="metric" uid="f258e558-b975-4f4d-a21b-09293e4e460c"/>
+      <Dependency name="Personas - Traits - Resource Usage - Web Traffic Consumer" type="metric" uid="4865c577-7d73-465d-a305-ae670c1b810d"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Developers" type="metric" uid="b01f9ec1-0bc2-4420-a774-6d87ae2d8f55"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Sales Exec" type="metric" uid="09357384-e894-4706-b947-f50527ed8499"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Designers" type="metric" uid="65993c2d-7eb3-475e-9ec7-3a94ddffbdbf"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Data Scientist" type="metric" uid="f4fd48d0-6794-4740-af4f-ce96ea551a4b"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Developers" type="metric" uid="6968f6cf-9af0-4ea7-826a-398472c33f74"/>
+      <Dependency name="Persona - Persona Insights - Developers - Backend Developer - By Persona" type="metric" uid="ef7ce2d3-489d-4747-aa8a-301f63909db6"/>
+      <Dependency name="Persona - Persona Insights - Developers - Frontend Developer - By Persona" type="metric" uid="1feca3a1-b8d5-4187-b12b-2ea25058bd67"/>
+      <Dependency name="Persona - Persona Insights - Developers - Unhappy FrontEnd Developer" type="metric" uid="1035f394-44e6-406a-9053-76e1412974e5"/>
+      <Dependency name="Persona - Persona Insights - Developers - Unhappy Backend Developer - By Persona" type="metric" uid="f5a828a4-e7af-4901-90f3-aa75526c78a6"/>
+      <Dependency name="Persona - Persona Insights - Developers - NodeJsUser" type="metric" uid="6b9d65d9-508e-4847-a1f0-52206a3c2ff0"/>
+      <Dependency name="Persona - Persona Insights - Developers - CPU Intense User" type="metric" uid="68568fb2-96ed-46d1-96f4-6c6c07e8e894"/>
+      <Dependency name="Persona - Persona Insights - Developers - Network Heavy" type="metric" uid="a4fbc47b-82e9-4142-b041-9d950459a7cb"/>
+      <Dependency name="Persona - Avg CPU Usage for Backend" type="metric" uid="f3570f77-a63f-4b59-9ce4-7174681f0b3e"/>
+      <Dependency name="Persona - Avg Memory Usage for Backend" type="metric" uid="542a19e5-b58e-43e3-9101-0514e4a0f697"/>
+      <Dependency name="Persona - Avg Web Traffic for Backend Developers" type="metric" uid="225cf4ba-21a1-4615-9916-02698060dc58"/>
+      <Dependency name="Persona - Persona Insights - Developers - Python User" type="metric" uid="131d6e49-819d-4e7d-89d3-b459d4694c3d"/>
+      <Dependency name="Persona - Persona Insights - Developers - DatabaseUser" type="metric" uid="222a213a-52cb-4b44-8ef9-94a79fb0f9af"/>
+      <Dependency name="Persona - Persona Insights - Developers - #PowerShellUser" type="metric" uid="7a82348c-4517-4ffa-a9b7-8dbc7d712b41"/>
+      <Dependency name="Persona - Persona Insights - Developers - DEX of Backend Developer - By Persona" type="metric" uid="3cf170cd-c963-46ec-b35b-dc020b6ec4ad"/>
+      <Dependency name="Persona - Avg CPU Usage for Frontend" type="metric" uid="822e742b-a845-4352-a11d-6b068d77006f"/>
+      <Dependency name="Persona - Avg Memory Usage for Frontend" type="metric" uid="028374b8-fcc4-4ae7-aa29-69491fb453c3"/>
+      <Dependency name="Persona - Avg Web Traffic for Frontend" type="metric" uid="efac3ab8-df73-4db1-ad4e-dfaa7a56486f"/>
+      <Dependency name="Persona - Persona Insights - Developers - #VisualStudioUser" type="metric" uid="393f07b4-86c9-4b3e-b833-a41db8735bda"/>
+      <Dependency name="Persona - Persona Insights - Developers - #SilverlightUser" type="metric" uid="86d71307-6e53-485e-9b33-4b5705f2c054"/>
+      <Dependency name="Persona - Persona Insights - Developers - Memory Intense User" type="metric" uid="a537dc58-0d1e-44af-a31e-1ef9f8653bed"/>
+      <Dependency name="Persona - Persona Insights - Developers - DEX of Frontend Developer - By Persona" type="metric" uid="45e855bd-662d-47ca-a0ab-b41ce669c3f5"/>
+      <Dependency name="Persona - DEX Recommended Devices Models for Frontend" type="metric" uid="3649f8f1-a2e4-4733-868e-05007dbcfcc3"/>
+      <Dependency name="Persona - DEX CPU Models for Frontend" type="metric" uid="c71b936e-a041-4522-9c41-6a2bcb34f850"/>
+      <Dependency name="Persona - DEX OS for Frontend" type="metric" uid="5fb585da-adfc-47d9-950d-4723bf04d856"/>
+      <Dependency name="Persona - Applications for Frontend Developer" type="metric" uid="d2344422-12b3-4905-a347-aad9717097ae"/>
+      <Dependency name="Persona - Domains for Frontend" type="metric" uid="cbbc12de-d467-4ae1-a5dc-feb70454a029"/>
+      <Dependency name="Persona - DEX Devices Models for BackEnd" type="metric" uid="25b08224-777c-4961-8a80-7d1103e99b59"/>
+      <Dependency name="Persona - DEX CPU Models for Backend" type="metric" uid="fba28217-52c6-4f85-b797-6df4575ea1b8"/>
+      <Dependency name="Persona - DEX OS for Backend" type="metric" uid="947b1161-715e-4340-8179-2b47649e773e"/>
+      <Dependency name="Persona - Applications for Backend Developers" type="metric" uid="45b7bb2f-b00b-4ace-8920-7880f4cd7909"/>
+      <Dependency name="Persona - Domains for Backend" type="metric" uid="c6cedf03-faac-4668-b779-29d5f3144b2e"/>
+      <Dependency name="Persona - Backend to Frontend Developers" type="metric" uid="9da47081-a5ac-4f2f-9dff-aa968ca2a829"/>
+      <Dependency name="Persona - Front-End to Backend Developers" type="metric" uid="5ce4ff13-e47c-41d0-bf37-a2da0973aeab"/>
+      <Dependency name="Persona - Shadow Developers" type="metric" uid="061d6afc-de45-47d7-aad5-efd9256d1ae5"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Designer" type="metric" uid="6e1c21a9-cc6f-4e27-8d3d-0c3d89161fcd"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Data Scientist" type="metric" uid="554fbbc1-3b82-4eff-b3a5-bdc32d9ad0c1"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Marketing Exec" type="metric" uid="9dd6c856-0215-4dae-96c4-d5d9ae670d78"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Finance Exec" type="metric" uid="c96c32bc-d4c0-435e-9214-3dc890e11d24"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - Sales Exec" type="metric" uid="8f40d110-72cf-4aed-9f2d-3f9fcd7b58bf"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Marketing Exec" type="metric" uid="fa1a53ea-4c0d-493d-a764-063ab9456c62"/>
+      <Dependency name="Persona - Stativ vs Behaviour-like - DEX of Finance Exec" type="metric" uid="f4c63880-14ed-4c62-ad5c-6433dcba9c6c"/>
+      <Dependency name="Persona - Power Worker - By Persona" type="metric" uid="e3aadc6f-816e-43ea-97c7-22e58eae486b"/>
+      <Dependency name="Persona - Knowledge Worker - By Persona" type="metric" uid="864d064d-5a09-4829-9cce-c7a598620960"/>
+      <Dependency name="Persona - Office User - By Persona" type="metric" uid="e8be5c9e-5047-4124-b185-7a11ee481da8"/>
+      <Dependency name="Personas - Persona Insights - Unsatisfied Employees" type="metric" uid="dedbb8b6-f5ea-458e-9571-53a0793e3f67"/>
+      <Dependency name="Persona - User Needs Attention - By Persona" type="metric" uid="c687528f-be31-42d3-a634-0a6a5f4a23c9"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Persona Insight" uid="4d0fd53c-490d-49fc-b8de-e6183b1a12c9">
+        <dashboards>
+         <dashboard description="" index="2" name="Digital Experience by Persona" uid="7ef11b82-5355-4c05-afc4-939d8aed65b6">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="0fe226cc-f604-4a17-b692-689cd94eeadf" minHeight="321" minWidth="599" type="tableWidget" widgetID="0fe226cc-f604-4a17-b692-689cd94eeadf">
+                <preferredHeight value="321"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="d4ce0670-e736-4963-8101-5506040698d4" minHeight="345" minWidth="599" type="tableWidget" widgetID="d4ce0670-e736-4963-8101-5506040698d4">
+                <preferredHeight value="345"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="b74dd487-1abf-4d02-93c4-cadba21201e8" minHeight="297" minWidth="599" type="tableWidget" widgetID="b74dd487-1abf-4d02-93c4-cadba21201e8">
+                  <preferredHeight value="297"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="bb3d0411-0f26-4887-80df-2f9a6e7836cd" minHeight="345" minWidth="599" type="tableWidget" widgetID="bb3d0411-0f26-4887-80df-2f9a6e7836cd">
+                  <preferredHeight value="345"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="2ccea445-253c-4763-858b-67d16aa8e47b" minHeight="321" minWidth="599" type="tableWidget" widgetID="2ccea445-253c-4763-858b-67d16aa8e47b">
+                <preferredHeight value="321"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="0fe226cc-f604-4a17-b692-689cd94eeadf">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="25" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience for Resource Based Persona's">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Resource Heavy User" ordering="22" serviceMetric="false" uid="6a37caae-0684-4ce2-b6b0-8cade43c21f0"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Power Worker" ordering="23" serviceMetric="false" uid="3ccb8e1e-6eef-499e-87f8-a3f69e9f0778"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Cloud Storage User" ordering="24" serviceMetric="false" uid="b7e55a7f-415e-4b6e-bb45-370f8ff7f917"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Virtualization User" ordering="26" serviceMetric="false" uid="74c5db31-7b13-4051-9682-e3dbe28a3468"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="d4ce0670-e736-4963-8101-5506040698d4">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="20" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience for Work Style based Persona's">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Productive and Motivated" ordering="18" serviceMetric="false" uid="648a1508-da78-48c3-be45-3333da1cad0e"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Real Time Collaborator" ordering="20" serviceMetric="false" uid="0519832a-e74b-4aa5-b29b-9255cdb927bb"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Non Collaborator" ordering="21" serviceMetric="false" uid="b7bbcb62-02e9-4985-89f5-6bb2f17115ba"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Asynchronous Collaborator" ordering="22" serviceMetric="false" uid="b16bc6b3-9c91-42a0-a2c5-2a8ffddf5511"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Knowledge Worker" ordering="23" serviceMetric="false" uid="3185dc14-a392-40a9-bbaa-16635182f271"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="b74dd487-1abf-4d02-93c4-cadba21201e8">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience for Application Usage Based Persona's">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Office User" ordering="6" serviceMetric="false" uid="e1c1635d-0e88-49be-8171-331ede310f15"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Browser User" ordering="7" serviceMetric="false" uid="e168bfee-0f09-43c2-adac-bb1a77f3ddc3"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Web Apps User" ordering="8" serviceMetric="false" uid="72523c00-dd0c-4b10-8bbe-632abe0e737d"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="bb3d0411-0f26-4887-80df-2f9a6e7836cd">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="15" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience for Sentiment Based Persona's">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Not Engaged" ordering="10" serviceMetric="false" uid="ef6ea115-44bc-4fc1-b8b3-06148c606038"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Engaged" ordering="11" serviceMetric="false" uid="31ec015f-168f-4d16-bc31-6c0729a95654"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Not Satisfied" ordering="12" serviceMetric="false" uid="82c5bcc3-2fb9-4ec2-bc5c-0ff05d2ffbcf"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Satisfied" ordering="13" serviceMetric="false" uid="35fcc8a0-616e-42af-98fc-eff0bac1b6b0"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Needs Attention" ordering="14" serviceMetric="false" uid="0c7f67a7-61d3-4590-8e1b-e0ad0cca4b30"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="2ccea445-253c-4763-858b-67d16aa8e47b">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience for Role-like Persona's">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Data scientist like" ordering="0" serviceMetric="false" uid="98a206d1-784b-4fa2-bae4-d9e6b92b6da4"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Developer like" ordering="1" serviceMetric="false" uid="e18474c1-bbdd-478a-97ff-ed72e8354747"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Salesperson like" ordering="2" serviceMetric="false" uid="8bf88034-226f-4079-b373-670e7a88116b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Designer like" ordering="3" serviceMetric="false" uid="139e24d8-2f73-4dff-ab57-ff1be46962a6"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="4" name="Persona Insight - Developers" uid="1f5480b9-303e-443a-b5e1-727c733db2e8">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="04fe5a03-dcd5-4e87-aa46-8c13749cdd0b" minHeight="56" minWidth="296" type="titleWidget" widgetID="04fe5a03-dcd5-4e87-aa46-8c13749cdd0b">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="ccbf9f62-289c-454d-86a3-08914239a6bd" minHeight="238" minWidth="318" type="kpiWidget" widgetID="ccbf9f62-289c-454d-86a3-08914239a6bd">
+                  <preferredHeight value="238"/>
+                  <preferredWidth value="318"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6feb2c12-4b9a-42f7-bbb7-c9646e4147ff" minHeight="297" minWidth="408" type="tableWidget" widgetID="6feb2c12-4b9a-42f7-bbb7-c9646e4147ff">
+                    <preferredHeight value="297"/>
+                    <preferredWidth value="408"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="4f56667e-fa89-4600-b14d-4ff4c3ba28f3" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="4f56667e-fa89-4600-b14d-4ff4c3ba28f3">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="fbc6105f-b52a-46b2-96b4-076ea9378cab" minHeight="56" minWidth="296" type="titleWidget" widgetID="fbc6105f-b52a-46b2-96b4-076ea9378cab">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="a0cbe98f-c4ef-411f-afd9-666f42f28061" minHeight="249" minWidth="408" type="tableWidget" widgetID="a0cbe98f-c4ef-411f-afd9-666f42f28061">
+                    <preferredHeight value="249"/>
+                    <preferredWidth value="408"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="8b88debc-9d99-4267-9f6e-5a4b89f3775f" minHeight="238" minWidth="576" type="kpiWidget" widgetID="8b88debc-9d99-4267-9f6e-5a4b89f3775f">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="c77f7376-c047-45b2-9083-eb47d45d6079" minHeight="273" minWidth="408" type="tableWidget" widgetID="c77f7376-c047-45b2-9083-eb47d45d6079">
+                      <preferredHeight value="273"/>
+                      <preferredWidth value="408"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="283f4716-8a75-4c09-b35c-094bc2bfd034" minHeight="56" minWidth="296" type="titleWidget" widgetID="283f4716-8a75-4c09-b35c-094bc2bfd034">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="b18a1e7c-14d5-42d6-a309-9c869fcd522c" minHeight="238" minWidth="834" type="kpiWidget" widgetID="b18a1e7c-14d5-42d6-a309-9c869fcd522c">
+                          <preferredHeight value="238"/>
+                          <preferredWidth value="834"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="d26227b5-18e6-4610-a826-f909a50948e2" minHeight="273" minWidth="408" type="tableWidget" widgetID="d26227b5-18e6-4610-a826-f909a50948e2">
+                          <preferredHeight value="273"/>
+                          <preferredWidth value="408"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="bb1f8cfc-4444-43a5-8064-3e58066adbe6" minHeight="321" minWidth="408" type="tableWidget" widgetID="bb1f8cfc-4444-43a5-8064-3e58066adbe6">
+                        <preferredHeight value="321"/>
+                        <preferredWidth value="408"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="99c7d016-94a0-4adf-ae09-5d9978e0ed75" minHeight="56" minWidth="296" type="titleWidget" widgetID="99c7d016-94a0-4adf-ae09-5d9978e0ed75">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="3889bd30-c867-42f2-b2ce-8e45577f29d0" minHeight="238" minWidth="834" type="kpiWidget" widgetID="3889bd30-c867-42f2-b2ce-8e45577f29d0">
+                        <preferredHeight value="238"/>
+                        <preferredWidth value="834"/>
+                       </data>
+                      </child>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="905c8328-7142-45a5-b793-f86fcca95152" minHeight="297" minWidth="408" type="tableWidget" widgetID="905c8328-7142-45a5-b793-f86fcca95152">
+                          <preferredHeight value="297"/>
+                          <preferredWidth value="408"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="7779be97-41df-4bb9-b362-608ec997c3ed" minHeight="321" minWidth="408" type="tableWidget" widgetID="7779be97-41df-4bb9-b362-608ec997c3ed">
+                          <preferredHeight value="321"/>
+                          <preferredWidth value="408"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="04fe5a03-dcd5-4e87-aa46-8c13749cdd0b">
+            <titleConfig title="Overview"/>
+           </widget>
+           <widget type="KPI" uid="ccbf9f62-289c-454d-86a3-08914239a6bd">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="HR Role &quot;Developers&quot;">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Num employees" ordering="0" serviceMetric="false" uid="b01f9ec1-0bc2-4420-a774-6d87ae2d8f55"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="6feb2c12-4b9a-42f7-bbb7-c9646e4147ff">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score Comparison">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="1. Salespeople" ordering="16" serviceMetric="false" uid="09357384-e894-4706-b947-f50527ed8499"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="3. Designers" ordering="24" serviceMetric="false" uid="65993c2d-7eb3-475e-9ec7-3a94ddffbdbf"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="4. Data Scientist" ordering="25" serviceMetric="false" uid="f4fd48d0-6794-4740-af4f-ce96ea551a4b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="2. Developers" ordering="26" serviceMetric="false" uid="6968f6cf-9af0-4ea7-826a-398472c33f74"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="4f56667e-fa89-4600-b14d-4ff4c3ba28f3">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Digital Experience for Developer Role">
+             <metrics>
+              <metric label="Digital Experience Score" ordering="0" serviceMetric="false" uid="6968f6cf-9af0-4ea7-826a-398472c33f74"/>
+             </metrics>
+             <scale scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="fbc6105f-b52a-46b2-96b4-076ea9378cab">
+            <titleConfig title="Persona Analysis for Developer Role"/>
+           </widget>
+           <widget type="TABLE" uid="a0cbe98f-c4ef-411f-afd9-666f42f28061">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Developer Types">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Back-End Developers" ordering="0" serviceMetric="false" uid="ef7ce2d3-489d-4747-aa8a-301f63909db6">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Front-End Developers" ordering="1" serviceMetric="false" uid="1feca3a1-b8d5-4187-b12b-2ea25058bd67">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="8b88debc-9d99-4267-9f6e-5a4b89f3775f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Unhappy Developers">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unhappy Front-End Dev" ordering="0" serviceMetric="false" uid="1035f394-44e6-406a-9053-76e1412974e5"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unhappy Back-End Dev" ordering="1" serviceMetric="false" uid="f5a828a4-e7af-4901-90f3-aa75526c78a6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="c77f7376-c047-45b2-9083-eb47d45d6079">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Common traits">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="NodeJsUser" ordering="0" serviceMetric="false" uid="6b9d65d9-508e-4847-a1f0-52206a3c2ff0">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="CPU Intense" ordering="1" serviceMetric="false" uid="68568fb2-96ed-46d1-96f4-6c6c07e8e894">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Network Heavy" ordering="2" serviceMetric="false" uid="a4fbc47b-82e9-4142-b041-9d950459a7cb">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="283f4716-8a75-4c09-b35c-094bc2bfd034">
+            <titleConfig title="Insights - Back-End Developers"/>
+           </widget>
+           <widget type="KPI" uid="b18a1e7c-14d5-42d6-a309-9c869fcd522c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Average Resource Usage">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg CPU Usage" ordering="0" serviceMetric="false" uid="f3570f77-a63f-4b59-9ce4-7174681f0b3e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg Memory Usage" ordering="1" serviceMetric="false" uid="542a19e5-b58e-43e3-9101-0514e4a0f697"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg Web Traffic" ordering="2" serviceMetric="false" uid="225cf4ba-21a1-4615-9916-02698060dc58"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="d26227b5-18e6-4610-a826-f909a50948e2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Additional Traits">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Python User" ordering="1" serviceMetric="false" uid="131d6e49-819d-4e7d-89d3-b459d4694c3d">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Database User" ordering="2" serviceMetric="false" uid="222a213a-52cb-4b44-8ef9-94a79fb0f9af">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="PowerShell User" ordering="3" serviceMetric="false" uid="7a82348c-4517-4ffa-a9b7-8dbc7d712b41">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="bb1f8cfc-4444-43a5-8064-3e58066adbe6">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Device Model Performance">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="5" serviceMetric="false" uid="3cf170cd-c963-46ec-b35b-dc020b6ec4ad"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="model"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="model"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="99c7d016-94a0-4adf-ae09-5d9978e0ed75">
+            <titleConfig title="Insights - Front End Developers"/>
+           </widget>
+           <widget type="KPI" uid="3889bd30-c867-42f2-b2ce-8e45577f29d0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="Average Resource Usage">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg CPU Usage" ordering="3" serviceMetric="false" uid="822e742b-a845-4352-a11d-6b068d77006f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg Memory Usage" ordering="4" serviceMetric="false" uid="028374b8-fcc4-4ae7-aa29-69491fb453c3"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Avg Web Traffic" ordering="5" serviceMetric="false" uid="efac3ab8-df73-4db1-ad4e-dfaa7a56486f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="905c8328-7142-45a5-b793-f86fcca95152">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Additional Traits">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Visual Studio User" ordering="2" serviceMetric="false" uid="393f07b4-86c9-4b3e-b833-a41db8735bda">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Silverlight User" ordering="4" serviceMetric="false" uid="86d71307-6e53-485e-9b33-4b5705f2c054">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Memory Intense User" ordering="5" serviceMetric="false" uid="a537dc58-0d1e-44af-a31e-1ef9f8653bed">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Designer Tools User" ordering="7" serviceMetric="false" uid="03d2bc61-c23a-4998-94d1-277a7fdd6e62">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_73d5fbac21d6487ab3f8e48b5d318858" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="7779be97-41df-4bb9-b362-608ec997c3ed">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Device Model Performance">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="4" serviceMetric="false" uid="45e855bd-662d-47ca-a0ab-b41ce669c3f5"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="model"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="model"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="1" name="Persona Traits Landscape" uid="710ab502-78c4-4c41-9586-6ee201b5d4af">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="aac5017f-3834-43c0-9c22-dee936cda88c" minHeight="297" minWidth="599" type="tableWidget" widgetID="aac5017f-3834-43c0-9c22-dee936cda88c">
+                      <preferredHeight value="297"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="a7b40e5b-4300-4780-8a03-2cc2e3dac62d" minHeight="345" minWidth="599" type="tableWidget" widgetID="a7b40e5b-4300-4780-8a03-2cc2e3dac62d">
+                      <preferredHeight value="345"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="522f54ff-c154-4ddb-be3a-7b622f0f517b" minHeight="393" minWidth="599" type="tableWidget" widgetID="522f54ff-c154-4ddb-be3a-7b622f0f517b">
+                    <preferredHeight value="393"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="dc567d2c-c5ed-4677-ba63-103bb9f9b2d2" minHeight="273" minWidth="599" type="tableWidget" widgetID="dc567d2c-c5ed-4677-ba63-103bb9f9b2d2">
+                      <preferredHeight value="273"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="ff0110b3-bee6-41a2-9803-f076dd2a5efe" minHeight="465" minWidth="599" type="tableWidget" widgetID="ff0110b3-bee6-41a2-9803-f076dd2a5efe">
+                      <preferredHeight value="465"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="1208509d-ad2d-439b-a76b-d7bfda7a4c0d" minHeight="273" minWidth="599" type="tableWidget" widgetID="1208509d-ad2d-439b-a76b-d7bfda7a4c0d">
+                      <preferredHeight value="273"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="81673e21-8b9a-4031-a8c5-53c6a104de9e" minHeight="321" minWidth="599" type="tableWidget" widgetID="81673e21-8b9a-4031-a8c5-53c6a104de9e">
+                        <preferredHeight value="321"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="63910359-e1f1-4ee7-933a-034780956d09" minHeight="297" minWidth="599" type="tableWidget" widgetID="63910359-e1f1-4ee7-933a-034780956d09">
+                          <preferredHeight value="297"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="af8b164a-1381-4b1e-b813-3498ad5d0b57" minHeight="249" minWidth="599" type="tableWidget" widgetID="af8b164a-1381-4b1e-b813-3498ad5d0b57">
+                          <preferredHeight value="249"/>
+                          <preferredWidth value="599"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="8cb81473-cde8-4153-8cf5-db22e753030c" minHeight="321" minWidth="599" type="tableWidget" widgetID="8cb81473-cde8-4153-8cf5-db22e753030c">
+                <preferredHeight value="321"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="c5f62df1-d2a6-4ffa-aee5-c033c3308705" minHeight="321" minWidth="599" type="tableWidget" widgetID="c5f62df1-d2a6-4ffa-aee5-c033c3308705">
+                <preferredHeight value="321"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c908c0ab-1f1a-47a5-9e34-5a456ee57bc9" minHeight="273" minWidth="599" type="tableWidget" widgetID="c908c0ab-1f1a-47a5-9e34-5a456ee57bc9">
+                  <preferredHeight value="273"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="1eb50afe-4708-4740-9113-9cec7950ea8e" minHeight="345" minWidth="599" type="tableWidget" widgetID="1eb50afe-4708-4740-9113-9cec7950ea8e">
+                    <preferredHeight value="345"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="7fe1131a-8b78-4346-945c-647981056114" minHeight="321" minWidth="599" type="tableWidget" widgetID="7fe1131a-8b78-4346-945c-647981056114">
+                      <preferredHeight value="321"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="H">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="0d5e552c-df07-45f8-b6d4-ee38d50bde23" minHeight="249" minWidth="599" type="tableWidget" widgetID="0d5e552c-df07-45f8-b6d4-ee38d50bde23">
+                        <preferredHeight value="249"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="f0c1ba20-0e07-44e8-a30b-fceb7c682d25" minHeight="369" minWidth="599" type="tableWidget" widgetID="f0c1ba20-0e07-44e8-a30b-fceb7c682d25">
+                        <preferredHeight value="369"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TABLE" uid="aac5017f-3834-43c0-9c22-dee936cda88c">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Work Style">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Admin Rights" ordering="0" serviceMetric="false" uid="0cd789c9-63aa-41d9-86b5-e8eba1768fb4">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_5886b013c0cd4484816bef7d7a95e723" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Recently Seen Employee" ordering="1" serviceMetric="false" uid="56932b5d-9415-4a18-b2b8-0a3ec90b395b">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_8d99cc4f0cc640ea8c18932722e5728c" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Shadow IT" ordering="2" serviceMetric="false" uid="ce4f4ff1-2a98-48d3-bb28-bd0ae06495e5">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_9975b08f34554d268d6032726b035614" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="a7b40e5b-4300-4780-8a03-2cc2e3dac62d">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Pulse Survey">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Responsive" ordering="0" serviceMetric="false" uid="ee315323-5ee0-4317-aaee-f0b16d2fc35f">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_af0ae12fc6db4e658ea5ff7890a8337c" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Satisfied with Learning and Growth" ordering="1" serviceMetric="false" uid="be2c5a01-a463-42c6-9700-a396ee00782d">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_30485f6a00834041bf0469b7f7a17e69" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Satisfied with Recognition and Increments" ordering="2" serviceMetric="false" uid="93c2d3ce-88f4-45fe-a8c3-93f7e6c0c5aa">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_f18aec1540ec474493104ba458fbaae2" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Satisfied with Work Location" ordering="3" serviceMetric="false" uid="fffa935b-17db-42ad-b59a-249b9534d5d8">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_e3ef6542d0ca48129ada72b21d7749e9" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Satisfied with Work-Life Balance" ordering="4" serviceMetric="false" uid="8204506f-53d3-416b-91bf-22f92e35c5c1">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_a8ee8ccc106242749d4e55611ccfa2b9" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="522f54ff-c154-4ddb-be3a-7b622f0f517b">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Collaboration Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Collaboration Program Consumer" ordering="0" serviceMetric="false" uid="ce986d7b-c923-43d8-995c-64e588cc1ba6">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_f3c69975495644279f3c375c47a0cc42" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="GoToMeeting Consumer" ordering="1" serviceMetric="false" uid="43aa346e-7df1-4ba7-8739-e8384d0a6893">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_68ddbab656244538baeee9ccf4af0316" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Teams Consumer" ordering="2" serviceMetric="false" uid="fe39f86e-10e1-4ad7-8b86-8b3718d6e5db">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_2fc1a530cc4344b6905b348a456dc6b7" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Whiteboard Consumer" ordering="3" serviceMetric="false" uid="1272dd40-bcae-472d-8a9d-c766fedd3812">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_e2fd4d32b0924dc0acddf58840166192" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Skype Consumer" ordering="4" serviceMetric="false" uid="2aeaa961-38e5-478c-9be0-362d274c3331">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_ffe0a2703449496d82b7e00b7663336e" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="WebEx Consumer" ordering="5" serviceMetric="false" uid="78aac4a8-7f80-48a5-b898-046ee52779d4">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_63df2d40435a48db9660a30a8a87bacb" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Zoom Consumer" ordering="6" serviceMetric="false" uid="13a77a90-d448-482b-b450-8bcbd16f987c">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_f896487dc93b4e70be517decbc18b959" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="dc567d2c-c5ed-4677-ba63-103bb9f9b2d2">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Email Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Email Client Consumer" ordering="0" serviceMetric="false" uid="7ec26164-8a7f-42f3-b89f-a298e40e99e2">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_dafaf4103a44487880e765c0186d596d" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Outlook Consumer" ordering="1" serviceMetric="false" uid="e0acdcc8-96c5-4db9-8e84-2a9177e802ea">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_54fea56d062f49b9b60d12f5b4574328" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ff0110b3-bee6-41a2-9803-f076dd2a5efe">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Productivity Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Document Management Solution Consumer" ordering="0" serviceMetric="false" uid="9dda846c-da4d-4700-bf13-5a5f87102083">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_6fb85577c59e46ffade651a2e995dd19" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Access Consumer" ordering="1" serviceMetric="false" uid="eefb7e09-9877-42d2-8eff-aaa55af72468">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_7308193bf60449a9bd9a175235377c57" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Planner Consumer" ordering="2" serviceMetric="false" uid="c6c4b397-14e6-4f86-bcc9-64fd2c26b629">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_b7cf4ea22adb402091b10c1df4832119" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Project Consumer" ordering="3" serviceMetric="false" uid="eb784b64-0050-40e0-bac2-e0983dbcd993">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_b6d81cf0ede341a5834d0fe7957757f8" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Publisher Consumer" ordering="4" serviceMetric="false" uid="abfa882a-cdec-4072-adad-b4299ae6551d">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_a1c7d8a45c1449dea819eb93b4689ae9" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Visio Consumer" ordering="5" serviceMetric="false" uid="360d35ab-7ba6-4c1e-9ce8-61e6b871f13b">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_c3498babeed5438b8430212a5fbc2209" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Note Taking Solution Consumer" ordering="6" serviceMetric="false" uid="af8b5c6b-f133-4581-bffb-91928365b071">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_158f5cac9f404e26985a13dd5568a323" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Presentation Program Consumer" ordering="7" serviceMetric="false" uid="fc37c518-3262-4404-904d-fd90d50750f9">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_c8c2aad812bf4b6ab9660eb50a7ce57e" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Spreadsheet Program Consumer" ordering="8" serviceMetric="false" uid="53b5715e-c7b5-442e-a65a-2bd24cc2d570">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_461037a5f47748b4a12dda4c110ce6aa" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Word Processor Consumer" ordering="9" serviceMetric="false" uid="ef01a33e-e760-4b9c-b60f-a21ea38f9902">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_db955215119e48e48f3cd82252266691" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="1208509d-ad2d-439b-a76b-d7bfda7a4c0d">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Developer Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Backend Tools Consumer" ordering="0" serviceMetric="false" uid="4911c89b-f2a4-4c41-a9d8-a8f450aa5c6d">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_7e15e24055c34cfcac298e9b63ff1f6b" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Frontend Tools Consumer" ordering="1" serviceMetric="false" uid="d6f3000c-699e-45cb-bd7d-b092ec51a1fc">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_d7050a773b524979b2991480eb08553b" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="81673e21-8b9a-4031-a8c5-53c6a104de9e">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Designer Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Adobe Acrobat Consumer" ordering="0" serviceMetric="false" uid="03d2bc61-c23a-4998-94d1-277a7fdd6e62">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_73d5fbac21d6487ab3f8e48b5d318858" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Adobe Acrobat Distiller Consumer" ordering="1" serviceMetric="false" uid="de997c96-3baa-4818-b67b-c40f2d8a2631">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_cb738edc0a2347bb8b3baf966e541a19" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Adobe Illustrator Consumer" ordering="2" serviceMetric="false" uid="26d2e235-213b-4148-ac12-1a142a0b743a">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_bd3449a428db49c19aa9cfaced651633" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Adobe Photoshop Consumer" ordering="3" serviceMetric="false" uid="20950c8e-428a-460e-bcf6-2fed20f36ece">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_ba4fde08c5184886adf9fe4a744a9d37" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="63910359-e1f1-4ee7-933a-034780956d09">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Data Scientist Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft PowerBI Consumer" ordering="0" serviceMetric="false" uid="c2ca75a0-5d9a-4399-beba-afed59ad4a1e">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_f78b1368efdc46e692f5f16046711236" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Oracle BI Consumer" ordering="1" serviceMetric="false" uid="419f5cf3-d29c-4e84-8437-66621891b9e5">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_e9de18d23cf447d8853d3089039d050c" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Tableau Consumer" ordering="2" serviceMetric="false" uid="3ec0188f-6045-467f-be7d-b617f85358ac">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_e369c3090a2249cab122db145e5b05c6" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="af8b164a-1381-4b1e-b813-3498ad5d0b57">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Sales Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Salesforce Consumer" ordering="0" serviceMetric="false" uid="12c987c8-4424-42b5-b6c4-a50184603431">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_c02c70331fc847b8a44e9b9fbc7ccfd7" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="8cb81473-cde8-4153-8cf5-db22e753030c">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Cloud Storage Tools">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Dropbox Consumer" ordering="0" serviceMetric="false" uid="33226b31-975e-4439-8473-cd2f43ae9905">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_790e39fa720c46ab922ee429518329f4" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="File Sharing Program Consumer" ordering="1" serviceMetric="false" uid="73322385-e2dd-4735-9169-b873fe00e5f0">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_a08365f34492411181e1fb6db1b9472e" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Google Drive Consumer" ordering="2" serviceMetric="false" uid="4fee677f-0601-4710-955b-0df45d6aef94">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_4c9116cc8be34cb9862e640517f42b9c" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft OneDrive Consumer" ordering="3" serviceMetric="false" uid="932f59d9-0fed-4ab1-981f-1966f50ce5b7">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_c89aa9d9e5da40fbb220ad9cd25492f0" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c5f62df1-d2a6-4ffa-aee5-c033c3308705">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Browser Apps">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Chrome Consumer" ordering="0" serviceMetric="false" uid="ad05ce90-5b4e-40f0-b09f-ed90511f1a07">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_0883c0d1cb9b40a1a63ef58e060329ff" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Firefox Consumer" ordering="1" serviceMetric="false" uid="935bde1f-207b-4e4c-b7c9-86d21f67fe66">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_7bde025753894912a15653d980332a77" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Edge Consumer" ordering="2" serviceMetric="false" uid="17554cf5-e8cc-44a3-b24b-1c5fa562dcea">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_5b1a353fad7f45559671996e51034c50" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Microsoft Internet Explorer Consumer" ordering="3" serviceMetric="false" uid="75f8b9a2-2c3b-4cfa-a1f4-6df4c8f169f0">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_46e57604f2544d5790ba38e5def14843" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c908c0ab-1f1a-47a5-9e34-5a456ee57bc9">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Virtualization">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Heavy SBC Consumer" ordering="0" serviceMetric="false" uid="f497f0fc-8299-4a17-b8a6-d5195c08fb7f">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_3791b6d9034042fc955ecfb7558a7720" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Heavy VDI Consumer" ordering="1" serviceMetric="false" uid="f1d145dd-d64c-4aed-954a-d24bbd8f09e4">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_6d73bcfa91d146d689f818bbb61ec156" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="1eb50afe-4708-4740-9113-9cec7950ea8e">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Web Apps">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Business Service Consumer" ordering="0" serviceMetric="false" uid="6065c2e5-165b-4a19-bdb6-fc8106198e9f">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_e7a9b2ddcd9f465fbdb941236a0d7886" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Non-Business Service Consumer" ordering="1" serviceMetric="false" uid="a5b111bd-2158-443c-b045-659235bf11eb">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_69fb88e729414aa8829c1f63e3de048a" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Online Learning Consumer" ordering="2" serviceMetric="false" uid="bf7547bb-364c-4ad1-b863-e9fe7d65f912">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_6e8a676d627a420e9a6fe1c5ad233ca5" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Research Platform Consumer" ordering="3" serviceMetric="false" uid="6218d04f-39d2-4afc-afc8-542b85d2dcdf">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_cb390923faec4924bf5959b02919415b" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Social Platform Consumer" ordering="4" serviceMetric="false" uid="226ffb7c-5cf7-4c6c-b08c-f327bb58a34d">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_3d7a0c78ce344b0e9f8937d14c648566" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="7fe1131a-8b78-4346-945c-647981056114">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Hardware Configuration">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Deskbound Employee" ordering="0" serviceMetric="false" uid="af5e6df5-45e4-4946-9919-2e7ebc209863">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_a172103e0698456d878abad327068cc9" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Laptop Based Employee" ordering="1" serviceMetric="false" uid="7102f962-150e-41d1-8ee7-4aaadd13e1a3">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_3a1a68e3d65b4ce3a82e6d7a4546d37e" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Multiple Device Consumer" ordering="2" serviceMetric="false" uid="d850c3d9-f434-47c9-99cc-8e7f492b9794">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_54d3b923dd3d4093b436931e5b364dfa" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Multiple Screen Consumer" ordering="3" serviceMetric="false" uid="62d2ee6d-d885-4189-85b3-348938bdf9b3">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_fa8c3cb4a0c941269b9be3631408a351" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="0d5e552c-df07-45f8-b6d4-ee38d50bde23">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="OS Configuration">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Windows User" ordering="0" serviceMetric="false" uid="49ab38c6-0172-4989-b305-cb2dd5434040">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_4e1700ef599b4ee78afdcae558f25422" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="f0c1ba20-0e07-44e8-a30b-fceb7c682d25">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Resource Usage">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="CPU Intensive" ordering="0" serviceMetric="false" uid="578ddaf9-fd13-4745-9f8b-5a34945850cb">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_b28f267866da4fd8bfba6664d9edb8aa" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Device Usage" ordering="1" serviceMetric="false" uid="305c4841-221b-4314-b840-f5882c094535">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_2df30534385343358c60e105dd7c420d" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Memory Intensive" ordering="2" serviceMetric="false" uid="a7fe6e0d-89c3-40be-ae00-af788ef257b2">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_ddc1529085354eb78d6b17b78ba5b43a" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Multiple Apps Usage" ordering="3" serviceMetric="false" uid="41cb4a55-2a01-4170-b930-54540f79bef0">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_af3a7fb924ac4cbba520e8159a60adbc" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Network Traffic Consumer" ordering="4" serviceMetric="false" uid="f258e558-b975-4f4d-a21b-09293e4e460c">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_2c55110cb4b04b199193cfe60e188939" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Web Traffic Consumer" ordering="5" serviceMetric="false" uid="4865c577-7d73-465d-a305-ae670c1b810d">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_3d9f01f9da6c4b028695943f852b8842" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="3" name="Persona's by HR Role" uid="e07f714c-c2ec-4902-a053-f7052a09fcdf">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="27623c22-e11c-47b8-85b1-3004ca890c00" minHeight="56" minWidth="296" type="titleWidget" widgetID="27623c22-e11c-47b8-85b1-3004ca890c00">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="ce7d5519-9d7e-4a60-93d8-2c7d8b45f2b0" minHeight="345" minWidth="408" type="tableWidget" widgetID="ce7d5519-9d7e-4a60-93d8-2c7d8b45f2b0">
+                  <preferredHeight value="345"/>
+                  <preferredWidth value="408"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b540a592-e7d9-4bc7-b9e7-d7c9d18c06d4" minHeight="321" minWidth="408" type="tableWidget" widgetID="b540a592-e7d9-4bc7-b9e7-d7c9d18c06d4">
+                  <preferredHeight value="321"/>
+                  <preferredWidth value="408"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="0ab0f57c-ae2a-44a8-b54a-bdc0aa548ba3" minHeight="56" minWidth="296" type="titleWidget" widgetID="0ab0f57c-ae2a-44a8-b54a-bdc0aa548ba3">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="7c369f3a-85ed-4b42-85ed-5563447419be" minHeight="441" minWidth="858" type="tableWidget" widgetID="7c369f3a-85ed-4b42-85ed-5563447419be">
+                <preferredHeight value="441"/>
+                <preferredWidth value="1008"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="27623c22-e11c-47b8-85b1-3004ca890c00">
+            <titleConfig title="Employee Distribution and Experience"/>
+           </widget>
+           <widget type="TABLE" uid="ce7d5519-9d7e-4a60-93d8-2c7d8b45f2b0">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Employee Count by HR Role">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="2. Designers" ordering="0" serviceMetric="false" uid="6e1c21a9-cc6f-4e27-8d3d-0c3d89161fcd">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="3. Developers" ordering="1" serviceMetric="false" uid="b01f9ec1-0bc2-4420-a774-6d87ae2d8f55">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="4. Data Scientists" ordering="3" serviceMetric="false" uid="554fbbc1-3b82-4eff-b3a5-bdc32d9ad0c1">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="5. Marketing" ordering="4" serviceMetric="false" uid="9dd6c856-0215-4dae-96c4-d5d9ae670d78">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="6. Finance" ordering="5" serviceMetric="false" uid="c96c32bc-d4c0-435e-9214-3dc890e11d24">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="1. Sales" ordering="6" serviceMetric="false" uid="8f40d110-72cf-4aed-9f2d-3f9fcd7b58bf">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="b540a592-e7d9-4bc7-b9e7-d7c9d18c06d4">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Digital Experience Score by HR Role">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="1. Salespeople" ordering="16" serviceMetric="false" uid="09357384-e894-4706-b947-f50527ed8499"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="2. Developers" ordering="21" serviceMetric="false" uid="e18474c1-bbdd-478a-97ff-ed72e8354747"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="3. Designers" ordering="24" serviceMetric="false" uid="65993c2d-7eb3-475e-9ec7-3a94ddffbdbf"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="4. Data Scientist" ordering="25" serviceMetric="false" uid="f4fd48d0-6794-4740-af4f-ce96ea551a4b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="5. Marketing" ordering="26" serviceMetric="false" uid="fa1a53ea-4c0d-493d-a764-063ab9456c62"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="6. Finance" ordering="27" serviceMetric="false" uid="f4c63880-14ed-4c62-ad5c-6433dcba9c6c"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="0ab0f57c-ae2a-44a8-b54a-bdc0aa548ba3">
+            <titleConfig title="Persona Traits Exhibited by HR Roles"/>
+           </widget>
+           <widget type="TABLE" uid="7c369f3a-85ed-4b42-85ed-5563447419be">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Behaviour Based">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Power Worker" ordering="0" serviceMetric="false" uid="e3aadc6f-816e-43ea-97c7-22e58eae486b">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Knowledge Worker" ordering="1" serviceMetric="false" uid="864d064d-5a09-4829-9cce-c7a598620960">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Office User" ordering="2" serviceMetric="false" uid="e8be5c9e-5047-4124-b185-7a11ee481da8">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Unsatisfied Employees" ordering="3" serviceMetric="false" uid="dedbb8b6-f5ea-458e-9571-53a0793e3f67">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="User Needs Attention" ordering="4" serviceMetric="false" uid="c687528f-be31-42d3-a634-0a6a5f4a23c9">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="user" type="CATEGORY" value="Persona - Job Role"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="Persona - Job Role"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="5" name="Recommendation - Developers" uid="007d3350-8574-43ad-9ae2-3f37536d8d32">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="b55f6374-9930-4a54-88ea-16c4a8179234" minHeight="56" minWidth="296" type="titleWidget" widgetID="b55f6374-9930-4a54-88ea-16c4a8179234">
+              <preferredHeight value="56"/>
+              <preferredWidth value="0"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e3a13471-ed75-425b-89de-4ce6f4ae9df4" minHeight="352" minWidth="318" type="kpiWidget" widgetID="e3a13471-ed75-425b-89de-4ce6f4ae9df4">
+                  <preferredHeight value="352"/>
+                  <preferredWidth value="318"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="8fd75edb-6177-4d24-8725-768c3a631bd8" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="8fd75edb-6177-4d24-8725-768c3a631bd8">
+                    <preferredHeight value="362"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="7f2ede74-7547-4986-b9c0-0198a46cadb8" minHeight="310" minWidth="396" type="lineChartWidget" widgetID="7f2ede74-7547-4986-b9c0-0198a46cadb8">
+                    <preferredHeight value="410"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="0979941c-b0b8-4415-bc1f-a4af6804887c" minHeight="56" minWidth="296" type="titleWidget" widgetID="0979941c-b0b8-4415-bc1f-a4af6804887c">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="H">
+                         <children>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="0df9a9cc-42b7-4cb6-8d70-5b23ecb79bec" minHeight="321" minWidth="408" type="tableWidget" widgetID="0df9a9cc-42b7-4cb6-8d70-5b23ecb79bec">
+                              <preferredHeight value="321"/>
+                              <preferredWidth value="408"/>
+                             </data>
+                            </child>
+                            <child type="V">
+                             <children>
+                              <child type="L">
+                               <children/>
+                               <data id="1b778887-779d-4e19-818c-a5a8250b8c47" minHeight="321" minWidth="408" type="tableWidget" widgetID="1b778887-779d-4e19-818c-a5a8250b8c47">
+                                <preferredHeight value="321"/>
+                                <preferredWidth value="408"/>
+                               </data>
+                              </child>
+                              <child type="L">
+                               <children/>
+                               <data id="3faf5093-5840-4d3a-83e7-3c7091a5b29d" minHeight="321" minWidth="408" type="tableWidget" widgetID="3faf5093-5840-4d3a-83e7-3c7091a5b29d">
+                                <preferredHeight value="321"/>
+                                <preferredWidth value="408"/>
+                               </data>
+                              </child>
+                             </children>
+                            </child>
+                           </children>
+                          </child>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="c314959d-79e3-42d0-97a3-efaa361a8f66" minHeight="441" minWidth="630" type="tableWidget" widgetID="c314959d-79e3-42d0-97a3-efaa361a8f66">
+                              <preferredHeight value="441"/>
+                              <preferredWidth value="630"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="41bc9ea7-10e8-43bd-91a8-08f2c3b49f10" minHeight="441" minWidth="330" type="tableWidget" widgetID="41bc9ea7-10e8-43bd-91a8-08f2c3b49f10">
+                              <preferredHeight value="441"/>
+                              <preferredWidth value="330"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                         </children>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="672ad096-4b86-46ca-8f76-bfc5e7919aa6" minHeight="56" minWidth="296" type="titleWidget" widgetID="672ad096-4b86-46ca-8f76-bfc5e7919aa6">
+                          <preferredHeight value="56"/>
+                          <preferredWidth value="0"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="14ae216a-201e-4085-86c5-c0ee2a848a09" minHeight="321" minWidth="408" type="tableWidget" widgetID="14ae216a-201e-4085-86c5-c0ee2a848a09">
+                          <preferredHeight value="321"/>
+                          <preferredWidth value="408"/>
+                         </data>
+                        </child>
+                        <child type="V">
+                         <children>
+                          <child type="L">
+                           <children/>
+                           <data id="0d53e01b-b6d7-42e3-bd4e-484f7ae20579" minHeight="321" minWidth="408" type="tableWidget" widgetID="0d53e01b-b6d7-42e3-bd4e-484f7ae20579">
+                            <preferredHeight value="321"/>
+                            <preferredWidth value="408"/>
+                           </data>
+                          </child>
+                          <child type="L">
+                           <children/>
+                           <data id="7f0aebde-df58-4842-865b-c2eb752368ae" minHeight="321" minWidth="408" type="tableWidget" widgetID="7f0aebde-df58-4842-865b-c2eb752368ae">
+                            <preferredHeight value="321"/>
+                            <preferredWidth value="408"/>
+                           </data>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="103bdb26-e985-42db-9ea4-f63cda9f32f7" minHeight="441" minWidth="630" type="tableWidget" widgetID="103bdb26-e985-42db-9ea4-f63cda9f32f7">
+                        <preferredHeight value="441"/>
+                        <preferredWidth value="630"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="185e9444-aca4-476f-a6e0-54620b57e3f3" minHeight="441" minWidth="330" type="tableWidget" widgetID="185e9444-aca4-476f-a6e0-54620b57e3f3">
+                        <preferredHeight value="441"/>
+                        <preferredWidth value="330"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="07902ee6-177d-4b0c-a988-9808d4040a77" minHeight="238" minWidth="576" type="kpiWidget" widgetID="07902ee6-177d-4b0c-a988-9808d4040a77">
+                      <preferredHeight value="238"/>
+                      <preferredWidth value="576"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="bdff8905-3488-4253-878c-8269e10b97fd" minHeight="244" minWidth="300" type="barChartWidget" widgetID="bdff8905-3488-4253-878c-8269e10b97fd">
+                      <preferredHeight value="244"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="b55f6374-9930-4a54-88ea-16c4a8179234">
+            <titleConfig title="Unhappy Developers"/>
+           </widget>
+           <widget type="KPI" uid="e3a13471-ed75-425b-89de-4ce6f4ae9df4">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unhappy Front-End Developer" ordering="0" serviceMetric="false" uid="1035f394-44e6-406a-9053-76e1412974e5"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Unhappy Back-End Developer" ordering="1" serviceMetric="false" uid="f5a828a4-e7af-4901-90f3-aa75526c78a6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="8fd75edb-6177-4d24-8725-768c3a631bd8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Unhappy Front-End Developer" ordering="0" serviceMetric="false" uid="1035f394-44e6-406a-9053-76e1412974e5"/>
+              <metric label="Unhappy Back-End Developer" ordering="1" serviceMetric="false" uid="f5a828a4-e7af-4901-90f3-aa75526c78a6"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="7f2ede74-7547-4986-b9c0-0198a46cadb8">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="Digital Experience Score">
+             <metrics>
+              <metric label="Front-End Developers" ordering="0" serviceMetric="false" uid="45e855bd-662d-47ca-a0ab-b41ce669c3f5"/>
+              <metric label="Back-End Developers" ordering="1" serviceMetric="false" uid="3cf170cd-c963-46ec-b35b-dc020b6ec4ad"/>
+             </metrics>
+             <scale scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TITLE" uid="0979941c-b0b8-4415-bc1f-a4af6804887c">
+            <titleConfig title="Recommendations for Front-End Developers"/>
+           </widget>
+           <widget type="TABLE" uid="0df9a9cc-42b7-4cb6-8d70-5b23ecb79bec">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Devices Models">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="0" serviceMetric="false" uid="3649f8f1-a2e4-4733-868e-05007dbcfcc3"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="model"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="3649f8f1-a2e4-4733-868e-05007dbcfcc3_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="1b778887-779d-4e19-818c-a5a8250b8c47">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended  CPU Models">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="1" serviceMetric="false" uid="c71b936e-a041-4522-9c41-6a2bcb34f850"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="cpu_model"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="c71b936e-a041-4522-9c41-6a2bcb34f850_1"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="3faf5093-5840-4d3a-83e7-3c7091a5b29d">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended  Operating Systems">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="0" serviceMetric="false" uid="5fb585da-adfc-47d9-950d-4723bf04d856"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="os_name"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="5fb585da-adfc-47d9-950d-4723bf04d856_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c314959d-79e3-42d0-97a3-efaa361a8f66">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Applications">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Focus Time" ordering="3" serviceMetric="false" uid="d2344422-12b3-4905-a347-aad9717097ae">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+               <fields name="description" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="total_focus_time"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="41bc9ea7-10e8-43bd-91a8-08f2c3b49f10">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Domains">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Domains for Frontend" ordering="0" serviceMetric="false" uid="cbbc12de-d467-4ae1-a5dc-feb70454a029">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="web_usage_duration"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="672ad096-4b86-46ca-8f76-bfc5e7919aa6">
+            <titleConfig title="Recommendations for Back-End Developers"/>
+           </widget>
+           <widget type="TABLE" uid="14ae216a-201e-4085-86c5-c0ee2a848a09">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Devices Models">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="0" serviceMetric="false" uid="25b08224-777c-4961-8a80-7d1103e99b59"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="model"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="25b08224-777c-4961-8a80-7d1103e99b59_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="0d53e01b-b6d7-42e3-bd4e-484f7ae20579">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended CPU Models">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="0" serviceMetric="false" uid="fba28217-52c6-4f85-b797-6df4575ea1b8"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="cpu_model"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="fba28217-52c6-4f85-b797-6df4575ea1b8_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="7f0aebde-df58-4842-865b-c2eb752368ae">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Operating Systems">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="DEX" ordering="0" serviceMetric="false" uid="947b1161-715e-4340-8179-2b47649e773e"/>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="os_name"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="947b1161-715e-4340-8179-2b47649e773e_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="103bdb26-e985-42db-9ea4-f63cda9f32f7">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Applications">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Persona - Applications for Backend Developers" ordering="2" serviceMetric="false" uid="45b7bb2f-b00b-4ace-8920-7880f4cd7909">
+               <fields name="name" type="FIELD"/>
+               <fields name="company" type="FIELD"/>
+               <fields name="description" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="total_focus_time"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="185e9444-aca4-476f-a6e0-54620b57e3f3">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Recommended Domains">
+             <columns option="TOP"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Domains for Fullstack" ordering="0" serviceMetric="false" uid="c6cedf03-faac-4668-b779-29d5f3144b2e">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="TOP"/>
+             <sortRowsBy type="TOP" value="web_usage_duration"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="07902ee6-177d-4b0c-a988-9808d4040a77">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Potential Persona Transitions">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Back-end to Front-end Developers" ordering="0" serviceMetric="false" uid="9da47081-a5ac-4f2f-9dff-aa968ca2a829"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Front-end to Back-end Developers" ordering="1" serviceMetric="false" uid="5ce4ff13-e47c-41d0-bf37-a2da0973aeab"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="bdff8905-3488-4253-878c-8269e10b97fd">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="4" sortByOrder="DESC" threshold="false" title="Shadow Developers by Department">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="CATEGORY" value="Persona - Job Role"/>
+             </groupBy>
+             <metrics>
+              <metric label="Persona - Shadow Developers" ordering="0" serviceMetric="false" uid="061d6afc-de45-47d7-aad5-efd9256d1ae5"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

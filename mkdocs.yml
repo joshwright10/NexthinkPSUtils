@@ -1,0 +1,18 @@
+site_name: NexthinkPSUtils
+repo_url: https://github.com/joshwright10/NexthinkPSUtils
+site_author: Josh Wright
+edit_uri: edit/master/docs/
+theme: readthedocs
+copyright: "NexthinkPSUtils is licensed under the <a href='https://raw.githubusercontent.com/joshwright10/NexthinkPSUtils/master/LICENSE'>MIT license"
+pages:
+  - Home: index.md
+  - Configuration: gettingsetup.md
+  - Scenarios:
+      - Locate Remote Action References: locateremoteactionreferences.md
+  - Functions:
+      - Get-NxtCategoryMetricUsage: functions/Get-NxtCategoryMetricUsage.md
+      - Get-NxtCategoryScoreUsage: functions/Get-NxtCategoryScoreUsage.md
+      - Get-NxtMetricDashboardUsage: functions/Get-NxtMetricDashboardUsage.md
+      - Get-NxtRemoteActionMetricUsage: functions/Get-NxtRemoteActionMetricUsage.md
+      - Get-NxtRemoteActionScoreUsage: functions/Get-NxtRemoteActionScoreUsage.md
+

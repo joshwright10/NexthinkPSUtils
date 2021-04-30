@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AlertsTree SyntaxVersion="3">
+  <Folder Name="alerts">
+    <Alert SyntaxVersion="3">
+      <Investigation DataModelVersion="13" SyntaxVersion="3">
+        <Label>Devices with poor battery health</Label>
+        <Object>source</Object>
+        <Platforms>
+          <Platform>windows</Platform>
+        </Platforms>
+        <Description />
+        <FieldList>
+          <string>name</string>
+          <string>entity</string>
+        </FieldList>
+        <CategoryList />
+        <AggregateList />
+        <ObjectConditionList>
+          <ObjectCondition IsTemplate="false">
+            <Object>source</Object>
+            <Field>action_200f647eaf11e5396fbb92385886ce33</Field>
+            <Comparer>=</Comparer>
+            <Value>"67%"</Value>
+            <Operand>string</Operand>
+          </ObjectCondition>
+        </ObjectConditionList>
+        <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+        <LastHours>1</LastHours>
+      </Investigation>
+      <Emails />
+      <Mail>true</Mail>
+      <Critical>false</Critical>
+      <Frequency>Immediate</Frequency>
+      <Home>false</Home>
+      <Syslog>false</Syslog>
+      <IsEnabled>false</IsEnabled>
+      <Parameters>
+        <selector>select source.name, source.entity where source.action_200f647eaf11e5396fbb92385886ce33 = "67%" AND source.platform = windows</selector>
+      </Parameters>
+      <DisplayParameters>
+        <fields>
+          <field>source.name</field>
+          <field>source.entity</field>
+        </fields>
+      </DisplayParameters>
+    </Alert>
+  </Folder>
+</AlertsTree>

@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>MS Teams: Adoption</Name>
+     <Dependencies>
+      <Dependency name="Teams - pre-deployment adoption times - Early Adopters" type="metric" uid="72145d12-d864-4ef4-b789-a0b38c428208"/>
+      <Dependency name="Teams - pre-deployment adoption hours - Early Adopters" type="metric" uid="20969f09-33ec-400f-ba29-6fe37e9e8363"/>
+      <Dependency name="Teams - pre-deployment respondents - Early Adopters" type="metric" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+      <Dependency name="Teams - pre-deployment adoption times distribution - Early Adopters" type="metric" uid="976ed072-4d86-43d7-9578-83ec3cfb5516"/>
+      <Dependency name="Teams - pre-deployment adoption hours distribution - Early Adopters" type="metric" uid="fad9b82d-0a2c-42cd-b2a2-7deb36237b5f"/>
+      <Dependency name="Teams - post-deployment adoption times - Early Adopters" type="metric" uid="ef00a749-a12d-4855-ada6-4f6b97ae46e8"/>
+      <Dependency name="Teams - post-deployment adoption hours - Early Adopters" type="metric" uid="84ff1154-f4cb-4183-8c08-63eb18e3107b"/>
+      <Dependency name="Teams - post-deployment respondents - Early Adopters" type="metric" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+      <Dependency name="Teams - post-deployment adoption times distribution - Early Adopters" type="metric" uid="d40e6e96-13f5-431d-b037-d295ce039735"/>
+      <Dependency name="Teams - post-deployment adoption hours distribution - Early Adopters" type="metric" uid="fbc80452-5e5b-49cf-b19b-0090e2ae3bab"/>
+      <Dependency name="Teams - pre-deployment collaboration - Early Adopters" type="metric" uid="69e84c90-d537-4773-9800-290578817354"/>
+      <Dependency name="Teams - pre-deployment collaboration remote networks - Early Adopters" type="metric" uid="7f48fd42-9057-4122-9892-f1f83114eb8c"/>
+      <Dependency name="Teams - pre-deployment collaboration methods distribution - Early Adopters" type="metric" uid="55566327-0b4d-43a4-8c2a-a462d5ef171b"/>
+      <Dependency name="Teams - pre-deployment collaboration team location distribution - Early Adopters" type="metric" uid="3bc45f56-12db-45d1-b417-41165a626256"/>
+      <Dependency name="Teams - post-deployment collaboration - Early Adopters" type="metric" uid="24c4fc7b-53d5-45c6-a6be-59b32f87ba7e"/>
+      <Dependency name="Teams - post-deployment collaboration remote networks - Early Adopters" type="metric" uid="2b0b4ce3-297d-44b7-903d-f0d07ed6abc4"/>
+      <Dependency name="Teams - post-deployment collaboration methods distribution - Early Adopters" type="metric" uid="d6a62c7a-e4ae-467c-bd8e-c3ff380d39b1"/>
+      <Dependency name="Teams - pre-deployment satisfaction - Early Adopters" type="metric" uid="d97449e7-97ec-4300-b66a-8f084badcc88"/>
+      <Dependency name="Teams - post-deployment satisfaction - Early Adopters" type="metric" uid="43069ead-5d65-47be-8883-f741dd53aabd"/>
+      <Dependency name="Teams - Users not preferring Teams - Early Adopters" type="metric" uid="04c11512-c4c8-4c12-811c-41a780c8c88a"/>
+      <Dependency name="Teams - Users preferring Teams - Early Adopters" type="metric" uid="2b83bfba-9a74-4715-9e6d-70345528d5c5"/>
+      <Dependency name="Teams - Users not sure preferring Teams - Early Adopters" type="metric" uid="144022f3-63a5-460d-a50e-cb596be2ce64"/>
+      <Dependency name="Teams - Users - Early Adopters" type="metric" uid="74564dc8-a2ae-4534-8c13-1e29c8386a17"/>
+      <Dependency name="Teams - Call quality satisfaction last 30 days - Early Adopters" type="metric" uid="aa902c75-3906-490f-9e1c-800b6a38d1da"/>
+      <Dependency name="Teams - Call quality respondents last 30 days - Early Adopters" type="metric" uid="b1e6fcf0-be27-4e80-97fa-febe6ff8f461"/>
+      <Dependency name="Teams - pre-deployment satisfaction happy users - Early Adopters" type="metric" uid="906abe83-9e48-4eb3-bd8c-73d99b01f0bf"/>
+      <Dependency name="Teams - pre-deployment - users willing to be early adopters" type="metric" uid="ac571a15-5d5a-412d-ac82-33e2b7809cac"/>
+      <Dependency name="Teams - pre-deployment satisfaction distribution - Early Adopters" type="metric" uid="7a619abe-e233-4b07-90ee-6eae0db9427e"/>
+      <Dependency name="Teams - pre-deployment satisfaction positive points - Early Adopters" type="metric" uid="85f99dc1-6210-4c7b-9357-ef53bf94aa72"/>
+      <Dependency name="Teams - pre-deployment satisfaction negative points - Early Adopters" type="metric" uid="c447aff6-2aac-49c8-ba37-68081ccc7492"/>
+      <Dependency name="Teams - post-deployment satisfaction happy users - Early Adopters" type="metric" uid="eeea464e-445e-49bf-a6b7-473a5b54995f"/>
+      <Dependency name="Teams - post-deployment satisfaction distribution - Early Adopters" type="metric" uid="8d62e430-60a2-4351-b541-d63240968b8a"/>
+      <Dependency name="Teams - post-deployment satisfaction positive points - Early Adopters" type="metric" uid="8a3bac53-2e17-4178-af61-004e4249bcf2"/>
+      <Dependency name="Teams - post-deployment satisfaction negative points - Early Adopters" type="metric" uid="525f4f32-1259-40b8-b6cb-c754017c8971"/>
+      <Dependency name="Teams - pre-deployment adoption times - Production" type="metric" uid="5f0f7ec1-a9b1-4ada-8ac6-67c108e24184"/>
+      <Dependency name="Teams - pre-deployment adoption hours - Production" type="metric" uid="c9901325-7f8c-4bd9-81c7-3c1efbc80f13"/>
+      <Dependency name="Teams - pre-deployment respondents - Production" type="metric" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+      <Dependency name="Teams - pre-deployment adoption times distribution - Production" type="metric" uid="83d3927c-ceef-4026-a25f-cacf76c3c6a6"/>
+      <Dependency name="Teams - pre-deployment adoption hours distribution - Production" type="metric" uid="938ccf90-d7f0-426e-a251-bee42e9b5bdd"/>
+      <Dependency name="Teams - post-deployment adoption times - Production" type="metric" uid="8bdc25dc-5320-490e-8b47-f6adb6dfc9f2"/>
+      <Dependency name="Teams - post-deployment adoption hours - Production" type="metric" uid="1e8aa011-6844-4bfd-9cb4-9b566e6584e8"/>
+      <Dependency name="Teams - post-deployment respondents - Production" type="metric" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+      <Dependency name="Teams - post-deployment adoption times distribution - Production" type="metric" uid="ae18eb59-9a69-4950-aea7-9939cbad0343"/>
+      <Dependency name="Teams - post-deployment adoption hours distribution - Production" type="metric" uid="79b3a22f-ff27-4713-8a94-8ce056b11449"/>
+      <Dependency name="Teams - pre-deployment collaboration - Production" type="metric" uid="9a4634d7-248a-4d4c-a1ac-2f6edc36a8e4"/>
+      <Dependency name="Teams - pre-deployment collaboration remote networks - Production" type="metric" uid="79d41a88-9f3c-457b-bf27-31f3826c28da"/>
+      <Dependency name="Teams - pre-deployment collaboration methods distribution - Production" type="metric" uid="423f4209-cb30-4c71-a597-b4cbf12e74ac"/>
+      <Dependency name="Teams - pre-deployment collaboration team location distribution - Production" type="metric" uid="6fc83974-2b8c-4993-b11b-374ecb4b6999"/>
+      <Dependency name="Teams - post-deployment collaboration - Production" type="metric" uid="a506f62e-4318-4374-afee-d57a9b7bb79e"/>
+      <Dependency name="Teams - post-deployment collaboration remote networks - Production" type="metric" uid="b5e3888a-b1ca-4570-a99a-579b9b40dc68"/>
+      <Dependency name="Teams - post-deployment collaboration methods distribution - Production" type="metric" uid="240e922b-e9c6-4650-a288-243d99cdea17"/>
+      <Dependency name="Teams - pre-deployment satisfaction - Production" type="metric" uid="258c1ded-40d4-42ae-a0b2-86b916b0dc53"/>
+      <Dependency name="Teams - post-deployment satisfaction - Production" type="metric" uid="919b9d42-ae9c-4821-87a2-07e663cb6177"/>
+      <Dependency name="Teams - Users not preferring Teams - Production" type="metric" uid="ff01ced0-96f6-4f35-9754-7e124191ebfc"/>
+      <Dependency name="Teams - Users preferring Teams - Production" type="metric" uid="37aaea32-ecb2-45a6-90e8-cbb82a49d97b"/>
+      <Dependency name="Teams - Users not sure preferring Teams - Production" type="metric" uid="2931648a-98dd-4a18-a047-522febfb40f5"/>
+      <Dependency name="Teams - Users - Production" type="metric" uid="b25636a2-dbc5-4789-930b-27317c5da815"/>
+      <Dependency name="Teams - Call quality satisfaction last 30 days - Production" type="metric" uid="b2eb9c42-660b-4af7-b97a-52f4edddb63f"/>
+      <Dependency name="Teams - Call quality respondents last 30 days - Production" type="metric" uid="0c2ecc1c-2d43-4d22-9667-16b634e038b9"/>
+      <Dependency name="Teams - pre-deployment satisfaction happy users - Production" type="metric" uid="163b6ce3-4e88-434a-9af8-b44e5bbb909f"/>
+      <Dependency name="Teams - pre-deployment satisfaction distribution - Production" type="metric" uid="e5bc26a1-ed65-4e03-9a74-0d8f35af87a8"/>
+      <Dependency name="Teams - pre-deployment satisfaction positive points - Production" type="metric" uid="3ca3f22a-bf8c-4479-808e-6f7cdaab27f0"/>
+      <Dependency name="Teams - pre-deployment satisfaction negative points - Production" type="metric" uid="21a9709c-ac60-41ad-b83d-b0f11c7bc2f7"/>
+      <Dependency name="Teams - post-deployment satisfaction happy users - Production" type="metric" uid="faa29987-45e5-4d05-893b-32d906a43c23"/>
+      <Dependency name="Teams - post-deployment satisfaction distribution - Production" type="metric" uid="0bfa9e57-4fa2-439f-ac86-1fc01c11fb8b"/>
+      <Dependency name="Teams - post-deployment satisfaction positive points - Production" type="metric" uid="f374c16d-cac3-4ef1-96c5-d2edc6802ae4"/>
+      <Dependency name="Teams - post-deployment satisfaction negative points - Production" type="metric" uid="a0b616d0-3948-4684-81fc-54abb0343450"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="MS Teams: Adoption" uid="b5c4ac6b-f735-41e0-8a78-0516b8b9242a">
+        <dashboards>
+         <dashboard description="# Early Adopters: Adoption&#13;&#10;&#13;&#10;**Pre-deployment use of communication tools &amp; Post-deployment use of Teams**&#13;&#10;* Survey your Early Adopters employees before the deployment to define a baseline usage of the current collaboration tools. Run the same survey after Teams is installed to assess an increase of usage. The two metrics used are *Times per week* and *Hours per week*.&#13;&#10;&#13;&#10;**Breakdown of usage**&#13;&#10;* See the distribution of the usage, before and after the deployment of Teams, for both metrics described above." index="3" name="Early Adopters: Adoption" uid="d50b8e75-b815-475f-96e4-f56f177a8b22">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="2000340a-afc5-404a-94d9-f25d72df5185" minHeight="166" minWidth="744" type="kpiWidget" widgetID="2000340a-afc5-404a-94d9-f25d72df5185">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="3757a772-1175-4bd2-ac82-f3d5d722e54a" minHeight="204" minWidth="300" type="barChartWidget" widgetID="3757a772-1175-4bd2-ac82-f3d5d722e54a">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="33a3ee65-5247-4bef-a94b-587d374d60c4" minHeight="164" minWidth="300" type="barChartWidget" widgetID="33a3ee65-5247-4bef-a94b-587d374d60c4">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="f227d203-0211-42b2-8967-19357e463a51" minHeight="166" minWidth="744" type="kpiWidget" widgetID="f227d203-0211-42b2-8967-19357e463a51">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="88c589c1-51c0-443e-a289-dc9fa3dce257" minHeight="204" minWidth="300" type="barChartWidget" widgetID="88c589c1-51c0-443e-a289-dc9fa3dce257">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="0ea57b99-d728-4437-bd4e-07544b99bebb" minHeight="164" minWidth="300" type="barChartWidget" widgetID="0ea57b99-d728-4437-bd4e-07544b99bebb">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="2000340a-afc5-404a-94d9-f25d72df5185">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment use of communication tools">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Times per week" ordering="0" serviceMetric="false" uid="72145d12-d864-4ef4-b789-a0b38c428208"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hours per week" ordering="1" serviceMetric="false" uid="20969f09-33ec-400f-ba29-6fe37e9e8363"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3757a772-1175-4bd2-ac82-f3d5d722e54a">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="Breakdown of usage">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment adoption times distribution - Early Adopters" ordering="0" serviceMetric="false" uid="976ed072-4d86-43d7-9578-83ec3cfb5516"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_4"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="33a3ee65-5247-4bef-a94b-587d374d60c4">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_5"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment adoption hours distribution - Early Adopters" ordering="0" serviceMetric="false" uid="fad9b82d-0a2c-42cd-b2a2-7deb36237b5f"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_5"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="f227d203-0211-42b2-8967-19357e463a51">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post-deployment use of Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Times per week" ordering="0" serviceMetric="false" uid="ef00a749-a12d-4855-ada6-4f6b97ae46e8"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hours per week" ordering="4" serviceMetric="false" uid="84ff1154-f4cb-4183-8c08-63eb18e3107b"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="88c589c1-51c0-443e-a289-dc9fa3dce257">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="Breakdown of usage">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment adoption times distribution - Early Adopters" ordering="0" serviceMetric="false" uid="d40e6e96-13f5-431d-b037-d295ce039735"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_4"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0ea57b99-d728-4437-bd4e-07544b99bebb">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_5"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment adoption hours distribution - Early Adopters" ordering="0" serviceMetric="false" uid="fbc80452-5e5b-49cf-b19b-0090e2ae3bab"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_5"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Early Adopters: Collaboration&#13;&#10;&#13;&#10;**Pre-deployment &amp; Post-deployment collaboration**&#13;&#10;* Run a survey before and after the deployment to define your Early Adopters collaboration score. Run the same survey after Teams is installed to observe an increase in the collaboration score.&#13;&#10;&#13;&#10;**Breakdown of usage**&#13;&#10;* See the distribution of the usage, before and after the deployment of Teams, for both metrics described above." index="4" name="Early Adopters: Collaboration" uid="1eb487ef-d86d-4751-bd60-a947a5e2804a">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d8138557-6aef-4560-912b-c221ddad23b3" minHeight="166" minWidth="744" type="kpiWidget" widgetID="d8138557-6aef-4560-912b-c221ddad23b3">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="66693c45-245c-40e6-a1a9-deef29acec28" minHeight="324" minWidth="300" type="barChartWidget" widgetID="66693c45-245c-40e6-a1a9-deef29acec28">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="bcf91887-8003-4781-9130-e560e374caec" minHeight="204" minWidth="300" type="barChartWidget" widgetID="bcf91887-8003-4781-9130-e560e374caec">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="405e3fba-7c04-402a-ac54-d407ce653706" minHeight="166" minWidth="744" type="kpiWidget" widgetID="405e3fba-7c04-402a-ac54-d407ce653706">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="723ffac7-765d-471e-bc4c-8af28a397763" minHeight="324" minWidth="300" type="barChartWidget" widgetID="723ffac7-765d-471e-bc4c-8af28a397763">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="d8138557-6aef-4560-912b-c221ddad23b3">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment collaboration with colleagues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Collaboration score" ordering="0" serviceMetric="false" uid="69e84c90-d537-4773-9800-290578817354"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Remote teams - Collaboration score" ordering="1" serviceMetric="false" uid="7f48fd42-9057-4122-9892-f1f83114eb8c"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="66693c45-245c-40e6-a1a9-deef29acec28">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Preferred collaboration methods">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_6"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment collaboration methods distribution - Early Adopters" ordering="1" serviceMetric="false" uid="55566327-0b4d-43a4-8c2a-a462d5ef171b"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="bcf91887-8003-4781-9130-e560e374caec">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Teams locations">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_7"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment collaboration team location distribution - Early Adopters" ordering="0" serviceMetric="false" uid="3bc45f56-12db-45d1-b417-41165a626256"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="405e3fba-7c04-402a-ac54-d407ce653706">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post-deployment collaboration with colleagues using Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Collaboration score" ordering="0" serviceMetric="false" uid="24c4fc7b-53d5-45c6-a6be-59b32f87ba7e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Remote teams - Collaboration score" ordering="1" serviceMetric="false" uid="2b0b4ce3-297d-44b7-903d-f0d07ed6abc4"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="723ffac7-765d-471e-bc4c-8af28a397763">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Preferred collaboration methods">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_6"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment collaboration methods distribution - Early Adopters" ordering="0" serviceMetric="false" uid="d6a62c7a-e4ae-467c-bd8e-c3ff380d39b1"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# MS Teams: Employee engagement&#13;&#10;This pack helps measure your employee satisfaction, adoption and collaboration on Microsoft Teams. Track what your employees like and dislike, ask them how many times per week and how much time they spend on collaboration tools, and if in the end they preferred the old way compared to the new.&#13;&#10;&#13;&#10;Four dashboards focus on the Early Adopters and four dashboards target Production.&#13;&#10;&#13;&#10;# Early Adopters: Overview&#13;&#10;&#13;&#10;**User satisfaction score**&#13;&#10;* Survey your Early Adopters employees before the deployment to define a baseline satisfaction of the current collaboration tools. Run the same survey after Teams is installed to assess an improvement or a deterioration of the overall satisfaction.&#13;&#10;&#13;&#10;**User adoption (number of hours / week)**&#13;&#10;* Get to know how many hours per week your Early Adopters employees use collaboration tools. Ideally you should observe an increase once Microsoft Team is in place.&#13;&#10;&#13;&#10;**User adoption (number of times / week)**&#13;&#10;* As for the number of hours, once Microsoft Team is in place you should observe an increase in the number of times your Early Adopters report usage of Teams vs. your old collaboration tools.&#13;&#10;&#13;&#10;**User collaboration score**&#13;&#10;* Assess your Early Adopters collaboration score. As for the satisfaction score, they should feel that collaboration is easier once Microsoft Teams is in place compared to their old collaboration tools.&#13;&#10;&#13;&#10;**Users preference**&#13;&#10;* Read what percentage of your Early Adopters prefer Teams compared to the old collaboration tool. Investigate on the users not preferring Teams.&#13;&#10;&#13;&#10;**Call quality satisfaction - last 30 days**&#13;&#10;* Continuously monitor the satisfaction of your employees on their last audio or video call made with Microsoft Teams.&#13;&#10;&#13;&#10;::: configuration&#13;&#10;In order to take full advantage of this content pack, categories and metrics need to be adjusted.&#13;&#10;&#13;&#10;**Please contact Nexthink Professional services if needed.**&#13;&#10;:::" index="1" name="Early Adopters: Overview" uid="92620235-61f5-400e-a56f-823384a13d35">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="393d0391-07bf-47a5-8891-5d9753804d18" minHeight="166" minWidth="364" type="kpiWidget" widgetID="393d0391-07bf-47a5-8891-5d9753804d18">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="b30f0d0d-9a41-4e49-b7a6-d79669ec281c" minHeight="166" minWidth="364" type="kpiWidget" widgetID="b30f0d0d-9a41-4e49-b7a6-d79669ec281c">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="9d566415-bf9d-4d34-a1e7-a78b37aacbe0" minHeight="166" minWidth="364" type="kpiWidget" widgetID="9d566415-bf9d-4d34-a1e7-a78b37aacbe0">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="cb397ee2-883f-4b72-9e9c-623de1d058cf" minHeight="166" minWidth="364" type="kpiWidget" widgetID="cb397ee2-883f-4b72-9e9c-623de1d058cf">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="d3c26b4a-549f-4403-bf01-4e37344e911c" minHeight="233" minWidth="774" type="tableWidget" widgetID="d3c26b4a-549f-4403-bf01-4e37344e911c">
+                <preferredHeight value="233"/>
+                <preferredWidth value="924"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="85bed217-8d12-4624-95c8-56109f92eb14" minHeight="56" minWidth="296" type="titleWidget" widgetID="85bed217-8d12-4624-95c8-56109f92eb14">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="968df4c9-c1fd-498d-b39b-2b9f9c0cf864" minHeight="126" minWidth="554" type="kpiWidget" widgetID="968df4c9-c1fd-498d-b39b-2b9f9c0cf864">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="6fc930eb-134f-42fc-8960-5ae98aa9d7cb" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="6fc930eb-134f-42fc-8960-5ae98aa9d7cb">
+                  <preferredHeight value="274"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="393d0391-07bf-47a5-8891-5d9753804d18">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User satisfaction score">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="d97449e7-97ec-4300-b66a-8f084badcc88"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="43069ead-5d65-47be-8883-f741dd53aabd"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="b30f0d0d-9a41-4e49-b7a6-d79669ec281c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Users adoption - hours per week">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="20969f09-33ec-400f-ba29-6fe37e9e8363"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="2" serviceMetric="false" uid="84ff1154-f4cb-4183-8c08-63eb18e3107b"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="9d566415-bf9d-4d34-a1e7-a78b37aacbe0">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User adoption - times per week">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="2" serviceMetric="false" uid="72145d12-d864-4ef4-b789-a0b38c428208"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="3" serviceMetric="false" uid="ef00a749-a12d-4855-ada6-4f6b97ae46e8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="cb397ee2-883f-4b72-9e9c-623de1d058cf">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User collaboration score">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="69e84c90-d537-4773-9800-290578817354"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="24c4fc7b-53d5-45c6-a6be-59b32f87ba7e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="d3c26b4a-549f-4403-bf01-4e37344e911c">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Users preference">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users NOT preferring Teams" ordering="0" serviceMetric="false" uid="04c11512-c4c8-4c12-811c-41a780c8c88a">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users preferring Teams" ordering="1" serviceMetric="false" uid="2b83bfba-9a74-4715-9e6d-70345528d5c5">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="% users preferring Teams" ordering="2" serviceMetric="false" uid="2b83bfba-9a74-4715-9e6d-70345528d5c5">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users not sure" ordering="4" serviceMetric="false" uid="144022f3-63a5-460d-a50e-cb596be2ce64">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Total users" ordering="5" serviceMetric="false" uid="74564dc8-a2ae-4534-8c13-1e29c8386a17">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="85bed217-8d12-4624-95c8-56109f92eb14">
+            <titleConfig title="Call quality satisfaction - last 30 days"/>
+           </widget>
+           <widget type="KPI" uid="968df4c9-c1fd-498d-b39b-2b9f9c0cf864">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction - last 30 days" ordering="0" serviceMetric="false" uid="aa902c75-3906-490f-9e1c-800b6a38d1da"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="1" serviceMetric="false" uid="b1e6fcf0-be27-4e80-97fa-febe6ff8f461"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="2" serviceMetric="false" uid="b1e6fcf0-be27-4e80-97fa-febe6ff8f461"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="6fc930eb-134f-42fc-8960-5ae98aa9d7cb">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false" title="">
+             <metrics>
+              <metric label="Teams - Call quality satisfaction last 30 days - Early Adopters" ordering="0" serviceMetric="false" uid="aa902c75-3906-490f-9e1c-800b6a38d1da"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Early Adopters: Satisfaction&#13;&#10;&#13;&#10;**Pre-deployment &amp; Post-deployment satisfaction on communication tools**&#13;&#10;* Survey your Early Adopters employees before the deployment to define a baseline satisfaction of the current collaboration tools. Run the same survey after Teams is installed to assess an improvement or a deterioration of the overall satisfaction.&#13;&#10;&#13;&#10;**Satisfaction breakdown**&#13;&#10;* See the distribution of the satisfaction.&#13;&#10;&#13;&#10;**What users like the most**&#13;&#10;* Compare the positive points before and after the deployment of Microsoft Teams.&#13;&#10;&#13;&#10;**What users dislike the most**&#13;&#10;* Compare the negative points before and after the deployment of Microsoft Teams." index="2" name="Early Adopters: Satisfaction" uid="be253b65-fe87-4df2-ad47-4f0a0fef7508">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="aa3a30b9-95d6-4a19-80ae-6efde374279c" minHeight="166" minWidth="934" type="kpiWidget" widgetID="aa3a30b9-95d6-4a19-80ae-6efde374279c">
+                <preferredHeight value="166"/>
+                <preferredWidth value="934"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8b011c59-e4ff-484c-a4c1-4c715fbf9ba0" minHeight="228" minWidth="300" type="barChartWidget" widgetID="8b011c59-e4ff-484c-a4c1-4c715fbf9ba0">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5b847ff4-b956-4baa-881f-391cad124e1a" minHeight="252" minWidth="300" type="barChartWidget" widgetID="5b847ff4-b956-4baa-881f-391cad124e1a">
+                    <preferredHeight value="252"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="563b1dee-76fa-4f3f-b2be-722551b01cad" minHeight="252" minWidth="300" type="barChartWidget" widgetID="563b1dee-76fa-4f3f-b2be-722551b01cad">
+                    <preferredHeight value="252"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="20126bb2-2a63-4be4-81e7-34a8440f69e8" minHeight="166" minWidth="744" type="kpiWidget" widgetID="20126bb2-2a63-4be4-81e7-34a8440f69e8">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="bfae303f-c3cc-4768-9b75-d73b13218c66" minHeight="228" minWidth="300" type="barChartWidget" widgetID="bfae303f-c3cc-4768-9b75-d73b13218c66">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="b6b1bd86-035f-4f41-9732-d557175ea66b" minHeight="252" minWidth="300" type="barChartWidget" widgetID="b6b1bd86-035f-4f41-9732-d557175ea66b">
+                    <preferredHeight value="252"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="82cf6bbc-9941-4cd7-9b39-fe1622756edf" minHeight="252" minWidth="300" type="barChartWidget" widgetID="82cf6bbc-9941-4cd7-9b39-fe1622756edf">
+                    <preferredHeight value="252"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="aa3a30b9-95d6-4a19-80ae-6efde374279c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment satisfaction on communication tools">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction score" ordering="0" serviceMetric="false" uid="d97449e7-97ec-4300-b66a-8f084badcc88"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy users" ordering="1" serviceMetric="false" uid="906abe83-9e48-4eb3-bd8c-73d99b01f0bf"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Early adopters volonteers" ordering="7" serviceMetric="false" uid="ac571a15-5d5a-412d-ac82-33e2b7809cac"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="8" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="9" serviceMetric="false" uid="d0d7f17c-8853-4923-9572-854dd280dafc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8b011c59-e4ff-484c-a4c1-4c715fbf9ba0">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="ASC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction respondents - Early Adopters" ordering="0" serviceMetric="false" uid="7a619abe-e233-4b07-90ee-6eae0db9427e"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_0"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5b847ff4-b956-4baa-881f-391cad124e1a">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction positive points - Early Adopters" ordering="0" serviceMetric="false" uid="85f99dc1-6210-4c7b-9357-ef53bf94aa72"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="563b1dee-76fa-4f3f-b2be-722551b01cad">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="DESC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction negative points - Early Adopters" ordering="0" serviceMetric="false" uid="c447aff6-2aac-49c8-ba37-68081ccc7492"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="20126bb2-2a63-4be4-81e7-34a8440f69e8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post deployment satisfaction on Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction score" ordering="1" serviceMetric="false" uid="43069ead-5d65-47be-8883-f741dd53aabd"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy users" ordering="2" serviceMetric="false" uid="eeea464e-445e-49bf-a6b7-473a5b54995f"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="9b4688c8-35a0-4501-a419-a5d346b7c506"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="bfae303f-c3cc-4768-9b75-d73b13218c66">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="ASC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction respondents - Early Adopters" ordering="0" serviceMetric="false" uid="8d62e430-60a2-4351-b541-d63240968b8a"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_0"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b6b1bd86-035f-4f41-9732-d557175ea66b">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction positive points - Early Adopters" ordering="0" serviceMetric="false" uid="8a3bac53-2e17-4178-af61-004e4249bcf2"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="82cf6bbc-9941-4cd7-9b39-fe1622756edf">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="7" sortByOrder="DESC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction negative points - Early Adopters" ordering="0" serviceMetric="false" uid="525f4f32-1259-40b8-b6cb-c754017c8971"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Production: Adoption&#13;&#10;&#13;&#10;**Pre-deployment use of communication tools &amp; Post-deployment use of Teams**&#13;&#10;* Survey your Production employees before the deployment to define a baseline usage of the current collaboration tools. Run the same survey after Teams is installed to assess an increase of usage. The two metrics used are *Times per week* and *Hours per week*.&#13;&#10;&#13;&#10;**Breakdown of usage**&#13;&#10;* See the distribution of the usage, before and after the deployment of Teams, for both metrics described above." index="7" name="Production: Adoption" uid="4d649802-37ce-4049-baa8-63665dca595a">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="cc28737c-e733-4f8c-81f1-6e09094b8d49" minHeight="166" minWidth="744" type="kpiWidget" widgetID="cc28737c-e733-4f8c-81f1-6e09094b8d49">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d4746166-92d9-4efc-9e09-5da166da1d02" minHeight="204" minWidth="300" type="barChartWidget" widgetID="d4746166-92d9-4efc-9e09-5da166da1d02">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="c70b56e9-01e8-4169-8081-51bf62ce945d" minHeight="164" minWidth="300" type="barChartWidget" widgetID="c70b56e9-01e8-4169-8081-51bf62ce945d">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="586c25bb-7ca4-4f37-ba78-a41437654cc8" minHeight="166" minWidth="744" type="kpiWidget" widgetID="586c25bb-7ca4-4f37-ba78-a41437654cc8">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="da9615d7-1048-48e0-a98e-8d1a686658f3" minHeight="204" minWidth="300" type="barChartWidget" widgetID="da9615d7-1048-48e0-a98e-8d1a686658f3">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="35d1f234-faae-44cc-95b9-2894954f6d4f" minHeight="164" minWidth="300" type="barChartWidget" widgetID="35d1f234-faae-44cc-95b9-2894954f6d4f">
+                  <preferredHeight value="164"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="cc28737c-e733-4f8c-81f1-6e09094b8d49">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment use of communication tools">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Times per week" ordering="0" serviceMetric="false" uid="5f0f7ec1-a9b1-4ada-8ac6-67c108e24184"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hours per week" ordering="1" serviceMetric="false" uid="c9901325-7f8c-4bd9-81c7-3c1efbc80f13"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d4746166-92d9-4efc-9e09-5da166da1d02">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="Breakdown of usage">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment adoption times distribution - Production" ordering="0" serviceMetric="false" uid="83d3927c-ceef-4026-a25f-cacf76c3c6a6"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_4"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c70b56e9-01e8-4169-8081-51bf62ce945d">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_5"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment adoption hours distribution - Production" ordering="0" serviceMetric="false" uid="938ccf90-d7f0-426e-a251-bee42e9b5bdd"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_5"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="586c25bb-7ca4-4f37-ba78-a41437654cc8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post-deployment use of Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Times per week" ordering="0" serviceMetric="false" uid="8bdc25dc-5320-490e-8b47-f6adb6dfc9f2"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hours per week" ordering="1" serviceMetric="false" uid="1e8aa011-6844-4bfd-9cb4-9b566e6584e8"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="da9615d7-1048-48e0-a98e-8d1a686658f3">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="Breakdown of usage">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment adoption times distribution - Production" ordering="0" serviceMetric="false" uid="ae18eb59-9a69-4950-aea7-9939cbad0343"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_4"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="35d1f234-faae-44cc-95b9-2894954f6d4f">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="ASC" threshold="false" title="">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_5"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment adoption hours distribution - Production" ordering="0" serviceMetric="false" uid="79b3a22f-ff27-4713-8a94-8ce056b11449"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_5"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Production: Collaboration&#13;&#10;&#13;&#10;**Pre-deployment &amp; Post-deployment collaboration**&#13;&#10;* Run a survey before and after the deployment to define your Production employees collaboration score. Run the same survey after Teams is installed to observe an increase in the collaboration score.&#13;&#10;&#13;&#10;**Breakdown of usage**&#13;&#10;* See the distribution of the usage, before and after the deployment of Teams, for both metrics described above." index="8" name="Production: Collaboration" uid="66800998-a72a-4937-b9a2-aa9480d9269d">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="b4ae4783-1c5d-4f8b-8156-e3def680c61b" minHeight="166" minWidth="744" type="kpiWidget" widgetID="b4ae4783-1c5d-4f8b-8156-e3def680c61b">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="3ab6d2d9-4380-436e-bc00-2cdb9144946b" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3ab6d2d9-4380-436e-bc00-2cdb9144946b">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="6b125a61-d981-4a7c-aab2-cd5120b4a071" minHeight="204" minWidth="300" type="barChartWidget" widgetID="6b125a61-d981-4a7c-aab2-cd5120b4a071">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="1b105bcc-2fb0-4736-b26e-af97de905253" minHeight="166" minWidth="744" type="kpiWidget" widgetID="1b105bcc-2fb0-4736-b26e-af97de905253">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="e3b0f77d-8cfb-42c3-8750-97e5cb5320db" minHeight="324" minWidth="300" type="barChartWidget" widgetID="e3b0f77d-8cfb-42c3-8750-97e5cb5320db">
+                <preferredHeight value="324"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="b4ae4783-1c5d-4f8b-8156-e3def680c61b">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment collaboration with colleagues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Collaboration score" ordering="0" serviceMetric="false" uid="9a4634d7-248a-4d4c-a1ac-2f6edc36a8e4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Remote teams - collaboration score" ordering="1" serviceMetric="false" uid="79d41a88-9f3c-457b-bf27-31f3826c28da"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3ab6d2d9-4380-436e-bc00-2cdb9144946b">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Preferred collaboration methods">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_6"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment collaboration methods distribution - Production" ordering="0" serviceMetric="false" uid="423f4209-cb30-4c71-a597-b4cbf12e74ac"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="6b125a61-d981-4a7c-aab2-cd5120b4a071">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Teams locations">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_7"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment collaboration team location distribution - Production" ordering="0" serviceMetric="false" uid="6fc83974-2b8c-4993-b11b-374ecb4b6999"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="1b105bcc-2fb0-4736-b26e-af97de905253">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post-deployment collaboration with colleagues using Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Collaboration score" ordering="0" serviceMetric="false" uid="a506f62e-4318-4374-afee-d57a9b7bb79e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Remote teams - collaboration score" ordering="1" serviceMetric="false" uid="b5e3888a-b1ca-4570-a99a-579b9b40dc68"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="e3b0f77d-8cfb-42c3-8750-97e5cb5320db">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="10" sortByOrder="DESC" threshold="false" title="Preferred collaboration methods">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_6"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment collaboration methods distribution - Production" ordering="0" serviceMetric="false" uid="240e922b-e9c6-4650-a288-243d99cdea17"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Production: Overview&#13;&#10;&#13;&#10;**User satisfaction score**&#13;&#10;* Survey your Production employees before the deployment to define a baseline satisfaction of the current collaboration tools. Run the same survey after Teams is installed to assess an improvement or a deterioration of the overall satisfaction.&#13;&#10;&#13;&#10;**User adoption (number of hours / week)**&#13;&#10;* Get to know how many hours per week your Production employees use collaboration tools. Ideally you should observe an increase once Microsoft Team is in place.&#13;&#10;&#13;&#10;**User adoption (number of times / week)**&#13;&#10;* As for the number of hours, once Microsoft Team is in place you should observe an increase in the number of times your Production employees report usage of Teams vs. your old collaboration tools.&#13;&#10;&#13;&#10;**User collaboration score**&#13;&#10;* Assess your Production employees collaboration score. As for the satisfaction score, they should feel that collaboration is easier once Microsoft Teams is in place compared to their old collaboration tools.&#13;&#10;&#13;&#10;**Users preference**&#13;&#10;* Read what percentage of your Production employees prefer Teams compared to the old collaboration tool. Investigate on the users not preferring Teams.&#13;&#10;&#13;&#10;**Call quality satisfaction - last 30 days**&#13;&#10;* Continuously monitor the satisfaction of your employees on their last audio or video call made with Microsoft Teams." index="5" name="Production: Overview" uid="ff011cc4-d853-49ea-9216-6be1af1e753a">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="03f6158e-c461-490d-a183-ce8f04e670dc" minHeight="166" minWidth="364" type="kpiWidget" widgetID="03f6158e-c461-490d-a183-ce8f04e670dc">
+                  <preferredHeight value="166"/>
+                  <preferredWidth value="364"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="c6c8c560-8dd2-44a4-a935-eaf3e71f366d" minHeight="166" minWidth="364" type="kpiWidget" widgetID="c6c8c560-8dd2-44a4-a935-eaf3e71f366d">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="364"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f30ed35c-dbc2-4d53-b071-2b9bb8dfec1c" minHeight="166" minWidth="364" type="kpiWidget" widgetID="f30ed35c-dbc2-4d53-b071-2b9bb8dfec1c">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="bdb18efb-6a7f-495c-9dcc-1c99792fec75" minHeight="166" minWidth="364" type="kpiWidget" widgetID="bdb18efb-6a7f-495c-9dcc-1c99792fec75">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="364"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="81fa549c-d8af-4848-b62a-4a742405be16" minHeight="233" minWidth="774" type="tableWidget" widgetID="81fa549c-d8af-4848-b62a-4a742405be16">
+                <preferredHeight value="233"/>
+                <preferredWidth value="924"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="e0be2c73-75fc-4585-8239-e042351ca141" minHeight="56" minWidth="296" type="titleWidget" widgetID="e0be2c73-75fc-4585-8239-e042351ca141">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="350d2661-fc47-4b6b-aeca-ca36dd1a9901" minHeight="126" minWidth="554" type="kpiWidget" widgetID="350d2661-fc47-4b6b-aeca-ca36dd1a9901">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="1d72dfa1-98c4-4b9b-8cd0-9b8a5a132e6c" minHeight="174" minWidth="300" type="lineChartWidget" widgetID="1d72dfa1-98c4-4b9b-8cd0-9b8a5a132e6c">
+                  <preferredHeight value="274"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="03f6158e-c461-490d-a183-ce8f04e670dc">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User satisfaction score">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="258c1ded-40d4-42ae-a0b2-86b916b0dc53"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="919b9d42-ae9c-4821-87a2-07e663cb6177"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="c6c8c560-8dd2-44a4-a935-eaf3e71f366d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User adoption - hours per week">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="c9901325-7f8c-4bd9-81c7-3c1efbc80f13"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="1e8aa011-6844-4bfd-9cb4-9b566e6584e8"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="f30ed35c-dbc2-4d53-b071-2b9bb8dfec1c">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User adoption - times per week">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="5f0f7ec1-a9b1-4ada-8ac6-67c108e24184"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="8bdc25dc-5320-490e-8b47-f6adb6dfc9f2"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="bdb18efb-6a7f-495c-9dcc-1c99792fec75">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="User collaboration score">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Pre-deployment" ordering="0" serviceMetric="false" uid="9a4634d7-248a-4d4c-a1ac-2f6edc36a8e4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Post-deployment" ordering="1" serviceMetric="false" uid="a506f62e-4318-4374-afee-d57a9b7bb79e"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="81fa549c-d8af-4848-b62a-4a742405be16">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Users preference">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users NOT preferring Teams" ordering="0" serviceMetric="false" uid="ff01ced0-96f6-4f35-9754-7e124191ebfc">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users preferring Teams" ordering="1" serviceMetric="false" uid="37aaea32-ecb2-45a6-90e8-cbb82a49d97b">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="% users preferring Teams" ordering="2" serviceMetric="false" uid="37aaea32-ecb2-45a6-90e8-cbb82a49d97b">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users not sure" ordering="4" serviceMetric="false" uid="2931648a-98dd-4a18-a047-522febfb40f5">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Total users" ordering="5" serviceMetric="false" uid="b25636a2-dbc5-4789-930b-27317c5da815">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="e0be2c73-75fc-4585-8239-e042351ca141">
+            <titleConfig title="Call quality satisfaction - last 30 days"/>
+           </widget>
+           <widget type="KPI" uid="350d2661-fc47-4b6b-aeca-ca36dd1a9901">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction last 30 days" ordering="0" serviceMetric="false" uid="b2eb9c42-660b-4af7-b97a-52f4edddb63f"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="1" serviceMetric="false" uid="0c2ecc1c-2d43-4d22-9667-16b634e038b9"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="2" serviceMetric="false" uid="0c2ecc1c-2d43-4d22-9667-16b634e038b9"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="1d72dfa1-98c4-4b9b-8cd0-9b8a5a132e6c">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false">
+             <metrics>
+              <metric label="Teams - Call quality satisfaction last 30 days - Production" ordering="0" serviceMetric="false" uid="b2eb9c42-660b-4af7-b97a-52f4edddb63f"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Production: Satisfaction&#13;&#10;&#13;&#10;**Pre-deployment &amp; Post-deployment satisfaction on communication tools**&#13;&#10;* Survey your Production employees before the deployment to define a baseline satisfaction of the current collaboration tools. Run the same survey after Teams is installed to assess an improvement or a deterioration of the overall satisfaction.&#13;&#10;&#13;&#10;**Satisfaction breakdown**&#13;&#10;* See the distribution of the satisfaction.&#13;&#10;&#13;&#10;**What users like the most**&#13;&#10;* Compare the positive points before and after the deployment of Microsoft Teams.&#13;&#10;&#13;&#10;**What users dislike the most**&#13;&#10;* Compare the negative points before and after the deployment of Microsoft Teams." index="6" name="Production: Satisfaction" uid="6d7de58a-f4f5-4460-bfc1-948177732433">
+          <layout type="V">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="94701daf-4422-47e1-9ee4-1760bc588ca8" minHeight="166" minWidth="744" type="kpiWidget" widgetID="94701daf-4422-47e1-9ee4-1760bc588ca8">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="abc03741-da78-40fd-8305-a38f976ec4a2" minHeight="228" minWidth="300" type="barChartWidget" widgetID="abc03741-da78-40fd-8305-a38f976ec4a2">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="af357531-b03b-43cf-9497-0f98d03ea27a" minHeight="228" minWidth="300" type="barChartWidget" widgetID="af357531-b03b-43cf-9497-0f98d03ea27a">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="7866a243-5070-4062-b2f3-9a0e8957c1f3" minHeight="228" minWidth="300" type="barChartWidget" widgetID="7866a243-5070-4062-b2f3-9a0e8957c1f3">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="15a4fd2e-8fc3-4270-b8d1-fe0380c27233" minHeight="166" minWidth="744" type="kpiWidget" widgetID="15a4fd2e-8fc3-4270-b8d1-fe0380c27233">
+                <preferredHeight value="166"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="076facf8-4da5-4858-878e-c92f95104ca8" minHeight="228" minWidth="300" type="barChartWidget" widgetID="076facf8-4da5-4858-878e-c92f95104ca8">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="9810c192-fee6-4343-9eba-344b67fc98d1" minHeight="228" minWidth="300" type="barChartWidget" widgetID="9810c192-fee6-4343-9eba-344b67fc98d1">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="740d5a63-ff6f-45f0-9296-aeaddbc00f52" minHeight="228" minWidth="300" type="barChartWidget" widgetID="740d5a63-ff6f-45f0-9296-aeaddbc00f52">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="94701daf-4422-47e1-9ee4-1760bc588ca8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Pre-deployment satisfaction on communication tools">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction score" ordering="0" serviceMetric="false" uid="258c1ded-40d4-42ae-a0b2-86b916b0dc53"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy users" ordering="1" serviceMetric="false" uid="163b6ce3-4e88-434a-9af8-b44e5bbb909f"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="d602eab0-8026-4c44-ba80-875397db8072"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="abc03741-da78-40fd-8305-a38f976ec4a2">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="ASC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction distribution - Production" ordering="0" serviceMetric="false" uid="e5bc26a1-ed65-4e03-9a74-0d8f35af87a8"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_bf4466dcfd874621910971209f67adad_0"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="af357531-b03b-43cf-9497-0f98d03ea27a">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction positive points - Production" ordering="0" serviceMetric="false" uid="3ca3f22a-bf8c-4479-808e-6f7cdaab27f0"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="7866a243-5070-4062-b2f3-9a0e8957c1f3">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_bf4466dcfd874621910971209f67adad_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - pre-deployment satisfaction negative points - Production" ordering="0" serviceMetric="false" uid="21a9709c-ac60-41ad-b83d-b0f11c7bc2f7"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="15a4fd2e-8fc3-4270-b8d1-fe0380c27233">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Post deployment satisfaction on Teams">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction score" ordering="0" serviceMetric="false" uid="919b9d42-ae9c-4821-87a2-07e663cb6177"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy users" ordering="1" serviceMetric="false" uid="faa29987-45e5-4d05-893b-32d906a43c23"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="2" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="3" serviceMetric="false" uid="8ce429dd-b28a-487c-b77f-85c5cf2d14e1"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="076facf8-4da5-4858-878e-c92f95104ca8">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="ASC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_0"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction distribution - Production" ordering="0" serviceMetric="false" uid="0bfa9e57-4fa2-439f-ac86-1fc01c11fb8b"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="BREAKDOWN" value="euf_5c276261563b45c0a50c23f87e60794e_0"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="9810c192-fee6-4343-9eba-344b67fc98d1">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction positive points - Production" ordering="1" serviceMetric="false" uid="f374c16d-cac3-4ef1-96c5-d2edc6802ae4"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="740d5a63-ff6f-45f0-9296-aeaddbc00f52">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users dislike the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_5c276261563b45c0a50c23f87e60794e_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Teams - post-deployment satisfaction negative points - Production" ordering="0" serviceMetric="false" uid="a0b616d0-3948-4684-81fc-54abb0343450"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Hardware asset renewal</Name>
+     <Dependencies>
+      <Dependency name="Hardware asset renewal - DEX Device score" type="metric" uid="180bb143-4e81-46a1-a63e-ad56986aac00"/>
+      <Dependency name="DEX - Device score" type="metric" uid="05b6ff78-0fbf-47a7-bd62-c6d79eb486c1"/>
+      <Dependency name="Hardware asset renewal - Number of devices" type="metric" uid="634ae91b-d491-4f59-8b0e-b57bf8b378f6"/>
+      <Dependency name="Hardware asset renewal - Low DEX CPU Score Number of devices" type="metric" uid="93446a65-2d8e-4520-9bad-ea65cdc5c1b3"/>
+      <Dependency name="Hardware asset renewal - Low DEX memory Score Number of devices" type="metric" uid="37383fba-b214-4d39-bc12-8508ab029a9a"/>
+      <Dependency name="Hardware asset renewal - Low DEX memory or CPU Score Number of devices" type="metric" uid="aef701f0-d50d-4f2c-b378-d431dc19db03"/>
+      <Dependency name="Hardware asset renewal - Number of devices to upgrade disk" type="metric" uid="d154c725-1272-4e1f-9fa0-fe93c4d0ac93"/>
+      <Dependency name="Hardware asset renewal - Number of devices to upgrade memory" type="metric" uid="586a42dd-8e0d-404d-b7e6-6657b3c5e3c7"/>
+      <Dependency name="Hardware asset renewal - Devices to upgrade" type="metric" uid="a23c173f-0e43-4369-b3cc-1bd29ce8a008"/>
+      <Dependency name="Hardware asset renewal - Disk upgrade costs" type="metric" uid="8df38d53-8d3f-4dfc-9e8a-696377a06471"/>
+      <Dependency name="Hardware asset renewal - Memory upgrade costs" type="metric" uid="1831b35b-ecb3-483d-ab28-3b7f771bf998"/>
+      <Dependency name="Hardware asset renewal - Devices to replace by model" type="metric" uid="e20c7b65-17dd-4d74-aee3-167e856026f6"/>
+      <Dependency name="Hardware asset renewal - Devices to rebuild" type="metric" uid="dcbad232-fe51-46f4-8827-a2b0d1bdff18"/>
+      <Dependency name="Hardware asset renewal - Devices to keep" type="metric" uid="e3d28953-6d36-40e2-95f8-bbc70df5aa0d"/>
+      <Dependency name="Hardware asset renewal - Replacement costs" type="metric" uid="59a55232-f68c-418d-a753-5664804eba06"/>
+      <Dependency name="Hardware asset renewal - Rebuild costs" type="metric" uid="2fd3ef1d-56fb-4553-a6d1-6ad0d69d0f6d"/>
+      <Dependency name="Hardware asset renewal - Total Costs" type="metric" uid="b207a4c9-3da0-4b84-89c5-f2d9bd90e50d"/>
+      <Dependency name="Hardware asset renewal - Potential savings" type="metric" uid="2ce25a7d-e042-4ab2-b9f6-8576c375d6fc"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Hardware asset renewal" uid="d552fb35-4a7a-43ec-a083-66eacc76da8f">
+        <dashboards>
+         <dashboard description="# Hardware asset renewal&#10;&#10;The *Hardware asset renewal* pack helps you manage the life-cycle of your devices. It is based on the Digital experience (DEX) device score which measures the actual experience with your devices. The Hardware asset renewal dashboards give you an idea of the devices that you need to replace, rebuild, or keep.&#10;&#10;* **Replace**: the device got a poor DEX device score and it needs to be substituted for a new one.&#10;* **Rebuild**: the device got an intermediate DEX device score, meaning that it requires a general upgrade (motherboard / CPU) to improve key metrics. It may require an additional disk or memory upgrade.&#10;* **Keep**: the device got a high DEX device score and can be kept as it is, without excluding the possibility of a disk or memory upgrade.&#10;&#10;Devices to be rebuilt or kept may require an additional disk upgrade, memory upgrade, or both. Based on disk index and memory usage, the Hardware asset renewal dashboard highlights the devices that require disk or memory upgrades.&#10;&#10;For completeness, an associated score estimates the costs of refreshing your hardware. The costs depend on the number of devices that requires modification and on the type of modification.&#10;&#10;::: process&#10;Tag the devices that you want to assess with the keyword **Evaluate** of the category **[Hardware assessment](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Hardware%20assessment&amp;Type=device)**.&#10;&#10;By default, all Windows devices except for servers are tagged for evaluation.&#10;:::&#10;&#10;# Refresh costs and savings&#10;&#10;Each modification of a device has a cost associated to it. Typically, replacing a device is costlier than rebuilding or upgrading the device.&#10;&#10;Potential savings are computed by subtracting the calculated Hardware asset renewal costs from the cost that would result from replacing all the devices tagged for evaluation.&#10;&#10;::: configuration&#10;Associate a cost to each action by editing the score *Hardware asset renewal costs*. Find below the default cost of each action:&#10;* Replace (500 $)&#10;* Rebuild (200 $)&#10;* Upgrade disk (100 $)&#10;* Upgrade memory (100 $)&#10;&#10;If you change the default **Replace** costs, update the score *Hardware asset renewal savings* as well.&#10;:::" index="1" name="Overall report" uid="cee9b161-90bd-438d-a086-0b7c5c32e094">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="H">
+                     <children>
+                      <child type="H">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="1a070439-8541-49f0-b27c-0d3cd4d01bd9" minHeight="56" minWidth="296" type="titleWidget" widgetID="1a070439-8541-49f0-b27c-0d3cd4d01bd9">
+                          <preferredHeight value="56"/>
+                          <preferredWidth value="0"/>
+                         </data>
+                        </child>
+                        <child type="H">
+                         <children>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="453ed9d3-94d2-4034-9e3f-6a799201c956" minHeight="190" minWidth="318" type="kpiWidget" widgetID="453ed9d3-94d2-4034-9e3f-6a799201c956">
+                              <preferredHeight value="190"/>
+                              <preferredWidth value="318"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="946f9788-2eea-48c6-98a9-b57d7e4bfaaa" minHeight="262" minWidth="396" type="lineChartWidget" widgetID="946f9788-2eea-48c6-98a9-b57d7e4bfaaa">
+                              <preferredHeight value="362"/>
+                              <preferredWidth value="599"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                          <child type="V">
+                           <children>
+                            <child type="L">
+                             <children/>
+                             <data id="93c40ef8-be06-4fad-8f07-2c9897508481" minHeight="441" minWidth="558" type="tableWidget" widgetID="93c40ef8-be06-4fad-8f07-2c9897508481">
+                              <preferredHeight value="441"/>
+                              <preferredWidth value="558"/>
+                             </data>
+                            </child>
+                            <child type="L">
+                             <children/>
+                             <data id="c15ff916-4896-4b54-9af8-90bbe54be115" minHeight="441" minWidth="708" type="tableWidget" widgetID="c15ff916-4896-4b54-9af8-90bbe54be115">
+                              <preferredHeight value="441"/>
+                              <preferredWidth value="708"/>
+                             </data>
+                            </child>
+                           </children>
+                          </child>
+                         </children>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="28948b3a-61ba-472f-b37f-87946fec03cd" minHeight="441" minWidth="558" type="tableWidget" widgetID="28948b3a-61ba-472f-b37f-87946fec03cd">
+                          <preferredHeight value="441"/>
+                          <preferredWidth value="558"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="c96f1af8-3f15-4cc9-b124-c6ea87c244c8" minHeight="441" minWidth="708" type="tableWidget" widgetID="c96f1af8-3f15-4cc9-b124-c6ea87c244c8">
+                          <preferredHeight value="441"/>
+                          <preferredWidth value="708"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="ffa3d20c-7ee1-45d8-ba56-09b97b0dc1d3" minHeight="56" minWidth="296" type="titleWidget" widgetID="ffa3d20c-7ee1-45d8-ba56-09b97b0dc1d3">
+                      <preferredHeight value="56"/>
+                      <preferredWidth value="0"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="0f72e810-fed0-41dc-8910-b45c8bcca922" minHeight="400" minWidth="318" type="kpiWidget" widgetID="0f72e810-fed0-41dc-8910-b45c8bcca922">
+                      <preferredHeight value="400"/>
+                      <preferredWidth value="318"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="f511ae6a-c26d-4258-be82-89bb650e2d5f" minHeight="441" minWidth="708" type="tableWidget" widgetID="f511ae6a-c26d-4258-be82-89bb650e2d5f">
+                        <preferredHeight value="441"/>
+                        <preferredWidth value="708"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="81098f5a-0052-405f-8b97-cdac44bbc98e" minHeight="400" minWidth="318" type="kpiWidget" widgetID="81098f5a-0052-405f-8b97-cdac44bbc98e">
+                        <preferredHeight value="400"/>
+                        <preferredWidth value="318"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="5d98666e-2d74-47ed-b98f-2350815adb12" minHeight="56" minWidth="296" type="titleWidget" widgetID="5d98666e-2d74-47ed-b98f-2350815adb12">
+                  <preferredHeight value="56"/>
+                  <preferredWidth value="0"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="cf28db83-6e81-4f68-ae14-61dd8861b8c8" minHeight="562" minWidth="318" type="kpiWidget" widgetID="cf28db83-6e81-4f68-ae14-61dd8861b8c8">
+                  <preferredHeight value="562"/>
+                  <preferredWidth value="318"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="f4b68b91-dac3-4a82-8295-d5b8dd9d31c5" minHeight="561" minWidth="708" type="tableWidget" widgetID="f4b68b91-dac3-4a82-8295-d5b8dd9d31c5">
+                    <preferredHeight value="561"/>
+                    <preferredWidth value="708"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="2cb31d99-99b3-42fe-8808-f6bfa37ee5c8" minHeight="400" minWidth="318" type="kpiWidget" widgetID="2cb31d99-99b3-42fe-8808-f6bfa37ee5c8">
+                    <preferredHeight value="400"/>
+                    <preferredWidth value="318"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="9e7f321b-f52d-40cb-873f-81572641fafa" minHeight="56" minWidth="296" type="titleWidget" widgetID="9e7f321b-f52d-40cb-873f-81572641fafa">
+                <preferredHeight value="56"/>
+                <preferredWidth value="0"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="cf2d9642-5de8-469d-b21f-f79c85dc11b1" minHeight="238" minWidth="576" type="kpiWidget" widgetID="cf2d9642-5de8-469d-b21f-f79c85dc11b1">
+                <preferredHeight value="238"/>
+                <preferredWidth value="576"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="TITLE" uid="1a070439-8541-49f0-b27c-0d3cd4d01bd9">
+            <titleConfig title="Digital Experience Score"/>
+           </widget>
+           <widget type="KPI" uid="453ed9d3-94d2-4034-9e3f-6a799201c956">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Device score" ordering="0" serviceMetric="false" uid="180bb143-4e81-46a1-a63e-ad56986aac00"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="946f9788-2eea-48c6-98a9-b57d7e4bfaaa">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Device score" ordering="1" serviceMetric="false" uid="05b6ff78-0fbf-47a7-bd62-c6d79eb486c1"/>
+             </metrics>
+             <scale scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="TABLE" uid="93c40ef8-be06-4fad-8f07-2c9897508481">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Score by location">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Device score" ordering="0" serviceMetric="false" uid="180bb143-4e81-46a1-a63e-ad56986aac00"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of devices" ordering="1" serviceMetric="false" uid="634ae91b-d491-4f59-8b0e-b57bf8b378f6">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="METRIC" value="180bb143-4e81-46a1-a63e-ad56986aac00_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c15ff916-4896-4b54-9af8-90bbe54be115">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Device by location with Digital Experience Score CPU or Memory &gt; 7">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="CPU score &lt; 7" ordering="0" serviceMetric="false" uid="93446a65-2d8e-4520-9bad-ea65cdc5c1b3">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Memory score &lt; 7" ordering="1" serviceMetric="false" uid="37383fba-b214-4d39-bc12-8508ab029a9a">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of devices" ordering="2" serviceMetric="false" uid="aef701f0-d50d-4f2c-b378-d431dc19db03">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="METRIC" value="aef701f0-d50d-4f2c-b378-d431dc19db03_2"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="28948b3a-61ba-472f-b37f-87946fec03cd">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Score by manufacturer">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Device score" ordering="0" serviceMetric="false" uid="180bb143-4e81-46a1-a63e-ad56986aac00"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of devices" ordering="1" serviceMetric="false" uid="634ae91b-d491-4f59-8b0e-b57bf8b378f6">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="manufacturer"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="180bb143-4e81-46a1-a63e-ad56986aac00_0"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="c96f1af8-3f15-4cc9-b124-c6ea87c244c8">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Device by manufacturer with Digital Experience Score CPU or Memory &gt; 7">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="CPU score &lt; 7" ordering="0" serviceMetric="false" uid="93446a65-2d8e-4520-9bad-ea65cdc5c1b3">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Memory score &lt; 7" ordering="1" serviceMetric="false" uid="37383fba-b214-4d39-bc12-8508ab029a9a">
+               <fields name="name" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Number of devices" ordering="2" serviceMetric="false" uid="37383fba-b214-4d39-bc12-8508ab029a9a">
+               <fields name="name" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="FIELD" value="manufacturer"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="37383fba-b214-4d39-bc12-8508ab029a9a_2"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="ffa3d20c-7ee1-45d8-ba56-09b97b0dc1d3">
+            <titleConfig title="Upgrades"/>
+           </widget>
+           <widget type="KPI" uid="0f72e810-fed0-41dc-8910-b45c8bcca922">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="Devices requiring upgrade">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Disk" ordering="0" serviceMetric="false" uid="d154c725-1272-4e1f-9fa0-fe93c4d0ac93"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Memory" ordering="1" serviceMetric="false" uid="586a42dd-8e0d-404d-b7e6-6657b3c5e3c7"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="f511ae6a-c26d-4258-be82-89bb650e2d5f">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Required upgrades by location">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Disk upgrade" ordering="0" serviceMetric="false" uid="d154c725-1272-4e1f-9fa0-fe93c4d0ac93">
+               <fields name="name" type="FIELD"/>
+               <fields name="disks" type="FIELD"/>
+               <fields name="disks_manufacturers" type="FIELD"/>
+               <fields name="all_drives_free" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="true" label="Memory upgrade" ordering="1" serviceMetric="false" uid="586a42dd-8e0d-404d-b7e6-6657b3c5e3c7">
+               <fields name="name" type="FIELD"/>
+               <fields name="model" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Devices to upgrade" ordering="2" serviceMetric="false" uid="a23c173f-0e43-4369-b3cc-1bd29ce8a008">
+               <fields name="name" type="FIELD"/>
+               <fields name="disks" type="FIELD"/>
+               <fields name="disks_manufacturers" type="FIELD"/>
+               <fields name="all_drives_free" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="81098f5a-0052-405f-8b97-cdac44bbc98e">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="false" title="Estimated upgrade costs">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Disk upgrade ($)" ordering="0" serviceMetric="false" uid="8df38d53-8d3f-4dfc-9e8a-696377a06471"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Memory upgrade ($)" ordering="1" serviceMetric="false" uid="1831b35b-ecb3-483d-ab28-3b7f771bf998"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TITLE" uid="5d98666e-2d74-47ed-b98f-2350815adb12">
+            <titleConfig title="Actions"/>
+           </widget>
+           <widget type="KPI" uid="cf28db83-6e81-4f68-ae14-61dd8861b8c8">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="true" displayVariation="true" title="Main actions to take">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices to replace" ordering="2" serviceMetric="false" uid="e20c7b65-17dd-4d74-aee3-167e856026f6"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices to rebuild" ordering="3" serviceMetric="false" uid="dcbad232-fe51-46f4-8827-a2b0d1bdff18"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices to keep" ordering="4" serviceMetric="false" uid="e3d28953-6d36-40e2-95f8-bbc70df5aa0d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="f4b68b91-dac3-4a82-8295-d5b8dd9d31c5">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="15" sortByOrder="ASC" tableKind="STANDARD" title="Main actions by location">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Devices to replace" ordering="0" serviceMetric="false" uid="e20c7b65-17dd-4d74-aee3-167e856026f6">
+               <fields name="name" type="FIELD"/>
+               <fields name="cpu_model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="disk_health" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Devices to rebuild" ordering="1" serviceMetric="false" uid="dcbad232-fe51-46f4-8827-a2b0d1bdff18">
+               <fields name="name" type="FIELD"/>
+               <fields name="model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="disk_health" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Devices to keep" ordering="2" serviceMetric="false" uid="e3d28953-6d36-40e2-95f8-bbc70df5aa0d">
+               <fields name="name" type="FIELD"/>
+               <fields name="cpu_model" type="FIELD"/>
+               <fields name="ram" type="FIELD"/>
+               <fields name="disk_health" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="2cb31d99-99b3-42fe-8808-f6bfa37ee5c8">
+            <kpiConfig displayOrientation="VERTICAL" displayThreshold="false" displayVariation="false" title="Estimated costs per action">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Replacement ($)" ordering="0" serviceMetric="false" uid="59a55232-f68c-418d-a753-5664804eba06"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Rebuild ($)" ordering="1" serviceMetric="false" uid="2fd3ef1d-56fb-4553-a6d1-6ad0d69d0f6d"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TITLE" uid="9e7f321b-f52d-40cb-873f-81572641fafa">
+            <titleConfig title="Costs and savings"/>
+           </widget>
+           <widget type="KPI" uid="cf2d9642-5de8-469d-b21f-f79c85dc11b1">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="Total renewal costs and potentials savings">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total Costs ($)" ordering="0" serviceMetric="false" uid="b207a4c9-3da0-4b84-89c5-f2d9bd90e50d"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Potential savings ($)" ordering="1" serviceMetric="false" uid="2ce25a7d-e042-4ab2-b9f6-8576c375d6fc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

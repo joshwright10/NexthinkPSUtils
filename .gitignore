@@ -1,0 +1,13 @@
+*-tests.xml
+/BuildOutput/
+/Packages/
+/nuget-artifacts
+
+# Ignore packages
+*.nupkg
+
+# VSCode directories that are not at the repository root
+/*/.vscode/
+
+# Folder for local samples
+/Samples/

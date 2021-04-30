@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Skype for Business</Name>
+     <Dependencies>
+      <Dependency name="Devices making audio calls" type="metric" uid="9b165b1c-66cf-4ffe-8eb0-3c17d48302ae"/>
+      <Dependency name="Devices with failed audio calls" type="metric" uid="1f7dc416-90a7-481e-bcb7-c908f521c6eb"/>
+      <Dependency name="Devices with dropped audio calls" type="metric" uid="26676fbb-f4a8-4214-ba12-466ba5319137"/>
+      <Dependency name="Devices with poor-quality audio calls" type="metric" uid="631682cb-9a8e-4bd4-9e62-5baa5acc6796"/>
+      <Dependency name="Devices with short audio calls" type="metric" uid="4a35d091-49ee-46c0-bbdf-68956b99d98f"/>
+      <Dependency name="Devices with poor-quality audio calls over WiFi" type="metric" uid="b7c25bce-32e8-4b0b-bf32-0487d1ba2014"/>
+      <Dependency name="Devices with poor-quality audio calls over Ethernet" type="metric" uid="708d8a03-dbdb-4f0e-b68c-054d3ce8d008"/>
+      <Dependency name="Devices with audio calls with average ratio of concealed samples &gt; 0.07" type="metric" uid="6a948158-143e-43d3-9d5e-0a57550bcb6a"/>
+      <Dependency name="Devices with audio calls with jitter &gt; 30 ms" type="metric" uid="35698cb9-8b39-4d7f-a6f6-31744229868e"/>
+      <Dependency name="Devices with audio calls with network MOS degradation &gt; 1.0" type="metric" uid="5aaca1de-71e2-4109-9938-68f95fb36252"/>
+      <Dependency name="Devices with audio calls with packet loss rate &gt; 0.1" type="metric" uid="9557c3a8-e826-4181-a5c9-ce7d0896705c"/>
+      <Dependency name="Devices with audio calls with round trip time &gt; 500 ms" type="metric" uid="4b2ffcbf-edf5-46e2-a836-dd32ac9d7814"/>
+      <Dependency name="Devices making video calls" type="metric" uid="20a19f8a-3628-4be6-a90a-cbe8b748ae44"/>
+      <Dependency name="Devices making screen sharing calls" type="metric" uid="6d0913ef-fa3a-4840-a9a1-2c24c7aa7db6"/>
+      <Dependency name="Devices with bad audio calls" type="metric" uid="ac2e0178-c405-44e4-b880-8f9fe6e7df79"/>
+      <Dependency name="Devices with bad video calls" type="metric" uid="d71ad682-25b8-4f99-8568-f6a7aab1d75c"/>
+      <Dependency name="Devices with bad screen sharing calls" type="metric" uid="f3ebc401-6fb5-4745-9c95-a429122c47d3"/>
+      <Dependency name="Devices with failed video calls" type="metric" uid="b72f39e7-0976-46cd-a8d8-d9d27ef1f742"/>
+      <Dependency name="Devices with dropped video calls" type="metric" uid="15ec7729-c30e-431b-a52a-07301e1d4fcf"/>
+      <Dependency name="Devices with poor-quality video calls" type="metric" uid="75c6e538-84a2-4dd6-a525-7ef6451ff3bc"/>
+      <Dependency name="Devices with short video calls" type="metric" uid="2546e276-3815-461a-9380-cb30e9e9e41a"/>
+      <Dependency name="Devices with dropped screen sharing calls" type="metric" uid="33f1810b-7b2e-477c-9fa5-f2d04cbdadc7"/>
+      <Dependency name="Devices with failed screen sharing calls" type="metric" uid="5cfc26aa-df5c-4af1-b6e5-2651fb247f06"/>
+      <Dependency name="Devices with poor-quality screen sharing calls" type="metric" uid="acf05025-2d84-49bc-9ed9-76ae4dea180a"/>
+      <Dependency name="Devices with poor-quality screen sharing calls over WiFi" type="metric" uid="317e1c25-ef21-4701-8f3a-8bbdaea86c3d"/>
+      <Dependency name="Devices with poor-quality screen sharing calls over Ethernet" type="metric" uid="c71cbd55-0e01-4aa0-a5fd-9582bb068580"/>
+      <Dependency name="Devices with screen sharing calls with jitter &gt; 30 ms" type="metric" uid="85d02cb6-77a2-44bc-9dbb-e2d770e4ffeb"/>
+      <Dependency name="Devices with screen sharing calls with relative one-way delay &gt; 1.75" type="metric" uid="5cf54871-474a-479e-8e5f-a62b41a7434b"/>
+      <Dependency name="Devices with poor-quality video calls over WiFi" type="metric" uid="3f204eb8-fa7f-49aa-a9e2-1e8a0be93903"/>
+      <Dependency name="Devices with poor-quality video calls over Ethernet" type="metric" uid="89bfb5cf-7692-4774-b0df-de64ae3a1d00"/>
+      <Dependency name="Devices with video calls with average ratio of concealed samples &gt; 0.07" type="metric" uid="dcbb44f3-c32c-40fc-8e27-fbb87f34d656"/>
+      <Dependency name="Devices with video calls with jitter &gt; 30 ms" type="metric" uid="a5c5447a-de72-4cc9-a760-08453dedee59"/>
+      <Dependency name="Devices with video calls with network MOS degradation &gt; 1.0" type="metric" uid="80b0d25e-a6da-4d30-bd21-0fb64efa2252"/>
+      <Dependency name="Devices with video calls with audio packet loss rate &gt; 0.1" type="metric" uid="e5b5ed6d-4ee7-48ea-8c22-6831e9a36097"/>
+      <Dependency name="Devices with video calls with round trip time &gt; 500 ms" type="metric" uid="bbdfa16e-e7ea-4972-9f98-00e47ebb47b6"/>
+      <Dependency name="Devices with video calls with packet loss rate after error correction &gt; 0.1" type="metric" uid="c8dfafa4-d03c-4458-b89d-b2b0d2b9c2c5"/>
+      <Dependency name="Devices with video calls with high CPU load during &gt; 10% of the call" type="metric" uid="17e8e3be-bdf2-4e56-b6bf-0407b2a99dc5"/>
+      <Dependency name="Devices with video calls with video packet loss rate &gt; 0.1" type="metric" uid="86374275-1c95-4f87-b159-af6e85393355"/>
+      <Dependency name="Devices with video calls with &gt; 10% of total lost video frames" type="metric" uid="f4f829a9-87f9-47c2-8cbf-1d1bde5b32bc"/>
+      <Dependency name="Devices with video calls with a receiver frame rate &lt; 7" type="metric" uid="2aca860c-fdfe-473c-aae9-9cfd71d63d3f"/>
+      <Dependency name="Devices with video calls with an average frame rate &lt; 7" type="metric" uid="ebb64fc8-4612-4757-93b1-1a18cb905280"/>
+      <Dependency name="Devices with video calls with low frame rate during &gt; 10% of the call" type="metric" uid="15ad507b-71a7-42ec-8817-d98b3ee94e1c"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Skype for Business" uid="ee5109b1-8bc7-4270-a0a2-00055e9a361b">
+        <dashboards>
+         <dashboard description="" index="2" name="Audio calls diagnostics" uid="84875e16-16ff-40ad-b761-272c70c7cf4e">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c770ad47-111a-43f9-afe3-f9f2853c8db3" minHeight="126" minWidth="174" type="kpiWidget" widgetID="c770ad47-111a-43f9-afe3-f9f2853c8db3">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="ea6b722a-9284-44e3-8678-5961c75d2cdf" minHeight="166" minWidth="744" type="kpiWidget" widgetID="ea6b722a-9284-44e3-8678-5961c75d2cdf">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="744"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="a903ee36-67e9-4daa-a923-83fd34ba3e89" minHeight="132" minWidth="300" type="barChartWidget" widgetID="a903ee36-67e9-4daa-a923-83fd34ba3e89">
+                    <preferredHeight value="132"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="1cea8f61-3f14-4571-b8e5-c1036fa97bcc" minHeight="281" minWidth="599" type="tableWidget" widgetID="1cea8f61-3f14-4571-b8e5-c1036fa97bcc">
+                  <preferredHeight value="281"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="ca85485e-219a-4612-b827-0af8607e7ca1" minHeight="204" minWidth="300" type="barChartWidget" widgetID="ca85485e-219a-4612-b827-0af8607e7ca1">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="L">
+             <children/>
+             <data id="65b0b505-8e52-44f6-b124-6a4191cf88f7" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="65b0b505-8e52-44f6-b124-6a4191cf88f7">
+              <preferredHeight value="310"/>
+              <preferredWidth value="599"/>
+             </data>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="c770ad47-111a-43f9-afe3-f9f2853c8db3">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making audio calls" ordering="0" serviceMetric="false" uid="9b165b1c-66cf-4ffe-8eb0-3c17d48302ae"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="ea6b722a-9284-44e3-8678-5961c75d2cdf">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with audio calls issues">
+             <metrics>
+              <metric displayValue="RATIO" label="With failed calls" ordering="0" serviceMetric="false" uid="1f7dc416-90a7-481e-bcb7-c908f521c6eb"/>
+              <metric displayValue="RATIO" label="With dropped calls" ordering="1" serviceMetric="false" uid="26676fbb-f4a8-4214-ba12-466ba5319137"/>
+              <metric displayValue="RATIO" label="With poor-quality calls" ordering="2" serviceMetric="false" uid="631682cb-9a8e-4bd4-9e62-5baa5acc6796"/>
+              <metric displayValue="RATIO" label="With short calls" ordering="3" serviceMetric="false" uid="4a35d091-49ee-46c0-bbdf-68956b99d98f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a903ee36-67e9-4daa-a923-83fd34ba3e89">
+            <barChartConfig displayValue="RATIO" nbOfBars="2" sortByOrder="DESC" threshold="false" title="Devices with poor-quality audio calls">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="over WiFi" ordering="0" serviceMetric="false" uid="b7c25bce-32e8-4b0b-bf32-0487d1ba2014"/>
+              <metric label="over Ethernet" ordering="1" serviceMetric="false" uid="708d8a03-dbdb-4f0e-b68c-054d3ce8d008"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="1cea8f61-3f14-4571-b8e5-c1036fa97bcc">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Devices by location">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Making audio calls" ordering="0" serviceMetric="false" uid="9b165b1c-66cf-4ffe-8eb0-3c17d48302ae">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With failed calls" ordering="1" serviceMetric="false" uid="1f7dc416-90a7-481e-bcb7-c908f521c6eb">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+               <fields name="action_dc310e0a011aba60fe7d8fbe70bf1612" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With dropped calls" ordering="2" serviceMetric="false" uid="26676fbb-f4a8-4214-ba12-466ba5319137">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+               <fields name="action_4e336fd343ab7504ef9add4c86ba9b67" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over WiFi" ordering="3" serviceMetric="false" uid="b7c25bce-32e8-4b0b-bf32-0487d1ba2014">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_95b0b05b9cc332d48f751cef7a187943" type="FIELD"/>
+               <fields name="action_dc2e9873dbcadd9822e951fa91e51db2" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over Ethernet" ordering="4" serviceMetric="false" uid="708d8a03-dbdb-4f0e-b68c-054d3ce8d008">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_dc2e9873dbcadd9822e951fa91e51db2" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+               <fields name="action_365ea0a8a31c66665b086916af25c44f" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With short calls" ordering="5" serviceMetric="false" uid="4a35d091-49ee-46c0-bbdf-68956b99d98f">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_439d062ff5f74a3fb32079ad2de79728" type="FIELD"/>
+               <fields name="action_083ec17ee397b607b5959a2650108526" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="ca85485e-219a-4612-b827-0af8607e7ca1">
+            <barChartConfig displayValue="RATIO" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Issue details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Concealed samples &gt; 0.07" ordering="0" serviceMetric="false" uid="6a948158-143e-43d3-9d5e-0a57550bcb6a"/>
+              <metric label="Jitter &gt; 30 ms" ordering="1" serviceMetric="false" uid="35698cb9-8b39-4d7f-a6f6-31744229868e"/>
+              <metric label="Network MOS degradation &gt; 1.0" ordering="2" serviceMetric="false" uid="5aaca1de-71e2-4109-9938-68f95fb36252"/>
+              <metric label="Packet loss rate &gt; 0.1" ordering="3" serviceMetric="false" uid="9557c3a8-e826-4181-a5c9-ce7d0896705c"/>
+              <metric label="Round trip time &gt; 500 ms" ordering="4" serviceMetric="false" uid="4b2ffcbf-edf5-46e2-a836-dd32ac9d7814"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="65b0b505-8e52-44f6-b124-6a4191cf88f7">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Concealed samples &gt; 0.07" ordering="0" serviceMetric="false" uid="6a948158-143e-43d3-9d5e-0a57550bcb6a"/>
+              <metric label="Jitter &gt; 30 ms" ordering="1" serviceMetric="false" uid="35698cb9-8b39-4d7f-a6f6-31744229868e"/>
+              <metric label="Network MOS degradation &gt; 1.0" ordering="2" serviceMetric="false" uid="5aaca1de-71e2-4109-9938-68f95fb36252"/>
+              <metric label="Packet loss rate &gt; 0.1" ordering="3" serviceMetric="false" uid="9557c3a8-e826-4181-a5c9-ce7d0896705c"/>
+              <metric label="Round trip time &gt; 500 ms" ordering="4" serviceMetric="false" uid="4b2ffcbf-edf5-46e2-a836-dd32ac9d7814"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="**Helping to analyze troubles in *Skype for Business* by providing some aggregated information about the *Skype for Business* client's behavior during the last 24 hours.**&#13;&#10;  &#13;&#10;---&#13;&#10;**Calls definitions:**&#13;&#10;* **Audio**: only has audio stream.&#13;&#10;* **Video**: has audio and video streams. If video is added to an ongoing audio call, it will be recognized as a video call.&#13;&#10;* **Screen sharing**: it consists in sharing the screen or an application window.  &#13;&#10;---&#13;&#10;**Calls statuses:**&#13;&#10;- **Successful**: established and ended without any problem.&#13;&#10;- **Failed**: could not be established or was not received by the destination, due to external problems (typically network issues).&#13;&#10;- **Dropped**: established correctly but due to external problems it was cancelled.&#13;&#10;- **Poor**: established correctly and has some quality issues. It may become dropped if not finished properly.&#13;&#10;- **Rejected**: cancelled by the caller or declined by the receiver before being established. NOT CONSIDERED IN THIS DASHBOARD." index="1" name="Overview" uid="55274b90-1fc2-46c6-bb7b-92c6b3c682c0">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="fc0f1911-4f1a-4eb8-82d0-ceeaae99a67b" minHeight="126" minWidth="554" type="kpiWidget" widgetID="fc0f1911-4f1a-4eb8-82d0-ceeaae99a67b">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="ad7a0206-2fbb-4fc5-af12-60cc5810972d" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="ad7a0206-2fbb-4fc5-af12-60cc5810972d">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="4d83a82a-c9a6-478b-af9c-226f00ee9929" minHeight="126" minWidth="554" type="kpiWidget" widgetID="4d83a82a-c9a6-478b-af9c-226f00ee9929">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="554"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="c6feb079-c782-42b7-90b9-ceeb9adff9bc" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="c6feb079-c782-42b7-90b9-ceeb9adff9bc">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e7274ec6-457e-40ad-972e-414d99276e3a" minHeight="180" minWidth="300" type="barChartWidget" widgetID="e7274ec6-457e-40ad-972e-414d99276e3a">
+                  <preferredHeight value="180"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="0f8c873d-eacb-47fb-bef8-e690152ff2b5" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="0f8c873d-eacb-47fb-bef8-e690152ff2b5">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="517a9853-ab11-456b-8038-87c3fb954ef8" minHeight="324" minWidth="300" type="barChartWidget" widgetID="517a9853-ab11-456b-8038-87c3fb954ef8">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="4f64c272-1fd2-4ca5-900b-aad9e250dd02" minHeight="180" minWidth="300" type="barChartWidget" widgetID="4f64c272-1fd2-4ca5-900b-aad9e250dd02">
+                    <preferredHeight value="180"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f8f940e5-72cd-4476-8f4c-21473c9f7811" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="f8f940e5-72cd-4476-8f4c-21473c9f7811">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="3617a275-4357-47fd-88ea-55b8cedfdf4b" minHeight="324" minWidth="300" type="barChartWidget" widgetID="3617a275-4357-47fd-88ea-55b8cedfdf4b">
+                      <preferredHeight value="324"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="f421014c-3631-4562-8427-690c99a7fe40" minHeight="156" minWidth="300" type="barChartWidget" widgetID="f421014c-3631-4562-8427-690c99a7fe40">
+                    <preferredHeight value="156"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="H">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="8738358c-6b8c-4f59-94f8-d771b965760b" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="8738358c-6b8c-4f59-94f8-d771b965760b">
+                      <preferredHeight value="310"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="99952299-1c37-46b8-9a60-b5f87752527d" minHeight="324" minWidth="300" type="barChartWidget" widgetID="99952299-1c37-46b8-9a60-b5f87752527d">
+                      <preferredHeight value="324"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="fc0f1911-4f1a-4eb8-82d0-ceeaae99a67b">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making audio calls" ordering="0" serviceMetric="false" uid="9b165b1c-66cf-4ffe-8eb0-3c17d48302ae"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making video calls" ordering="1" serviceMetric="false" uid="20a19f8a-3628-4be6-a90a-cbe8b748ae44"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making screen sharing calls" ordering="2" serviceMetric="false" uid="6d0913ef-fa3a-4840-a9a1-2c24c7aa7db6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="ad7a0206-2fbb-4fc5-af12-60cc5810972d">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false">
+             <metrics>
+              <metric label="Devices making audio calls" ordering="0" serviceMetric="false" uid="9b165b1c-66cf-4ffe-8eb0-3c17d48302ae"/>
+              <metric label="Devices making video calls" ordering="1" serviceMetric="false" uid="20a19f8a-3628-4be6-a90a-cbe8b748ae44"/>
+              <metric label="Devices making screen sharing calls" ordering="2" serviceMetric="false" uid="6d0913ef-fa3a-4840-a9a1-2c24c7aa7db6"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="4d83a82a-c9a6-478b-af9c-226f00ee9929">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with audio calls issues" ordering="0" serviceMetric="false" uid="ac2e0178-c405-44e4-b880-8f9fe6e7df79"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with video calls issues" ordering="1" serviceMetric="false" uid="d71ad682-25b8-4f99-8568-f6a7aab1d75c"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with screen sharing calls issues" ordering="2" serviceMetric="false" uid="f3ebc401-6fb5-4745-9c95-a429122c47d3"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="c6feb079-c782-42b7-90b9-ceeb9adff9bc">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Devices with audio calls issues" ordering="0" serviceMetric="false" uid="ac2e0178-c405-44e4-b880-8f9fe6e7df79"/>
+              <metric label="Devices with video calls issues" ordering="1" serviceMetric="false" uid="d71ad682-25b8-4f99-8568-f6a7aab1d75c"/>
+              <metric label="Devices with screen sharing calls issues" ordering="2" serviceMetric="false" uid="f3ebc401-6fb5-4745-9c95-a429122c47d3"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="e7274ec6-457e-40ad-972e-414d99276e3a">
+            <barChartConfig displayValue="RATIO" nbOfBars="4" sortByOrder="DESC" threshold="false" title="Devices with audio calls issues">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="with dropped calls" ordering="0" serviceMetric="false" uid="26676fbb-f4a8-4214-ba12-466ba5319137"/>
+              <metric label="with failed calls" ordering="1" serviceMetric="false" uid="1f7dc416-90a7-481e-bcb7-c908f521c6eb"/>
+              <metric label="with poor-quality calls" ordering="2" serviceMetric="false" uid="631682cb-9a8e-4bd4-9e62-5baa5acc6796"/>
+              <metric label="with short calls" ordering="3" serviceMetric="false" uid="4a35d091-49ee-46c0-bbdf-68956b99d98f"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="0f8c873d-eacb-47fb-bef8-e690152ff2b5">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="with failed calls" ordering="0" serviceMetric="false" uid="1f7dc416-90a7-481e-bcb7-c908f521c6eb"/>
+              <metric label="with dropped calls" ordering="1" serviceMetric="false" uid="26676fbb-f4a8-4214-ba12-466ba5319137"/>
+              <metric label="with poor-quality calls" ordering="2" serviceMetric="false" uid="631682cb-9a8e-4bd4-9e62-5baa5acc6796"/>
+              <metric label="with short calls" ordering="3" serviceMetric="false" uid="4a35d091-49ee-46c0-bbdf-68956b99d98f"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="517a9853-ab11-456b-8038-87c3fb954ef8">
+            <barChartConfig displayValue="RATIO" nbOfBars="10" sortByOrder="DESC" threshold="false" title="By location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Devices with bad audio calls" ordering="0" serviceMetric="false" uid="ac2e0178-c405-44e4-b880-8f9fe6e7df79"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4f64c272-1fd2-4ca5-900b-aad9e250dd02">
+            <barChartConfig displayValue="RATIO" nbOfBars="4" sortByOrder="DESC" threshold="false" title="Devices with video calls issues">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="with failed calls" ordering="1" serviceMetric="false" uid="b72f39e7-0976-46cd-a8d8-d9d27ef1f742"/>
+              <metric label="with dropped  calls" ordering="2" serviceMetric="false" uid="15ec7729-c30e-431b-a52a-07301e1d4fcf"/>
+              <metric label="with poor-quality calls" ordering="3" serviceMetric="false" uid="75c6e538-84a2-4dd6-a525-7ef6451ff3bc"/>
+              <metric label="with short calls" ordering="4" serviceMetric="false" uid="2546e276-3815-461a-9380-cb30e9e9e41a"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="f8f940e5-72cd-4476-8f4c-21473c9f7811">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="with failed calls" ordering="0" serviceMetric="false" uid="b72f39e7-0976-46cd-a8d8-d9d27ef1f742"/>
+              <metric label="with dropped calls" ordering="1" serviceMetric="false" uid="15ec7729-c30e-431b-a52a-07301e1d4fcf"/>
+              <metric label="with poor-quality calls" ordering="2" serviceMetric="false" uid="75c6e538-84a2-4dd6-a525-7ef6451ff3bc"/>
+              <metric label="with short calls" ordering="3" serviceMetric="false" uid="2546e276-3815-461a-9380-cb30e9e9e41a"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3617a275-4357-47fd-88ea-55b8cedfdf4b">
+            <barChartConfig displayValue="RATIO" nbOfBars="10" sortByOrder="DESC" threshold="false" title="By location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Devices with bad video calls" ordering="0" serviceMetric="false" uid="d71ad682-25b8-4f99-8568-f6a7aab1d75c"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f421014c-3631-4562-8427-690c99a7fe40">
+            <barChartConfig displayValue="RATIO" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Devices with screen-sharing calls issues">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="with dropped calls" ordering="0" serviceMetric="false" uid="33f1810b-7b2e-477c-9fa5-f2d04cbdadc7"/>
+              <metric label="with failed calls" ordering="1" serviceMetric="false" uid="5cfc26aa-df5c-4af1-b6e5-2651fb247f06"/>
+              <metric label="with poor-quality calls" ordering="2" serviceMetric="false" uid="acf05025-2d84-49bc-9ed9-76ae4dea180a"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="8738358c-6b8c-4f59-94f8-d771b965760b">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="with failed calls" ordering="0" serviceMetric="false" uid="5cfc26aa-df5c-4af1-b6e5-2651fb247f06"/>
+              <metric label="with dropped calls" ordering="1" serviceMetric="false" uid="33f1810b-7b2e-477c-9fa5-f2d04cbdadc7"/>
+              <metric label="with poor-quality calls" ordering="2" serviceMetric="false" uid="acf05025-2d84-49bc-9ed9-76ae4dea180a"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="99952299-1c37-46b8-9a60-b5f87752527d">
+            <barChartConfig displayValue="RATIO" nbOfBars="10" sortByOrder="DESC" threshold="false" title="By location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Devices with bad screen sharing calls" ordering="0" serviceMetric="false" uid="f3ebc401-6fb5-4745-9c95-a429122c47d3"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="4" name="Screen sharing calls diagnostics" uid="e62fee5e-31b4-485e-903e-6242ece9ac1f">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6dd7c189-e9ed-4043-a4e0-01a85c767b5f" minHeight="126" minWidth="174" type="kpiWidget" widgetID="6dd7c189-e9ed-4043-a4e0-01a85c767b5f">
+                    <preferredHeight value="126"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="d9894b56-7698-461e-816b-2c81d81fc297" minHeight="166" minWidth="554" type="kpiWidget" widgetID="d9894b56-7698-461e-816b-2c81d81fc297">
+                      <preferredHeight value="166"/>
+                      <preferredWidth value="554"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="19b3ff3c-d37c-41df-9d3e-511e14a42b5d" minHeight="132" minWidth="300" type="barChartWidget" widgetID="19b3ff3c-d37c-41df-9d3e-511e14a42b5d">
+                      <preferredHeight value="132"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="8dd77b8e-da93-49b5-8f80-53e88f1c2264" minHeight="257" minWidth="599" type="tableWidget" widgetID="8dd77b8e-da93-49b5-8f80-53e88f1c2264">
+                  <preferredHeight value="257"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="693b78d3-709d-41ae-83a2-943025d3df26" minHeight="132" minWidth="300" type="barChartWidget" widgetID="693b78d3-709d-41ae-83a2-943025d3df26">
+                <preferredHeight value="132"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="L">
+             <children/>
+             <data id="673ca739-39c4-4b6e-aa5c-99389eceb3a4" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="673ca739-39c4-4b6e-aa5c-99389eceb3a4">
+              <preferredHeight value="310"/>
+              <preferredWidth value="599"/>
+             </data>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="6dd7c189-e9ed-4043-a4e0-01a85c767b5f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making screen sharing calls" ordering="0" serviceMetric="false" uid="6d0913ef-fa3a-4840-a9a1-2c24c7aa7db6"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="d9894b56-7698-461e-816b-2c81d81fc297">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with screen sharing calls issues">
+             <metrics>
+              <metric displayValue="RATIO" label="With failed calls" ordering="0" serviceMetric="false" uid="5cfc26aa-df5c-4af1-b6e5-2651fb247f06"/>
+              <metric displayValue="RATIO" label="With dropped calls" ordering="1" serviceMetric="false" uid="33f1810b-7b2e-477c-9fa5-f2d04cbdadc7"/>
+              <metric displayValue="RATIO" label="With poor-quality calls" ordering="2" serviceMetric="false" uid="acf05025-2d84-49bc-9ed9-76ae4dea180a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="19b3ff3c-d37c-41df-9d3e-511e14a42b5d">
+            <barChartConfig displayValue="RATIO" nbOfBars="2" sortByOrder="DESC" threshold="false" title="Devices with poor-quality screen sharing calls">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Over WiFi" ordering="0" serviceMetric="false" uid="317e1c25-ef21-4701-8f3a-8bbdaea86c3d"/>
+              <metric label="Over Ethernet" ordering="1" serviceMetric="false" uid="c71cbd55-0e01-4aa0-a5fd-9582bb068580"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="8dd77b8e-da93-49b5-8f80-53e88f1c2264">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Devices by location">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Making screen sharing calls" ordering="0" serviceMetric="false" uid="6d0913ef-fa3a-4840-a9a1-2c24c7aa7db6">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_08f06dfc2af1b6eaa6af8e0072be14be" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With failed calls" ordering="1" serviceMetric="false" uid="5cfc26aa-df5c-4af1-b6e5-2651fb247f06">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_08f06dfc2af1b6eaa6af8e0072be14be" type="FIELD"/>
+               <fields name="action_e8548bb01ff26a1c35f5c1dce99dc363" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With dropped calls" ordering="2" serviceMetric="false" uid="33f1810b-7b2e-477c-9fa5-f2d04cbdadc7">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_08f06dfc2af1b6eaa6af8e0072be14be" type="FIELD"/>
+               <fields name="action_f9b4296e20e39dd81330b63bc0544dac" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over Ethernet" ordering="4" serviceMetric="false" uid="c71cbd55-0e01-4aa0-a5fd-9582bb068580">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_08f06dfc2af1b6eaa6af8e0072be14be" type="FIELD"/>
+               <fields name="action_bcd8f6be9b36a52fdcc9c8bb30c32498" type="FIELD"/>
+               <fields name="action_9622e724afc8a887e86953982f08137d" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over WiFi" ordering="5" serviceMetric="false" uid="317e1c25-ef21-4701-8f3a-8bbdaea86c3d">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_08f06dfc2af1b6eaa6af8e0072be14be" type="FIELD"/>
+               <fields name="action_bcd8f6be9b36a52fdcc9c8bb30c32498" type="FIELD"/>
+               <fields name="action_1c72971572fd56f78897f9f1c6d67327" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="693b78d3-709d-41ae-83a2-943025d3df26">
+            <barChartConfig displayValue="RATIO" nbOfBars="2" sortByOrder="DESC" threshold="false" title="Issue details">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Jitter &gt; 30 ms" ordering="0" serviceMetric="false" uid="85d02cb6-77a2-44bc-9dbb-e2d770e4ffeb"/>
+              <metric label="Relative one-way delay &gt; 1.75" ordering="1" serviceMetric="false" uid="5cf54871-474a-479e-8e5f-a62b41a7434b"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="673ca739-39c4-4b6e-aa5c-99389eceb3a4">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Jitter &gt; 30 ms" ordering="0" serviceMetric="false" uid="85d02cb6-77a2-44bc-9dbb-e2d770e4ffeb"/>
+              <metric label="Relative one-way delay &gt; 1.75" ordering="1" serviceMetric="false" uid="5cf54871-474a-479e-8e5f-a62b41a7434b"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="3" name="Video calls diagnostics" uid="8c10843e-443f-46de-8c75-10c9f220a17f">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8bef0cb7-3a29-4918-b68c-25eea1d33972" minHeight="126" minWidth="174" type="kpiWidget" widgetID="8bef0cb7-3a29-4918-b68c-25eea1d33972">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="174"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d6c2170f-9aee-431c-8b72-cc6f99d0c4cc" minHeight="166" minWidth="744" type="kpiWidget" widgetID="d6c2170f-9aee-431c-8b72-cc6f99d0c4cc">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="744"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="1e2c979f-efd3-4c47-885e-d7e3f3f73c64" minHeight="132" minWidth="300" type="barChartWidget" widgetID="1e2c979f-efd3-4c47-885e-d7e3f3f73c64">
+                    <preferredHeight value="132"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="fc63df5f-d0d6-44f6-8e7c-019a094febe8" minHeight="281" minWidth="599" type="tableWidget" widgetID="fc63df5f-d0d6-44f6-8e7c-019a094febe8">
+                    <preferredHeight value="281"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="fac2c307-4772-4347-a2ff-a6be1f9d5f6b" minHeight="56" minWidth="296" type="titleWidget" widgetID="fac2c307-4772-4347-a2ff-a6be1f9d5f6b">
+                    <preferredHeight value="56"/>
+                    <preferredWidth value="0"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="9d155f24-1740-486e-a4d5-88005e1fe0b8" minHeight="164" minWidth="300" type="barChartWidget" widgetID="9d155f24-1740-486e-a4d5-88005e1fe0b8">
+                    <preferredHeight value="164"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="a5251a70-bc8a-473a-a50e-b4856972a038" minHeight="116" minWidth="300" type="barChartWidget" widgetID="a5251a70-bc8a-473a-a50e-b4856972a038">
+                      <preferredHeight value="116"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="3dc9943b-a557-46f9-a2a6-968a1ecd61ce" minHeight="140" minWidth="300" type="barChartWidget" widgetID="3dc9943b-a557-46f9-a2a6-968a1ecd61ce">
+                      <preferredHeight value="140"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="51cf8676-30f5-4ada-9073-0402522f36ba" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="51cf8676-30f5-4ada-9073-0402522f36ba">
+                <preferredHeight value="310"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="2e293c3e-c247-4841-b46a-53e4af79e842" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="2e293c3e-c247-4841-b46a-53e4af79e842">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="92e60536-5f0b-45a0-9383-8b26ec4ed22d" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="92e60536-5f0b-45a0-9383-8b26ec4ed22d">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="8bef0cb7-3a29-4918-b68c-25eea1d33972">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices making video calls" ordering="0" serviceMetric="false" uid="20a19f8a-3628-4be6-a90a-cbe8b748ae44"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="d6c2170f-9aee-431c-8b72-cc6f99d0c4cc">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Devices with video calls issues">
+             <metrics>
+              <metric displayValue="RATIO" label="With failed calls" ordering="0" serviceMetric="false" uid="b72f39e7-0976-46cd-a8d8-d9d27ef1f742"/>
+              <metric displayValue="RATIO" label="With dropped calls" ordering="1" serviceMetric="false" uid="15ec7729-c30e-431b-a52a-07301e1d4fcf"/>
+              <metric displayValue="RATIO" label="With poor-quality calls" ordering="2" serviceMetric="false" uid="75c6e538-84a2-4dd6-a525-7ef6451ff3bc"/>
+              <metric displayValue="RATIO" label="With short calls" ordering="3" serviceMetric="false" uid="2546e276-3815-461a-9380-cb30e9e9e41a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="1e2c979f-efd3-4c47-885e-d7e3f3f73c64">
+            <barChartConfig displayValue="RATIO" nbOfBars="2" sortByOrder="DESC" threshold="false" title="Devices with poor-quality video calls">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Over WiFi" ordering="0" serviceMetric="false" uid="3f204eb8-fa7f-49aa-a9e2-1e8a0be93903"/>
+              <metric label="Over Ethernet" ordering="1" serviceMetric="false" uid="89bfb5cf-7692-4774-b0df-de64ae3a1d00"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="fc63df5f-d0d6-44f6-8e7c-019a094febe8">
+            <tableConfig displayOverallValueColumns="true" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Devices by location">
+             <columns option="HIERARCHY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Making video calls" ordering="0" serviceMetric="false" uid="20a19f8a-3628-4be6-a90a-cbe8b748ae44">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With failed calls" ordering="1" serviceMetric="false" uid="b72f39e7-0976-46cd-a8d8-d9d27ef1f742">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+               <fields name="action_e32178b18c38f10e0e69d61459fd1b26" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With dropped calls" ordering="2" serviceMetric="false" uid="15ec7729-c30e-431b-a52a-07301e1d4fcf">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+               <fields name="action_729c1f74107df190881a912ac3213973" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over WiFi" ordering="3" serviceMetric="false" uid="3f204eb8-fa7f-49aa-a9e2-1e8a0be93903">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_9b6cabc5c9b49ca31bdd3a4b9977a404" type="FIELD"/>
+               <fields name="action_6d7004fb16ee154e0560360ead6025fe" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With poor-quality calls over Ethernet" ordering="4" serviceMetric="false" uid="89bfb5cf-7692-4774-b0df-de64ae3a1d00">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_990efb5c8541bf9588d4fabe1e65f5cc" type="FIELD"/>
+               <fields name="action_6d7004fb16ee154e0560360ead6025fe" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="With short calls" ordering="5" serviceMetric="false" uid="2546e276-3815-461a-9380-cb30e9e9e41a">
+               <fields name="name" type="FIELD"/>
+               <fields name="action_643a47b378a02b4d3f13f6764ed1994a" type="FIELD"/>
+               <fields name="action_343bae99ed04ef7b0fa2ce2c49a4f5cf" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TITLE" uid="fac2c307-4772-4347-a2ff-a6be1f9d5f6b">
+            <titleConfig title="Issue details"/>
+           </widget>
+           <widget type="BAR_CHART" uid="9d155f24-1740-486e-a4d5-88005e1fe0b8">
+            <barChartConfig displayValue="RATIO" nbOfBars="5" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Concealed samples &gt; 0.07" ordering="0" serviceMetric="false" uid="dcbb44f3-c32c-40fc-8e27-fbb87f34d656"/>
+              <metric label="Jitter &gt; 30 ms" ordering="1" serviceMetric="false" uid="a5c5447a-de72-4cc9-a760-08453dedee59"/>
+              <metric label="Network MOS degradation &gt; 1.0" ordering="2" serviceMetric="false" uid="80b0d25e-a6da-4d30-bd21-0fb64efa2252"/>
+              <metric label="Packet loss rate &gt; 0.1" ordering="3" serviceMetric="false" uid="e5b5ed6d-4ee7-48ea-8c22-6831e9a36097"/>
+              <metric label="Round trip time &gt; 500 ms" ordering="4" serviceMetric="false" uid="bbdfa16e-e7ea-4972-9f98-00e47ebb47b6"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a5251a70-bc8a-473a-a50e-b4856972a038">
+            <barChartConfig displayValue="RATIO" nbOfBars="3" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Packet loss rate after error correction &gt; 0.1" ordering="1" serviceMetric="false" uid="c8dfafa4-d03c-4458-b89d-b2b0d2b9c2c5"/>
+              <metric label="High CPU load during &gt; 10% of the call" ordering="2" serviceMetric="false" uid="17e8e3be-bdf2-4e56-b6bf-0407b2a99dc5"/>
+              <metric label="Video packet loss rate &gt; 0.1" ordering="3" serviceMetric="false" uid="86374275-1c95-4f87-b159-af6e85393355"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3dc9943b-a557-46f9-a2a6-968a1ecd61ce">
+            <barChartConfig displayValue="RATIO" nbOfBars="4" sortByOrder="DESC" threshold="false" title="">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="&gt; 10% of total lost video frames" ordering="0" serviceMetric="false" uid="f4f829a9-87f9-47c2-8cbf-1d1bde5b32bc"/>
+              <metric label="Receiver frame rate &lt; 7" ordering="1" serviceMetric="false" uid="2aca860c-fdfe-473c-aae9-9cfd71d63d3f"/>
+              <metric label="Average frame rate &lt; 7" ordering="2" serviceMetric="false" uid="ebb64fc8-4612-4757-93b1-1a18cb905280"/>
+              <metric label="Low frame rate during &gt; 10% of the call" ordering="3" serviceMetric="false" uid="15ad507b-71a7-42ec-8817-d98b3ee94e1c"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="automatic"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="51cf8676-30f5-4ada-9073-0402522f36ba">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Concealed sample &gt; 0.07" ordering="0" serviceMetric="false" uid="dcbb44f3-c32c-40fc-8e27-fbb87f34d656"/>
+              <metric label="Jitter &gt; 30 ms" ordering="1" serviceMetric="false" uid="a5c5447a-de72-4cc9-a760-08453dedee59"/>
+              <metric label="Network MOS degradation &gt; 1.0" ordering="2" serviceMetric="false" uid="80b0d25e-a6da-4d30-bd21-0fb64efa2252"/>
+              <metric label="Packet loss rate &gt; 0.1" ordering="3" serviceMetric="false" uid="86374275-1c95-4f87-b159-af6e85393355"/>
+              <metric label="Round trip time &gt; 500 ms" ordering="4" serviceMetric="false" uid="bbdfa16e-e7ea-4972-9f98-00e47ebb47b6"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2e293c3e-c247-4841-b46a-53e4af79e842">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Video packet loss rate &gt; 0.1" ordering="0" serviceMetric="false" uid="86374275-1c95-4f87-b159-af6e85393355"/>
+              <metric label="Packet loss rate after error correction &gt; 0.1" ordering="1" serviceMetric="false" uid="c8dfafa4-d03c-4458-b89d-b2b0d2b9c2c5"/>
+              <metric label="High CPU load during &gt; 10% of the call" ordering="2" serviceMetric="false" uid="17e8e3be-bdf2-4e56-b6bf-0407b2a99dc5"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="92e60536-5f0b-45a0-9383-8b26ec4ed22d">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="&gt; 10% of total lost video frames" ordering="0" serviceMetric="false" uid="f4f829a9-87f9-47c2-8cbf-1d1bde5b32bc"/>
+              <metric label="Receiver frame rate &lt; 7" ordering="1" serviceMetric="false" uid="2aca860c-fdfe-473c-aae9-9cfd71d63d3f"/>
+              <metric label="Average frame rate &lt; 7" ordering="2" serviceMetric="false" uid="ebb64fc8-4612-4757-93b1-1a18cb905280"/>
+              <metric label="Low frame rate during &gt; 10% of the call" ordering="3" serviceMetric="false" uid="15ad507b-71a7-42ec-8817-d98b3ee94e1c"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

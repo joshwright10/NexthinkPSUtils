@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Desktop Manager Overview</Name>
+     <Dependencies>
+      <Dependency name="Devices Crashes (BSOD)" type="metric" uid="d54130e8-b0ac-4a81-842d-f69be5c74d2a"/>
+      <Dependency name="Devices with hard resets" type="metric" uid="b88242af-9fc7-4557-abb7-c01b9ff340ac"/>
+      <Dependency name="Devices with application hangs" type="metric" uid="c35eeed3-7679-4ce4-a9ea-dc2f06dbea1e"/>
+      <Dependency name="Devices with application crashes" type="metric" uid="90e6265f-71df-4ba1-8bb9-d862dd53b691"/>
+      <Dependency name="Percentage of Users experencing crashes or hangs" type="metric" uid="523185e3-b517-40b3-8681-adf9e2e83b38"/>
+      <Dependency name="Percentage of Devices with hangs or crash" type="metric" uid="3dcb9bcf-1b9c-4190-b8d5-a061f85c2a9c"/>
+      <Dependency name="VIP's experencing crashes/hangs" type="metric" uid="52b6771c-538d-4d02-b177-afda9f05e6c7"/>
+      <Dependency name="Devices with Malware" type="metric" uid="da1f80fb-984f-47b0-ab92-9830e7e2541f"/>
+      <Dependency name="Devices with RTP not On" type="metric" uid="02904329-d124-44f9-863e-6ba36c9ce39e"/>
+      <Dependency name="Device AV not up-to-date" type="metric" uid="da947c1b-9c23-49de-b033-ef4f16778db4"/>
+      <Dependency name="Devices accessing malicious domains" type="metric" uid="59c60fef-8d00-4db2-99e1-d352387d922f"/>
+      <Dependency name="Device system disk near full" type="metric" uid="abbcce98-9683-4ab5-b337-e69cefcd2456"/>
+      <Dependency name="Device not rebooted &gt;7 days" type="metric" uid="b2552529-c3f5-436d-ad2e-f517ecebf3a2"/>
+      <Dependency name="Devices with poor network response time (&gt; 100ms)" type="metric" uid="cb4df235-912d-4a6a-96c9-1181eb1bbf85"/>
+      <Dependency name="Devices with average logon time &gt; 3 min" type="metric" uid="2cb2d108-d7ea-4035-99b4-a96283441bc5"/>
+      <Dependency name="Devices with System boots &gt; 2mins" type="metric" uid="831652df-144d-4b5a-af43-656bd5c82c4e"/>
+      <Dependency name="Devices using more than 90% RAM" type="metric" uid="8de40706-5d4d-4dd5-867b-b027397640bd"/>
+      <Dependency name="Devices using more than 90% CPU" type="metric" uid="5aed9ccf-af10-4e61-adbf-55014632b3c0"/>
+      <Dependency name="Devices with 15% or more failed connections" type="metric" uid="8c730004-c915-4735-b9cd-285d3ddf444f"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Desktop Manager Overview" uid="a45f9f02-d885-42da-902f-3d5f4720a87f">
+        <dashboards>
+         <dashboard description="**What am I looking at?**&#13;&#10;&#13;&#10;Metrics that may be relevant to a CIO.&#13;&#10;&#13;&#10;**User visible events :**&#13;&#10;These are events that may be noticed by a user or cause a loss of data, for example, a Blue Screen during device use could cause data loss.&#13;&#10; &#13;&#10;- Blue Screens, Hard Resets, Application crash and hangs are all events that we'd expect a user to notice but maybe not report.&#13;&#10;- Percentages shown give the value for device and users seeing issues globally.&#13;&#10;- Trend graph gives a view of the values so you can compare the trends.&#13;&#10;::: tip&#13;&#10;It's possible to have a difference between the two metrics as Users facing issues will be processes running under the user context.&#13;&#10;&#13;&#10;When looking at a device based metric, this can also include system based processes running under local system, network service etc&#13;&#10;:::&#13;&#10;**Non visible events:**&#13;&#10;Events that are not so visible but can or may soon contribute to user downtime.&#13;&#10;&#13;&#10;- Security related metrics that could result in issues along with other device based issues that may contribute to poor performance or downtime.&#13;&#10;&#13;&#10;**Poor Experience:**&#13;&#10;Events that again, not so visible or that users &quot;put up with&quot; yet can still cost time.&#13;&#10;&#13;&#10;::: tip&#13;&#10;Viewing this dashboard by week (Click the date selector and move from Day to Week) will give you a better view of the data over the time period.&#13;&#10;:::" index="2" name="Quality of Service - User Experience" uid="d079ef83-c0a1-4d20-937c-eba870f7f085">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="c6b5319c-4424-442d-8d33-af9365860560" minHeight="166" minWidth="1124" type="kpiWidget" widgetID="c6b5319c-4424-442d-8d33-af9365860560">
+                <preferredHeight value="166"/>
+                <preferredWidth value="1124"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="3b64c9dc-56c5-40ef-bc9a-c37525136b01" minHeight="166" minWidth="174" type="kpiWidget" widgetID="3b64c9dc-56c5-40ef-bc9a-c37525136b01">
+                    <preferredHeight value="166"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="2f6b3d46-c274-4578-b13f-e411724d25f3" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="2f6b3d46-c274-4578-b13f-e411724d25f3">
+                    <preferredHeight value="310"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="736c543a-e647-40eb-b27e-518a5591d2d2" minHeight="210" minWidth="300" type="lineChartWidget" widgetID="736c543a-e647-40eb-b27e-518a5591d2d2">
+                  <preferredHeight value="310"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="9d67574a-48e9-4e35-bccc-e1258770962e" minHeight="166" minWidth="1124" type="kpiWidget" widgetID="9d67574a-48e9-4e35-bccc-e1258770962e">
+                <preferredHeight value="166"/>
+                <preferredWidth value="1124"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="0f494eb4-d7a4-4722-9949-702446907977" minHeight="166" minWidth="1124" type="kpiWidget" widgetID="0f494eb4-d7a4-4722-9949-702446907977">
+                <preferredHeight value="166"/>
+                <preferredWidth value="1124"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="c6b5319c-4424-442d-8d33-af9365860560">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="true" title="User visible events">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="BlueScreens" ordering="3" serviceMetric="false" uid="d54130e8-b0ac-4a81-842d-f69be5c74d2a"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Hard Resets" ordering="4" serviceMetric="false" uid="b88242af-9fc7-4557-abb7-c01b9ff340ac"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with App Hangs" ordering="5" serviceMetric="false" uid="c35eeed3-7679-4ce4-a9ea-dc2f06dbea1e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with App Crashes" ordering="6" serviceMetric="false" uid="90e6265f-71df-4ba1-8bb9-d862dd53b691"/>
+              <metric displayValue="RATIO" label="Percentage of Users seeing crash/hangs" ordering="10" serviceMetric="false" uid="523185e3-b517-40b3-8681-adf9e2e83b38"/>
+              <metric displayValue="RATIO" label="Devices with crash or hang" ordering="11" serviceMetric="false" uid="3dcb9bcf-1b9c-4190-b8d5-a061f85c2a9c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="3b64c9dc-56c5-40ef-bc9a-c37525136b01">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="VIP Issues">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="VIPs experiencing crashes/hangs" ordering="2" serviceMetric="false" uid="52b6771c-538d-4d02-b177-afda9f05e6c7"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="2f6b3d46-c274-4578-b13f-e411724d25f3">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Devices Crashes (BSOD)" ordering="0" serviceMetric="false" uid="d54130e8-b0ac-4a81-842d-f69be5c74d2a"/>
+              <metric label="Devices with hard resets" ordering="1" serviceMetric="false" uid="b88242af-9fc7-4557-abb7-c01b9ff340ac"/>
+              <metric label="Devices with application crashes" ordering="2" serviceMetric="false" uid="90e6265f-71df-4ba1-8bb9-d862dd53b691"/>
+              <metric label="Devices with application hangs" ordering="3" serviceMetric="false" uid="c35eeed3-7679-4ce4-a9ea-dc2f06dbea1e"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="LINE_CHART" uid="736c543a-e647-40eb-b27e-518a5591d2d2">
+            <lineChartConfig displayValue="RATIO" legend="true" thresholds="false" title="">
+             <metrics>
+              <metric label="Percentage of Users experiencing crashes or hangs" ordering="0" serviceMetric="false" uid="523185e3-b517-40b3-8681-adf9e2e83b38"/>
+              <metric label="Percentage of Devices with hangs or crash" ordering="1" serviceMetric="false" uid="3dcb9bcf-1b9c-4190-b8d5-a061f85c2a9c"/>
+             </metrics>
+             <scale scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+           <widget type="KPI" uid="9d67574a-48e9-4e35-bccc-e1258770962e">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Non-visible events">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with Malware" ordering="3" serviceMetric="false" uid="da1f80fb-984f-47b0-ab92-9830e7e2541f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with RTP not On" ordering="5" serviceMetric="false" uid="02904329-d124-44f9-863e-6ba36c9ce39e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Device AV not up-to-date" ordering="6" serviceMetric="false" uid="da947c1b-9c23-49de-b033-ef4f16778db4"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices accessing malicious domains" ordering="9" serviceMetric="false" uid="59c60fef-8d00-4db2-99e1-d352387d922f"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Device system disk near full" ordering="10" serviceMetric="false" uid="abbcce98-9683-4ab5-b337-e69cefcd2456"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Device not rebooted &gt;7 days" ordering="11" serviceMetric="false" uid="b2552529-c3f5-436d-ad2e-f517ecebf3a2"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="0f494eb4-d7a4-4722-9949-702446907977">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="true" title="Poor Experience">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with poor network response time (&gt; 100ms)" ordering="0" serviceMetric="false" uid="cb4df235-912d-4a6a-96c9-1181eb1bbf85"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with average logon time &gt; 3 min" ordering="1" serviceMetric="false" uid="2cb2d108-d7ea-4035-99b4-a96283441bc5"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with System boots &gt; 2mins" ordering="2" serviceMetric="false" uid="831652df-144d-4b5a-af43-656bd5c82c4e"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices using more than 90% RAM" ordering="3" serviceMetric="false" uid="8de40706-5d4d-4dd5-867b-b027397640bd"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices using more than 90% CPU" ordering="4" serviceMetric="false" uid="5aed9ccf-af10-4e61-adbf-55014632b3c0"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices with 15% or more failed connections" ordering="5" serviceMetric="false" uid="8c730004-c915-4735-b9cd-285d3ddf444f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>

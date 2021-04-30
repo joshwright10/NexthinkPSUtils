@@ -1,0 +1,2705 @@
+<?xml version="1.0" encoding="UTF-8"?><Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>End-User Experience Improvement</Name>
+     <Dependencies>
+      <Dependency name="End-user satisfaction" type="metric" uid="43814a98-b758-4461-bebd-cc434e1f0f60"/>
+      <Dependency name="Endpoint performance" type="metric" uid="4660c172-ba36-4469-a198-6882593ba5fd"/>
+      <Dependency name="End-user satisfaction - Devices" type="metric" uid="dff046f8-b664-4fd7-8741-85e6681d3226"/>
+      <Dependency name="Desktop satisfaction - Satisfaction" type="metric" uid="0d735514-6686-4eaf-a29f-5d36872b3477"/>
+      <Dependency name="Laptop satisfaction - Satisfaction" type="metric" uid="33f58f40-639a-4920-96cb-9ec404c05887"/>
+      <Dependency name="Mobile satisfaction - Satisfaction" type="metric" uid="5cfd48af-de47-417a-945b-ca9b1840d9cf"/>
+      <Dependency name="Endpoint performance - Devices" type="metric" uid="3c68a180-35e1-46df-88df-d532cc63fb83"/>
+      <Dependency name="Endpoint performance - Devices / Hardware resources" type="metric" uid="8c9431a5-3d90-4518-b721-76b935d9844e"/>
+      <Dependency name="Endpoint performance - Devices / Stability" type="metric" uid="eaaef9c0-3f36-494e-b656-665926e86c21"/>
+      <Dependency name="Endpoint performance - Devices / Storage" type="metric" uid="6eab4483-e6ce-4621-b12b-f8aa156e364b"/>
+      <Dependency name="Endpoint performance - Devices / System" type="metric" uid="9251d486-290e-4ad6-bda7-73efb422af06"/>
+      <Dependency name="End-user satisfaction - Services" type="metric" uid="cb159de7-95a0-4e39-9d01-01a76b805725"/>
+      <Dependency name="Email satisfaction - Satisfaction" type="metric" uid="4ad42426-6683-4d52-b906-481f0492a5c5"/>
+      <Dependency name="SMB satisfaction - Satisfaction" type="metric" uid="47d07d60-a582-4fc9-b5c4-109bd8dcb101"/>
+      <Dependency name="Software satisfaction - Satisfaction" type="metric" uid="02e83d2e-9f92-4d45-b75e-2241091ce291"/>
+      <Dependency name="Unified communication satisfaction - Satisfaction" type="metric" uid="63abc6d7-a1f3-4204-9d61-55f7437aee2b"/>
+      <Dependency name="Endpoint performance - Services" type="metric" uid="f742ee42-e1e7-4d33-a2d8-5503fce9ed2a"/>
+      <Dependency name="Endpoint performance - Services / Email" type="metric" uid="1d34fb10-8f4f-42ac-afbb-8882dac216fe"/>
+      <Dependency name="Endpoint performance - Services / Unified communication" type="metric" uid="412ca51c-c3ab-4d3f-85f5-b73215ab7b76"/>
+      <Dependency name="Endpoint performance - Services / SMB" type="metric" uid="bb0cd917-1f4d-4624-8131-0a25b3ba3f56"/>
+      <Dependency name="Endpoint performance - Services / Software" type="metric" uid="b8fdde0c-05f5-43d4-b852-06be35fbf358"/>
+      <Dependency name="End-user satisfaction - Infrastructure" type="metric" uid="dcc0dbfa-12fd-4283-abac-10729fea148c"/>
+      <Dependency name="Meeting rooms satisfaction - Satisfaction" type="metric" uid="e7380734-2ab0-467c-b87c-feec05ec32b0"/>
+      <Dependency name="Network satisfaction - Satisfaction" type="metric" uid="b45ec98d-3fc4-44f3-bfc9-b22babed8017"/>
+      <Dependency name="Printing satisfaction - Satisfaction" type="metric" uid="84723bed-fe0b-44b2-8e54-be7c2609f94d"/>
+      <Dependency name="Endpoint performance - Infrastructure" type="metric" uid="745dcc71-69d1-4644-96f2-8ef18b301d95"/>
+      <Dependency name="Endpoint performance - Infrastructure / Ethernet" type="metric" uid="ecfa89ba-e6b8-4b9c-af56-03087e50f0da"/>
+      <Dependency name="Endpoint performance - Infrastructure / Wifi" type="metric" uid="35f333da-16fb-457c-8897-c236f34c8ea3"/>
+      <Dependency name="End-user satisfaction - IT team" type="metric" uid="ebf9697e-9736-4b4c-8444-d4c41ba7f6cc"/>
+      <Dependency name="IT documentation satisfaction - Satisfaction" type="metric" uid="67ca8547-f22b-4c45-a452-68e2437c8915"/>
+      <Dependency name="IT help desk satisfaction - Satisfaction" type="metric" uid="93a13b7a-4c99-4b91-8ab6-f576d38133c5"/>
+      <Dependency name="Email satisfaction - Happy users" type="metric" uid="d0e3e33e-7329-4bb2-b7bd-1726f816720e"/>
+      <Dependency name="Email satisfaction - Respondents" type="metric" uid="e66a400c-98db-4428-a693-832fb889c75c"/>
+      <Dependency name="Email satisfaction - Satisfaction breakdown" type="metric" uid="2ac31e9e-2122-474a-8a32-1125f4471c36"/>
+      <Dependency name="Email satisfaction - Positive points" type="metric" uid="f9dd23ec-5351-45fe-98ca-be5fe8cd3143"/>
+      <Dependency name="Email satisfaction - Negative points" type="metric" uid="db1e4850-c776-4ae9-bc48-8e0a05b9d539"/>
+      <Dependency name="Endpoint performance - Services / Email / Connectivity" type="metric" uid="542c6672-3789-4825-9a4b-a705d80a8b84"/>
+      <Dependency name="Endpoint performance - Services / Email / Response time" type="metric" uid="b728100d-fc7d-4c00-b231-2f13e53d31f2"/>
+      <Dependency name="Endpoint performance - Services / Email / Stability / Crashes" type="metric" uid="fa790630-1c49-4054-849a-58b451384f8f"/>
+      <Dependency name="Endpoint performance - Services / Email / Stability / Freezes" type="metric" uid="566f20c1-8d25-498e-aaae-3548698b320f"/>
+      <Dependency name="Email satisfaction - Satisfaction with Outlook 14" type="metric" uid="d0050524-a902-4909-9b0f-64a0211ce492"/>
+      <Dependency name="Email satisfaction - Respondants with Outlook 14" type="metric" uid="2a50200b-28a0-4ee5-916c-bdb1ba75a2e3"/>
+      <Dependency name="Email satisfaction - Email performance with Outlook 14" type="metric" uid="94590d7b-afba-408f-8054-dac80b8c1661"/>
+      <Dependency name="Email satisfaction - Satisfaction with Outlook 15" type="metric" uid="03042afd-d525-4f90-af30-e70cf6f276d2"/>
+      <Dependency name="Email satisfaction - Respondants with Outlook 15" type="metric" uid="5c7794ae-a608-4c7e-a3f6-b79323e20259"/>
+      <Dependency name="Email satisfaction - Email performance with Outlook 15" type="metric" uid="b0cfdd61-ce3d-4e19-b229-85108083c530"/>
+      <Dependency name="Desktop satisfaction - Happy users" type="metric" uid="b803e60f-e4de-4aba-93bb-a85a37a2c6ab"/>
+      <Dependency name="Desktop satisfaction - Respondents" type="metric" uid="d3e58673-4f91-4b4b-8b20-acf2e2f05ea8"/>
+      <Dependency name="Desktop satisfaction - Satisfaction breakdown" type="metric" uid="e6c2efec-3800-480e-9a24-a2a813f964a6"/>
+      <Dependency name="Desktop satisfaction - Positive points" type="metric" uid="a8e25237-fe42-4b36-8477-d6015fedbab3"/>
+      <Dependency name="Desktop satisfaction - Negative points" type="metric" uid="13a02275-d621-479a-859f-ab1c5ab44f31"/>
+      <Dependency name="Endpoint performance - Devices / Hardware resources / CPU" type="metric" uid="6825dcbb-cbb2-4626-a9c2-4fefcae87670"/>
+      <Dependency name="Endpoint performance - Devices / Hardware resources / Disk throughput" type="metric" uid="de20bf00-a2b8-40ac-9a89-355aecbe6ca7"/>
+      <Dependency name="Endpoint performance - Devices / Hardware resources / Memory" type="metric" uid="c0b5c7f2-cdbc-4484-8584-60fd8047b605"/>
+      <Dependency name="Endpoint performance - Devices / Stability / BSOD" type="metric" uid="628ab41d-fd45-4e68-ab46-52c75ab92604"/>
+      <Dependency name="Endpoint performance - Devices / Stability / Hard resets" type="metric" uid="37dc00a0-b4e2-4e75-aab5-7341cdaf147f"/>
+      <Dependency name="Endpoint performance - Devices / Stability / WMI" type="metric" uid="f59a679d-6e18-42f4-96cb-f2c165920d33"/>
+      <Dependency name="Endpoint performance - Devices / Storage / Free space" type="metric" uid="dee81d9e-3429-48e6-bf5b-2476ee238500"/>
+      <Dependency name="Endpoint performance - Devices / Storage / Health" type="metric" uid="b6b34ae9-4b84-4efa-89ba-6b6a6d6ae3b2"/>
+      <Dependency name="Endpoint performance - Devices / System / OS" type="metric" uid="0b76011f-d92a-4a96-9069-d17993fc9461"/>
+      <Dependency name="Endpoint performance - Devices / System / Screen" type="metric" uid="e0938dae-4747-4edc-a2d9-25af338b2228"/>
+      <Dependency name="Endpoint performance - Devices / Startup / Boot speed" type="metric" uid="a206ae5a-cac0-46a5-8bdd-0ed6aa351711"/>
+      <Dependency name="Endpoint performance - Devices / Startup / Logon speed" type="metric" uid="4d07bf14-6554-44e3-83fa-af4848bc3a18"/>
+      <Dependency name="Desktop satisfaction - Happy users by desktop model" type="metric" uid="5c314f3d-0c42-4f47-bc97-c6e9763c3a54"/>
+      <Dependency name="Desktop satisfaction - Respondents by desktop model" type="metric" uid="d61f38e8-7a57-4d42-bb9d-f1ecef1ce5da"/>
+      <Dependency name="Desktop satisfaction - Device performance by desktop model" type="metric" uid="12697b1f-6c91-45b1-8cce-7a82086cd375"/>
+      <Dependency name="Desktop satisfaction - Number of devices by desktop model" type="metric" uid="ecc4ef19-d47d-485b-aa28-8e8d3016d526"/>
+      <Dependency name="Desktop satisfaction - Device preference" type="metric" uid="b69458fe-735f-4ba2-810b-3f20513f3637"/>
+      <Dependency name="Mobile satisfaction - Happy users" type="metric" uid="a07852f4-4096-47c5-9ba8-a0e18cefc8cc"/>
+      <Dependency name="Mobile satisfaction - Respondents" type="metric" uid="e7bc8c46-9f36-4704-a6bc-93ed0132664a"/>
+      <Dependency name="Mobile satisfaction - Satisfaction breakdown" type="metric" uid="f4b2eac3-1e61-43f5-b34e-3bcf97a951c7"/>
+      <Dependency name="Mobile satisfaction - Positive points" type="metric" uid="3f920884-d353-4448-a7a0-92ed8383c0a3"/>
+      <Dependency name="Mobile satisfaction - Negative points" type="metric" uid="a9d61728-5dfa-4749-b4d9-302f4c948e1c"/>
+      <Dependency name="Mobile satisfaction - Happy users by mobile model" type="metric" uid="3b45c0cf-9785-404b-b4d0-43e19c7c0e21"/>
+      <Dependency name="Mobile satisfaction - Respondents by mobile model" type="metric" uid="66f27977-be82-41d9-b76d-b9e5eec057e3"/>
+      <Dependency name="Mobile satisfaction - Business usage" type="metric" uid="edaf783a-be9b-4940-ba3a-6f08c2f7e90e"/>
+      <Dependency name="Laptop satisfaction - Happy users" type="metric" uid="823bc117-8ecf-430c-8672-be8252b963a5"/>
+      <Dependency name="Laptop satisfaction - Respondents" type="metric" uid="069b7b99-ff42-4cf9-9665-46d6602b8439"/>
+      <Dependency name="Laptop satisfaction - Satisfaction breakdown" type="metric" uid="ee45326d-f1d5-42e6-96c0-629ff37e681e"/>
+      <Dependency name="Laptop satisfaction - Positive points" type="metric" uid="6e0b838e-032e-4d99-8600-52f5603ac332"/>
+      <Dependency name="Laptop satisfaction - Negative points" type="metric" uid="2a27c727-681a-4553-9a9a-78bd347f606b"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Hardware resources / CPU" type="metric" uid="82ebd53f-a2f9-49aa-9fd1-23b81dfd37d1"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Hardware resources / Disk throughput" type="metric" uid="df639fe4-6237-430f-b166-0d5d1d0165de"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Hardware resources / Memory" type="metric" uid="0e18a486-abce-48ee-956c-293054dd3a02"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Stability / BSOD" type="metric" uid="a8db1a5c-729f-41ec-9af0-3cee03b15633"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Stability / Hard resets" type="metric" uid="f920c838-78ea-4344-b141-fa90cea177bf"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Stability / WMI" type="metric" uid="c0e24ca4-e408-4ba6-96aa-233bc6755dfc"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Startup / Boot speed" type="metric" uid="746ce3a2-1550-4fb7-b49b-1471656be22a"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Startup / Logon speed" type="metric" uid="5b28dd10-87d2-4d16-8658-27ae45ca6ced"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Storage / Free space" type="metric" uid="1d90f84c-4415-4c0c-a8fc-0f25ab8939c9"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / Storage / Health" type="metric" uid="4ed69e32-1a03-4c70-a004-fc370ce6199a"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / System / OS" type="metric" uid="333a966f-2b17-469b-bf1a-04af86990911"/>
+      <Dependency name="Endpoint performance - Laptops - Devices / System / Screen" type="metric" uid="e0e0c8ad-8b7c-45c3-b8d4-812aebddfed0"/>
+      <Dependency name="Laptop satisfaction - Happy users by laptop model" type="metric" uid="a40ef57a-c5c6-4b9f-9f2e-1fd11b549f65"/>
+      <Dependency name="Laptop satisfaction - Respondents by laptop model" type="metric" uid="db29e4a3-b045-451b-96da-14aa03bfe27e"/>
+      <Dependency name="Laptop satisfaction - Device performance by laptop model" type="metric" uid="480f1183-991d-43bb-9532-a7dbed0296f6"/>
+      <Dependency name="Laptop satisfaction - Number of devices by laptop model" type="metric" uid="6628fd3b-7566-4a25-8825-abafcafccb2a"/>
+      <Dependency name="Laptop satisfaction - Device preference" type="metric" uid="b61a6485-9c69-4a61-87a9-84a93257b339"/>
+      <Dependency name="Printing satisfaction - Happy users" type="metric" uid="73103d03-b2e4-40cf-8123-093d4ad4935d"/>
+      <Dependency name="Printing satisfaction - Respondents" type="metric" uid="d97a74d5-0265-46f6-957e-665fc5658bca"/>
+      <Dependency name="Printing satisfaction - Satisfaction breakdown" type="metric" uid="5135c16f-ba3a-42d4-bddf-bd7ecd85d753"/>
+      <Dependency name="Printing satisfaction - Positive points" type="metric" uid="3edf8198-998a-415f-8f99-19a4ddbb1ab9"/>
+      <Dependency name="Printing satisfaction - Negative points" type="metric" uid="6961816a-209e-47b4-ac9c-4104683a32f9"/>
+      <Dependency name="Laptop satisfaction - Model 1 - Happy users" type="metric" uid="9b7e4a6c-a0cf-4cc0-b7fc-ab5cbd44a70f"/>
+      <Dependency name="Laptop satisfaction - Model 2 - Happy users" type="metric" uid="1fc5cbcc-c4a4-4d2c-a4ff-8db4b3992a3c"/>
+      <Dependency name="Laptop satisfaction - Model 1- Positive points" type="metric" uid="3227a6f8-9a8d-4ba4-a8d6-135665242417"/>
+      <Dependency name="Laptop satisfaction - Model 2 - Positive points" type="metric" uid="7610f628-5094-4ada-85ee-91ad1a60e64c"/>
+      <Dependency name="Laptop satisfaction - Model 1 - Negative points" type="metric" uid="c28e972e-eab6-4dfa-a1d9-02fe4e692754"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Hardware resources / CPU" type="metric" uid="ee9b9ca2-353a-4fcb-bff6-834299e7f779"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Hardware resources / Disk throughput" type="metric" uid="1b38e2e8-ba6d-445b-bf0a-abba4d38093f"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Hardware resources / Memory" type="metric" uid="01df1df0-0e34-47bb-9c35-812b540ad0b6"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Stability / BSOD" type="metric" uid="c80d413b-2718-4653-a14b-1e32979b104e"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Stability / Hard resets" type="metric" uid="fb4a9a20-5a7b-46d5-bdbc-57f0c80023be"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Stability / WMI" type="metric" uid="2ea10ece-324c-4b0f-be4d-980050af45b0"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Startup / Boot speed" type="metric" uid="64c9d27a-9075-41ed-95a9-2f3e2841ffef"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / Storage / Free space" type="metric" uid="f5d3e8a6-314f-448d-b63b-375f92386dac"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / System / OS" type="metric" uid="8c9972e6-0c8a-4c91-8ec0-8620936afde4"/>
+      <Dependency name="Endpoint performance - Lenovo series 41 - Devices / System / Screen" type="metric" uid="ba4280f9-df7a-4774-8e0d-ec26cb6eeb06"/>
+      <Dependency name="Laptop satisfaction - Model 2 - Negative points" type="metric" uid="4c801a45-784e-42ff-8cc8-8ce53b624756"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Hardware resources / Disk throughput" type="metric" uid="9d0d8b70-7d75-42f2-92af-abedf2408bbd"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Hardware resources / Memory" type="metric" uid="21a9039f-1ecf-413e-a917-33494adf1ab4"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Stability / BSOD" type="metric" uid="833475ca-b014-429e-ab27-99c1c6a8076a"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Stability / Hard resets" type="metric" uid="50ec0985-c0bf-4068-805b-e49a35952656"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Stability / WMI" type="metric" uid="7920df94-c656-4382-80db-1146953f1d9b"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Startup / Boot speed" type="metric" uid="baa3c27a-d010-4664-951a-a4dc612453f4"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Storage / Free space" type="metric" uid="cbff855d-2da3-469a-8dcd-7392b7c9e662"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / System / OS" type="metric" uid="00a9313e-1ea8-4c4e-b762-7fccb5ccc32e"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / Storage / Health" type="metric" uid="4686111b-546e-4b68-a47f-2acdc29cb7ee"/>
+      <Dependency name="Endpoint performance - Lenovo series 42 - Devices / System / Screen" type="metric" uid="fdfad472-fe39-430d-b5ee-7a91d643d909"/>
+      <Dependency name="IT documentation satisfaction - Happy users" type="metric" uid="1bab72cb-2ce5-46a5-88f7-13258ac4e96f"/>
+      <Dependency name="IT documentation satisfaction - Respondents" type="metric" uid="7a4cefc8-42c5-4678-abae-f04cab18e614"/>
+      <Dependency name="IT documentation satisfaction - Satisfaction breakdown" type="metric" uid="de59d531-aa1d-46e2-b9a1-81db3e1e24b4"/>
+      <Dependency name="IT documentation satisfaction - Positive points" type="metric" uid="fbafd4d5-1107-43be-9f6c-481dc0330f05"/>
+      <Dependency name="IT documentation satisfaction - Negative points" type="metric" uid="8e4cb629-85d6-42ac-b94f-bafbfb69ae90"/>
+      <Dependency name="Meeting rooms satisfaction - Happy users" type="metric" uid="7d6e8b68-dc38-4eba-83c6-f906f1f5187e"/>
+      <Dependency name="Meeting rooms satisfaction - Respondents" type="metric" uid="92edd542-16ad-4506-88c0-3f77a4090e85"/>
+      <Dependency name="Meeting rooms satisfaction - Satisfaction breakdown" type="metric" uid="1878215e-d8a9-4ad5-ad6e-6728282bbef6"/>
+      <Dependency name="Meeting rooms satisfaction - Positive points" type="metric" uid="4a066662-9867-435c-91b4-b037e9bfe30e"/>
+      <Dependency name="Meeting rooms satisfaction - Negative points" type="metric" uid="96b198ab-7a23-4b04-a6b3-2a124b3980e5"/>
+      <Dependency name="Software satisfaction - Happy users" type="metric" uid="dad6f617-63a5-4008-9002-a0b29bf24a12"/>
+      <Dependency name="Software satisfaction - Respondents" type="metric" uid="aa04a228-9c96-42dc-8e75-af5994fa9038"/>
+      <Dependency name="Software satisfaction - Satisfaction breakdown" type="metric" uid="4617367d-fadb-41bf-8927-84e22f8379b4"/>
+      <Dependency name="Software satisfaction - Positive points" type="metric" uid="34b5e7bc-167d-4268-bd66-c77def1d42e5"/>
+      <Dependency name="Software satisfaction - Negative points" type="metric" uid="de349bb2-1dba-438f-89ad-6b0781bbe5a0"/>
+      <Dependency name="Endpoint performance - Services / Software / Number of packages" type="metric" uid="8b0de43b-a9d7-4398-b6d2-1aea1ee30080"/>
+      <Dependency name="Endpoint performance - Services / Software / Software age" type="metric" uid="40f64448-f7c1-40c5-8110-47ff134254c3"/>
+      <Dependency name="Endpoint performance - Services / Software / Software stability / Software crashes" type="metric" uid="f31b601e-62c9-43cc-b679-cef0f87296e7"/>
+      <Dependency name="Endpoint performance - Services / Software / Software stability / Software freezes" type="metric" uid="69c4e284-59c9-490d-8440-1ae0b19df1fe"/>
+      <Dependency name="Software satisfaction - Needed applications" type="metric" uid="4f250d5c-0418-41c3-ae21-6c19cef10e08"/>
+      <Dependency name="Network satisfaction - Happy users" type="metric" uid="a74c185d-aef6-4693-ba67-bc36fc37640b"/>
+      <Dependency name="Network satisfaction - Respondents" type="metric" uid="e13c3943-fa99-4af9-a047-5383460b1723"/>
+      <Dependency name="Network satisfaction - Satisfaction breakdown" type="metric" uid="658132f2-fe3f-4cb4-8c3a-262bb9792cb8"/>
+      <Dependency name="Network satisfaction - Positive points" type="metric" uid="0cd41e6c-d851-4f75-bcd5-d4c4a54df2cb"/>
+      <Dependency name="Network satisfaction - Negative points" type="metric" uid="2cb1c7eb-1181-4614-9301-8de59980831e"/>
+      <Dependency name="Endpoint performance - Infrastructure / Ethernet / Connectivity" type="metric" uid="965301b9-fed7-429e-8914-ed3a232d623b"/>
+      <Dependency name="Endpoint performance - Infrastructure / Ethernet / Response time" type="metric" uid="f5ef481c-d561-49bb-bf2d-80b7b18b67a3"/>
+      <Dependency name="Endpoint performance - Infrastructure / Wifi / Connectivity" type="metric" uid="416eb799-bf50-482e-abd9-0fa11d59c9bb"/>
+      <Dependency name="Endpoint performance - Infrastructure / Wifi / Response time" type="metric" uid="6be1bde8-c191-4c4f-8ce3-3ee81972704f"/>
+      <Dependency name="SMB satisfaction - Happy users" type="metric" uid="cf990b61-ca99-4a7c-9ccc-3410d65faf9b"/>
+      <Dependency name="SMB satisfaction - Respondents" type="metric" uid="38c21c44-1397-4e13-9386-4ebb97650403"/>
+      <Dependency name="SMB satisfaction - Satisfaction breakdown" type="metric" uid="946b54cd-f211-4be9-98f6-ed38597a7f19"/>
+      <Dependency name="SMB satisfaction - Positive points" type="metric" uid="3e1c98b7-dbe4-4156-916b-b4f9694f1413"/>
+      <Dependency name="SMB satisfaction - Negative points" type="metric" uid="6a9d88e4-9d23-4183-9c22-78b7d1b5c326"/>
+      <Dependency name="Endpoint performance - Services / SMB / Connectivity" type="metric" uid="d199ce56-e433-4abf-8907-ae570b20dac7"/>
+      <Dependency name="Endpoint performance - Services / SMB / Response time" type="metric" uid="c338f69f-e9b3-4319-ac6a-1a1499084071"/>
+      <Dependency name="IT help desk satisfaction - Happy users" type="metric" uid="c9b7ae8a-161a-472a-8cb8-abaab706d161"/>
+      <Dependency name="IT help desk satisfaction - Respondents" type="metric" uid="d48b75ee-aaa1-4c2c-af8a-4f37efb8aaf9"/>
+      <Dependency name="IT help desk satisfaction - Satisfaction breakdown" type="metric" uid="bfa33bf6-4308-4ef9-84da-450d000acf2a"/>
+      <Dependency name="IT help desk satisfaction - Positive points" type="metric" uid="2c97b87b-4c83-438f-9032-5797d2e7d313"/>
+      <Dependency name="IT help desk satisfaction - Negative points" type="metric" uid="d1d80167-09ce-40dc-b9c6-62e37911437f"/>
+      <Dependency name="IT help desk satisfaction - Actions" type="metric" uid="43856aad-78b3-46a5-ba4e-0afce02a378d"/>
+      <Dependency name="Unified communication satisfaction - Happy users" type="metric" uid="9dab3f1b-5bb2-4cac-a19f-c3d6a47fb842"/>
+      <Dependency name="Unified communication satisfaction - Respondents" type="metric" uid="0883fa47-77c9-4029-8cb4-c3a4d82981fb"/>
+      <Dependency name="Unified communication satisfaction - Satisfaction breakdown" type="metric" uid="012dcc8d-3f24-4e0f-b2b0-e2060c10692b"/>
+      <Dependency name="Unified communication satisfaction - Positive points" type="metric" uid="7453bdb9-6763-4677-b49e-1324f8deaa19"/>
+      <Dependency name="Unified communication satisfaction - Negative points" type="metric" uid="1c29a8bb-3e69-48ac-b3bd-2b850cf0fb77"/>
+      <Dependency name="Endpoint performance - Services / Unified communication / Connectivity" type="metric" uid="4adc0429-ee35-43d4-b974-17500913318e"/>
+      <Dependency name="Endpoint performance - Services / Unified communication / Response time" type="metric" uid="fe7f68c2-ce7b-4daa-8b7c-24443019f3fa"/>
+      <Dependency name="Endpoint performance - Services / Unified communication / Stability / Crashes" type="metric" uid="f31fb202-0195-4d10-9d2c-9de0d4a9757b"/>
+      <Dependency name="Endpoint performance - Services / Unified communication / Stability / Freezes" type="metric" uid="8d687e1d-4201-4e69-a5e6-1e84d668fc56"/>
+      <Dependency name="Unified communication satisfaction - Happy users by Unified communication version" type="metric" uid="796d0ab5-c84d-4bf4-9338-29ef2bc735b0"/>
+      <Dependency name="Unified communication satisfaction - Respondents by Unified communication version" type="metric" uid="56cf74e5-3a9a-46d0-ab3f-bc76d1443272"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="End-User Experience Improvement" uid="dc681579-42c7-4b7e-8be4-9621b3ce4b0b">
+        <dashboards>
+         <dashboard description="# Desktop satisfaction&#13;&#10;This dashboard presents information about overall desktop satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Overall speed&#13;&#10;* Stability: weather it crashes&#13;&#10;* Monitor size&#13;&#10;* Noise level&#13;&#10;* Storage&#13;&#10;* OS&#13;&#10;* Startup time&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Hardware resources&#13;&#10;* Stability&#13;&#10;* Startup&#13;&#10;* Storage&#13;&#10;* System&#13;&#10;&#13;&#10;:::tip&#13;&#10;The second part of the dashboard allows you to understand which desktop models are most popular.&#13;&#10;:::&#13;&#10;&#13;&#10;:::configuration&#13;&#10;Edit device category [Desktop Model](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Desktop%20model&amp;Type=device) to define the breakdown for the model comparison.&#13;&#10;:::" index="3" name="Devices: desktops" uid="d318014d-6f72-4143-91b9-8932a3d722d3">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="ec431456-0189-4d52-8852-beae7c250ae5" minHeight="126" minWidth="934" type="kpiWidget" widgetID="ec431456-0189-4d52-8852-beae7c250ae5">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="934"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="56e1ee5b-1bb2-476e-bdbf-dc64e7cec9ee" minHeight="204" minWidth="300" type="barChartWidget" widgetID="56e1ee5b-1bb2-476e-bdbf-dc64e7cec9ee">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="42dfe313-00d1-4851-9ef6-98bbc630a5e1" minHeight="204" minWidth="300" type="barChartWidget" widgetID="42dfe313-00d1-4851-9ef6-98bbc630a5e1">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="f805ee93-b5c1-4f88-aa48-ecd5ecbdaaa9" minHeight="324" minWidth="300" type="barChartWidget" widgetID="f805ee93-b5c1-4f88-aa48-ecd5ecbdaaa9">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="1fe47a58-3c8d-463f-a76e-c7456c87173f" minHeight="324" minWidth="300" type="barChartWidget" widgetID="1fe47a58-3c8d-463f-a76e-c7456c87173f">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="3b4ec97b-6d72-4d17-8004-34b9a248f34e" minHeight="401" minWidth="324" type="tableWidget" widgetID="3b4ec97b-6d72-4d17-8004-34b9a248f34e">
+                    <preferredHeight value="401"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="d9ccc38f-d68c-470c-bdc5-54bbcc544680" minHeight="233" minWidth="774" type="tableWidget" widgetID="d9ccc38f-d68c-470c-bdc5-54bbcc544680">
+                <preferredHeight value="233"/>
+                <preferredWidth value="774"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="451d50cd-115f-4a24-990b-6652938cc011" minHeight="156" minWidth="300" type="barChartWidget" widgetID="451d50cd-115f-4a24-990b-6652938cc011">
+                <preferredHeight value="156"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="ec431456-0189-4d52-8852-beae7c250ae5">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="7" serviceMetric="false" uid="0d735514-6686-4eaf-a29f-5d36872b3477"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="8" serviceMetric="false" uid="b803e60f-e4de-4aba-93bb-a85a37a2c6ab"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="9" serviceMetric="false" uid="d3e58673-4f91-4b4b-8b20-acf2e2f05ea8"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="10" serviceMetric="false" uid="d3e58673-4f91-4b4b-8b20-acf2e2f05ea8"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: devices" ordering="11" serviceMetric="false" uid="3c68a180-35e1-46df-88df-d532cc63fb83"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="56e1ee5b-1bb2-476e-bdbf-dc64e7cec9ee">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Desktop satisfaction - Average satisfaction" ordering="0" serviceMetric="false" uid="0d735514-6686-4eaf-a29f-5d36872b3477"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="42dfe313-00d1-4851-9ef6-98bbc630a5e1">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Desktop satisfaction - Happiness breakdown" ordering="1" serviceMetric="false" uid="e6c2efec-3800-480e-9a24-a2a813f964a6"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f805ee93-b5c1-4f88-aa48-ecd5ecbdaaa9">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Desktop satisfaction - Positive points" ordering="0" serviceMetric="false" uid="a8e25237-fe42-4b36-8477-d6015fedbab3"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="1fe47a58-3c8d-463f-a76e-c7456c87173f">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Desktop satisfaction - Negative points" ordering="0" serviceMetric="false" uid="13a02275-d621-479a-859f-ab1c5ab44f31"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="3b4ec97b-6d72-4d17-8004-34b9a248f34e">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="15" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Hardware resources: CPU" ordering="1" serviceMetric="false" uid="6825dcbb-cbb2-4626-a9c2-4fefcae87670"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Hardware resources: disk throughput" ordering="2" serviceMetric="false" uid="de20bf00-a2b8-40ac-9a89-355aecbe6ca7"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Hardware resources: memory" ordering="3" serviceMetric="false" uid="c0b5c7f2-cdbc-4484-8584-60fd8047b605"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: BSOD" ordering="4" serviceMetric="false" uid="628ab41d-fd45-4e68-ab46-52c75ab92604"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: hard resets" ordering="5" serviceMetric="false" uid="37dc00a0-b4e2-4e75-aab5-7341cdaf147f"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: WMI" ordering="7" serviceMetric="false" uid="f59a679d-6e18-42f4-96cb-f2c165920d33"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Storage: free space" ordering="8" serviceMetric="false" uid="dee81d9e-3429-48e6-bf5b-2476ee238500"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Storage: health" ordering="9" serviceMetric="false" uid="b6b34ae9-4b84-4efa-89ba-6b6a6d6ae3b2"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="System: OS" ordering="10" serviceMetric="false" uid="0b76011f-d92a-4a96-9069-d17993fc9461"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="System: screen" ordering="11" serviceMetric="false" uid="e0938dae-4747-4edc-a2d9-25af338b2228"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Startup: boot speed" ordering="12" serviceMetric="false" uid="a206ae5a-cac0-46a5-8bdd-0ed6aa351711"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Startup: logon speed" ordering="13" serviceMetric="false" uid="4d07bf14-6554-44e3-83fa-af4848bc3a18"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="d9ccc38f-d68c-470c-bdc5-54bbcc544680">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Model comparison">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="RATIO" displayVariation="false" label="Happy users" ordering="4" serviceMetric="false" uid="5c314f3d-0c42-4f47-bc97-c6e9763c3a54">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_1" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_3" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_2" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Respondents" ordering="5" serviceMetric="false" uid="d61f38e8-7a57-4d42-bb9d-f1ecef1ce5da">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_1" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_2" type="FIELD"/>
+               <fields name="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_3" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Endpoint performance: devices" ordering="6" serviceMetric="false" uid="12697b1f-6c91-45b1-8cce-7a82086cd375"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="7" serviceMetric="false" uid="ecc4ef19-d47d-485b-aa28-8e8d3016d526">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_4f582ee425cc41a689c21087c33962bb" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="Desktop model"/>
+             </rows>
+             <sortRowsBy type="BREAKDOWN" value="Desktop model"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="451d50cd-115f-4a24-990b-6652938cc011">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Would users prefer a laptop instead of their desktop?">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_d74f50ff81ce4ec5a1ab18596d0f0d20_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Desktop satisfaction - Device preference" ordering="0" serviceMetric="false" uid="b69458fe-735f-4ba2-810b-3f20513f3637"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="Here we can see a side-by-side comparison of the two most successful laptops of the laptop hardware trial." index="5" name="Devices: laptop finalists" uid="47d1c591-9e57-447c-be2c-2ab044ecfcbe">
+          <layout type="H">
+           <children>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="1f6747be-7a13-4bf6-af01-30206b223d16" minHeight="166" minWidth="174" type="kpiWidget" widgetID="1f6747be-7a13-4bf6-af01-30206b223d16">
+                <preferredHeight value="166"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="814db9b0-2245-454e-99d5-9abc3313b79f" minHeight="166" minWidth="174" type="kpiWidget" widgetID="814db9b0-2245-454e-99d5-9abc3313b79f">
+                <preferredHeight value="166"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+             </children>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="716f7608-a94b-4e27-bb86-38748732a779" minHeight="156" minWidth="300" type="barChartWidget" widgetID="716f7608-a94b-4e27-bb86-38748732a779">
+                  <preferredHeight value="156"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="aff0ca73-5139-402a-8bbd-00d349700421" minHeight="156" minWidth="300" type="barChartWidget" widgetID="aff0ca73-5139-402a-8bbd-00d349700421">
+                  <preferredHeight value="156"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="0440645a-9120-4fe5-8cee-a1c75fa63bd4" minHeight="156" minWidth="300" type="barChartWidget" widgetID="0440645a-9120-4fe5-8cee-a1c75fa63bd4">
+                    <preferredHeight value="156"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="49f92b10-a845-4bb5-9361-9ad7527dc757" minHeight="204" minWidth="300" type="barChartWidget" widgetID="49f92b10-a845-4bb5-9361-9ad7527dc757">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="H">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="67cbeda1-a14a-43b1-a62c-6759fdac4c6b" minHeight="156" minWidth="300" type="barChartWidget" widgetID="67cbeda1-a14a-43b1-a62c-6759fdac4c6b">
+                    <preferredHeight value="156"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="f032e8b6-90a0-4796-81d0-41d9bdcfc8ba" minHeight="204" minWidth="300" type="barChartWidget" widgetID="f032e8b6-90a0-4796-81d0-41d9bdcfc8ba">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="1f6747be-7a13-4bf6-af01-30206b223d16">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="Series 41 - Happy users">
+             <metrics>
+              <metric displayValue="RATIO" label="Happy users" ordering="0" serviceMetric="false" uid="9b7e4a6c-a0cf-4cc0-b7fc-ab5cbd44a70f"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="814db9b0-2245-454e-99d5-9abc3313b79f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="Series 42 - Happy users">
+             <metrics>
+              <metric displayValue="RATIO" label="Happy users" ordering="0" serviceMetric="false" uid="1fc5cbcc-c4a4-4d2c-a4ff-8db4b3992a3c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="716f7608-a94b-4e27-bb86-38748732a779">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Series 41 - Positive points">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Model 1- Positive points" ordering="0" serviceMetric="false" uid="3227a6f8-9a8d-4ba4-a8d6-135665242417"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="aff0ca73-5139-402a-8bbd-00d349700421">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Series 42 - Positive points">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Model 2 - Positive points" ordering="0" serviceMetric="false" uid="7610f628-5094-4ada-85ee-91ad1a60e64c"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0440645a-9120-4fe5-8cee-a1c75fa63bd4">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Series 41 - Negative points">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Model 1 - Negative points" ordering="0" serviceMetric="false" uid="c28e972e-eab6-4dfa-a1d9-02fe4e692754"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="49f92b10-a845-4bb5-9361-9ad7527dc757">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Series 41 - Performance">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Hardware: CPU" ordering="0" serviceMetric="false" uid="ee9b9ca2-353a-4fcb-bff6-834299e7f779"/>
+              <metric label="Hardware: disk throughput" ordering="1" serviceMetric="false" uid="1b38e2e8-ba6d-445b-bf0a-abba4d38093f"/>
+              <metric label="Hardware: memory" ordering="2" serviceMetric="false" uid="01df1df0-0e34-47bb-9c35-812b540ad0b6"/>
+              <metric label="Stability: BSOD" ordering="3" serviceMetric="false" uid="c80d413b-2718-4653-a14b-1e32979b104e"/>
+              <metric label="Stability: Hard resets" ordering="4" serviceMetric="false" uid="fb4a9a20-5a7b-46d5-bdbc-57f0c80023be"/>
+              <metric label="Stability: WMI" ordering="5" serviceMetric="false" uid="2ea10ece-324c-4b0f-be4d-980050af45b0"/>
+              <metric label="Startup: boot speed" ordering="6" serviceMetric="false" uid="64c9d27a-9075-41ed-95a9-2f3e2841ffef"/>
+              <metric label="Storage: free space" ordering="8" serviceMetric="false" uid="f5d3e8a6-314f-448d-b63b-375f92386dac"/>
+              <metric label="System: OS" ordering="10" serviceMetric="false" uid="8c9972e6-0c8a-4c91-8ec0-8620936afde4"/>
+              <metric label="System: screen" ordering="11" serviceMetric="false" uid="ba4280f9-df7a-4774-8e0d-ec26cb6eeb06"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="67cbeda1-a14a-43b1-a62c-6759fdac4c6b">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Series 42 - Negative points">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Model 2 - Negative points" ordering="0" serviceMetric="false" uid="4c801a45-784e-42ff-8cc8-8ce53b624756"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f032e8b6-90a0-4796-81d0-41d9bdcfc8ba">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Series 42 - Performance">
+             <groupBy type="metrics"/>
+             <metrics>
+              <metric label="Hardware: disk throughput" ordering="1" serviceMetric="false" uid="9d0d8b70-7d75-42f2-92af-abedf2408bbd"/>
+              <metric label="Hardware: memory" ordering="2" serviceMetric="false" uid="21a9039f-1ecf-413e-a917-33494adf1ab4"/>
+              <metric label="Stability: BSOD" ordering="3" serviceMetric="false" uid="833475ca-b014-429e-ab27-99c1c6a8076a"/>
+              <metric label="Stability: hard resets" ordering="4" serviceMetric="false" uid="50ec0985-c0bf-4068-805b-e49a35952656"/>
+              <metric label="Stability: WMI" ordering="5" serviceMetric="false" uid="7920df94-c656-4382-80db-1146953f1d9b"/>
+              <metric label="Startup: boot speed" ordering="6" serviceMetric="false" uid="baa3c27a-d010-4664-951a-a4dc612453f4"/>
+              <metric label="Storage: free space" ordering="8" serviceMetric="false" uid="cbff855d-2da3-469a-8dcd-7392b7c9e662"/>
+              <metric label="System: OS" ordering="10" serviceMetric="false" uid="00a9313e-1ea8-4c4e-b762-7fccb5ccc32e"/>
+              <metric label="Hardware: CPU" ordering="13" serviceMetric="false" uid="4686111b-546e-4b68-a47f-2acdc29cb7ee"/>
+              <metric label="System: screen" ordering="14" serviceMetric="false" uid="fdfad472-fe39-430d-b5ee-7a91d643d909"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Laptop satisfaction&#13;&#10;This dashboard presents information about overall laptop satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Overall speed&#13;&#10;* Stability: whether it crashes&#13;&#10;* Size&#13;&#10;* Noise level&#13;&#10;* Weight&#13;&#10;* Battery life&#13;&#10;* Storage&#13;&#10;* OS&#13;&#10;* Startup time&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Hardware resources&#13;&#10;* Stability&#13;&#10;* Startup&#13;&#10;* Storage&#13;&#10;* System&#13;&#10;&#13;&#10;:::tip&#13;&#10;The second part of the dashboard allows you to understand which laptop models are most popular.&#13;&#10;:::&#13;&#10;&#13;&#10;:::configuration&#13;&#10;Edit device category [Laptop Model](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Laptop%20model&amp;Type=device) to define the breakdown for the model comparison.&#13;&#10;:::" index="4" name="Devices: laptops" uid="13f39fe6-6547-4372-ad23-f72d1f2efbbb">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d7e630fd-2e86-4cc9-9ad2-815ab71d8aa8" minHeight="126" minWidth="934" type="kpiWidget" widgetID="d7e630fd-2e86-4cc9-9ad2-815ab71d8aa8">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="934"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="3082ddee-e8a6-489a-9afe-50c6188c2adc" minHeight="204" minWidth="300" type="barChartWidget" widgetID="3082ddee-e8a6-489a-9afe-50c6188c2adc">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="f538e4c4-8381-4386-92e2-303254b30d22" minHeight="204" minWidth="300" type="barChartWidget" widgetID="f538e4c4-8381-4386-92e2-303254b30d22">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="d9278e8b-90b1-453d-a1d0-395c5f90d7a9" minHeight="324" minWidth="300" type="barChartWidget" widgetID="d9278e8b-90b1-453d-a1d0-395c5f90d7a9">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="eea7fd66-83a3-40f0-be44-0f3e612a1844" minHeight="324" minWidth="300" type="barChartWidget" widgetID="eea7fd66-83a3-40f0-be44-0f3e612a1844">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="892a47fe-f88d-4e4e-af8d-0586ac452233" minHeight="401" minWidth="324" type="tableWidget" widgetID="892a47fe-f88d-4e4e-af8d-0586ac452233">
+                  <preferredHeight value="401"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="8c91bb50-7d45-4490-9ed9-1be84c6e3afe" minHeight="233" minWidth="774" type="tableWidget" widgetID="8c91bb50-7d45-4490-9ed9-1be84c6e3afe">
+                <preferredHeight value="233"/>
+                <preferredWidth value="774"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="17be8660-bcb6-41ed-bdad-be260d2792c0" minHeight="156" minWidth="300" type="barChartWidget" widgetID="17be8660-bcb6-41ed-bdad-be260d2792c0">
+                <preferredHeight value="156"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="d7e630fd-2e86-4cc9-9ad2-815ab71d8aa8">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="33f58f40-639a-4920-96cb-9ec404c05887"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="823bc117-8ecf-430c-8672-be8252b963a5"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="069b7b99-ff42-4cf9-9665-46d6602b8439"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total repondents" ordering="6" serviceMetric="false" uid="069b7b99-ff42-4cf9-9665-46d6602b8439"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: devices" ordering="7" serviceMetric="false" uid="3c68a180-35e1-46df-88df-d532cc63fb83"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3082ddee-e8a6-489a-9afe-50c6188c2adc">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Laptop satisfaction - Average satisfaction" ordering="0" serviceMetric="false" uid="33f58f40-639a-4920-96cb-9ec404c05887"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_26f8920c235a47a0ba07118b5d2c0c54_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f538e4c4-8381-4386-92e2-303254b30d22">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="ee45326d-f1d5-42e6-96c0-629ff37e681e"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_26f8920c235a47a0ba07118b5d2c0c54_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d9278e8b-90b1-453d-a1d0-395c5f90d7a9">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Positive points" ordering="0" serviceMetric="false" uid="6e0b838e-032e-4d99-8600-52f5603ac332"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="eea7fd66-83a3-40f0-be44-0f3e612a1844">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Negative points" ordering="0" serviceMetric="false" uid="2a27c727-681a-4553-9a9a-78bd347f606b"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="892a47fe-f88d-4e4e-af8d-0586ac452233">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="15" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="HW: CPU" ordering="14" serviceMetric="false" uid="82ebd53f-a2f9-49aa-9fd1-23b81dfd37d1"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="HW: disk throughput" ordering="15" serviceMetric="false" uid="df639fe4-6237-430f-b166-0d5d1d0165de"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="HW: memory" ordering="16" serviceMetric="false" uid="0e18a486-abce-48ee-956c-293054dd3a02"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: BSOD" ordering="17" serviceMetric="false" uid="a8db1a5c-729f-41ec-9af0-3cee03b15633"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: hard resets" ordering="18" serviceMetric="false" uid="f920c838-78ea-4344-b141-fa90cea177bf"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: WMI" ordering="19" serviceMetric="false" uid="c0e24ca4-e408-4ba6-96aa-233bc6755dfc"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Startup: boot speed" ordering="20" serviceMetric="false" uid="746ce3a2-1550-4fb7-b49b-1471656be22a"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Startup: logon speed" ordering="21" serviceMetric="false" uid="5b28dd10-87d2-4d16-8658-27ae45ca6ced"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Storage: free space" ordering="22" serviceMetric="false" uid="1d90f84c-4415-4c0c-a8fc-0f25ab8939c9"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Storage: health" ordering="23" serviceMetric="false" uid="4ed69e32-1a03-4c70-a004-fc370ce6199a"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="System: OS" ordering="24" serviceMetric="false" uid="333a966f-2b17-469b-bf1a-04af86990911"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="System: screen" ordering="25" serviceMetric="false" uid="e0e0c8ad-8b7c-45c3-b8d4-812aebddfed0"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="8c91bb50-7d45-4490-9ed9-1be84c6e3afe">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Model comparison">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="RATIO" displayVariation="false" label="Happy users" ordering="3" serviceMetric="false" uid="a40ef57a-c5c6-4b9f-9f2e-1fd11b549f65">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_1" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_3" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_2" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Respondents" ordering="4" serviceMetric="false" uid="db29e4a3-b045-451b-96da-14aa03bfe27e">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_1" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_2" type="FIELD"/>
+               <fields name="euf_26f8920c235a47a0ba07118b5d2c0c54_3" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Endpoint performance: devices" ordering="5" serviceMetric="false" uid="480f1183-991d-43bb-9532-a7dbed0296f6"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of devices" ordering="6" serviceMetric="false" uid="6628fd3b-7566-4a25-8825-abafcafccb2a">
+               <fields name="name" type="FIELD"/>
+               <fields name="score_4f582ee425cc41a689c21087c33962bb" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="source" type="CATEGORY" value="Laptop model"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="a40ef57a-c5c6-4b9f-9f2e-1fd11b549f65_3"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="17be8660-bcb6-41ed-bdad-be260d2792c0">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Would user prefer a desktop instead of their laptop?">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_26f8920c235a47a0ba07118b5d2c0c54_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Laptop satisfaction - Device preference" ordering="0" serviceMetric="false" uid="b61a6485-9c69-4a61-87a9-84a93257b339"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="6" name="Devices: mobiles" uid="e7645d19-8ce6-4b44-9609-398d3562e6b5">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="00ebbf53-0b13-4ab1-9052-aa75f62699c1" minHeight="126" minWidth="744" type="kpiWidget" widgetID="00ebbf53-0b13-4ab1-9052-aa75f62699c1">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="744"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6059c5c0-dd5f-4094-8955-cdeec41f2d02" minHeight="156" minWidth="300" type="barChartWidget" widgetID="6059c5c0-dd5f-4094-8955-cdeec41f2d02">
+                    <preferredHeight value="156"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="a22384c2-c7c4-499c-97ad-a08433a8d0a9" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a22384c2-c7c4-499c-97ad-a08433a8d0a9">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="0f911d23-c06d-427b-85b6-afe5575377ef" minHeight="324" minWidth="300" type="barChartWidget" widgetID="0f911d23-c06d-427b-85b6-afe5575377ef">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="8ef42804-b2a9-4292-ab32-2f2455bba463" minHeight="324" minWidth="300" type="barChartWidget" widgetID="8ef42804-b2a9-4292-ab32-2f2455bba463">
+                  <preferredHeight value="324"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="9e1e2554-78e8-4285-a8d1-aef82c75fa43" minHeight="353" minWidth="474" type="tableWidget" widgetID="9e1e2554-78e8-4285-a8d1-aef82c75fa43">
+                <preferredHeight value="353"/>
+                <preferredWidth value="474"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="ffa35a74-24db-48e3-8eba-6585bf9b8b93" minHeight="353" minWidth="324" type="tableWidget" widgetID="ffa35a74-24db-48e3-8eba-6585bf9b8b93">
+                <preferredHeight value="353"/>
+                <preferredWidth value="324"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="00ebbf53-0b13-4ab1-9052-aa75f62699c1">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="false" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="2" serviceMetric="false" uid="5cfd48af-de47-417a-945b-ca9b1840d9cf"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Happy users" ordering="3" serviceMetric="false" uid="a07852f4-4096-47c5-9ba8-a0e18cefc8cc"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="4" serviceMetric="false" uid="e7bc8c46-9f36-4704-a6bc-93ed0132664a"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="5" serviceMetric="false" uid="e7bc8c46-9f36-4704-a6bc-93ed0132664a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="6059c5c0-dd5f-4094-8955-cdeec41f2d02">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="3" sortByOrder="DESC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Mobile satisfaction - Average Satisfaction" ordering="1" serviceMetric="false" uid="5cfd48af-de47-417a-945b-ca9b1840d9cf"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_c58351ca187a4fd2bf3015541080a2a6_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a22384c2-c7c4-499c-97ad-a08433a8d0a9">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c58351ca187a4fd2bf3015541080a2a6_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Mobile satisfaction - Satisfaction breakdown" ordering="0" serviceMetric="false" uid="f4b2eac3-1e61-43f5-b34e-3bcf97a951c7"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0f911d23-c06d-427b-85b6-afe5575377ef">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c58351ca187a4fd2bf3015541080a2a6_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Mobile satisfaction - Positive points" ordering="0" serviceMetric="false" uid="3f920884-d353-4448-a7a0-92ed8383c0a3"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8ef42804-b2a9-4292-ab32-2f2455bba463">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c58351ca187a4fd2bf3015541080a2a6_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Negative points" ordering="0" serviceMetric="false" uid="a9d61728-5dfa-4749-b4d9-302f4c948e1c"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="ratio" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="9e1e2554-78e8-4285-a8d1-aef82c75fa43">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="Model comparison">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Happy users" ordering="0" serviceMetric="false" uid="3b45c0cf-9785-404b-b4d0-43e19c7c0e21">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_c58351ca187a4fd2bf3015541080a2a6_1" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Respondents" ordering="1" serviceMetric="false" uid="66f27977-be82-41d9-b76d-b9e5eec057e3">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_c58351ca187a4fd2bf3015541080a2a6_1" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="user" type="FIELD" value="euf_c58351ca187a4fd2bf3015541080a2a6_4"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="66f27977-be82-41d9-b76d-b9e5eec057e3_1"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ffa35a74-24db-48e3-8eba-6585bf9b8b93">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="DESC" tableKind="STANDARD" title="What users do for business with their mobile device">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Mobile satisfaction - Business usage" ordering="0" serviceMetric="false" uid="edaf783a-be9b-4940-ba3a-6f08c2f7e90e">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_c58351ca187a4fd2bf3015541080a2a6_1" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="user" type="FIELD" value="euf_c58351ca187a4fd2bf3015541080a2a6_5"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="edaf783a-be9b-4940-ba3a-6f08c2f7e90e_0"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# IT documentation satisfaction&#13;&#10;This dashboard presents information about overall IT documentation satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Ease to find&#13;&#10;* Ease to undertand&#13;&#10;* Helpfulness" index="15" name="IT team: documentation" uid="0d1fb2c2-01c9-4ce4-b514-0b0849357676">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="b1956f87-2f30-4017-b573-9fea0113ca6d" minHeight="126" minWidth="744" type="kpiWidget" widgetID="b1956f87-2f30-4017-b573-9fea0113ca6d">
+              <preferredHeight value="126"/>
+              <preferredWidth value="744"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="8875046f-0fed-4deb-8eae-a52a9bf4ce13" minHeight="228" minWidth="300" type="barChartWidget" widgetID="8875046f-0fed-4deb-8eae-a52a9bf4ce13">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="160066a6-fa28-4e5d-b011-96a1085ea781" minHeight="228" minWidth="300" type="barChartWidget" widgetID="160066a6-fa28-4e5d-b011-96a1085ea781">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="84d664d2-8ffc-42bf-834d-4a967dfab44e" minHeight="204" minWidth="300" type="barChartWidget" widgetID="84d664d2-8ffc-42bf-834d-4a967dfab44e">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="a3854f46-af36-49f3-b0a9-264d31ef1c31" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a3854f46-af36-49f3-b0a9-264d31ef1c31">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="b1956f87-2f30-4017-b573-9fea0113ca6d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="67ca8547-f22b-4c45-a452-68e2437c8915"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="1bab72cb-2ce5-46a5-88f7-13258ac4e96f"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="7a4cefc8-42c5-4678-abae-f04cab18e614"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="7a4cefc8-42c5-4678-abae-f04cab18e614"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8875046f-0fed-4deb-8eae-a52a9bf4ce13">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="6" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="IT documentation satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="67ca8547-f22b-4c45-a452-68e2437c8915"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_24c7700f6e3b4593b594ff166cab5e6a_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="160066a6-fa28-4e5d-b011-96a1085ea781">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Happiness breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_24c7700f6e3b4593b594ff166cab5e6a_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT documentation satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="de59d531-aa1d-46e2-b9a1-81db3e1e24b4"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_24c7700f6e3b4593b594ff166cab5e6a_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="84d664d2-8ffc-42bf-834d-4a967dfab44e">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_24c7700f6e3b4593b594ff166cab5e6a_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT documentation satisfaction - Positive points" ordering="0" serviceMetric="false" uid="fbafd4d5-1107-43be-9f6c-481dc0330f05"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a3854f46-af36-49f3-b0a9-264d31ef1c31">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_24c7700f6e3b4593b594ff166cab5e6a_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT documentation satisfaction - Negative points" ordering="0" serviceMetric="false" uid="8e4cb629-85d6-42ac-b94f-bafbfb69ae90"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# IT help desk satisfaction&#13;&#10;This dashboard presents information about overall IT help desk satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Efficiency&#13;&#10;* Speed&#13;&#10;* Friendliness&#13;&#10;* Understandibility: capacity to be understood by users&#13;&#10;* Understanding: capacity to understand users' issues" index="14" name="IT team: help desk" uid="0ec52e8d-948a-4cad-a78c-a68c2c18f84e">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="11a435b3-ab55-4131-b842-9178f1e186c4" minHeight="126" minWidth="744" type="kpiWidget" widgetID="11a435b3-ab55-4131-b842-9178f1e186c4">
+              <preferredHeight value="126"/>
+              <preferredWidth value="744"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="f09c99a1-1e3c-449e-b681-af966fc89d7e" minHeight="204" minWidth="300" type="barChartWidget" widgetID="f09c99a1-1e3c-449e-b681-af966fc89d7e">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="d733b7e0-0695-486a-891b-c73169094453" minHeight="228" minWidth="300" type="barChartWidget" widgetID="d733b7e0-0695-486a-891b-c73169094453">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="915dab14-ac49-4e54-9937-0ace4fd801cc" minHeight="204" minWidth="300" type="barChartWidget" widgetID="915dab14-ac49-4e54-9937-0ace4fd801cc">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="5ecc56fc-85d0-41f1-8307-6bd7daff0339" minHeight="204" minWidth="300" type="barChartWidget" widgetID="5ecc56fc-85d0-41f1-8307-6bd7daff0339">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="0cb8f33b-bd57-4b5f-94e4-ffeeb35ee250" minHeight="324" minWidth="300" type="barChartWidget" widgetID="0cb8f33b-bd57-4b5f-94e4-ffeeb35ee250">
+                    <preferredHeight value="324"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="11a435b3-ab55-4131-b842-9178f1e186c4">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="93a13b7a-4c99-4b91-8ab6-f576d38133c5"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="c9b7ae8a-161a-472a-8cb8-abaab706d161"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="d48b75ee-aaa1-4c2c-af8a-4f37efb8aaf9"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="d48b75ee-aaa1-4c2c-af8a-4f37efb8aaf9"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="f09c99a1-1e3c-449e-b681-af966fc89d7e">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="IT help desk satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="93a13b7a-4c99-4b91-8ab6-f576d38133c5"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_c10a204d5bae408e9b72d75f5cd1eef0_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d733b7e0-0695-486a-891b-c73169094453">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c10a204d5bae408e9b72d75f5cd1eef0_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT help desk satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="bfa33bf6-4308-4ef9-84da-450d000acf2a"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_c10a204d5bae408e9b72d75f5cd1eef0_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="915dab14-ac49-4e54-9937-0ace4fd801cc">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c10a204d5bae408e9b72d75f5cd1eef0_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT help desk satisfaction - Positive points" ordering="0" serviceMetric="false" uid="2c97b87b-4c83-438f-9032-5797d2e7d313"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5ecc56fc-85d0-41f1-8307-6bd7daff0339">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c10a204d5bae408e9b72d75f5cd1eef0_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT help desk satisfaction - Negative points" ordering="0" serviceMetric="false" uid="d1d80167-09ce-40dc-b9c6-62e37911437f"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0cb8f33b-bd57-4b5f-94e4-ffeeb35ee250">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="10" sortByOrder="DESC" threshold="false" title="What users do when they have a problem">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_c10a204d5bae408e9b72d75f5cd1eef0_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="IT help desk satisfaction - Actions" ordering="0" serviceMetric="false" uid="43856aad-78b3-46a5-ba4e-0afce02a378d"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Meeting rooms satisfaction&#13;&#10;This dashboard presents information about overall meeting rooms satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Availability&#13;&#10;* Distance&#13;&#10;* Capacity&#13;&#10;* A/V equipment" index="13" name="Infra: meeting rooms" uid="6d88f581-18b6-4823-94ba-37d7066b30ee">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="f9d4da09-ae79-47bb-9829-9b144e23f13d" minHeight="126" minWidth="744" type="kpiWidget" widgetID="f9d4da09-ae79-47bb-9829-9b144e23f13d">
+              <preferredHeight value="126"/>
+              <preferredWidth value="744"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d476d9c1-626e-44f1-8cc0-47752da76747" minHeight="204" minWidth="300" type="barChartWidget" widgetID="d476d9c1-626e-44f1-8cc0-47752da76747">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="28662d90-9264-4806-81e1-e494e5902c2a" minHeight="228" minWidth="300" type="barChartWidget" widgetID="28662d90-9264-4806-81e1-e494e5902c2a">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="122cbf23-370c-491e-bc6b-ac759fb115e7" minHeight="204" minWidth="300" type="barChartWidget" widgetID="122cbf23-370c-491e-bc6b-ac759fb115e7">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b32b1eaf-7a1b-4b79-a093-bb0cebaecff5" minHeight="204" minWidth="300" type="barChartWidget" widgetID="b32b1eaf-7a1b-4b79-a093-bb0cebaecff5">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="f9d4da09-ae79-47bb-9829-9b144e23f13d">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="e7380734-2ab0-467c-b87c-feec05ec32b0"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="7d6e8b68-dc38-4eba-83c6-f906f1f5187e"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="92edd542-16ad-4506-88c0-3f77a4090e85"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="92edd542-16ad-4506-88c0-3f77a4090e85"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d476d9c1-626e-44f1-8cc0-47752da76747">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Meeting rooms satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="e7380734-2ab0-467c-b87c-feec05ec32b0"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_0721446e8eb3443d9edbe9405ff3d758_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="28662d90-9264-4806-81e1-e494e5902c2a">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_0721446e8eb3443d9edbe9405ff3d758_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Meeting rooms satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="1878215e-d8a9-4ad5-ad6e-6728282bbef6"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_0721446e8eb3443d9edbe9405ff3d758_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="122cbf23-370c-491e-bc6b-ac759fb115e7">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_0721446e8eb3443d9edbe9405ff3d758_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Meeting rooms satisfaction - Positive points" ordering="0" serviceMetric="false" uid="4a066662-9867-435c-91b4-b037e9bfe30e"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b32b1eaf-7a1b-4b79-a093-bb0cebaecff5">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_0721446e8eb3443d9edbe9405ff3d758_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Meeting rooms satisfaction - Negative points" ordering="0" serviceMetric="false" uid="96b198ab-7a23-4b04-a6b3-2a124b3980e5"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Network satisfaction&#13;&#10;This dashboard presents information about overall network satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Overall speed&#13;&#10;* Wi-Fi: coverage, reliability and accessibility with private devices&#13;&#10;* Connectivity&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Ethernet/Wifi connectivity&#13;&#10;* Ethernet/Wifi response time" index="11" name="Infra: network" uid="344db7cc-929f-42c1-8109-b5c7b47476ba">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="200fe980-bc7d-4326-ba86-10cfcb25dc0b" minHeight="126" minWidth="934" type="kpiWidget" widgetID="200fe980-bc7d-4326-ba86-10cfcb25dc0b">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="934"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6ff0147b-31b2-4f95-88c9-6e45e5b3b6af" minHeight="204" minWidth="300" type="barChartWidget" widgetID="6ff0147b-31b2-4f95-88c9-6e45e5b3b6af">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="c36fab75-75d7-46d5-bf5a-2278636ee65a" minHeight="228" minWidth="300" type="barChartWidget" widgetID="c36fab75-75d7-46d5-bf5a-2278636ee65a">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="1b9576ee-f62a-4c8a-97d4-e2987b6268ed" minHeight="204" minWidth="300" type="barChartWidget" widgetID="1b9576ee-f62a-4c8a-97d4-e2987b6268ed">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="251b5167-027b-4608-8355-52bd87ecf53d" minHeight="204" minWidth="300" type="barChartWidget" widgetID="251b5167-027b-4608-8355-52bd87ecf53d">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="05efefc8-04fb-4348-ae9a-1a059d9aa6e2" minHeight="209" minWidth="324" type="tableWidget" widgetID="05efefc8-04fb-4348-ae9a-1a059d9aa6e2">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="L">
+             <children/>
+             <data id="be62177e-0e40-49b3-a289-d884a00008f9" minHeight="353" minWidth="774" type="tableWidget" widgetID="be62177e-0e40-49b3-a289-d884a00008f9">
+              <preferredHeight value="353"/>
+              <preferredWidth value="924"/>
+             </data>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="200fe980-bc7d-4326-ba86-10cfcb25dc0b">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="b45ec98d-3fc4-44f3-bfc9-b22babed8017"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="8" serviceMetric="false" uid="a74c185d-aef6-4693-ba67-bc36fc37640b"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="9" serviceMetric="false" uid="e13c3943-fa99-4af9-a047-5383460b1723"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="10" serviceMetric="false" uid="e13c3943-fa99-4af9-a047-5383460b1723"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: infrastructure" ordering="11" serviceMetric="false" uid="745dcc71-69d1-4644-96f2-8ef18b301d95"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="6ff0147b-31b2-4f95-88c9-6e45e5b3b6af">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Network satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="b45ec98d-3fc4-44f3-bfc9-b22babed8017"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_832a30af0fe747aa81d47a63d9029860_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c36fab75-75d7-46d5-bf5a-2278636ee65a">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_832a30af0fe747aa81d47a63d9029860_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Network satisfaction - Satisfaction breakdown" ordering="0" serviceMetric="false" uid="658132f2-fe3f-4cb4-8c3a-262bb9792cb8"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_832a30af0fe747aa81d47a63d9029860_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="1b9576ee-f62a-4c8a-97d4-e2987b6268ed">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_832a30af0fe747aa81d47a63d9029860_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Network satisfaction - Positive points" ordering="0" serviceMetric="false" uid="0cd41e6c-d851-4f75-bcd5-d4c4a54df2cb"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="251b5167-027b-4608-8355-52bd87ecf53d">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_832a30af0fe747aa81d47a63d9029860_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Network satisfaction - Negative points" ordering="0" serviceMetric="false" uid="2cb1c7eb-1181-4614-9301-8de59980831e"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="05efefc8-04fb-4348-ae9a-1a059d9aa6e2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Ethernet: connectivity" ordering="1" serviceMetric="false" uid="965301b9-fed7-429e-8914-ed3a232d623b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Ethernet: response time" ordering="2" serviceMetric="false" uid="f5ef481c-d561-49bb-bf2d-80b7b18b67a3"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Wifi: connectivity" ordering="3" serviceMetric="false" uid="416eb799-bf50-482e-abd9-0fa11d59c9bb"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Wifi: response time" ordering="4" serviceMetric="false" uid="6be1bde8-c191-4c4f-8ce3-3ee81972704f"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="be62177e-0e40-49b3-a289-d884a00008f9">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="Location comparison">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Satisfaction" ordering="0" serviceMetric="false" uid="b45ec98d-3fc4-44f3-bfc9-b22babed8017"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Ethernet: connectivity" ordering="1" serviceMetric="false" uid="965301b9-fed7-429e-8914-ed3a232d623b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Ethernet: response time" ordering="2" serviceMetric="false" uid="f5ef481c-d561-49bb-bf2d-80b7b18b67a3"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Wifi: connectivity" ordering="3" serviceMetric="false" uid="416eb799-bf50-482e-abd9-0fa11d59c9bb"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Wifi: response time" ordering="4" serviceMetric="false" uid="6be1bde8-c191-4c4f-8ce3-3ee81972704f"/>
+             </metrics>
+             <rows option="HIERARCHY"/>
+             <sortRowsBy type="HIERARCHY" value="hierarchy"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Printing satisfaction&#13;&#10;This dashboard presents information about overall printing satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Ease of use&#13;&#10;* Overall reliability&#13;&#10;* Overall speed&#13;&#10;* Quality&#13;&#10;* Distance to printer" index="12" name="Infra: printing" uid="b443bfb1-d983-4402-bb9b-b514f6a6e8b9">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="b4cd6549-b312-42cb-ab8a-76d7a1bfdb27" minHeight="126" minWidth="744" type="kpiWidget" widgetID="b4cd6549-b312-42cb-ab8a-76d7a1bfdb27">
+                <preferredHeight value="126"/>
+                <preferredWidth value="744"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="d2ee24af-edf3-44ab-a781-91a9c916aa30" minHeight="204" minWidth="300" type="barChartWidget" widgetID="d2ee24af-edf3-44ab-a781-91a9c916aa30">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="4480ef9b-6444-4018-bee8-85b88aca9e70" minHeight="228" minWidth="300" type="barChartWidget" widgetID="4480ef9b-6444-4018-bee8-85b88aca9e70">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="63b562c9-8418-4612-97e9-8a967b3a4992" minHeight="204" minWidth="300" type="barChartWidget" widgetID="63b562c9-8418-4612-97e9-8a967b3a4992">
+                <preferredHeight value="204"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="18a0a3b7-4f46-4dd3-ba6b-8426dc84bbd7" minHeight="204" minWidth="300" type="barChartWidget" widgetID="18a0a3b7-4f46-4dd3-ba6b-8426dc84bbd7">
+                <preferredHeight value="204"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="b4cd6549-b312-42cb-ab8a-76d7a1bfdb27">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="84723bed-fe0b-44b2-8e54-be7c2609f94d"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="73103d03-b2e4-40cf-8123-093d4ad4935d"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="d97a74d5-0265-46f6-957e-665fc5658bca"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="d97a74d5-0265-46f6-957e-665fc5658bca"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="d2ee24af-edf3-44ab-a781-91a9c916aa30">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Printing satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="84723bed-fe0b-44b2-8e54-be7c2609f94d"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_1f3457e549de4e0eb49921cf8a133992_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4480ef9b-6444-4018-bee8-85b88aca9e70">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1f3457e549de4e0eb49921cf8a133992_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Printing satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="5135c16f-ba3a-42d4-bddf-bd7ecd85d753"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_1f3457e549de4e0eb49921cf8a133992_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="63b562c9-8418-4612-97e9-8a967b3a4992">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1f3457e549de4e0eb49921cf8a133992_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Printing satisfaction - Positive points" ordering="0" serviceMetric="false" uid="3edf8198-998a-415f-8f99-19a4ddbb1ab9"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="18a0a3b7-4f46-4dd3-ba6b-8426dc84bbd7">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users are complaining about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1f3457e549de4e0eb49921cf8a133992_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Printing satisfaction - Negative points" ordering="0" serviceMetric="false" uid="6961816a-209e-47b4-ac9c-4104683a32f9"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="1" name="Overview" uid="a230a032-b228-4268-a474-fa7680f7328a">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="H">
+                 <children>
+                  <child type="H">
+                   <children>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="613a4fcb-66ce-445b-ba32-f126f731b9e7" minHeight="126" minWidth="174" type="kpiWidget" widgetID="613a4fcb-66ce-445b-ba32-f126f731b9e7">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="174"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="4b6a896d-849b-4c7b-9dbb-bed3f37e91fe" minHeight="126" minWidth="174" type="kpiWidget" widgetID="4b6a896d-849b-4c7b-9dbb-bed3f37e91fe">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="174"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="19e24942-bb34-4a58-8235-ebc18b4672d0" minHeight="212" minWidth="300" type="barChartWidget" widgetID="19e24942-bb34-4a58-8235-ebc18b4672d0">
+                        <preferredHeight value="212"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="c6624557-bd54-4269-813e-e79ba5fc5552" minHeight="212" minWidth="300" type="barChartWidget" widgetID="c6624557-bd54-4269-813e-e79ba5fc5552">
+                        <preferredHeight value="212"/>
+                        <preferredWidth value="599"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="V">
+                     <children>
+                      <child type="V">
+                       <children>
+                        <child type="L">
+                         <children/>
+                         <data id="f5c6a688-eb14-4edd-afaf-e14a7a15f981" minHeight="126" minWidth="174" type="kpiWidget" widgetID="f5c6a688-eb14-4edd-afaf-e14a7a15f981">
+                          <preferredHeight value="126"/>
+                          <preferredWidth value="174"/>
+                         </data>
+                        </child>
+                        <child type="L">
+                         <children/>
+                         <data id="8aa20201-22e5-4a3a-a83f-7507c263f990" minHeight="145" minWidth="324" type="tableWidget" widgetID="8aa20201-22e5-4a3a-a83f-7507c263f990">
+                          <preferredHeight value="145"/>
+                          <preferredWidth value="324"/>
+                         </data>
+                        </child>
+                       </children>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="78a20358-c6c1-4567-968c-83eb8ebde726" minHeight="126" minWidth="174" type="kpiWidget" widgetID="78a20358-c6c1-4567-968c-83eb8ebde726">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="174"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="f1937ba5-3b6d-416a-b27c-2231bf10bdd2" minHeight="169" minWidth="324" type="tableWidget" widgetID="f1937ba5-3b6d-416a-b27c-2231bf10bdd2">
+                      <preferredHeight value="169"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="f8d1db19-1076-4c57-a764-5f40e2535a0f" minHeight="126" minWidth="174" type="kpiWidget" widgetID="f8d1db19-1076-4c57-a764-5f40e2535a0f">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                    <child type="V">
+                     <children>
+                      <child type="L">
+                       <children/>
+                       <data id="ad9832a6-21dd-443e-a2cc-b589cba3a8ad" minHeight="169" minWidth="324" type="tableWidget" widgetID="ad9832a6-21dd-443e-a2cc-b589cba3a8ad">
+                        <preferredHeight value="169"/>
+                        <preferredWidth value="324"/>
+                       </data>
+                      </child>
+                      <child type="L">
+                       <children/>
+                       <data id="cfc26f80-bf0c-421d-b2cc-d546d356e810" minHeight="126" minWidth="174" type="kpiWidget" widgetID="cfc26f80-bf0c-421d-b2cc-d546d356e810">
+                        <preferredHeight value="126"/>
+                        <preferredWidth value="174"/>
+                       </data>
+                      </child>
+                     </children>
+                    </child>
+                   </children>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="cbcf0613-ed5b-4564-b190-a9d735684976" minHeight="169" minWidth="324" type="tableWidget" widgetID="cbcf0613-ed5b-4564-b190-a9d735684976">
+                    <preferredHeight value="169"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="85ee1534-36a8-497f-a63a-c10e26e578ab" minHeight="126" minWidth="174" type="kpiWidget" widgetID="85ee1534-36a8-497f-a63a-c10e26e578ab">
+                    <preferredHeight value="126"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="c24c7f00-fc3b-4fde-af81-b22aa3116798" minHeight="145" minWidth="324" type="tableWidget" widgetID="c24c7f00-fc3b-4fde-af81-b22aa3116798">
+                      <preferredHeight value="145"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="c80047c2-4a52-49d8-8d0a-b67bcedbc965" minHeight="126" minWidth="174" type="kpiWidget" widgetID="c80047c2-4a52-49d8-8d0a-b67bcedbc965">
+                      <preferredHeight value="126"/>
+                      <preferredWidth value="174"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b27f1ecd-f425-489f-9276-d346992e9dac" minHeight="121" minWidth="324" type="tableWidget" widgetID="b27f1ecd-f425-489f-9276-d346992e9dac">
+                  <preferredHeight value="121"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="3c7cc124-d1c7-42e3-9108-80f5c7e68c06" minHeight="126" minWidth="174" type="kpiWidget" widgetID="3c7cc124-d1c7-42e3-9108-80f5c7e68c06">
+                <preferredHeight value="126"/>
+                <preferredWidth value="174"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="c9fba55b-96c6-4d27-803c-ea829f096b07" minHeight="121" minWidth="324" type="tableWidget" widgetID="c9fba55b-96c6-4d27-803c-ea829f096b07">
+                  <preferredHeight value="121"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="6b3ccec9-54d3-414b-a305-5b97f4113743" minHeight="126" minWidth="174" type="kpiWidget" widgetID="6b3ccec9-54d3-414b-a305-5b97f4113743">
+                    <preferredHeight value="126"/>
+                    <preferredWidth value="174"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="786c6ea2-d025-4ae2-b97b-699def5f21d2" minHeight="121" minWidth="324" type="tableWidget" widgetID="786c6ea2-d025-4ae2-b97b-699def5f21d2">
+                    <preferredHeight value="121"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="613a4fcb-66ce-445b-ba32-f126f731b9e7">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="End-user satisfaction index" ordering="0" serviceMetric="false" uid="43814a98-b758-4461-bebd-cc434e1f0f60"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="KPI" uid="4b6a896d-849b-4c7b-9dbb-bed3f37e91fe">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance index" ordering="0" serviceMetric="false" uid="4660c172-ba36-4469-a198-6882593ba5fd"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="19e24942-bb34-4a58-8235-ebc18b4672d0">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="End-user satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="End-user satisfaction index: overall" ordering="0" serviceMetric="false" uid="43814a98-b758-4461-bebd-cc434e1f0f60"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="c6624557-bd54-4269-813e-e79ba5fc5552">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Endpoint performance by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Endpoint performance index: overall" ordering="0" serviceMetric="false" uid="4660c172-ba36-4469-a198-6882593ba5fd"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="float" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="KPI" uid="f5c6a688-eb14-4edd-afaf-e14a7a15f981">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices" ordering="0" serviceMetric="false" uid="dff046f8-b664-4fd7-8741-85e6681d3226"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="8aa20201-22e5-4a3a-a83f-7507c263f990">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Desktop" ordering="6" serviceMetric="false" uid="0d735514-6686-4eaf-a29f-5d36872b3477"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Laptop" ordering="7" serviceMetric="false" uid="33f58f40-639a-4920-96cb-9ec404c05887"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Mobile" ordering="8" serviceMetric="false" uid="5cfd48af-de47-417a-945b-ca9b1840d9cf"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="78a20358-c6c1-4567-968c-83eb8ebde726">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Devices" ordering="0" serviceMetric="false" uid="3c68a180-35e1-46df-88df-d532cc63fb83"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="f1937ba5-3b6d-416a-b27c-2231bf10bdd2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Hardware resources" ordering="0" serviceMetric="false" uid="8c9431a5-3d90-4518-b721-76b935d9844e"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability" ordering="1" serviceMetric="false" uid="eaaef9c0-3f36-494e-b656-665926e86c21"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Storage" ordering="2" serviceMetric="false" uid="6eab4483-e6ce-4621-b12b-f8aa156e364b"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="System" ordering="3" serviceMetric="false" uid="9251d486-290e-4ad6-bda7-73efb422af06"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="f8d1db19-1076-4c57-a764-5f40e2535a0f">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Services" ordering="0" serviceMetric="false" uid="cb159de7-95a0-4e39-9d01-01a76b805725"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="ad9832a6-21dd-443e-a2cc-b589cba3a8ad">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Email" ordering="8" serviceMetric="false" uid="4ad42426-6683-4d52-b906-481f0492a5c5"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="SMB" ordering="9" serviceMetric="false" uid="47d07d60-a582-4fc9-b5c4-109bd8dcb101"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Software" ordering="10" serviceMetric="false" uid="02e83d2e-9f92-4d45-b75e-2241091ce291"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Unified communication" ordering="11" serviceMetric="false" uid="63abc6d7-a1f3-4204-9d61-55f7437aee2b"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="cfc26f80-bf0c-421d-b2cc-d546d356e810">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Services" ordering="0" serviceMetric="false" uid="f742ee42-e1e7-4d33-a2d8-5503fce9ed2a"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="cbcf0613-ed5b-4564-b190-a9d735684976">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Email" ordering="0" serviceMetric="false" uid="1d34fb10-8f4f-42ac-afbb-8882dac216fe"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Unified communication" ordering="2" serviceMetric="false" uid="412ca51c-c3ab-4d3f-85f5-b73215ab7b76"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="SMB" ordering="3" serviceMetric="false" uid="bb0cd917-1f4d-4624-8131-0a25b3ba3f56"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Software" ordering="4" serviceMetric="false" uid="b8fdde0c-05f5-43d4-b852-06be35fbf358"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="85ee1534-36a8-497f-a63a-c10e26e578ab">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Infrastructure" ordering="0" serviceMetric="false" uid="dcc0dbfa-12fd-4283-abac-10729fea148c"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="c24c7f00-fc3b-4fde-af81-b22aa3116798">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Meeting rooms" ordering="6" serviceMetric="false" uid="e7380734-2ab0-467c-b87c-feec05ec32b0"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Network" ordering="7" serviceMetric="false" uid="b45ec98d-3fc4-44f3-bfc9-b22babed8017"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Printing" ordering="8" serviceMetric="false" uid="84723bed-fe0b-44b2-8e54-be7c2609f94d"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="c80047c2-4a52-49d8-8d0a-b67bcedbc965">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Infrastructure" ordering="0" serviceMetric="false" uid="745dcc71-69d1-4644-96f2-8ef18b301d95"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="b27f1ecd-f425-489f-9276-d346992e9dac">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="10" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Ethernet" ordering="0" serviceMetric="false" uid="ecfa89ba-e6b8-4b9c-af56-03087e50f0da"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Wifi" ordering="1" serviceMetric="false" uid="35f333da-16fb-457c-8897-c236f34c8ea3"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="3c7cc124-d1c7-42e3-9108-80f5c7e68c06">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="IT team" ordering="0" serviceMetric="false" uid="ebf9697e-9736-4b4c-8444-d4c41ba7f6cc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="c9fba55b-96c6-4d27-803c-ea829f096b07">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="IT documentation" ordering="4" serviceMetric="false" uid="67ca8547-f22b-4c45-a452-68e2437c8915"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="IT help desk" ordering="5" serviceMetric="false" uid="93a13b7a-4c99-4b91-8ab6-f576d38133c5"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="KPI" uid="6b3ccec9-54d3-414b-a305-5b97f4113743">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="IT team" ordering="0" serviceMetric="false" uid="ebf9697e-9736-4b4c-8444-d4c41ba7f6cc"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="TABLE" uid="786c6ea2-d025-4ae2-b97b-699def5f21d2">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="IT documentation" ordering="4" serviceMetric="false" uid="67ca8547-f22b-4c45-a452-68e2437c8915"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="IT help desk" ordering="5" serviceMetric="false" uid="93a13b7a-4c99-4b91-8ab6-f576d38133c5"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Storage satisfaction&#13;&#10;This dashboard presents information about overall storage satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Ease of use&#13;&#10;* Overall reliability&#13;&#10;* Capacity&#13;&#10;* Access rights&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Connectivity&#13;&#10;* Response time" index="9" name="Services: SMB" uid="981551fc-d873-4085-8e82-23c34d5e8017">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="16001c6b-6f01-41e1-8d52-faedcd2a3634" minHeight="126" minWidth="934" type="kpiWidget" widgetID="16001c6b-6f01-41e1-8d52-faedcd2a3634">
+                <preferredHeight value="126"/>
+                <preferredWidth value="934"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="52856c7e-3e05-47d1-87b2-fa4626797cc7" minHeight="204" minWidth="300" type="barChartWidget" widgetID="52856c7e-3e05-47d1-87b2-fa4626797cc7">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b4759427-f6ca-40ad-93b0-44839d010e87" minHeight="228" minWidth="300" type="barChartWidget" widgetID="b4759427-f6ca-40ad-93b0-44839d010e87">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="8fad667c-bc2f-4bf2-9056-df08824404a4" minHeight="204" minWidth="300" type="barChartWidget" widgetID="8fad667c-bc2f-4bf2-9056-df08824404a4">
+                <preferredHeight value="204"/>
+                <preferredWidth value="599"/>
+               </data>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="7ff639e8-9387-4f00-8044-56f8f346c084" minHeight="204" minWidth="300" type="barChartWidget" widgetID="7ff639e8-9387-4f00-8044-56f8f346c084">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b469f177-4eaf-4294-9195-c916e2edbe23" minHeight="161" minWidth="324" type="tableWidget" widgetID="b469f177-4eaf-4294-9195-c916e2edbe23">
+                  <preferredHeight value="161"/>
+                  <preferredWidth value="324"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="16001c6b-6f01-41e1-8d52-faedcd2a3634">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="47d07d60-a582-4fc9-b5c4-109bd8dcb101"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="cf990b61-ca99-4a7c-9ccc-3410d65faf9b"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="38c21c44-1397-4e13-9386-4ebb97650403"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="38c21c44-1397-4e13-9386-4ebb97650403"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: SMB" ordering="7" serviceMetric="false" uid="bb0cd917-1f4d-4624-8131-0a25b3ba3f56"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="52856c7e-3e05-47d1-87b2-fa4626797cc7">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="SMB satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="47d07d60-a582-4fc9-b5c4-109bd8dcb101"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_71cc0a777c1844a782dfe464be96d5e2_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b4759427-f6ca-40ad-93b0-44839d010e87">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_71cc0a777c1844a782dfe464be96d5e2_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Storage satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="946b54cd-f211-4be9-98f6-ed38597a7f19"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_71cc0a777c1844a782dfe464be96d5e2_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="8fad667c-bc2f-4bf2-9056-df08824404a4">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_71cc0a777c1844a782dfe464be96d5e2_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="SMB satisfaction - Positive points" ordering="0" serviceMetric="false" uid="3e1c98b7-dbe4-4156-916b-b4f9694f1413"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="7ff639e8-9387-4f00-8044-56f8f346c084">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_71cc0a777c1844a782dfe464be96d5e2_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="SMB satisfaction - Negative points" ordering="0" serviceMetric="false" uid="6a9d88e4-9d23-4183-9c22-78b7d1b5c326"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="b469f177-4eaf-4294-9195-c916e2edbe23">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Connectivity" ordering="1" serviceMetric="false" uid="d199ce56-e433-4abf-8907-ae570b20dac7"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Response time" ordering="2" serviceMetric="false" uid="c338f69f-e9b3-4319-ac6a-1a1499084071"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Email satisfaction&#13;&#10;This dashboard presents information about overall email satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Ease of use&#13;&#10;* Overall speed&#13;&#10;* Overall reliability&#13;&#10;* Amount of spam&#13;&#10;* Amount of storage&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Connectivity&#13;&#10;* Response time&#13;&#10;* Stability&#13;&#10;&#13;&#10;:::tip&#13;&#10;The second part of the dashboard allows you to understand which email client version is more appreciated.&#13;&#10;:::&#13;&#10;&#13;&#10;:::configuration&#13;&#10;Edit binary category [Email version](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Email%20version&amp;Type=binary) to define the breakdown for the version comparison.&#13;&#10;:::" index="7" name="Services: email" uid="b1de95bb-06f9-4f80-92c2-0eef8a35cc24">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="6790b605-e78c-4973-ad4f-f278f6834601" minHeight="126" minWidth="934" type="kpiWidget" widgetID="6790b605-e78c-4973-ad4f-f278f6834601">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="934"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="a8b36190-504a-43fd-a2b2-cf651288aaca" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a8b36190-504a-43fd-a2b2-cf651288aaca">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="5180cb56-d66f-4e53-a6d8-b0732f05c17f" minHeight="204" minWidth="300" type="barChartWidget" widgetID="5180cb56-d66f-4e53-a6d8-b0732f05c17f">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="4d7bed26-1e41-4aad-a701-4227ad29f441" minHeight="228" minWidth="300" type="barChartWidget" widgetID="4d7bed26-1e41-4aad-a701-4227ad29f441">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="fcf3a32b-e9d3-462f-8cc7-3d409db27857" minHeight="228" minWidth="300" type="barChartWidget" widgetID="fcf3a32b-e9d3-462f-8cc7-3d409db27857">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="01ed4297-7b7e-4058-83a3-b6d2ca646593" minHeight="209" minWidth="324" type="tableWidget" widgetID="01ed4297-7b7e-4058-83a3-b6d2ca646593">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="V">
+             <children>
+              <child type="L">
+               <children/>
+               <data id="0db52310-707a-4a3a-8d7d-67ca0b259f29" minHeight="185" minWidth="324" type="tableWidget" widgetID="0db52310-707a-4a3a-8d7d-67ca0b259f29">
+                <preferredHeight value="185"/>
+                <preferredWidth value="324"/>
+               </data>
+              </child>
+              <child type="L">
+               <children/>
+               <data id="ed33d4d1-aeaa-4db7-b5c9-e4b415d4a2ce" minHeight="185" minWidth="324" type="tableWidget" widgetID="ed33d4d1-aeaa-4db7-b5c9-e4b415d4a2ce">
+                <preferredHeight value="185"/>
+                <preferredWidth value="324"/>
+               </data>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="6790b605-e78c-4973-ad4f-f278f6834601">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="8" serviceMetric="false" uid="4ad42426-6683-4d52-b906-481f0492a5c5"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="9" serviceMetric="false" uid="d0e3e33e-7329-4bb2-b7bd-1726f816720e"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="10" serviceMetric="false" uid="e66a400c-98db-4428-a693-832fb889c75c"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="11" serviceMetric="false" uid="e66a400c-98db-4428-a693-832fb889c75c"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: Email" ordering="12" serviceMetric="false" uid="1d34fb10-8f4f-42ac-afbb-8882dac216fe"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a8b36190-504a-43fd-a2b2-cf651288aaca">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Email satisfaction - Satisfaction" ordering="1" serviceMetric="false" uid="4ad42426-6683-4d52-b906-481f0492a5c5"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_37286cc9e1d94289935d5f743eb5fcec_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="5180cb56-d66f-4e53-a6d8-b0732f05c17f">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_37286cc9e1d94289935d5f743eb5fcec_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Email satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="2ac31e9e-2122-474a-8a32-1125f4471c36"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_37286cc9e1d94289935d5f743eb5fcec_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4d7bed26-1e41-4aad-a701-4227ad29f441">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_37286cc9e1d94289935d5f743eb5fcec_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Positive points" ordering="0" serviceMetric="false" uid="f9dd23ec-5351-45fe-98ca-be5fe8cd3143"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="fcf3a32b-e9d3-462f-8cc7-3d409db27857">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_37286cc9e1d94289935d5f743eb5fcec_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Email satisfaction - Negative points" ordering="0" serviceMetric="false" uid="db1e4850-c776-4ae9-bc48-8e0a05b9d539"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="01ed4297-7b7e-4058-83a3-b6d2ca646593">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Connectivity" ordering="1" serviceMetric="false" uid="542c6672-3789-4825-9a4b-a705d80a8b84"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Response time" ordering="2" serviceMetric="false" uid="b728100d-fc7d-4c00-b231-2f13e53d31f2"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: crashes" ordering="3" serviceMetric="false" uid="fa790630-1c49-4054-849a-58b451384f8f"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: freezes" ordering="4" serviceMetric="false" uid="566f20c1-8d25-498e-aaae-3548698b320f"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="0db52310-707a-4a3a-8d7d-67ca0b259f29">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Outlook 14">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="1. Satisfaction" ordering="0" serviceMetric="false" uid="d0050524-a902-4909-9b0f-64a0211ce492"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="2. Respondants" ordering="1" serviceMetric="false" uid="2a50200b-28a0-4ee5-916c-bdb1ba75a2e3">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_1" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_2" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_3" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="3. Endpoint performance: email" ordering="2" serviceMetric="false" uid="94590d7b-afba-408f-8054-dac80b8c1661"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="ed33d4d1-aeaa-4db7-b5c9-e4b415d4a2ce">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="Outlook 15">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="1. Satisfaction" ordering="0" serviceMetric="false" uid="03042afd-d525-4f90-af30-e70cf6f276d2"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="2. Respondants" ordering="1" serviceMetric="false" uid="5c7794ae-a608-4c7e-a3f6-b79323e20259">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_1" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_3" type="FIELD"/>
+               <fields name="euf_37286cc9e1d94289935d5f743eb5fcec_2" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="3. Endpoint performance: email" ordering="2" serviceMetric="false" uid="b0cfdd61-ce3d-4e19-b229-85108083c530"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Software satisfaction&#13;&#10;This dashboard presents information about overall software satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Version&#13;&#10;* Overall speed&#13;&#10;* Overall stability&#13;&#10;* Ease-of-use&#13;&#10;&#13;&#10;**We  measure:**&#13;&#10;* Number of packages&#13;&#10;* Software age&#13;&#10;* Stability" index="10" name="Services: software" uid="ac99219a-2e07-4205-b744-ed863f261693">
+          <layout type="H">
+           <children>
+            <child type="L">
+             <children/>
+             <data id="5cf8b924-e065-4d62-b38d-2a740fb046d3" minHeight="126" minWidth="934" type="kpiWidget" widgetID="5cf8b924-e065-4d62-b38d-2a740fb046d3">
+              <preferredHeight value="126"/>
+              <preferredWidth value="934"/>
+             </data>
+            </child>
+            <child type="H">
+             <children>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="e4f2e70b-0e8c-4643-a9d6-56f9da8cffb5" minHeight="204" minWidth="300" type="barChartWidget" widgetID="e4f2e70b-0e8c-4643-a9d6-56f9da8cffb5">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="L">
+                 <children/>
+                 <data id="b4293047-3565-4909-821c-bb3109edd262" minHeight="228" minWidth="300" type="barChartWidget" widgetID="b4293047-3565-4909-821c-bb3109edd262">
+                  <preferredHeight value="228"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="4006d572-fc8e-4d2e-8484-16dc8d4ce971" minHeight="204" minWidth="300" type="barChartWidget" widgetID="4006d572-fc8e-4d2e-8484-16dc8d4ce971">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="67dab7c6-ce3e-4172-84b9-e549cf57bfcf" minHeight="204" minWidth="300" type="barChartWidget" widgetID="67dab7c6-ce3e-4172-84b9-e549cf57bfcf">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="V">
+                   <children>
+                    <child type="L">
+                     <children/>
+                     <data id="91af1b60-24cc-401c-9800-f5c7f2f9223a" minHeight="209" minWidth="324" type="tableWidget" widgetID="91af1b60-24cc-401c-9800-f5c7f2f9223a">
+                      <preferredHeight value="209"/>
+                      <preferredWidth value="324"/>
+                     </data>
+                    </child>
+                    <child type="L">
+                     <children/>
+                     <data id="3a3a2485-b18b-4ba1-95b0-b2b6ed679a08" minHeight="156" minWidth="300" type="barChartWidget" widgetID="3a3a2485-b18b-4ba1-95b0-b2b6ed679a08">
+                      <preferredHeight value="156"/>
+                      <preferredWidth value="599"/>
+                     </data>
+                    </child>
+                   </children>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="5cf8b924-e065-4d62-b38d-2a740fb046d3">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="02e83d2e-9f92-4d45-b75e-2241091ce291"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="dad6f617-63a5-4008-9002-a0b29bf24a12"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="aa04a228-9c96-42dc-8e75-af5994fa9038"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="aa04a228-9c96-42dc-8e75-af5994fa9038"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: Software" ordering="7" serviceMetric="false" uid="b8fdde0c-05f5-43d4-b852-06be35fbf358"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="e4f2e70b-0e8c-4643-a9d6-56f9da8cffb5">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Software satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="02e83d2e-9f92-4d45-b75e-2241091ce291"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_010b8f20605442e8ba837b588a1b0746_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="b4293047-3565-4909-821c-bb3109edd262">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_010b8f20605442e8ba837b588a1b0746_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Software satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="4617367d-fadb-41bf-8927-84e22f8379b4"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_010b8f20605442e8ba837b588a1b0746_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="4006d572-fc8e-4d2e-8484-16dc8d4ce971">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_010b8f20605442e8ba837b588a1b0746_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Software satisfaction - Positive points" ordering="0" serviceMetric="false" uid="34b5e7bc-167d-4268-bd66-c77def1d42e5"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="67dab7c6-ce3e-4172-84b9-e549cf57bfcf">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_010b8f20605442e8ba837b588a1b0746_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Software satisfaction - Negative points" ordering="0" serviceMetric="false" uid="de349bb2-1dba-438f-89ad-6b0781bbe5a0"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="91af1b60-24cc-401c-9800-f5c7f2f9223a">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Number of packages" ordering="0" serviceMetric="false" uid="8b0de43b-a9d7-4398-b6d2-1aea1ee30080"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Software age" ordering="1" serviceMetric="false" uid="40f64448-f7c1-40c5-8110-47ff134254c3"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: crashes" ordering="2" serviceMetric="false" uid="f31b601e-62c9-43cc-b679-cef0f87296e7"/>
+              <metric displayThreshold="YES" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: freezes" ordering="3" serviceMetric="false" uid="69c4e284-59c9-490d-8440-1ae0b19df1fe"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="3a3a2485-b18b-4ba1-95b0-b2b6ed679a08">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="3" sortByOrder="DESC" threshold="false" title="Do users have all the software they need?">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_010b8f20605442e8ba837b588a1b0746_4"/>
+             </groupBy>
+             <metrics>
+              <metric label="Software satisfaction - Needed applications" ordering="0" serviceMetric="false" uid="4f250d5c-0418-41c3-ae21-6c19cef10e08"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="# Unified communication satisfaction&#13;&#10;This dashboard presents information about overall unified communication satisfaction and allows to understand which factors are impacting satisfaction the most.&#13;&#10;&#13;&#10;**We ask users about:**&#13;&#10;* Ease of use&#13;&#10;* Overall reliability&#13;&#10;* Features&#13;&#10;&#13;&#10;**We measure:**&#13;&#10;* Connectivity&#13;&#10;* Response time&#13;&#10;* Stability&#13;&#10;&#13;&#10;:::tip&#13;&#10;The second part of the dashboard allows you to understand which unified communication client version is more appreciated.&#13;&#10;:::&#13;&#10;&#13;&#10;:::configuration&#13;&#10;Edit binary category [Unified communication version](nxt://Edit-NxCategory?Encoding=Url&amp;Name=Unified%20communication%20version&amp;Type=binary) to define the breakdown for the version comparison.&#13;&#10;:::" index="8" name="Services: unified communication" uid="e8138575-ef4f-4816-b9ed-0c6ac617edbe">
+          <layout type="H">
+           <children>
+            <child type="H">
+             <children>
+              <child type="H">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="2587a688-174e-488c-8524-9d3f8297fc62" minHeight="126" minWidth="934" type="kpiWidget" widgetID="2587a688-174e-488c-8524-9d3f8297fc62">
+                  <preferredHeight value="126"/>
+                  <preferredWidth value="934"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="a48c43de-23f2-47a8-b8b6-eb1dc6c83794" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a48c43de-23f2-47a8-b8b6-eb1dc6c83794">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="0e6f7dad-77da-4b90-a70e-3e3e67064943" minHeight="228" minWidth="300" type="barChartWidget" widgetID="0e6f7dad-77da-4b90-a70e-3e3e67064943">
+                    <preferredHeight value="228"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+              <child type="V">
+               <children>
+                <child type="L">
+                 <children/>
+                 <data id="a26fbdae-7bf6-4997-8772-8467b19400f0" minHeight="204" minWidth="300" type="barChartWidget" widgetID="a26fbdae-7bf6-4997-8772-8467b19400f0">
+                  <preferredHeight value="204"/>
+                  <preferredWidth value="599"/>
+                 </data>
+                </child>
+                <child type="V">
+                 <children>
+                  <child type="L">
+                   <children/>
+                   <data id="48331643-395c-4510-9a34-04d932d42590" minHeight="204" minWidth="300" type="barChartWidget" widgetID="48331643-395c-4510-9a34-04d932d42590">
+                    <preferredHeight value="204"/>
+                    <preferredWidth value="599"/>
+                   </data>
+                  </child>
+                  <child type="L">
+                   <children/>
+                   <data id="86d09d1a-5821-44dd-85bd-28cf965332eb" minHeight="209" minWidth="324" type="tableWidget" widgetID="86d09d1a-5821-44dd-85bd-28cf965332eb">
+                    <preferredHeight value="209"/>
+                    <preferredWidth value="324"/>
+                   </data>
+                  </child>
+                 </children>
+                </child>
+               </children>
+              </child>
+             </children>
+            </child>
+            <child type="L">
+             <children/>
+             <data id="68f49d69-29cc-4e62-ae65-2d042559ab38" minHeight="233" minWidth="624" type="tableWidget" widgetID="68f49d69-29cc-4e62-ae65-2d042559ab38">
+              <preferredHeight value="233"/>
+              <preferredWidth value="624"/>
+             </data>
+            </child>
+           </children>
+          </layout>
+          <widgets>
+           <widget type="KPI" uid="2587a688-174e-488c-8524-9d3f8297fc62">
+            <kpiConfig displayOrientation="HORIZONTAL" displayThreshold="true" displayVariation="false" title="">
+             <metrics>
+              <metric displayValue="ABSOLUTE_VALUE" label="Satisfaction" ordering="3" serviceMetric="false" uid="63abc6d7-a1f3-4204-9d61-55f7437aee2b"/>
+              <metric displayValue="RATIO" label="Happy users" ordering="4" serviceMetric="false" uid="9dab3f1b-5bb2-4cac-a19f-c3d6a47fb842"/>
+              <metric displayValue="RATIO" label="Respondents ratio" ordering="5" serviceMetric="false" uid="0883fa47-77c9-4029-8cb4-c3a4d82981fb"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Total respondents" ordering="6" serviceMetric="false" uid="0883fa47-77c9-4029-8cb4-c3a4d82981fb"/>
+              <metric displayValue="ABSOLUTE_VALUE" label="Endpoint performance: Unified communication" ordering="7" serviceMetric="false" uid="412ca51c-c3ab-4d3f-85f5-b73215ab7b76"/>
+             </metrics>
+            </kpiConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a48c43de-23f2-47a8-b8b6-eb1dc6c83794">
+            <barChartConfig displayValue="ABSOLUTE_VALUE" nbOfBars="5" sortByOrder="ASC" threshold="true" title="Satisfaction by location">
+             <groupBy type="hierarchy"/>
+             <metrics>
+              <metric label="Unified communication satisfaction - Satisfaction" ordering="0" serviceMetric="false" uid="63abc6d7-a1f3-4204-9d61-55f7437aee2b"/>
+             </metrics>
+             <scale scaleMaxValue="10.0" scaleMaxValueType="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1_type" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="0e6f7dad-77da-4b90-a70e-3e3e67064943">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="6" sortByOrder="DESC" threshold="false" title="Satisfaction breakdown">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1"/>
+             </groupBy>
+             <metrics>
+              <metric label="Unified communication satisfaction - Happiness breakdown" ordering="0" serviceMetric="false" uid="012dcc8d-3f24-4e0f-b2b0-e2060c10692b"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="BREAKDOWN" value="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="a26fbdae-7bf6-4997-8772-8467b19400f0">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users like the most">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1e87ca96424046e49eb7a8d4c34ad7cf_2"/>
+             </groupBy>
+             <metrics>
+              <metric label="Unified communication satisfaction - Positive points" ordering="0" serviceMetric="false" uid="7453bdb9-6763-4677-b49e-1324f8deaa19"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="BAR_CHART" uid="48331643-395c-4510-9a34-04d932d42590">
+            <barChartConfig displayValue="RATIO_BY_GROUP_BY" nbOfBars="5" sortByOrder="DESC" threshold="false" title="What users complain about">
+             <groupBy type="breakdown">
+              <breakdown object="user" type="FIELD" value="euf_1e87ca96424046e49eb7a8d4c34ad7cf_3"/>
+             </groupBy>
+             <metrics>
+              <metric label="Unified communication satisfaction - Negative points" ordering="0" serviceMetric="false" uid="1c29a8bb-3e69-48ac-b3bd-2b850cf0fb77"/>
+             </metrics>
+             <scale scaleMaxValue="1.0" scaleMaxValueType="integer" scaleMaxValueUnit="" scaleType="fixed"/>
+             <sortBy type="VALUE" value="value"/>
+            </barChartConfig>
+           </widget>
+           <widget type="TABLE" uid="86d09d1a-5821-44dd-85bd-28cf965332eb">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="ASC" tableKind="STANDARD" title="What we measured">
+             <columns option="OVERALL_ONLY"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Connectivity" ordering="1" serviceMetric="false" uid="4adc0429-ee35-43d4-b974-17500913318e"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Response time" ordering="2" serviceMetric="false" uid="fe7f68c2-ce7b-4daa-8b7c-24443019f3fa"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: crashes" ordering="3" serviceMetric="false" uid="f31fb202-0195-4d10-9d2c-9de0d4a9757b"/>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Stability: freezes" ordering="4" serviceMetric="false" uid="8d687e1d-4201-4e69-a5e6-1e84d668fc56"/>
+             </metrics>
+             <rows option="METRICS"/>
+             <sortRowsBy type="METRICS" value="metrics"/>
+            </tableConfig>
+           </widget>
+           <widget type="TABLE" uid="68f49d69-29cc-4e62-ae65-2d042559ab38">
+            <tableConfig displayOverallValueColumns="false" displayOverallValueRows="false" numberPerPage="5" sortByOrder="DESC" tableKind="STANDARD" title="Version comparison">
+             <columns option="METRICS"/>
+             <metrics>
+              <metric displayThreshold="NO" displayValue="RATIO" displayVariation="false" label="Happiness ratio" ordering="0" serviceMetric="false" uid="796d0ab5-c84d-4bf4-9338-29ef2bc735b0">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_2" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_3" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Users who are happy" ordering="1" serviceMetric="false" uid="796d0ab5-c84d-4bf4-9338-29ef2bc735b0">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_2" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_3" type="FIELD"/>
+              </metric>
+              <metric displayThreshold="NO" displayValue="ABSOLUTE_VALUE" displayVariation="false" label="Out of" ordering="2" serviceMetric="false" uid="56cf74e5-3a9a-46d0-ab3f-bc76d1443272">
+               <fields name="name" type="FIELD"/>
+               <fields name="display_name" type="FIELD"/>
+               <fields name="department" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_1" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_2" type="FIELD"/>
+               <fields name="euf_1e87ca96424046e49eb7a8d4c34ad7cf_3" type="FIELD"/>
+              </metric>
+             </metrics>
+             <rows option="BREAKDOWN">
+              <breakdown object="binary" type="CATEGORY" value="Unified communication version"/>
+             </rows>
+             <sortRowsBy type="METRIC" value="796d0ab5-c84d-4bf4-9338-29ef2bc735b0_0"/>
+            </tableConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+        <digestConfiguration>
+         <metrics>
+          <metric>
+           <dashboardUid>a230a032-b228-4268-a474-fa7680f7328a</dashboardUid>
+           <metricLabel>End-user satisfaction</metricLabel>
+           <metricOrder>0</metricOrder>
+           <metricUid>43814a98-b758-4461-bebd-cc434e1f0f60</metricUid>
+          </metric>
+          <metric>
+           <dashboardUid>a230a032-b228-4268-a474-fa7680f7328a</dashboardUid>
+           <metricLabel>Endpoint performance</metricLabel>
+           <metricOrder>1</metricOrder>
+           <metricUid>4660c172-ba36-4469-a198-6882593ba5fd</metricUid>
+          </metric>
+         </metrics>
+        </digestConfiguration>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ </Contents>
+</Pack>
