@@ -1,29 +1,42 @@
-# Version 0.0.1 (2020-04-16)
+# Version 0.0.1 (2020-05-12)
 ## Notes
 
 First Release!
 
 ## Functions
 
-### Get-NxtRemoteActionMetricUsage
+### Get-NxtCampaignUsageInMetrics
+* Initial function release
 
-* Added Get-NxtRemoteActionMetricUsage function
-* Parses a MetricTree XML file to look for uses of a Remote Action
+### Get-NxtCampaignUsageInScores
+* Initial function release
+
+### Get-NxtCategoryUsageInCampaigns
+* Initial function release
+
+### Get-NxtCategoryUsageInMetrics
+* Initial function release
+
+### Get-NxtCategoryUsageInScores
+* Initial function release
+
+### Get-NxtMetricUsageInDashboards
+* Initial function release
+
+### Get-NxtUnusedMetrics
+* Initial function release
 
 ### Get-NxtRemoteActionScoreUsage
+* Initial function release
 
-* Added Get-NxtRemoteActionScoreUsage function
-* Parses a MetricTree XML file to look for uses of a Remote Action
+### Get-NxtRemoteActionUsageInMetrics
+* Initial function release
 
-### Get-NxtCategoryMetricUsage
+### Get-NxtScoreUsageInMetrics
+* Initial function release
 
-* Added Get-NxtCategoryMetricUsage function
-* Parses a MetricTree XML file to look for uses of a category
-
-### Get-NxtCategoryScoreUsage
-
-* Added Get-NxtCategoryScoreUsage function
-* Parses a ScoreTree XML file to look for uses of a category
+### Get-NxtScoreUsageInScores
+* Initial function release
 
 ## Documentation
 * First release of automated documentation

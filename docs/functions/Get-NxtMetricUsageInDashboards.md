@@ -1,29 +1,33 @@
 ---
 external help file: NexthinkPSUtils-help.xml
 Module Name: NexthinkPSUtils
-online version: https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md
+online version: https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtMetricUsageInDashboards.md
 schema: 2.0.0
 ---
 
-# Get-NxtMetricDashboardUsage
+# Get-NxtMetricUsageInDashboards
 
 ## SYNOPSIS
-Checks for references to a metric within a Nexthink Dashboard Modules.
+Checks for references to a Metric within Nexthink Dashboard Modules.
 
 ## SYNTAX
 
 ```
-Get-NxtMetricDashboardUsage [-ModuleXMLPath] <String> [-MetricUID] <String> [<CommonParameters>]
+Get-NxtMetricUsageInDashboards [-ModuleXMLPath] <String> [-MetricUID] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Checks for references to a metric in Nexthink Dashboards.
+Checks for references to a Metric within Nexthink Dashboard Modules.
+The Module Xml must be exported from the Portal of CLI and provided to this function.
+
+The following places are checked within the Module:
+    - Dashboard Widgets
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 ```
-Get-NxtMetricDashboardUsage -ModuleXMLPath "C:\Temp\dashboard.xml" -MetricUID "af95692e-b1d9-489b-8ef3-aaed3b5dcee9"
+Get-NxtMetricUsageInDashboards -ModuleXMLPath "C:\Temp\dashboard.xml" -MetricUID "af95692e-b1d9-489b-8ef3-aaed3b5dcee9"
 ```
 
 Look in the 'dashboard.xml' file for any references to the metric 'af95692e-b1d9-489b-8ef3-aaed3b5dcee9'.
@@ -32,7 +36,9 @@ Look in the 'dashboard.xml' file for any references to the metric 'af95692e-b1d9
 
 ### -ModuleXMLPath
 Specifies the XML file containing an export of metrics from the Nexthink Finder.
-Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+The individual Dashboard Modules can be exported from the Portal.
+Bulk exports must be done via the CLI.
+See the documentation for advice on bulk exporting Dashboard Modules.
 
 ```yaml
 Type: System.String
@@ -47,8 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetricUID
-Specifies the UID of the metric to search for.
-This must be the name of the category without any tags appended to it.
+Specifies the UID of the Metric to search for.
 
 ```yaml
 Type: System.String
@@ -67,7 +72,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### You cannot pipe input to Get-NxtMetricDashboardUsage.
+### You cannot pipe input to Get-NxtMetricUsageInDashboards.
 ## OUTPUTS
 
 ### PSObject
@@ -76,5 +81,5 @@ None
 
 ## RELATED LINKS
 
-[https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md](https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md)
+[https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtMetricUsageInDashboards.md](https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtMetricUsageInDashboards.md)
 

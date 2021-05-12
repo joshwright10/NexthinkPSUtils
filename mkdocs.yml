@@ -7,12 +7,24 @@ copyright: "NexthinkPSUtils is licensed under the <a href='https://raw.githubuse
 pages:
   - Home: index.md
   - Configuration: gettingsetup.md
+  - Nexthink:
+      - Exporting Dashboard Modules: exportingdashboardmodules.md
   - Scenarios:
-      - Locate Remote Action References: locateremoteactionreferences.md
+      - Remote Action Dependencies: /scenarios/dependenciesremoteaction.md
+      - Category Dependencies: /scenarios/dependenciescategory.md
+      - Metric Dependencies: /scenarios/dependenciesmetric.md
+      - Score Dependencies: /scenarios/dependenciesscore.md
+      - Campaign Dependencies: /scenarios/dependenciescampaign.md
+  - Release Notes: RELEASE.md
   - Functions:
-      - Get-NxtCategoryMetricUsage: functions/Get-NxtCategoryMetricUsage.md
-      - Get-NxtCategoryScoreUsage: functions/Get-NxtCategoryScoreUsage.md
-      - Get-NxtMetricDashboardUsage: functions/Get-NxtMetricDashboardUsage.md
-      - Get-NxtRemoteActionMetricUsage: functions/Get-NxtRemoteActionMetricUsage.md
-      - Get-NxtRemoteActionScoreUsage: functions/Get-NxtRemoteActionScoreUsage.md
+      - Get-NxtCampaignUsageInMetrics: functions/Get-NxtCampaignUsageInMetrics.md
+      - Get-NxtCampaignUsageInScores: functions/Get-NxtCampaignUsageInScores.md
+      - Get-NxtCategoryUsageInCampaigns: functions/Get-NxtCategoryUsageInCampaigns.md
+      - Get-NxtCategoryUsageInMetrics: functions/Get-NxtCategoryUsageInMetrics.md
+      - Get-NxtCategoryUsageInScores: functions/Get-NxtCategoryUsageInScores.md
+      - Get-NxtMetricUsageInDashboards: functions/Get-NxtMetricUsageInDashboards.md
+      - Get-NxtRemoteActionUsageInMetrics: functions/Get-NxtRemoteActionUsageInMetrics.md
+      - Get-NxtScoreUsageInMetrics: functions/Get-NxtScoreUsageInMetrics.md
+      - Get-NxtScoreUsageInScores: functions/Get-NxtScoreUsageInScores.md
+      - Get-NxtUnusedMetrics: functions/Get-NxtUnusedMetrics.md
 

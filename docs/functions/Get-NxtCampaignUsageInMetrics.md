@@ -1,39 +1,45 @@
 ---
 external help file: NexthinkPSUtils-help.xml
 Module Name: NexthinkPSUtils
-online version: https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md
+online version: https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCampaignUsageInMetrics.md
 schema: 2.0.0
 ---
 
-# Get-NxtCategoryMetricUsage
+# Get-NxtCampaignUsageInMetrics
 
 ## SYNOPSIS
-Checks for references to a category within Nexthink Metrics.
+Checks for references to a Campaign within Nexthink Metrics.
 
 ## SYNTAX
 
 ```
-Get-NxtCategoryMetricUsage [-MetricTreeXMLPath] <String> [-CategoryName] <String> [<CommonParameters>]
+Get-NxtCampaignUsageInMetrics [-MetricTreeXMLPath] <String> [-CampaignUID] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Checks for references to a category within conditions and the output fields of metrics.
+Checks for references to a Campaign within Metrics.
 The MetricTree (export of all metrics) must be exported from the Finder and provided to this function.
+
+The following places are checked within the Metric:
+    - Compute
+    - Breakdowns
+    - Conditions
+    - Output Fields
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 ```
-Get-NxtCategoryMetricUsage -MetricTreeXMLPath "C:\Temp\metrics.xml" -CategoryName "Hardware type"
+Get-NxtCampaignUsageInMetrics -MetricTreeXMLPath "C:\Temp\metrics.xml" -CampaignUID "bf573024-c7cc-4885-9ce5-2d22535467d8"
 ```
 
-Look in the 'metrics.xml' file for any references to the category name 'Hardware type'.
+Look in the 'metrics.xml' file for any Campaign references to the UID 'bf573024-c7cc-4885-9ce5-2d22535467d8'.
 
 ## PARAMETERS
 
 ### -MetricTreeXMLPath
 Specifies the XML file containing an export of metrics from the Nexthink Finder.
-Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+The MetricTree can be exported by right clicking on the Metrics section and then exporting to file.
 
 ```yaml
 Type: System.String
@@ -47,9 +53,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CategoryName
-Specifies the name of the category to search for.
-This must be the name of the category without any tags appended to it.
+### -CampaignUID
+Specifies the UID of the Campaign to search for.
 
 ```yaml
 Type: System.String
@@ -68,7 +73,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### You cannot pipe input to Get-NxtCategoryMetricUsage.
+### You cannot pipe input to Get-NxtCampaignUsageInMetrics.
 ## OUTPUTS
 
 ### PSObject
@@ -77,5 +82,5 @@ None
 
 ## RELATED LINKS
 
-[https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md](https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCategoryMetricUsage.md)
+[https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCampaignUsageInMetrics.md](https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-NxtCampaignUsageInMetrics.md)
 

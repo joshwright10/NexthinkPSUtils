@@ -5,35 +5,40 @@ online version: https://nexthinkpsutils.readthedocs.io/en/latest/functions/Get-N
 schema: 2.0.0
 ---
 
-# Get-NxtCategoryScoreUsage
+# Get-NxtCategoryUsageInScores
 
 ## SYNOPSIS
-Checks for references to a category within Nexthink Scores.
+Checks for references to a Category within Nexthink Scores.
 
 ## SYNTAX
 
 ```
-Get-NxtCategoryScoreUsage [-ScoreTreeXMLPath] <String> [-CategoryName] <String> [<CommonParameters>]
+Get-NxtCategoryUsageInScores [-ScoreTreeXMLPath] <String> [-CategoryName] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Checks for references to a category within conditions and the output fields of metrics.
-The MetricTree (export of all metrics) must be exported from the Finder and provided to this function.
+Checks for references to a Category within Scores.
+The ScoreTree (export of all scores) must be exported from the Finder and provided to this function.
+
+The following places are checked within the Score:
+    - Scope Query
+    - Computation Query
+    - Input Field
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 ```
-Get-NxtCategoryScoreUsage -MetricTreeXMLPath "C:\Temp\metrics.xml" -CategoryName "Hardware type"
+Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type"
 ```
 
-Look in the 'metrics.xml' file for any references to the category name 'Hardware type'.
+Look in the 'scores.xml' file for any references to the Category name 'Hardware type'.
 
 ## PARAMETERS
 
 ### -ScoreTreeXMLPath
-Specifies the XML file containing an export of metrics from the Nexthink Finder.
-Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+Specifies the XML file containing an export of Scores from the Nexthink Finder.
+The ScoreTree can be exported by right clicking on the Scores section and then exporting to file.
 
 ```yaml
 Type: System.String
@@ -50,6 +55,7 @@ Accept wildcard characters: False
 ### -CategoryName
 Specifies the name of the category to search for.
 This must be the name of the category without any tags appended to it.
+For example "Hardware type/Laptop" would not return any results.
 
 ```yaml
 Type: System.String
@@ -68,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### You cannot pipe input to Get-NxtCategoryScoreUsage.
+### You cannot pipe input to Get-NxtCategoryUsageInScores.
 ## OUTPUTS
 
 ### PSObject
