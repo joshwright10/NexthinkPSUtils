@@ -2,21 +2,24 @@
 function Get-NxtRemoteActionUsageInScores {
     <#
 .SYNOPSIS
-    Checks for references to a remote action within Nexthink Scores.
+    Checks for references to a Remote Action within Nexthink Scores.
 
 .DESCRIPTION
-    Checks for references to a remote action within the computation fields and the Document Content section of the scores.
-    Both the the ScoreTree (Export of all Scores) and Remote Action must be exported from the Finder and provided to this function.
+    Checks for references to a Remote Action within Scores.
+    Both the the ScoreTree (Export of all Scores) and the Remote Action must be exported from the Finder and provided to this function.
 
-    The Remote Action XML export is used, as it contains the UIDs for the output fields.
+    The following places are checked within the Score:
+        - Scope Query
+        - Computation Query
+        - Input Field
+        - Document Content for Remote Action Trigger
 
 .PARAMETER ScoreTreeXMLPath
     Specifies the XML file containing an export of ScoreTree from the Nexthink Finder.
-    Note that the ScoreTree can be exported by right clicking on the Scores section and then exporting to file.
+    The ScoreTree can be exported by right clicking on the Scores section and then exporting to file.
 
 .PARAMETER RemoteActionXMLPath
     Specifies the XML file containing an export of the Remote Action from the Nexthink Finder.
-    This must be a single Remote Action in a single XML file.
 
 .EXAMPLE
     Get-NxtRemoteActionUsageInScores -ScoreTreeXMLPath "C:\Temp\scores.xml" -RemoteActionXMLPath "C:\Temp\Get Wi-Fi Information.xml"
@@ -39,61 +42,47 @@ function Get-NxtRemoteActionUsageInScores {
     [CmdletBinding()]
     param (
         [string]
-        [ValidateScript( {
-                if ( -Not ($_ | Test-Path) ) {
-                    throw "File or folder does not exist"
-                }
-                if (-Not ($_ | Test-Path -PathType Leaf) ) {
-                    throw "The ScoreTreeXMLPath argument must be a file. Folder paths are not allowed."
-                }
-                if ($_ -notmatch "\.xml$") {
-                    throw "The file specified in the path argument must be either of type xml"
-                }
-                return $true
-            })]
+        [Parameter(Mandatory)]
+        [ValidateXMLFileExists()]
         $ScoreTreeXMLPath,
 
         [string]
         [Parameter(Mandatory)]
-        [ValidateScript( {
-                if ( -Not ($_ | Test-Path) ) {
-                    throw "File or folder does not exist"
-                }
-                if (-Not ($_ | Test-Path -PathType Leaf) ) {
-                    throw "The RemoteActionXMLPath argument must be a file. Folder paths are not allowed."
-                }
-                if ($_ -notmatch "\.xml$") {
-                    throw "The file specified in the path argument must be either of type xml"
-                }
-                return $true
-            })]
+        [ValidateXMLFileExists()]
         $RemoteActionXMLPath
     )
 
-    $remoteAction = Get-RemoteActionUIDS -Path $RemoteActionXMLPath
-    $remoteActionName = $remoteAction.Name
-    $remoteActionUID = $remoteAction.UID
-
-    # Import Metrics data from XML
-    [xml]$xmlContent = Import-XMLFile -Path $ScoreTreeXMLPath -ErrorAction Stop
+    # Import data from XML
+    [xml]$scoreXmlContent = Import-XMLFile -Path $ScoreTreeXMLPath -ErrorAction Stop
 
     if (-not ($xmlContent.ScoreTree)) {
         throw "XML file is not a an export of the ScoreTree. "
     }
 
+    # Get Remote Action info from XML
+    [xml]$remoteActionXmlContent = Import-XMLFile -Path $RemoteActionXMLPath -ErrorAction Stop
+    $remoteActions = Get-RemoteActionObject -XML $remoteActionXmlContent
+    if ($null -eq $remoteActions) {
+        Write-Error -Message "Unable to find any Remote Action in '$RemoteActionXMLPath'"
+    }
+
     $scoresToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
+    foreach ($remoteAction in $remoteActions) {
 
-    ## Find matching values in the Score Scope Query
-    $xmlContent.SelectNodes("//ScopeQuery/Filtering[contains(text(), '#`"action:$remoteActionName/')]") | ForEach-Object { $scoresToCheck.Add($_) }
+        # Check Computation Query
+        $scoreXmlContent.SelectNodes("//Computation/Query[contains(text(), 'action:$($remoteAction.Name)/')]") | ForEach-Object { $scoresToCheck.Add($_) }
 
-    # Find matching values in the Score Input Field
-    $xmlContent.SelectNodes("//Input/Field[starts-with(@Name, '#action:$remoteActionName/')]") | ForEach-Object { $scoresToCheck.Add($_) }
+        #Check Scope Query
+        $scoreXmlContent.SelectNodes("//ScopeQuery/Filtering[contains(text(), 'action:$($remoteAction.Name)/')]") | ForEach-Object { $scoresToCheck.Add($_) }
 
-    # Find matching values in the Score Document Section
-    $xmlContent.SelectNodes("//Document/Sections/Section/RemoteAction[@UID='$remoteActionUID']") | ForEach-Object { $scoresToCheck.Add($_) }
+        # Check Input Field
+        $scoreXmlContent.SelectNodes("//Input/Field[contains(@Name, 'action:$($remoteAction.Name)/')]") | ForEach-Object { $scoresToCheck.Add($_) }
 
-    # Find matching values in the Score Computation Query
-    $xmlContent.SelectNodes("//Computation/Query[contains(text(), '#`"action:$remoteActionName/')]") | ForEach-Object { $scoresToCheck.Add($_) }
+        if ($null -ne $remoteAction.UID) {
+            # Find matching values in the Document Section
+            $scoreXmlContent.SelectNodes("//Document/Sections/Section/RemoteAction[@UID='$($remoteAction.UID)']") | ForEach-Object { $scoresToCheck.Add($_) }
+        }
+    }
 
     return Get-RelatedScore -Scores $scoresToCheck
 }

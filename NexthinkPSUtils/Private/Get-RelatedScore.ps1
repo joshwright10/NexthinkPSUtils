@@ -5,6 +5,10 @@ function Get-RelatedScore {
         $Scores
     )
 
+    if ($null -eq $Scores) {
+        return
+    }
+
     $results = [System.Collections.Generic.List[Object]]::new()
     foreach ($score in $Scores) {
 
@@ -16,6 +20,11 @@ function Get-RelatedScore {
         do {
             if ($index -ne 0) {
                 $tempElement = $tempElement.ParentNode
+            }
+
+            if (($index -eq 0) -and (($tempElement.PSObject.Properties.Name) -eq "Object")) {
+                $mainScore = $tempElement
+                continue
             }
 
             # Grab the Leaf Score name

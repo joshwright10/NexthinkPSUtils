@@ -9,7 +9,7 @@ param (
     [string[]]$PackageProviders = @('NuGet', 'PowerShellGet')
 )
 
-Set-StrictMode -Version Latest
+Set-StrictMode -Version 1.0
 
 # Install package providers for PowerShell Modules
 foreach ($provider in $PackageProviders) {

@@ -2,18 +2,22 @@
 function Get-NxtMetricUsageInDashboards {
     <#
 .SYNOPSIS
-    Checks for references to a metric within a Nexthink Dashboard Modules.
+    Checks for references to a Metric within Nexthink Dashboard Modules.
 
 .DESCRIPTION
-    Checks for references to a metric in Nexthink Dashboards.
+    Checks for references to a Metric within Nexthink Dashboard Modules.
+    The Module Xml must be exported from the Portal of CLI and provided to this function.
+
+    The following places are checked within the Module:
+        - Dashboard Widgets
 
 .PARAMETER ModuleXMLPath
     Specifies the XML file containing an export of metrics from the Nexthink Finder.
-    Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+    The individual Dashboard Modules can be exported from the Portal. Bulk exports must be done via the CLI.
+    See the documentation for advice on bulk exporting Dashboard Modules.
 
 .PARAMETER MetricUID
-    Specifies the UID of the metric to search for.
-    This must be the name of the category without any tags appended to it.
+    Specifies the UID of the Metric to search for.
 
 .EXAMPLE
     Get-NxtMetricUsageInDashboards -ModuleXMLPath "C:\Temp\dashboard.xml" -MetricUID "af95692e-b1d9-489b-8ef3-aaed3b5dcee9"
@@ -37,23 +41,12 @@ function Get-NxtMetricUsageInDashboards {
     param (
         [string]
         [Parameter(Mandatory)]
-        [ValidateScript( {
-                if ( -Not ($_ | Test-Path) ) {
-                    throw "File or folder does not exist"
-                }
-                if (-Not ($_ | Test-Path -PathType Leaf) ) {
-                    throw "The ModuleXMLPath argument must be a file. Folder paths are not allowed."
-                }
-                if ($_ -notmatch "\.xml$") {
-                    throw "The file specified in the path argument must be either of type xml"
-                }
-                return $true
-            })]
+        [ValidateXMLFileExists()]
         $ModuleXMLPath,
 
         [string]
         [Parameter(Mandatory)]
-        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
         [ValidateScript( {
                 if ( -not ($_ -as [guid]) ) {
                     throw "MetricUID must be in the format of a Guid."
@@ -69,9 +62,11 @@ function Get-NxtMetricUsageInDashboards {
         throw "XML file is not a an export of a Module Pack. "
     }
 
+    [string]$uid = ($MetricUID -as [guid]).Guid
+
     $widgetsToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
 
-    $xmlContent.SelectNodes("//metrics/metric[@uid='$MetricUID']")  | ForEach-Object { $widgetsToCheck.Add($_) }
+    $xmlContent.SelectNodes("//metrics/metric[@uid='$uid']")  | ForEach-Object { $widgetsToCheck.Add($_) }
 
     return Get-DashboardFromMetric -Widgets $widgetsToCheck
 }

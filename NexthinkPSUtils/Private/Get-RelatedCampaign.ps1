@@ -1,22 +1,22 @@
-function Get-RelatedMetric {
+function Get-RelatedCampaign {
     [CmdletBinding()]
     param (
         [System.Xml.XmlElement[]]
-        $Metrics
+        $Campaigns
     )
 
-    if ($null -eq $Metrics) {
+    if ($null -eq $Campaigns) {
         return
     }
 
     $results = [System.Collections.Generic.List[Object]]::new()
-    foreach ($metric in $Metrics) {
+    foreach ($campaign in $Campaigns) {
 
         $index = 0
-        $foundMetric = $null
+        $foundCampaign = $null
         $recordPath = $false
         $fullPath = $null
-        $tempElement = $metric
+        $tempElement = $campaign
         do {
             if ($index -ne 0) {
                 $tempElement = $tempElement.ParentNode
@@ -26,10 +26,10 @@ function Get-RelatedMetric {
                 $fullPath = $tempElement.Name, $fullPath -join "/"
             }
 
-            # Grab the metric and then trigger the search for the path
-            if ($null -eq $foundMetric) {
-                if ($tempElement.PSObject.Properties["UID"] -and $tempElement.PSObject.Properties["Name"]) {
-                    $foundMetric = $tempElement
+            # Grab the campaign and then trigger the search for the path
+            if ($null -eq $foundCampaign) {
+                if ($tempElement.PSObject.Properties["UID"] -and $tempElement.PSObject.Properties["Name"] -and $tempElement.PSObject.Properties["Status"]) {
+                    $foundCampaign = $tempElement
                     $recordPath = $true
                 }
             }
@@ -37,17 +37,17 @@ function Get-RelatedMetric {
         } until ($tempElement.NodeType -eq [System.Xml.XmlNodeType]::Document)
 
 
-        if ($foundMetric) {
+        if ($foundCampaign) {
             # Clean up folder path
-            $path = $fullPath -replace "#document/MetricTree/metrics/", ""
+            $path = $fullPath -replace "#document/PublicationTree/campaigns/", ""
             $path = $path -replace "#document/", ""
             $path = $path -replace "\/$", ""
 
             $result = [PSCustomObject]@{
-                Name        = $foundMetric.Name
-                UID         = $foundMetric.UID
-                Status      = $foundMetric.Status
-                Description = $foundMetric.Description
+                Name        = $foundCampaign.Name
+                UID         = $foundCampaign.UID
+                Status      = $foundCampaign.Status
+                Description = $foundCampaign.Description
                 Folder      = $path
             }
             $results.Add($result)

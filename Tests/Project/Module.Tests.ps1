@@ -1,6 +1,6 @@
 BeforeDiscovery {
     $Script:manifestTestResult = Test-ModuleManifest -Path $Env:BHPSModuleManifest
-    $Script:publicScriptFiles = Get-ChildItem -Path "$modulePath\Public" -Recurse
+    $Script:publicScriptFiles = Get-ChildItem -Path "$modulePath\Public" -Recurse -File
 }
 
 Describe "Core Module Validation" {

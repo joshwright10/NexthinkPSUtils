@@ -5,6 +5,7 @@ BeforeDiscovery {
     $params = @{
         Path          = $Script:modulePath
         Severity      = @('Error', 'Warning')
+        ExcludeRule   = @('PSUseSingularNouns')
         Recurse       = $true
         Verbose       = $false
         ErrorVariable = 'ErrorVariable'

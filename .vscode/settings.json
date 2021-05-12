@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "cSpell.dictionaries": [
+        "powershell"
+    ],
+    "cSpell.allowCompoundWords": true,
+    "cSpell.diagnosticLevel": "Hint"
+}

@@ -8,7 +8,7 @@ task DocsBuild {
     $ymlText = "$ymlText`n"
 
     # Add Release Notes
-    $releaseNotesText = (Get-Content -Path "$env:BHProjectPath\RELEASE.md" -ErrorAction SilentlyContinue) -join "`n"
+    $releaseNotesText = (Get-Content -Path "$env:BHProjectPath\docs\RELEASE.md" -ErrorAction SilentlyContinue) -join "`n"
     if ($releaseNotesText) {
         $releaseNotesText | Set-Content "$env:BHProjectPath\docs\RELEASE.md" -Force
         $ymlText = "$ymlText  - Release Notes: RELEASE.md`n"

@@ -2,24 +2,30 @@
 function Get-NxtCategoryUsageInMetrics {
     <#
 .SYNOPSIS
-    Checks for references to a category within Nexthink Metrics.
+    Checks for references to a Category within Nexthink Metrics.
 
 .DESCRIPTION
-    Checks for references to a category within conditions and the output fields of metrics.
+    Checks for references to a Campaign within Metrics.
     The MetricTree (export of all metrics) must be exported from the Finder and provided to this function.
 
+    The following places are checked within the Metric:
+        - Breakdowns
+        - Conditions
+        - Output Fields
+
 .PARAMETER MetricTreeXMLPath
-    Specifies the XML file containing an export of metrics from the Nexthink Finder.
-    Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+    Specifies the XML file containing an export of Metrics from the Nexthink Finder.
+    The MetricTree can be exported by right clicking on the Metrics section and then exporting to file.
 
 .PARAMETER CategoryName
-    Specifies the name of the category to search for.
-    This must be the name of the category without any tags appended to it.
+    Specifies the name of the Category to search for.
+    This must be the name of the Category without any tags appended to it.
+    For example "Hardware type/Laptop" would not return any results.
 
 .EXAMPLE
     Get-NxtCategoryUsageInMetrics -MetricTreeXMLPath "C:\Temp\metrics.xml" -CategoryName "Hardware type"
 
-    Look in the 'metrics.xml' file for any references to the category name 'Hardware type'.
+    Look in the 'metrics.xml' file for any references to the Category name 'Hardware type'.
 
 .INPUTS
    You cannot pipe input to Get-NxtCategoryUsageInMetrics.
@@ -38,34 +44,30 @@ function Get-NxtCategoryUsageInMetrics {
     param (
         [string]
         [Parameter(Mandatory)]
-        [ValidateScript( {
-                if ( -Not ($_ | Test-Path) ) {
-                    throw "File or folder does not exist"
-                }
-                if (-Not ($_ | Test-Path -PathType Leaf) ) {
-                    throw "The MetricTreeXMLPath argument must be a file. Folder paths are not allowed."
-                }
-                if ($_ -notmatch "\.xml$") {
-                    throw "The file specified in the path argument must be either of type xml"
-                }
-                return $true
-            })]
+        [ValidateXMLFileExists()]
         $MetricTreeXMLPath,
 
         [string]
         [Parameter(Mandatory)]
-        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
         $CategoryName
     )
 
     [xml]$xmlContent = Import-XMLFile -Path $MetricTreeXMLPath -ErrorAction Stop
 
+    if (-not ($xmlContent.MetricTree)) {
+        throw "XML file is not a an export of a MetricTree. "
+    }
+
     $metricsToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
 
-    # Find matching values in the metric Condition
-    $xmlContent.SelectNodes("//*[Field='tags' and starts-with(Value, '`"$($CategoryName):')]") | ForEach-Object { $metricsToCheck.Add($_) }
+    # Check Breakdowns
+    $xmlContent.SelectNodes("//Breakdowns/Breakdown[Type='category' and text()='$CategoryName']") | ForEach-Object { $metricsToCheck.Add($_) }
 
-    # Find for categories used in Fields
+    # Check Condition
+    $xmlContent.SelectNodes("//ObjectCondition[Field='tags' and starts-with(Value, '`"$($CategoryName):')]") | ForEach-Object { $metricsToCheck.Add($_) }
+
+    # Check Fields
     $xmlContent.SelectNodes("//Field[@Type='category' and text()='$CategoryName']") | ForEach-Object { $metricsToCheck.Add($_) }
 
     return Get-RelatedMetric -Metrics $metricsToCheck

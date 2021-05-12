@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publication xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UID="bf573024-c7cc-4885-9ce5-2d22535467d8" Name="DEX - Employee sentiment" SyntaxVersion="8" DataModelVersion="13" Description="DEX version: 2.0.2" Status="draft" UsageType="benchmark">
+  <Schedule IsCsm="true">
+    <Recurrence>86400</Recurrence>
+    <QuietPeriod>7776000</QuietPeriod>
+  </Schedule>
+  <Trigger Type="investigation">
+    <Selector>select user.sid, user.name where (user.type = domain AND user.days_since_last_time &lt;= 30) AND source.platform = windows</Selector>
+    <Investigation>
+      <Label>All domain users</Label>
+      <Type>user</Type>
+      <Description />
+    </Investigation>
+    <InvestigationRaw>&lt;Investigation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DataModelVersion="13" SyntaxVersion="3"&gt;&lt;Label&gt;All domain users&lt;/Label&gt;&lt;Object&gt;user&lt;/Object&gt;&lt;Platforms&gt;&lt;Platform&gt;windows&lt;/Platform&gt;&lt;/Platforms&gt;&lt;Description /&gt;&lt;FieldList&gt;&lt;string&gt;name&lt;/string&gt;&lt;/FieldList&gt;&lt;CategoryList /&gt;&lt;AggregateList /&gt;&lt;ObjectConditionList&gt;&lt;ObjectCondition IsTemplate="false"&gt;&lt;Object&gt;user&lt;/Object&gt;&lt;Field&gt;type&lt;/Field&gt;&lt;Comparer&gt;=&lt;/Comparer&gt;&lt;Value&gt;domain&lt;/Value&gt;&lt;/ObjectCondition&gt;&lt;ObjectCondition IsTemplate="false"&gt;&lt;Object&gt;user&lt;/Object&gt;&lt;Field&gt;days_since_last_time&lt;/Field&gt;&lt;Comparer&gt;&amp;lt;=&lt;/Comparer&gt;&lt;Value&gt;30&lt;/Value&gt;&lt;Operand&gt;integer&lt;/Operand&gt;&lt;/ObjectCondition&gt;&lt;/ObjectConditionList&gt;&lt;ObjectsConditionsExpression&gt;1 AND 2&lt;/ObjectsConditionsExpression&gt;&lt;/Investigation&gt;</InvestigationRaw>
+  </Trigger>
+  <Definition SyntaxVersion="6" Priority="normal" TrayDesign="quicky">
+    <Emitter>
+      <Name>Sally Smith</Name>
+      <Title>Digital Experience Manager</Title>
+      <Picture>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</Picture>
+    </Emitter>
+    <Notification Frequency="biweekly" Duration="60">
+      <Subject>How satisfied are you with your IT environment?</Subject>
+      <Footer>Please take 1min to give us your feedback.</Footer>
+    </Notification>
+    <Questions>
+      <Question Id="0" Label="Satisfaction">
+        <Greeting />
+        <Header>We care about your workplace experience — Please take 1 min to share your feedback</Header>
+        <Body>How satisfied are you with your IT environment at [Company name]?​</Body>
+        <Answers Type="Scale" Orientation="Default">
+          <Answer Value="10" Id="10" Label="10">
+            <Caption>😀 Very satisfied</Caption>
+          </Answer>
+          <Answer Value="7" Id="0" Label="7">
+            <Caption>🙂 Somewhat satisfied</Caption>
+          </Answer>
+          <Answer Value="5" Id="1" Label="5">
+            <Caption>😐 Neither satisfied nor dissatisfied​​</Caption>
+          </Answer>
+          <Answer Value="3" Id="11" Label="3">
+            <Caption>🙁 Somewhat dissatisfied​</Caption>
+          </Answer>
+          <Answer Value="1" Id="12" Label="1">
+            <Caption>☹️ Very dissatisfied​</Caption>
+          </Answer>
+        </Answers>
+        <Footer>Your IT environment includes everything related to information technology (IT):devices, software, connectivity, policies, support, training, office infrastructure, etc.</Footer>
+        <Comment />
+      </Question>
+      <Question Id="1" Label="Device sentiment">
+        <Body>How satisfied are you with the performance and reliability of this computer?</Body>
+        <Answers Type="Scale" Orientation="Default">
+          <Answer Value="10" Id="0" Label="10">
+            <Caption>😀 Very satisfied​</Caption>
+          </Answer>
+          <Answer Value="7" Id="1" Label="7">
+            <Caption>🙂 Somewhat satisfied</Caption>
+          </Answer>
+          <Answer Value="5" Id="2" Label="5">
+            <Caption>😐 Neither satisfied nor dissatisfied​​</Caption>
+          </Answer>
+          <Answer Value="3" Id="3" Label="3">
+            <Caption>🙁 Somewhat dissatisfied​</Caption>
+          </Answer>
+          <Answer Value="1" Id="4" Label="1">
+            <Caption>☹️ Very dissatisfied​</Caption>
+          </Answer>
+        </Answers>
+        <Comment />
+      </Question>
+      <Question Id="2" Label="Productivity sentiment">
+        <Body>How satisfied are you with your browser and office applications?</Body>
+        <Answers Type="Scale" Orientation="Default">
+          <Answer Value="10" Id="0" Label="10">
+            <Caption>😀 Very satisfied​</Caption>
+          </Answer>
+          <Answer Value="7" Id="1" Label="7">
+            <Caption>🙂 Somewhat satisfied</Caption>
+          </Answer>
+          <Answer Value="5" Id="2" Label="5">
+            <Caption>😐 Neither satisfied nor dissatisfied​​</Caption>
+          </Answer>
+          <Answer Value="3" Id="3" Label="3">
+            <Caption>🙁 Somewhat dissatisfied​</Caption>
+          </Answer>
+          <Answer Value="1" Id="4" Label="1">
+            <Caption>☹️ Very dissatisfied​</Caption>
+          </Answer>
+        </Answers>
+        <Comment />
+      </Question>
+      <Question Id="4" Label="Additional feedback">
+        <Body>What else could be improved?</Body>
+        <Answers Type="MultipleAnswer" Orientation="Default">
+          <Answer Value="10" Id="9" Label="access restrictions">
+            <Caption>🔐 Access restrictions to applications, files, etc.</Caption>
+          </Answer>
+          <Answer Value="15" Id="14" Label="Training &amp; self-help">
+            <Caption>📖 Software training and self-help resources</Caption>
+          </Answer>
+          <Answer Value="2" Id="1" Label="support">
+            <Caption>🔧 IT support</Caption>
+          </Answer>
+          <Answer Value="14" Id="13" Label="Connectivity &amp; VPN">
+            <Caption>📡 Connectivity (network, WiFi, VPN)</Caption>
+          </Answer>
+          <Answer Value="5" Id="4" Label="peripherals">
+            <Caption>🕹️ Desk equipment (screen, headset, etc.)</Caption>
+          </Answer>
+          <Answer Value="6" Id="5" Label="meeting room IT">
+            <Caption>📽️ IT equipment in meeting rooms</Caption>
+          </Answer>
+          <Answer Value="3" Id="2" Label="printers">
+            <Caption>🖨️ Printer/Scanner</Caption>
+          </Answer>
+          <Answer Value="1" Id="0" Label="mobile">
+            <Caption>📞 Mobile devices</Caption>
+          </Answer>
+          <Answer Value="13" Id="12" Label="application">
+            <Caption>📄 An application (please specify)</Caption>
+          </Answer>
+          <Answer Value="12" Id="11" Label="others">
+            <Caption>🙋 Something else (please specify)</Caption>
+          </Answer>
+          <Answer Value="11" Id="10" Label="Nothing">
+            <Caption>✔️ Nothing, I'm all good</Caption>
+          </Answer>
+        </Answers>
+        <Comment>(Optional) What else should we know?</Comment>
+      </Question>
+    </Questions>
+    <FinalMessage>Thank you for your feedback!</FinalMessage>
+    <Translations Default="en" Main="en">
+      <Lang Id="de" Status="valid">
+        <T TId="emitter_title">Digital Experience Manager</T>
+        <T TId="notif_subject">Wie zufrieden sind Sie mit Ihrer IT Umgebung?</T>
+        <T TId="notif_footer">Bitte nehmen Sie sich 1 min um uns Feedback zu geben.</T>
+        <T TId="q0_body">Wie zufrieden sind Sie mit Ihrer IT Umgebung bei [Name der Firma]?</T>
+        <T TId="q0_header">Ihre Zufriedenheit ist uns wichtig — Bitte nehmen Sie sich 1 min um uns Ihr Feedback zu geben.</T>
+        <T TId="q0_a0_caption">🙂 Einigermaßen zufrieden</T>
+        <T TId="q0_a1_caption">😐 Weder zufrieden noch unzufrieden</T>
+        <T TId="q0_footer">Ihre IT Umgebung umfasst alles was mit Informationstechnologie (IT) zu tun hat:Geräte, Software, Konnektivität, Regeln, Büroinfrastruktur, etc.</T>
+        <T TId="final_msg">Danke für Ihr Feedback</T>
+        <T TId="q1_body">Wie zufrieden sind Sie mit der Leistung und Zuverlässigkeit dieses Computers?</T>
+        <T TId="q1_a0_caption">😀 Sehr zufrieden</T>
+        <T TId="q1_a1_caption">🙂 Einigermaßen zufrieden</T>
+        <T TId="q1_a2_caption">😐 Weder zufrieden noch unzufrieden</T>
+        <T TId="q1_a3_caption">🙁 Einigermaßen unzufrieden</T>
+        <T TId="q1_a4_caption">☹️ Sehr unzufrieden</T>
+        <T TId="q2_body">Wie zufrieden sind Sie mit Ihrem Browser und Büroanwendungen (Word, Google Docs, etc.)?</T>
+        <T TId="q2_a0_caption">😀 Sehr zufrieden</T>
+        <T TId="q2_a1_caption">🙂 Einigermaßen zufrieden</T>
+        <T TId="q2_a2_caption">😐 Weder zufrieden noch unzufrieden</T>
+        <T TId="q2_a3_caption">🙁 Einigermaßen unzufrieden</T>
+        <T TId="q2_a4_caption">☹️ Sehr unzufrieden</T>
+        <T TId="q0_a10_caption">😀 Sehr zufrieden</T>
+        <T TId="q0_a11_caption">🙁 Einigermaßen unzufrieden</T>
+        <T TId="q0_a12_caption">☹️ Sehr unzufrieden</T>
+        <T TId="q4_body">Was könnte noch verbessert werden?</T>
+        <T TId="q4_a0_caption">📞 Mobiltelefone</T>
+        <T TId="q4_comment">(Optional) Was sollten wir ausserdem wissen?</T>
+        <T TId="q4_a1_caption">🔧 IT Support</T>
+        <T TId="q4_a2_caption">🖨️ Drucker/Scanner</T>
+        <T TId="q4_a4_caption">🕹️ Schreibtischgeräte (Bildschirm, Kopfhörer, etc.)</T>
+        <T TId="q4_a5_caption">📽️ IT Ausstattung von Konferenzräumen</T>
+        <T TId="q4_a9_caption">🔐 Zugangsbeschränkung von Anwendungen, Dateien, etc.</T>
+        <T TId="q4_a10_caption">✔ Nichts, alles prima</T>
+        <T TId="q4_a11_caption">🙋 Etwas anderes (bitte erläutern)</T>
+        <T TId="q4_a12_caption">📄 Eine Anwendung (bitte erläutern)</T>
+        <T TId="q4_a13_caption">📡 Konnektivität (Netzwerk, WLAN, VPN)</T>
+        <T TId="q4_a14_caption">📖 IT Training und Selbsthilfe</T>
+      </Lang>
+      <Lang Id="fr" Status="valid">
+        <T TId="emitter_title">Digital Experience Manager</T>
+        <T TId="notif_subject">Etes-vous satisfait de votre environnement informatique ?</T>
+        <T TId="notif_footer">Merci de prendre 1min pour nous faire part de vos commentaires.</T>
+        <T TId="q0_body">A quel point êtes-vous satisfait de l'environnement informatique de [Nom de l'entreprise] ?</T>
+        <T TId="q0_header">Nous souhaitons vous offrir une meilleure expérience digitale - Merci de prendre 1 minute pour partager vos commentaires</T>
+        <T TId="q0_a0_caption">🙂 Plutôt satisfait</T>
+        <T TId="q0_a1_caption">😐 Ni satisfait, ni insatisfait</T>
+        <T TId="q0_footer">L’environnement informatique comprend tout ce qui est en lien avec les technologies informatiques: ordinateurs, logiciels, connectivité réseau, politique informatique, support, formation, etc.</T>
+        <T TId="final_msg">Merci d’avoir répondu à ce questionnaire.</T>
+        <T TId="q1_body">A quel point êtes-vous satisfait des performances et de la fiabilité de cet ordinateur ?</T>
+        <T TId="q1_a0_caption">😀 Très satisfait</T>
+        <T TId="q1_a1_caption">🙂 Plutôt satisfait</T>
+        <T TId="q1_a2_caption">😐 Ni satisfait, ni insatisfait</T>
+        <T TId="q1_a3_caption">🙁 Plutôt insatisfait</T>
+        <T TId="q1_a4_caption">☹️ Très insatisfait</T>
+        <T TId="q2_body">A quel point êtes-vous satisfait de votre navigateur internet et des applications Office ?</T>
+        <T TId="q2_a0_caption">😀 Très satisfait</T>
+        <T TId="q2_a1_caption">🙂 Plutôt satisfait</T>
+        <T TId="q2_a2_caption">😐 Ni satisfait, ni insatisfait</T>
+        <T TId="q2_a3_caption">🙁 Plutôt insatisfait</T>
+        <T TId="q2_a4_caption">☹️ Très insatisfait</T>
+        <T TId="q0_a10_caption">😀 Très satisfait</T>
+        <T TId="q0_a11_caption">🙁 Plutôt insatisfait</T>
+        <T TId="q0_a12_caption">☹️ Très insatisfait</T>
+        <T TId="q4_body">Y-a-t-il quelque chose d'autre qui peut être amélioré ?</T>
+        <T TId="q4_a0_caption">📞 Appareil mobile</T>
+        <T TId="q4_comment">(Optionel) Y-a-t-il autre chose dont vous voulez nous faire part ?</T>
+        <T TId="q4_a1_caption">🔧 Support informatique</T>
+        <T TId="q4_a2_caption">🖨️ Imprimante/Scanner</T>
+        <T TId="q4_a4_caption">🕹️ Equipement de bureau (écran, casque, etc.)</T>
+        <T TId="q4_a5_caption">📽️ Equipement informatique dans les salle de réunion</T>
+        <T TId="q4_a9_caption">🔐 Restrictions d'accès aux applications, fichiers, etc.</T>
+        <T TId="q4_a10_caption">✔️ Rien de particulier</T>
+        <T TId="q4_a11_caption">🙋 Quelque chose d'autre (veuillez préciser)</T>
+        <T TId="q4_a12_caption">📄 Une application (veuillez préciser)</T>
+        <T TId="q4_a13_caption">📡 Connectivité (réseau, WiFI, VPN)</T>
+        <T TId="q4_a14_caption">📖 Formation et ressources d'aide informatique</T>
+      </Lang>
+    </Translations>
+  </Definition>
+</Publication>

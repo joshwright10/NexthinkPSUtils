@@ -2,24 +2,30 @@
 function Get-NxtCategoryUsageInScores {
     <#
 .SYNOPSIS
-    Checks for references to a category within Nexthink Scores.
+    Checks for references to a Category within Nexthink Scores.
 
 .DESCRIPTION
-    Checks for references to a category within conditions and the output fields of metrics.
-    The MetricTree (export of all metrics) must be exported from the Finder and provided to this function.
+    Checks for references to a Category within Scores.
+    The ScoreTree (export of all scores) must be exported from the Finder and provided to this function.
+
+    The following places are checked within the Score:
+        - Scope Query
+        - Computation Query
+        - Input Field
 
 .PARAMETER ScoreTreeXMLPath
-    Specifies the XML file containing an export of metrics from the Nexthink Finder.
-    Note that the MetricTree can be exported by right clicking on the Scores section and then exporting to file.
+    Specifies the XML file containing an export of Scores from the Nexthink Finder.
+    The ScoreTree can be exported by right clicking on the Scores section and then exporting to file.
 
 .PARAMETER CategoryName
     Specifies the name of the category to search for.
     This must be the name of the category without any tags appended to it.
+    For example "Hardware type/Laptop" would not return any results.
 
 .EXAMPLE
-    Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\metrics.xml" -CategoryName "Hardware type"
+    Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type"
 
-    Look in the 'metrics.xml' file for any references to the category name 'Hardware type'.
+    Look in the 'scores.xml' file for any references to the Category name 'Hardware type'.
 
 .INPUTS
    You cannot pipe input to Get-NxtCategoryUsageInScores.
@@ -38,39 +44,29 @@ function Get-NxtCategoryUsageInScores {
     param (
         [string]
         [Parameter(Mandatory)]
-        [ValidateScript( {
-                if ( -Not ($_ | Test-Path) ) {
-                    throw "File or folder does not exist"
-                }
-                if (-Not ($_ | Test-Path -PathType Leaf) ) {
-                    throw "The ScoreTreeXMLPath argument must be a file. Folder paths are not allowed."
-                }
-                if ($_ -notmatch "\.xml$") {
-                    throw "The file specified in the path argument must be either of type xml"
-                }
-                return $true
-            })]
+        [ValidateXMLFileExists()]
         $ScoreTreeXMLPath,
 
         [string]
         [Parameter(Mandatory)]
-        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
         $CategoryName
     )
 
-    # Import Metrics data from XML
+    # Import data from XML
     [xml]$xmlContent = Import-XMLFile -Path $ScoreTreeXMLPath -ErrorAction Stop
 
     $scoresToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
 
-    # Find matching values in the Score Computation Query
+    # Check Computation Query
     $xmlContent.SelectNodes("//Computation/Query[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object { $scoresToCheck.Add($_) }
 
-    # Find matching values in the Score Scope Query
+    # Check Scope Query
     $xmlContent.SelectNodes("//ScopeQuery/Filtering[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object { $scoresToCheck.Add($_) }
 
-    # Find matching values in the Score Input Field
+    # Check Input Field
     $xmlContent.SelectNodes("//Input/Field[@Name='#$CategoryName']") | ForEach-Object { $scoresToCheck.Add($_) }
+
 
     return Get-RelatedScore -Scores $scoresToCheck
 }
