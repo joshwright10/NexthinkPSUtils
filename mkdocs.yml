@@ -10,11 +10,11 @@ pages:
   - Nexthink:
       - Exporting Dashboard Modules: exportingdashboardmodules.md
   - Scenarios:
-      - Remote Action Dependencies: /scenarios/dependenciesremoteaction.md
-      - Category Dependencies: /scenarios/dependenciescategory.md
-      - Metric Dependencies: /scenarios/dependenciesmetric.md
-      - Score Dependencies: /scenarios/dependenciesscore.md
-      - Campaign Dependencies: /scenarios/dependenciescampaign.md
+      - Remote Action Dependencies: scenarios/dependenciesremoteaction.md
+      - Category Dependencies: scenarios/dependenciescategory.md
+      - Metric Dependencies: scenarios/dependenciesmetric.md
+      - Score Dependencies: scenarios/dependenciesscore.md
+      - Campaign Dependencies: scenarios/dependenciescampaign.md
   - Release Notes: RELEASE.md
   - Functions:
       - Get-NxtCampaignUsageInMetrics: functions/Get-NxtCampaignUsageInMetrics.md
