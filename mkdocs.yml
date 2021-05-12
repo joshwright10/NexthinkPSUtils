@@ -1,10 +1,9 @@
 site_name: NexthinkPSUtils
 repo_url: https://github.com/joshwright10/NexthinkPSUtils
 site_author: Josh Wright
-edit_uri: edit/master/docs/
 theme: readthedocs
 copyright: "NexthinkPSUtils is licensed under the <a href='https://raw.githubusercontent.com/joshwright10/NexthinkPSUtils/master/LICENSE'>MIT license"
-pages:
+nav:
   - Home: index.md
   - Configuration: gettingsetup.md
   - Nexthink:
