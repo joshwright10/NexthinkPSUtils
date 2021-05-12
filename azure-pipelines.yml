@@ -1,15 +1,4 @@
-trigger:
-  branches:
-    include:
-      - master
-  paths:
-    exclude:
-      - "docs/*"
-      - ".vscode/*"
-      - README.md
-      - .gitignore
-      - header-mkdocs.yml
-      - mkdocs.yml
+trigger: none
 
 pool:
   vmImage: "windows-latest"
