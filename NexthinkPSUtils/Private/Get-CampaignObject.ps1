@@ -1,6 +1,7 @@
 function Get-CampaignObject {
     [CmdletBinding()]
     param (
+        [System.Xml.XmlDocument]
         $XML
     )
 

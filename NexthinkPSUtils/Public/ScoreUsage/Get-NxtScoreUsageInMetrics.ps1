@@ -59,24 +59,25 @@ function Get-NxtScoreUsageInMetrics {
     }
 
     [xml]$scoreXmlContent = Import-XMLFile -Path $ScoresXMLPath -ErrorAction Stop
-    $scores = Get-ScoreObject -XML $scoreXmlContent
-    if ($null -eq $scores) {
+
+    $scoreList = Get-ScoreUIDs -XML $scoreXmlContent
+    if ($null -eq $scoreList) {
         Write-Error -Message "Unable to find any Scores in '$ScoresXMLPath'"
     }
 
     $metricsToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
-    foreach ($uid in $scores) {
+    foreach ($score in $scoreList) {
 
-        $uid = Format-ScoreUID -Value $uid
+        $uid = Format-ScoreUID -Value $score
 
         # Check Compute
-        $metricXmlContent.SelectNodes("//Compute/Activity[starts-with(@AggregateName, '$($uid)')]")  | ForEach-Object { $metricsToCheck.Add($_) }
+        $metricXmlContent.SelectNodes("//Compute/Activity[starts-with(@AggregateName, '$($uid)')]") | ForEach-Object { $metricsToCheck.Add($_) }
 
         # Check Conditions
-        $metricXmlContent.SelectNodes("//ObjectConditionList/ObjectCondition/Field[starts-with(text(), '$($uid)')]")  | ForEach-Object { $metricsToCheck.Add($_) }
+        $metricXmlContent.SelectNodes("//ObjectConditionList/ObjectCondition/Field[starts-with(text(), '$($uid)')]") | ForEach-Object { $metricsToCheck.Add($_) }
 
         # Check Fields
-        $metricXmlContent.SelectNodes("//Fields/Field[@Type='field' and starts-with(text(), '$($uid)')]")  | ForEach-Object { $metricsToCheck.Add($_) }
+        $metricXmlContent.SelectNodes("//Fields/Field[@Type='field' and starts-with(text(), '$($uid)')]") | ForEach-Object { $metricsToCheck.Add($_) }
 
     }
 

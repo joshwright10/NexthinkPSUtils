@@ -55,7 +55,7 @@ function Get-NxtRemoteActionUsageInScores {
     # Import data from XML
     [xml]$scoreXmlContent = Import-XMLFile -Path $ScoreTreeXMLPath -ErrorAction Stop
 
-    if (-not ($xmlContent.ScoreTree)) {
+    if (-not ($scoreXmlContent.ScoreTree)) {
         throw "XML file is not a an export of the ScoreTree. "
     }
 

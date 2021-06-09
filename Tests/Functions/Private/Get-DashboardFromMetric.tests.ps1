@@ -2,19 +2,19 @@ Describe "Get-DashboardFromMetric" {
     BeforeAll {
         $Script:moduleName = $ENV:BHProjectName
         $Script:modulePath = $ENV:BHModulePath
-        $Script:metricSamplePath = "$env:BHProjectPath\Tests\Samples\Get-DashboardFromMetric"
+        $Script:samplePath = "$env:BHProjectPath\Tests\Samples\DashboardModules"
 
         $functionName = (Split-Path -Path $PSCommandPath -Leaf) -replace "\.tests.ps1$", ""
         $functionPath = Join-Path -Path $modulePath -ChildPath "Private\$functionName.ps1"
         . "$functionPath"
 
-        $importXMLFunctionPath = Join-Path -Path $modulePath -ChildPath "Private\Import-XMLFile.ps1"
-        . "$importXMLFunctionPath"
+        # Load required Private functions
+        . "$modulePath\Private\Import-XMLFile.ps1"
     }
 
     It "should resolve dependency for one metric" {
 
-        $path = "$metricSamplePath\BasicModule-DexV2.xml"
+        $path = "$samplePath\BasicModule-DexV2.xml"
         $xmlContent = Import-XMLFile -Path $path
 
         $metricUID = "ecdec241-3518-44e4-a5a4-889216f5b6b3"
@@ -33,7 +33,7 @@ Describe "Get-DashboardFromMetric" {
 
     It "should resolve dependency for a metric referenced across multiple dashboards" {
 
-        $path = "$metricSamplePath\BasicModule-DexV2.xml"
+        $path = "$samplePath\BasicModule-DexV2.xml"
         $xmlContent = Import-XMLFile -Path $path
 
         $metricUID = "05b6ff78-0fbf-47a7-bd62-c6d79eb486c1"
