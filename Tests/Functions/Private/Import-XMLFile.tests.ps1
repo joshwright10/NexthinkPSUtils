@@ -4,9 +4,8 @@ Describe "Import-XMLFile" {
         $Script:modulePath = $ENV:BHModulePath
         $Script:samplePath = "$env:BHProjectPath\Tests\Samples\ImportXMLFileSamples"
 
-        $functionName = (Split-Path -Path $PSCommandPath -Leaf) -replace "\.tests.ps1$", ""
-        $functionPath = Join-Path -Path $modulePath -ChildPath "Private\$functionName.ps1"
-        . "$functionPath"
+        Get-ChildItem -Path "$modulePath\Private" -File -Recurse | ForEach-Object { . $_.FullName }
+        Get-ChildItem -Path "$modulePath\Classes" -File -Recurse | ForEach-Object { . $_.FullName }
     }
 
     It "should not have errors" {

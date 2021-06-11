@@ -3,9 +3,8 @@ Describe "Format-CampaignUID" {
         $Script:moduleName = $env:BHProjectName
         $Script:modulePath = $env:BHModulePath
 
-        $functionName = (Split-Path -Path $PSCommandPath -Leaf) -replace "\.tests.ps1$", ""
-        $functionPath = Join-Path -Path $modulePath -ChildPath "Private\$functionName.ps1"
-        . "$functionPath"
+        Get-ChildItem -Path "$modulePath\Private" -File -Recurse | ForEach-Object { . $_.FullName }
+        Get-ChildItem -Path "$modulePath\Classes" -File -Recurse | ForEach-Object { . $_.FullName }
     }
 
     It "should process value already in correct format" {

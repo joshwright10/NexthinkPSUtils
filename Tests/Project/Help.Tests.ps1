@@ -3,6 +3,10 @@ BeforeDiscovery {
     $Script:modulePath = $ENV:BHModulePath
 
     Import-MyModule
+
+    Get-ChildItem -Path "$modulePath\Private" -File -Recurse | ForEach-Object { . $_.FullName }
+    Get-ChildItem -Path "$modulePath\Classes" -File -Recurse | ForEach-Object { . $_.FullName }
+
     $Script:functions = Get-Command -Module $moduleName
     $Script:help = foreach ($function in $functions) {
         Get-Help -Name $function.Name
