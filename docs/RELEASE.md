@@ -1,4 +1,4 @@
-# Version 0.0.1 (2020-05-12)
+# Version 0.0.1 (2020-06-11)
 ## Notes
 
 First Release!
@@ -6,6 +6,9 @@ First Release!
 ## Functions
 
 ### Get-NxtCampaignUsageInMetrics
+* Initial function release
+
+### Get-NxtCampaignUsageInRemoteActions
 * Initial function release
 
 ### Get-NxtCampaignUsageInScores
@@ -26,10 +29,16 @@ First Release!
 ### Get-NxtUnusedMetrics
 * Initial function release
 
-### Get-NxtRemoteActionScoreUsage
+### Get-NxtRemoteActionSummary
 * Initial function release
 
 ### Get-NxtRemoteActionUsageInMetrics
+* Initial function release
+
+### Get-NxtRemoteActionUsageInRemoteActions
+* Initial function release
+
+### Get-NxtRemoteActionUsageInScores
 * Initial function release
 
 ### Get-NxtScoreUsageInMetrics

@@ -1,11 +1,14 @@
 # Campaign Dependencies
 
 The following functions can be used to identify references to a Campaign in Nexthink:
+* `Get-NxtCampaignUsageInRemoteActions`
 * `Get-NxtCampaignUsageInMetrics`
 * `Get-NxtCampaignUsageInScores`
 
 ## Usage Locations
 Locations where a Campaign may be referenced.
+* **Remote Actions**
+  * Investigation
 * **Metrics**
   * Compute
   * Breakdowns
@@ -24,12 +27,23 @@ Locations where a Campaign may be referenced.
 
 # Searching for dependencies
 
+## Looking in Remote Actions
+The following explains how to check in Remote Actions for references to a Campaign.
+
+1. Export the ActionTree from the Finder.
+2. Find the Campaign UID to be searched for.
+3. Execute the following, specifying the exported ActionTree file and the Campaign UID:
+
+       Get-NxtCampaignUsageInRemoteActions -ActionTreeXMLPath "C:\Temp\remoteactions.xml" -CampaignUID "bf573024-c7cc-4885-9ce5-2d22535467d8"
+
+This example searches for references to the Campaign UID in the exported Remote Actions.
+
 ## Looking in Metrics
 The following explains how to check in Metrics for references to a Campaign.
 
 1. Export the MetricTree from the Finder.
 2. Find the Campaign UID to be searched for.
-3. Execute the following, specifying the exported MetricTree file and the Campaign file:
+3. Execute the following, specifying the exported MetricTree file and the Campaign UID:
 
        Get-NxtCampaignUsageInMetrics -MetricTreeXMLPath "C:\Temp\metrics.xml" -CampaignUID "bf573024-c7cc-4885-9ce5-2d22535467d8"
 

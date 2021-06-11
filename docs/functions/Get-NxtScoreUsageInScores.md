@@ -8,18 +8,12 @@ schema: 2.0.0
 # Get-NxtScoreUsageInScores
 
 ## SYNOPSIS
-Checks for references to a Scores within other Nexthink Scores.
+Checks for references to a Score within other Nexthink Scores.
 
 ## SYNTAX
 
-### ScoreFile (Default)
 ```
-Get-NxtScoreUsageInScores -ScoreTreeXMLPath <String> -ScoresXMLPath <String> [<CommonParameters>]
-```
-
-### ScoreName
-```
-Get-NxtScoreUsageInScores -ScoreTreeXMLPath <String> -ScoreName <String> [<CommonParameters>]
+Get-NxtScoreUsageInScores [-ScoreTreeXMLPath] <String> [-ScoreName] <String[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,17 +29,17 @@ The following places are checked within the score:
 
 ### EXAMPLE 1
 ```
-Get-NxtScoreUsageInScores -ScoreTreeXMLPath "C:\Temp\allscores.xml" -ScoresXMLPath "C:\Temp\dexv2scores.xml"
-```
-
-Look in the 'allscores.xml' file for any references to the scores in the "dexv2scores.xml" file.
-
-### EXAMPLE 2
-```
 Get-NxtScoreUsageInScores -ScoreTreeXMLPath "C:\Temp\allscores.xml" -ScoreName "DEX - Device"
 ```
 
 Look in the 'allscores.xml' file for any references to the score named 'DEX - Device'.
+
+### EXAMPLE 2
+```
+Get-NxtScoreUsageInScores -ScoreTreeXMLPath "C:\Temp\allscores.xml" -ScoreName "DEX - Device","DEX - Business apps"
+```
+
+Look in the 'allscores.xml' file for any references to the scores named 'DEX - Device' and 'DEX - Business apps'.
 
 ## PARAMETERS
 
@@ -59,23 +53,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ScoresXMLPath
-Specifies the XML file containing an export of the scores to be checked for.
-This file should be an export of only the scores that are to be looked for within the ScoreTree.
-
-```yaml
-Type: System.String
-Parameter Sets: ScoreFile
-Aliases:
-
-Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -86,12 +64,12 @@ Specifies the name of the score to search for.
 This must be the name of the parent score without any of the composite score names.
 
 ```yaml
-Type: System.String
-Parameter Sets: ScoreName
+Type: System.String[]
+Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

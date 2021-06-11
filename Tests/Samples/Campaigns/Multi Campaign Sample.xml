@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PublicationTree SyntaxVersion="1">
+    <Folder Name="campaigns">
+        <Folder Name="Demo">
+            <Folder Name="Ask Toolbar">
+                <Publication UID="24eb902a-b59f-46be-a4bf-c7b3a01963a4" Name="Toolbar removal" SyntaxVersion="8" DataModelVersion="13" Description="Ask user to remove toolbar" Status="draft">
+                    <Schedule>
+                        <Recurrence>600</Recurrence>
+                        <StartDate>1562878115</StartDate>
+                        <QuietPeriod>7200</QuietPeriod>
+                    </Schedule>
+                    <Trigger Type="manual">
+                        <Selector />
+                        <Investigation>
+                            <Label />
+                            <Type />
+                            <Description />
+                        </Investigation>
+                        <InvestigationRaw />
+                    </Trigger>
+                    <Definition SyntaxVersion="6" Priority="normal" TrayDesign="lightning">
+                        <Emitter>
+                            <Name>Nick Morea</Name>
+                            <Title>Global Head of Engineering</Title>
+                            <Picture>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</Picture>
+                        </Emitter>
+                        <Notification Frequency="bidaily" Duration="60">
+                            <Subject>Application performance issue discovered</Subject>
+                            <Footer />
+                        </Notification>
+                        <Questions>
+                            <Question Id="0" Label="Fix issue">
+                                <Greeting>Dear {user},</Greeting>
+                                <Header>Your device is running low on resources. Let us help you resolve it.</Header>
+                                <Body>Would you like us to remove the Ask toolbar?</Body>
+                                <Answers Type="SingleAnswer" Orientation="Default">
+                                    <Answer Value="1" Id="0" Label="Light" Next="end">
+                                        <Caption>Yes, remove it (recommended)</Caption>
+                                    </Answer>
+                                    <Answer Value="2" Id="1" Label="Deep" Next="end">
+                                        <Caption>No thanks</Caption>
+                                    </Answer>
+                                </Answers>
+                                <Footer>You can contact us for questions on [it-helpdesk@aonnetwork.com](mailto:it-helpdesk@aonnetwork.com?subject=App%20perf%20issue)</Footer>
+                                <Comment />
+                            </Question>
+                            <Question Id="1" Label="Ask again">
+                                <Body>Should we ask you again?</Body>
+                                <Answers Type="SingleAnswer" Orientation="Default">
+                                    <Answer Value="1" Id="0" Label="Postponed">
+                                        <Caption>Yes, ask again later</Caption>
+                                    </Answer>
+                                    <Answer Value="2" Id="1" Label="Declined">
+                                        <Caption>No, never ask me again</Caption>
+                                    </Answer>
+                                </Answers>
+                                <Comment />
+                            </Question>
+                        </Questions>
+                        <FinalMessage />
+                    </Definition>
+                </Publication>
+            </Folder>
+            <Folder Name="Microsoft Teams">
+                <Publication UID="1b609b0e-da02-4217-b23e-54f7546514fe" Name="Microsoft Teams removal" SyntaxVersion="8" DataModelVersion="13" Description="" Status="retired">
+                    <Schedule>
+                        <Recurrence>600</Recurrence>
+                        <StartDate>1588570748</StartDate>
+                        <QuietPeriod>7200</QuietPeriod>
+                    </Schedule>
+                    <Trigger Type="manual">
+                        <Selector />
+                        <Investigation>
+                            <Label />
+                            <Type />
+                            <Description />
+                        </Investigation>
+                        <InvestigationRaw />
+                    </Trigger>
+                    <Definition SyntaxVersion="6" Priority="urgent" TrayDesign="lightning">
+                        <Emitter>
+                            <Name>Jack Ward</Name>
+                            <Title>Global Head of Engineering</Title>
+                            <Picture>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</Picture>
+                        </Emitter>
+                        <Notification Frequency="bidaily" Duration="60">
+                            <Subject>Microsoft Teams performance issue discovered</Subject>
+                            <Footer />
+                        </Notification>
+                        <Questions>
+                            <Question Id="0" Label="Fix issue">
+                                <Greeting>Dear {user},</Greeting>
+                                <Header>We are aware of an issue with Teams application crashes.</Header>
+                                <Body>We have a solution. Would you like us resolve it?</Body>
+                                <Answers Type="SingleAnswer" Orientation="Default">
+                                    <Answer Value="1" Id="0" Label="Light" Next="end">
+                                        <Caption>Yes, fix it</Caption>
+                                    </Answer>
+                                    <Answer Value="2" Id="1" Label="Deep" Next="1">
+                                        <Caption>No thanks</Caption>
+                                    </Answer>
+                                </Answers>
+                                <Footer>You can contact us for questions on [it-helpdesk@aonnetwork.com](mailto:it-helpdesk@aonnetwork.com?subject=App%20perf%20issue)</Footer>
+                                <Comment />
+                            </Question>
+                            <Question Id="1" Label="Ask again">
+                                <Greeting />
+                                <Header />
+                                <Body>Should we ask you again?</Body>
+                                <Answers Type="SingleAnswer" Orientation="Default">
+                                    <Answer Value="1" Id="0" Label="Postponed">
+                                        <Caption>Yes, ask again later</Caption>
+                                    </Answer>
+                                    <Answer Value="2" Id="1" Label="Declined">
+                                        <Caption>No, never ask me again</Caption>
+                                    </Answer>
+                                </Answers>
+                                <Footer />
+                                <Comment />
+                            </Question>
+                        </Questions>
+                        <FinalMessage />
+                    </Definition>
+                </Publication>
+            </Folder>
+        </Folder>
+    </Folder>
+</PublicationTree>

@@ -28,7 +28,7 @@ stages:
 
   - stage: PublishModule
     dependsOn: Test
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables.BUILDRELEASE, 'Release'))
     jobs:
       - job: Publish
         displayName: "Publish to PSGallery"

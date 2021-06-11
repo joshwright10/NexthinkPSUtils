@@ -42,9 +42,9 @@ The following explains how to check in Scores for references to a Category.
 1. Export the ScoreTree from the Finder.
 2. Execute the following, specifying the exported ScoreTree file and the name of the Category to check for:
 
-       Get-NxtCategoryUsageInScores -ScoreTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type"
+       Get-NxtCategoryUsageInScores -ScoreTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type" -CategoryType Device
 
-This example searches for references to the Category named 'Hardware type' in the exported Scores. The Category name should not contain any tags, for example "Hardware type/Laptop" would not return any results.
+This example searches for references to the Device Category named 'Hardware type' in the exported Scores. The Category name should not contain any tags, for example "Hardware type/Laptop" would not return any results.
 
 ## Looking in Campaigns
 The following explains how to check in Campaigns for references to a Category.

@@ -20,10 +20,10 @@ function Get-DashboardFromMetric {
 
             # Grab the Widget Uid and then trigger find where the widget is used
             if ($null -eq $widgetUid) {
-                if ($tempElement.UID -and $tempElement.type) {
+                if ($tempElement.uid -and $tempElement.type) {
                     $widgetUid = $tempElement.uid
                     # Search for the dashboard where the widget is used
-                    $tempElement = $tempElement.OwnerDocument.SelectNodes("//child/data[@widgetID='$widgetUid']")
+                    $tempElement = $tempElement.OwnerDocument.SelectNodes("//data[@widgetID='$widgetUid']")
                 }
             }
 
@@ -63,6 +63,10 @@ function Get-DashboardFromMetric {
             }
             $results.Add($result)
         }
+    }
+
+    if ($null -eq $results) {
+        return
     }
 
     $groups = $results | Group-Object -Property ModuleUID, DashboardUID

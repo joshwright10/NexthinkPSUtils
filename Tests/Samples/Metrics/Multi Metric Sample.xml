@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetricTree SyntaxVersion="1">
+	<Folder Name="metrics">
+		<Folder Name="Nexthink Library">
+			<Folder Name="Pester Samples">
+				<Folder Name="Example Folder 1">
+					<Metric UID="9c63efe6-94da-49be-b65b-661e4918409b" Status="enabled" Name="&quot;Without change&quot; devices" SyntaxVersion="3" DataModelVersion="13">
+						<Object>source</Object>
+						<Platforms>
+							<Platform>windows</Platform>
+						</Platforms>
+						<Compute>
+							<Count CountingStrategy="keepLastStatus" />
+						</Compute>
+						<Conditions>
+							<ObjectConditionList>
+								<ObjectCondition IsTemplate="false">
+									<Object>source</Object>
+									<Field>tags</Field>
+									<Comparer>=</Comparer>
+									<Value>"Client change management:without change"</Value>
+								</ObjectCondition>
+							</ObjectConditionList>
+							<ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+						</Conditions>
+						<Options>
+							<ObjectsScope>active_only</ObjectsScope>
+							<GroupBy Type="hierarchy" />
+							<Fields>
+								<Field IsMandatory="true" Type="field">name</Field>
+								<Field IsMandatory="false" Type="field">entity</Field>
+								<Field IsMandatory="false" Type="field">last_ip_address</Field>
+								<Field IsMandatory="false" Type="category">Client change management</Field>
+							</Fields>
+						</Options>
+					</Metric>
+					<Metric UID="d051a1e7-4230-4685-969f-affe0a22d0c7" Status="disabled" Name="&quot;With change&quot; devices" Description="This is a demo metric" SyntaxVersion="3" DataModelVersion="13">
+						<Object>source</Object>
+						<Platforms>
+							<Platform>windows</Platform>
+						</Platforms>
+						<Compute>
+							<Count CountingStrategy="keepLastStatus" />
+						</Compute>
+						<Conditions>
+							<ObjectConditionList>
+								<ObjectCondition IsTemplate="false">
+									<Object>source</Object>
+									<Field>tags</Field>
+									<Comparer>=</Comparer>
+									<Value>"Client change management:with change"</Value>
+								</ObjectCondition>
+							</ObjectConditionList>
+							<ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+						</Conditions>
+						<Options>
+							<ObjectsScope>active_only</ObjectsScope>
+							<GroupBy Type="hierarchy" />
+							<Fields>
+								<Field IsMandatory="true" Type="field">name</Field>
+								<Field IsMandatory="false" Type="field">entity</Field>
+								<Field IsMandatory="false" Type="field">last_ip_address</Field>
+								<Field IsMandatory="false" Type="category">Client change management</Field>
+							</Fields>
+						</Options>
+					</Metric>
+			</Folder>
+			<Folder Name="Example Sub-Folder 1">
+				<Metric UID="94535826-94b0-4065-a808-6c989664b439" Status="enabled" Name="Number of devices running the &quot;old&quot; application" SyntaxVersion="3" DataModelVersion="13">
+					<Object>source</Object>
+					<Platforms>
+						<Platform>windows</Platform>
+					</Platforms>
+					<Compute>
+						<Count CountingStrategy="keepAllStatus" />
+					</Compute>
+					<Conditions>
+						<ObjectConditionList>
+							<ObjectCondition IsTemplate="false">
+								<Object>binary</Object>
+								<Field>tags</Field>
+								<Comparer>=</Comparer>
+								<Value>"Client change management:old application"</Value>
+							</ObjectCondition>
+						</ObjectConditionList>
+						<ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+					</Conditions>
+					<Options>
+						<ObjectsScope>active_only</ObjectsScope>
+						<GroupBy Type="hierarchy" />
+						<Fields>
+							<Field IsMandatory="true" Type="field">name</Field>
+							<Field IsMandatory="false" Type="field">entity</Field>
+							<Field IsMandatory="false" Type="field">last_ip_address</Field>
+						</Fields>
+					</Options>
+				</Metric>
+			</Folder>
+		</Folder>
+	</Folder>
+</Folder>
+</MetricTree>

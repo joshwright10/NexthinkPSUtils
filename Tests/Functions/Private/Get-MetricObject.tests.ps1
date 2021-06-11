@@ -10,57 +10,48 @@ Describe "Get-MetricObject" {
 
         # Load required Private functions
         . "$modulePath\Private\Import-XMLFile.ps1"
-        . "$modulePath\Private\Get-RelatedCampaign.ps1"
+        . "$modulePath\Private\Get-RelatedMetric.ps1"
     }
 
-    It "should identify 1 Campaign" {
+    It "should identify 1 Metric" {
 
-        $path = "$samplePath\Demo-DEX - Employee sentiment.xml"
+        $path = "$samplePath\Single Metric Sample.xml"
         $xmlContent = Import-XMLFile -Path $path
 
-        $result = Get-CampaignObject -XML $xmlContent
-
+        $result = Get-MetricObject -XML $xmlContent
         $result | Should -HaveCount 1
-        $result.Name | Should -Be 'DEX - Employee sentiment'
-        $result.UID | Should -Be "bf573024-c7cc-4885-9ce5-2d22535467d8"
-        $result.Status | Should -Be "draft"
-        $result.Description | Should -Be "DEX version: 2.0.2"
+
+        $result.Name | Should -Be 'Single Metric Example'
+        $result.UID | Should -Be "8a9e8b7e-bd6b-4f68-9305-c1008b409f51"
+        $result.Status | Should -Be "enabled"
+        $result.Description | Should -Be "Example Description"
         $result.Folder | Should -BeNullOrEmpty
     }
 
-    It "should identify 3 Campaigns in a single file" {
+    It "should identify 3 Metrics in a single file" {
 
-        $path = "$samplePath\Demo-Multi-file Campaigns.xml"
+        $path = "$samplePath\Multi Metric Sample.xml"
         $xmlContent = Import-XMLFile -Path $path
 
-        $result = Get-CampaignObject -XML $xmlContent
+        $result = Get-MetricObject -XML $xmlContent
         $result | Should -HaveCount 3
 
-        $result[0].Name | Should -Be 'Win10 - Users ready for replacement'
-        $result[0].UID | Should -Be "34c0d3e4-9632-4ec2-87c2-7d6a444d3927"
-        $result[0].Status | Should -Be "draft"
+        $result[0].Name | Should -Be 'Number of devices running the "old" application'
+        $result[0].UID | Should -Be "94535826-94b0-4065-a808-6c989664b439"
+        $result[0].Status | Should -Be "enabled"
         $result[0].Description  | Should -BeNullOrEmpty
-        $result[0].Folder | Should -Be "Nexthink Library/Win10: Migration"
+        $result[0].Folder | Should -Be "Nexthink Library/Pester Samples/Example Sub-Folder 1"
 
-        $result[1].Name | Should -Be 'Win10 - Pre-migration satisfaction'
-        $result[1].UID | Should -Be "e82f64ec-8f71-4fec-8e10-6bb85e4443ce"
-        $result[1].Status | Should -Be "draft"
-        $result[1].Description  | Should -BeNullOrEmpty
-        $result[1].Folder | Should -Be "Nexthink Library/Win10: Migration"
+        $result[1].Name | Should -Be '"Without change" devices'
+        $result[1].UID | Should -Be "9c63efe6-94da-49be-b65b-661e4918409b"
+        $result[1].Status | Should -Be "enabled"
+        $result[1].Description  | Should -BeNullOrEmpty "This is a demo metric"
+        $result[1].Folder | Should -Be "Nexthink Library/Pester Samples/Example Folder 1"
 
-        $result[2].Name | Should -Be 'Win10 - Users ready for migration'
-        $result[2].UID | Should -Be "fa7710be-8d31-4d79-a377-e42507e81de7"
-        $result[2].Status | Should -Be "draft"
-        $result[2].Description  | Should -BeNullOrEmpty
-        $result[2].Folder | Should -Be "Nexthink Library/Win10: Migration"
-    }
-
-    It "should identify 83 Campaigns in a PublicationTree export" {
-
-        $path = "$samplePath\Demo-Campaigns.xml"
-        $xmlContent = Import-XMLFile -Path $path
-
-        $result = Get-CampaignObject -XML $xmlContent
-        $result | Should -HaveCount 83
+        $result[2].Name | Should -Be '"With change" devices'
+        $result[2].UID | Should -Be "d051a1e7-4230-4685-969f-affe0a22d0c7"
+        $result[2].Status | Should -Be "disabled"
+        $result[2].Description  | Should -Be "This is a demo metric"
+        $result[2].Folder | Should -Be "Nexthink Library/Pester Samples/Example Folder 1"
     }
 }

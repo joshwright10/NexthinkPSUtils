@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScoreTree SyntaxVersion="1">
+    <Folder Name="scores">
+        <Folder Name="Sample Scores">
+            <ScoreDef UID="aa6af607-7588-49a1-b57f-5e434a5771d6" SyntaxVersion="1" DataModelVersion="13" Object="device" Name="Overall experience" Status="enabled" InObjectView="true">
+                <Platforms>
+                    <Platform>windows</Platform>
+                </Platforms>
+                <ScopeQuery>
+                    <Filtering>(where device (ne device_type (enum server)))</Filtering>
+                </ScopeQuery>
+                <ComputationSchedule>
+                    <Every>15min</Every>
+                </ComputationSchedule>
+                <Thresholds>
+                    <Threshold Color="none">
+                        <Keyword From="0" Label="Default" />
+                    </Threshold>
+                </Thresholds>
+                <LeafScore UID="66b46dbf-9b45-4841-9cb5-cde3cb936d41" Name="Email Crashes" Description="" Visibility="visible" Weight="1">
+                    <Input>
+                        <Computation Name="Exists" Description="" UID="525d6854-cfb2-4c65-95c0-2289bc67d1ca">
+                            <Query Output="number_of_application_crashes" DefaultOutputValue="1">(select (id)(from device(with execution_error(where binary (eq #"Type" (enum "email")))(compute number_of_application_crashes)(between now-7d now))))</Query>
+                        </Computation>
+                    </Input>
+                    <Normalization>
+                        <Ranges>
+                            <Range>
+                                <From Value="1" Score="8.3" />
+                            </Range>
+                        </Ranges>
+                    </Normalization>
+                    <Document>
+                        <Header>Sample Score</Header>
+                        <Sections>
+                            <Section>
+                                <Title>Remote actions</Title>
+                                <RemoteAction UID="f2a4fafa-0f4b-4072-a936-ca4374505cad" Name="My remote action" />
+                                <RemoteAction UID="41e0ff34-abe4-4191-9735-8bebf7955a6e" Name="My other Remote Action" />
+                            </Section>
+                        </Sections>
+                    </Document>
+                </LeafScore>
+            </ScoreDef>
+        </Folder>
+    </Folder>
+</ScoreTree>

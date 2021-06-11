@@ -13,7 +13,8 @@ Checks for references to a Category within Nexthink Scores.
 ## SYNTAX
 
 ```
-Get-NxtCategoryUsageInScores [-ScoreTreeXMLPath] <String> [-CategoryName] <String> [<CommonParameters>]
+Get-NxtCategoryUsageInScores [-ScoreTreeXMLPath] <String> [-CategoryName] <String> [-CategoryType] <String>
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,10 +30,10 @@ The following places are checked within the Score:
 
 ### EXAMPLE 1
 ```
-Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type"
+Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type" -CategoryType Device
 ```
 
-Look in the 'scores.xml' file for any references to the Category name 'Hardware type'.
+Look in the 'scores.xml' file for any references to the device category with the name 'Hardware type'
 
 ## PARAMETERS
 
@@ -64,6 +65,22 @@ Aliases:
 
 Required: True
 Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CategoryType
+Specifies the type of the category to search for.
+Possible values: Device, User, Binary, Application, Package, Executable, Binary, Printer, Port, Destination,Domain
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 3
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ActionTree SyntaxVersion="1">
+    <Folder Name="remote actions">
+        <Folder Name="Samples">
+            <Action UID="afbc0e32-f5c5-97b3-5fbb-fcb9e1ccc742" SyntaxVersion="10" DataModelVersion="13" Name="Get Apple Unified Logging" AutomaticScheduling="disabled" Description="Returns a list of entries from the 'Apple Unified Log' which match the provided inputs supplied in the Remote Action.">
+                <Target>
+                    <Selector />
+                    <Investigation>
+                        <Label />
+                        <Type>source</Type>
+                        <Description />
+                    </Investigation>
+                    <InvestigationRaw />
+                </Target>
+                <ScriptInfo RunAs="localSystem" Timeout="120">
+                    <MacScript Hash="519bfc82e4758acb12502cbf77c7dcd97342c42377e05a3d44c2d78899e31c12">dummyvalue</MacScript>
+                    <Inputs>
+                        <Input Name="NumberOfEvents" UsedBy="MacScript" Value="10" />
+                        <Input Name="OutputDir" UsedBy="MacScript" Value="/tmp" />
+                        <Input Name="ProcessName" UsedBy="MacScript" Value="-" />
+                        <Input Name="ProviderName" UsedBy="MacScript" Value="-" />
+                        <Input Name="ProviderCategory" UsedBy="MacScript" Value="-" />
+                        <Input Name="SeverityLevel" UsedBy="MacScript" Value="default" />
+                        <Input Name="EventType" UsedBy="MacScript" Value="logEvent" />
+                        <Input Name="MessageContent" UsedBy="MacScript" Value="-" />
+                        <Input Name="ToDate" UsedBy="MacScript" Value="-" />
+                    </Inputs>
+                    <Outputs>
+                        <Output UID="f86f078d-ccb1-5381-9978-4589c3683e30" Name="OutputFile" Type="string" Label="Output File" Format="string" Object="source" UsedBy="MacScript">
+                            <Description>Full path of the output file on the local device</Description>
+                        </Output>
+                    </Outputs>
+                </ScriptInfo>
+                <Schedule>
+                    <EvaluationFrequency>60</EvaluationFrequency>
+                    <ExecutionFrequency>60</ExecutionFrequency>
+                </Schedule>
+                <ManualTrigger Type="all" Status="disabled" IsMultiDevicesTriggerable="true">
+                    <Selector>select source</Selector>
+                </ManualTrigger>
+                <Purpose>1</Purpose>
+                <General />
+            </Action>
+        </Folder>
+        <Folder Name="Examples">
+            <Action UID="02c0f46a-cdbb-99d7-8bd3-2c36692f790e" SyntaxVersion="10" DataModelVersion="13" Name="Skype for Business Diagnostics" AutomaticScheduling="disabled" Description="Creates files with information about Skype calls and calculates metrics of the last 24h.">
+                <Target>
+                    <Selector>select source.uid, source.name where source.platform = windows</Selector>
+                    <Investigation>
+                        <Label>Windows devices</Label>
+                        <Type>source</Type>
+                        <Description />
+                    </Investigation>
+                    <InvestigationRaw>&lt;Investigation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DataModelVersion="12" SyntaxVersion="3"&gt;
+&lt;Label&gt;Windows devices&lt;/Label&gt;
+&lt;Object&gt;source&lt;/Object&gt;
+&lt;Platforms&gt;
+&lt;Platform&gt;windows&lt;/Platform&gt;
+&lt;/Platforms&gt;
+&lt;Description&gt;Windows devices only&lt;/Description&gt;
+&lt;FieldList&gt;
+&lt;string&gt;name&lt;/string&gt;
+&lt;string&gt;platform&lt;/string&gt;
+&lt;string&gt;computer_type&lt;/string&gt;
+&lt;string&gt;model&lt;/string&gt;
+&lt;string&gt;os_name&lt;/string&gt;
+&lt;/FieldList&gt;
+&lt;CategoryList /&gt;
+&lt;AggregateList /&gt;
+&lt;ObjectConditionList /&gt;
+&lt;/Investigation&gt;</InvestigationRaw>
+                </Target>
+                <ScriptInfo RunAs="interactiveUser" Timeout="165">
+                    <WindowsScript Hash="f188305faa87b5d8f62eff148652df9e6c744e3c6efd4b783343b070525e4a1b">dummyvalue</WindowsScript>
+                    <Inputs>
+                        <Input Name="MinSecondsForCall" UsedBy="WindowsScript" Value="15" />
+                        <Input Name="NumHoursForTimeout" UsedBy="WindowsScript" Value="1" />
+                    </Inputs>
+                    <Outputs>
+                        <Output UID="7c08cae9-9653-a0bd-747f-7577a0e5eadb" Name="BadAudioPerc" Type="uint32" Label="Bad Audio Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of bad audio calls (either failed, dropped or poor)</Description>
+                        </Output>
+                        <Output UID="0cc8fcb8-a5f1-1dc3-2721-f11a21877f2d" Name="BadSharingPerc" Type="uint32" Label="Bad Sharing Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of bad screen sharing calls (either failed, dropped or poor)</Description>
+                        </Output>
+                        <Output UID="dec841b4-de9c-075c-6b56-44ec45810d4a" Name="BadVideoPerc" Type="uint32" Label="Bad Video Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of bad video calls (either failed, dropped or poor)</Description>
+                        </Output>
+                        <Output UID="4e336fd3-43ab-7504-ef9a-dd4c86ba9b67" Name="DroppedAudioPerc" Type="uint32" Label="Dropped Audio Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of dropped audio calls</Description>
+                        </Output>
+                        <Output UID="f9b4296e-20e3-9dd8-1330-b63bc0544dac" Name="DroppedSharingPerc" Type="uint32" Label="Dropped Sharing Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of dropped screen sharing calls</Description>
+                        </Output>
+                        <Output UID="729c1f74-107d-f190-881a-912ac3213973" Name="DroppedVideoPerc" Type="uint32" Label="Dropped Video Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of dropped video calls</Description>
+                        </Output>
+                        <Output UID="dc310e0a-011a-ba60-fe7d-8fbe70bf1612" Name="FailedAudioPerc" Type="uint32" Label="Failed Audio Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of failed audio calls</Description>
+                        </Output>
+                        <Output UID="e8548bb0-1ff2-6a1c-35f5-c1dce99dc363" Name="FailedSharingPerc" Type="uint32" Label="Failed Sharing Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of failed screen sharing calls</Description>
+                        </Output>
+                        <Output UID="e32178b1-8c38-f10e-0e69-d61459fd1b26" Name="FailedVideoPerc" Type="uint32" Label="Failed Video Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of failed video calls</Description>
+                        </Output>
+                        <Output UID="866afd19-8f5b-b7f6-06b1-4738a0c39ac1" Name="MainReasonDroppedAudio" Type="string" Label="Main Reason Dropped Audio" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for dropped audio calls</Description>
+                        </Output>
+                        <Output UID="e3da3af1-f848-862d-b5b5-3fb907548c9d" Name="MainReasonDroppedSharing" Type="string" Label="Main Reason Dropped Sharing" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for dropped screen sharing calls</Description>
+                        </Output>
+                        <Output UID="f729cc72-717a-3e67-3f91-1834437828ed" Name="MainReasonDroppedVideo" Type="string" Label="Main Reason Dropped Video" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for dropped video calls</Description>
+                        </Output>
+                        <Output UID="c12e4b3d-5d30-dd90-9744-9809efe879f3" Name="MainReasonFailedAudio" Type="string" Label="Main Reason Failed Audio" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for failed audio calls</Description>
+                        </Output>
+                        <Output UID="1b67a31a-96fb-9e4e-8458-1cf1e6d54ad4" Name="MainReasonFailedSharing" Type="string" Label="Main Reason Failed Sharing" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for failed screen sharing calls</Description>
+                        </Output>
+                        <Output UID="857fd6e2-e9dc-e6d8-001a-035816ce2435" Name="MainReasonFailedVideo" Type="string" Label="Main Reason Failed Video" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Main reason for failed video calls</Description>
+                        </Output>
+                        <Output UID="a20419f3-cd06-cf4e-0f9a-1717ac2b0b5a" Name="PoorAudioConcealedPerc" Type="uint32" Label="Poor Audio Concealed Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls due to "RatioConcealedSamples &gt; 0.07"</Description>
+                        </Output>
+                        <Output UID="cc82d77a-07f6-584c-5807-89c7753c61ee" Name="PoorAudioJitterPerc" Type="uint32" Label="Poor Audio Jitter Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls due to "Jitter &gt; 30 ms"</Description>
+                        </Output>
+                        <Output UID="72342625-0c2d-5629-8728-f4f9d1205734" Name="PoorAudioMOSPerc" Type="uint32" Label="Poor Audio MOS Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls due to "NetworkMOSDegradation &gt; 1.0"</Description>
+                        </Output>
+                        <Output UID="fcf848e0-25d6-8e75-fdc1-22819fc3eb70" Name="PoorAudioPacketLossPerc" Type="uint32" Label="Poor Audio Packet Loss Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls due to "PacketLossRate &gt; 0.1"</Description>
+                        </Output>
+                        <Output UID="dc2e9873-dbca-dd98-22e9-51fa91e51db2" Name="PoorAudioPerc" Type="uint32" Label="Poor Audio Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls</Description>
+                        </Output>
+                        <Output UID="8a48998d-18a8-7334-8938-98a27f40bf47" Name="PoorAudioRoundTripPerc" Type="uint32" Label="Poor Audio Round Trip Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls due to "RoundTripTime &gt; 500 ms"</Description>
+                        </Output>
+                        <Output UID="95b0b05b-9cc3-32d4-8f75-1cef7a187943" Name="PoorAudioWifiPerc" Type="uint32" Label="Poor Audio Wifi Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls over Wifi</Description>
+                        </Output>
+                        <Output UID="365ea0a8-a31c-6666-5b08-6916af25c44f" Name="PoorAudioWiredPerc" Type="uint32" Label="Poor Audio Wired Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality audio calls over Ethernet</Description>
+                        </Output>
+                        <Output UID="d64aa8ea-7cf2-48c9-4182-95b0f39156e5" Name="PoorDynamicCapabilityPerc" Type="uint32" Label="Poor Dynamic Capability Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "DynamicCapabilityPercentage &gt; 10%"</Description>
+                        </Output>
+                        <Output UID="0deee543-5448-5ba2-2f27-c698cb1c7c57" Name="PoorLowFrameRatePerc" Type="uint32" Label="Poor Low Frame Rate Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "LowFrameRateCallPercentage &gt; 10%"</Description>
+                        </Output>
+                        <Output UID="cddf1a90-4c7f-4a5e-347d-418909fe9d7e" Name="PoorRecvFrameRatePerc" Type="uint32" Label="Poor Recv Frame Rate Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "RecvFrameRate &lt; 7"</Description>
+                        </Output>
+                        <Output UID="8eee3043-7dd5-c38c-dbdd-410a7d254e3c" Name="PoorRelativeOneWayPerc" Type="uint32" Label="Poor Relative One Way Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality screen sharing calls due to "RelativeOneWay &gt; 1.75"</Description>
+                        </Output>
+                        <Output UID="db7e42e4-c8ec-bb62-91e4-086147d96f45" Name="PoorSharingJitterPerc" Type="uint32" Label="Poor Sharing Jitter Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality screen sharing calls due to "Jitter &gt; 30 ms"</Description>
+                        </Output>
+                        <Output UID="bcd8f6be-9b36-a52f-dcc9-c8bb30c32498" Name="PoorSharingPerc" Type="uint32" Label="Poor Sharing Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality screen sharing calls</Description>
+                        </Output>
+                        <Output UID="1c729715-72fd-56f7-8897-f9f1c6d67327" Name="PoorSharingWifiPerc" Type="uint32" Label="Poor Sharing Wifi Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality screen sharing calls over Wifi</Description>
+                        </Output>
+                        <Output UID="9622e724-afc8-a887-e869-53982f08137d" Name="PoorSharingWiredPerc" Type="uint32" Label="Poor Sharing Wired Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality screen sharing calls over Ethernet</Description>
+                        </Output>
+                        <Output UID="3344b5fe-b243-b629-db86-c9ae7ed3068f" Name="PoorVideoConcealedPerc" Type="uint32" Label="Poor Video Concealed Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "RatioConcealedSamples &gt; 0.07"</Description>
+                        </Output>
+                        <Output UID="89ee44d6-4274-19a6-5022-58f605688ac1" Name="PoorVideoFrameRatePerc" Type="uint32" Label="Poor Video Frame Rate Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "VideoFrameRate &lt; 7"</Description>
+                        </Output>
+                        <Output UID="421fb493-3588-0456-7122-0e957f249afd" Name="PoorVideoJitterPerc" Type="uint32" Label="Poor Video Jitter Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "Jitter &gt; 30 ms"</Description>
+                        </Output>
+                        <Output UID="7e5ca15a-0177-9062-7f11-c6f6180a1238" Name="PoorVideoLocalFrameLossPerc" Type="uint32" Label="Poor Video Local Frame Loss Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "VideoLocalFrameLossPercentage &gt; 10%"</Description>
+                        </Output>
+                        <Output UID="75639170-1396-721d-58d9-f8534dbfcd20" Name="PoorVideoMOSPerc" Type="uint32" Label="Poor Video MOS Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "NetworkMOSDegradation &gt; 1.0"</Description>
+                        </Output>
+                        <Output UID="30aa29fb-e185-5c56-7afe-a97ca12cc61f" Name="PoorVideoPacketLossPerc" Type="uint32" Label="Poor Video Packet Loss Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "PacketLossRate &gt; 0.1"</Description>
+                        </Output>
+                        <Output UID="4ce86094-c234-7409-cd08-b743063359fe" Name="PoorVideoPacketLossRatePerc" Type="uint32" Label="Poor Video Packet Loss Rate Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "VideoPacketLossRate &gt; 0.1"</Description>
+                        </Output>
+                        <Output UID="6d7004fb-16ee-154e-0560-360ead6025fe" Name="PoorVideoPerc" Type="uint32" Label="Poor Video Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls</Description>
+                        </Output>
+                        <Output UID="56a10be2-6f6c-aa8b-7e9c-bc1c0f6c7c67" Name="PoorVideoPostFECPLRPerc" Type="uint32" Label="Poor Video Post FEC PLR Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "VideoPostFECPLR &gt; 0.1"</Description>
+                        </Output>
+                        <Output UID="73b91cce-8b77-ae40-ac45-a719b9f87a84" Name="PoorVideoRoundTripPerc" Type="uint32" Label="Poor Video Round Trip Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls due to "RoundTripTime &gt; 500 ms"</Description>
+                        </Output>
+                        <Output UID="9b6cabc5-c9b4-9ca3-1bdd-3a4b9977a404" Name="PoorVideoWifiPerc" Type="uint32" Label="Poor Video Wifi Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls over Wifi</Description>
+                        </Output>
+                        <Output UID="990efb5c-8541-bf95-88d4-fabe1e65f5cc" Name="PoorVideoWiredPerc" Type="uint32" Label="Poor Video Wired Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of poor quality video calls over Ethernet</Description>
+                        </Output>
+                        <Output UID="083ec17e-e397-b607-b595-9a2650108526" Name="ShortAudioPerc" Type="uint32" Label="Short Audio Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of short audio calls</Description>
+                        </Output>
+                        <Output UID="343bae99-ed04-ef7b-0fa2-ce2c49a4f5cf" Name="ShortVideoPerc" Type="uint32" Label="Short Video Perc" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Percentage of short video calls</Description>
+                        </Output>
+                        <Output UID="439d062f-f5f7-4a3f-b320-79ad2de79728" Name="TotalAudio" Type="uint32" Label="Total Audio" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Total number of audio calls</Description>
+                        </Output>
+                        <Output UID="725a4d46-648d-47dc-068f-3332baa8a8d9" Name="TotalCalls" Type="uint32" Label="Total Calls" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Total number of calls (audio + video + screen sharing)</Description>
+                        </Output>
+                        <Output UID="08f06dfc-2af1-b6ea-a6af-8e0072be14be" Name="TotalSharing" Type="uint32" Label="Total Sharing" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Total number of screen sharing calls</Description>
+                        </Output>
+                        <Output UID="643a47b3-78a0-2b4d-3f13-f6764ed1994a" Name="TotalVideo" Type="uint32" Label="Total Video" Format="integer" Object="source" UsedBy="WindowsScript">
+                            <Description>Total number of video calls</Description>
+                        </Output>
+                        <Output UID="c17e0200-8e3d-61f8-daff-db9fc89e922e" Name="VersionAndTracingLevel" Type="string" Label="Version And Tracing Level" Format="string" Object="source" UsedBy="WindowsScript">
+                            <Description>Version and tracing level configured</Description>
+                        </Output>
+                    </Outputs>
+                </ScriptInfo>
+                <Schedule>
+                    <EvaluationFrequency>60</EvaluationFrequency>
+                    <ExecutionFrequency>60</ExecutionFrequency>
+                </Schedule>
+                <ManualTrigger Type="all" Status="enabled" IsMultiDevicesTriggerable="false">
+                    <Selector>select source</Selector>
+                </ManualTrigger>
+                <Purpose>0</Purpose>
+                <General />
+            </Action>
+        </Folder>
+    </Folder>
+</ActionTree>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publication xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UID="d884f407-24cd-4d91-b2ca-a871aa297970" Name="Example Campaign 1" SyntaxVersion="8" DataModelVersion="13" Description="This is a sample campaign" Status="published">
+    <Schedule>
+        <Recurrence>600</Recurrence>
+        <StartDate>1609926670</StartDate>
+    </Schedule>
+    <Trigger Type="remediation">
+        <Selector />
+        <Investigation>
+            <Label />
+            <Type />
+            <Description />
+        </Investigation>
+        <InvestigationRaw />
+    </Trigger>
+    <Definition SyntaxVersion="6" Priority="urgent" TrayDesign="lightning">
+        <Emitter>
+            <Name>John Brown</Name>
+            <Title>Head of Internal Compliance</Title>
+            <Picture>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</Picture>
+        </Emitter>
+        <Notification Frequency="weekly" Duration="60" Skip="true">
+            <Subject>Your device has been isolated from the network</Subject>
+            <Footer>-</Footer>
+        </Notification>
+        <Questions>
+            <Question Id="0" Label="Access will be restored soon">
+                <Greeting>Dear {user},</Greeting>
+                <Header />
+                <Body>Your device has been temporarily isolated from the network because malicious software has been detected</Body>
+                <Answers Type="SingleAnswer" Orientation="Default">
+                    <Answer Value="1" Id="0" Label="OK" Next="end">
+                        <Caption>Ok</Caption>
+                    </Answer>
+                </Answers>
+                <Footer>In order to protect the organisation, you will be momentarily unable to access network and Internet.
+                </Footer>
+                <Comment />
+            </Question>
+        </Questions>
+        <FinalMessage />
+    </Definition>
+</Publication>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Pack Description="Portal pack" Name="Portal pack" SyntaxVersion="1">
+ <Contents>
+  <Content Type="PortalModuleCollection">
+   <PortalModuleCollection SyntaxVersion="1">
+    <PortalModule>
+     <Name>Example Module</Name>
+     <Dependencies>
+      <Dependency name="DEX" type="metric" uid="b12da91a-70bb-4edf-9e05-f6fe322deed7"/>
+      <Dependency name="DEX - Business apps - Number of Devices" type="metric" uid="41f4bf6d-8718-4d82-b314-610ef72465b7"/>
+     </Dependencies>
+     <Payload>
+      <import version="1">
+       <basicModule index="0" name="Example Module" uid="9c3339a3-9e6c-4d5a-ba63-7f43c13aac77">
+        <dashboards>
+         <dashboard description="" index="1" name="Overview" uid="4f3a3b49-4074-44a8-afe3-7ea46efd5c56">
+          <layout type="L">
+           <children/>
+           <data id="995c9b95-5a1b-4596-bc06-61b819bad751" minHeight="226" minWidth="396" type="lineChartWidget" widgetID="995c9b95-5a1b-4596-bc06-61b819bad751">
+            <preferredHeight value="326"/>
+            <preferredWidth value="599"/>
+           </data>
+          </layout>
+          <widgets>
+           <widget type="LINE_CHART" uid="995c9b95-5a1b-4596-bc06-61b819bad751">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false">
+             <metrics>
+              <metric label="DEX" ordering="0" serviceMetric="false" uid="b12da91a-70bb-4edf-9e05-f6fe322deed7"/>
+             </metrics>
+             <scale scaleMaxValueType="float" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+         <dashboard description="" index="2" name="Sub Dashboard" uid="cb257ce5-f774-4a7c-b5e7-58ecfa713de1">
+          <layout type="L">
+           <children/>
+           <data id="e6c7f47c-e02a-4427-a5d0-198373f3edf6" minHeight="226" minWidth="396" type="lineChartWidget" widgetID="e6c7f47c-e02a-4427-a5d0-198373f3edf6">
+            <preferredHeight value="326"/>
+            <preferredWidth value="599"/>
+           </data>
+          </layout>
+          <widgets>
+           <widget type="LINE_CHART" uid="e6c7f47c-e02a-4427-a5d0-198373f3edf6">
+            <lineChartConfig displayValue="ABSOLUTE_VALUE" legend="false" thresholds="false">
+             <metrics>
+              <metric label="DEX - Business apps - Number of Devices" ordering="0" serviceMetric="false" uid="41f4bf6d-8718-4d82-b314-610ef72465b7"/>
+             </metrics>
+             <scale scaleMaxValueType="integer" scaleType="automatic"/>
+            </lineChartConfig>
+           </widget>
+          </widgets>
+         </dashboard>
+        </dashboards>
+       </basicModule>
+      </import>
+     </Payload>
+    </PortalModule>
+   </PortalModuleCollection>
+  </Content>
+ <Content Type="metrics-tree">
+   <MetricTree SyntaxVersion="1">
+    <Folder Name="Imported metrics">
+     <Metric xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DataModelVersion="13" Description="V2" Name="DEX" Status="enabled" SyntaxVersion="3" UID="b12da91a-70bb-4edf-9e05-f6fe322deed7" UsageType="benchmark">
+      <Object>source</Object>
+      <Platforms>
+       <Platform>windows</Platform>
+       <Platform>mac_os</Platform>
+      </Platforms>
+      <Compute>
+       <Activity AggregateName="score_d72561413e7441a990d561c4bae80678" OperationType="mean" Type="field"/>
+      </Compute>
+      <Conditions>
+       <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+         <Object>source</Object>
+         <Field>score_d72561413e7441a990d561c4bae80678</Field>
+         <Comparer>&gt;=</Comparer>
+         <Value>0.00000</Value>
+         <Operand>float</Operand>
+        </ObjectCondition>
+       </ObjectConditionList>
+       <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      </Conditions>
+      <Options>
+       <ObjectsScope>all</ObjectsScope>
+       <Variation IsHigherBetter="true"/>
+       <Thresholds Type="absolute">
+        <Value>6</Value>
+        <Value>8</Value>
+       </Thresholds>
+       <Breakdowns>
+        <Breakdown Object="source" Type="category">Remote Worker vs Office Worker Device</Breakdown>
+       </Breakdowns>
+       <GroupBy Type="hierarchy"/>
+      </Options>
+     </Metric>
+     <Metric xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DataModelVersion="13" Description="V2" Name="DEX - Business apps - Number of Devices" Status="enabled" SyntaxVersion="3" UID="41f4bf6d-8718-4d82-b314-610ef72465b7" UsageType="benchmark">
+      <Object>source</Object>
+      <Platforms>
+       <Platform>windows</Platform>
+       <Platform>mac_os</Platform>
+      </Platforms>
+      <Compute>
+       <Count CountingStrategy="keepLastStatus"/>
+      </Compute>
+      <Conditions>
+       <ObjectConditionList>
+        <ObjectCondition IsTemplate="false">
+         <Object>source</Object>
+         <Field>score_bb2ec8915abe4e3ea4e8941dc2d0a943</Field>
+         <Comparer>&gt;=</Comparer>
+         <Value>0.00000</Value>
+         <Operand>float</Operand>
+        </ObjectCondition>
+       </ObjectConditionList>
+       <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+      </Conditions>
+      <Options>
+       <ObjectsScope>all</ObjectsScope>
+       <Breakdowns>
+        <Breakdown Object="source" Type="category">Remote Worker vs Office Worker Device</Breakdown>
+       </Breakdowns>
+       <GroupBy Type="hierarchy"/>
+       <Fields>
+        <Field IsMandatory="true" Type="field">name</Field>
+        <Field IsMandatory="true" Type="category">Remote Worker vs Office Worker Device</Field>
+       </Fields>
+      </Options>
+     </Metric>
+    </Folder>
+   </MetricTree>
+  </Content>
+ </Contents>
+</Pack>

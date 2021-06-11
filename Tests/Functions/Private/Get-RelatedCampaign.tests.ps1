@@ -1,4 +1,4 @@
-Describe "Get-CampaignObject" {
+Describe "Get-RelatedCampaign" {
     BeforeAll {
         $Script:moduleName = $ENV:BHProjectName
         $Script:modulePath = $ENV:BHModulePath
@@ -18,14 +18,17 @@ Describe "Get-CampaignObject" {
         $path = "$samplePath\Single Campaign Sample.xml"
         $xmlContent = Import-XMLFile -Path $path
 
-        $result = Get-CampaignObject -XML $xmlContent
-        $result | Should -HaveCount 1
+        $campaignToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
+        $xmlContent.SelectNodes("//Publication/Definition/Questions") | ForEach-Object { $campaignToCheck.Add($_) }
+
+        $result = Get-RelatedCampaign -Campaigns $campaignToCheck
 
         $result.Name | Should -Be 'Example Campaign 1'
         $result.UID | Should -Be "d884f407-24cd-4d91-b2ca-a871aa297970"
         $result.Status | Should -Be "published"
         $result.Description | Should -Be "This is a sample campaign"
         $result.Folder | Should -BeNullOrEmpty
+        $result | Should -HaveCount 1
     }
 
     It "should resolve multiple Campaign" {
@@ -33,7 +36,10 @@ Describe "Get-CampaignObject" {
         $path = "$samplePath\Multi Campaign Sample.xml"
         $xmlContent = Import-XMLFile -Path $path
 
-        $results = Get-CampaignObject -XML $xmlContent
+        $campaignToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
+        $xmlContent.SelectNodes("//Publication/Definition/Questions") | ForEach-Object { $campaignToCheck.Add($_) }
+
+        $results = Get-RelatedCampaign -Campaigns $campaignToCheck
         $results | Should -HaveCount 2
 
         $results[0].Name | Should -Be 'Microsoft Teams removal'

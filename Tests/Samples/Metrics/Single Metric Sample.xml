@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metric xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UID="8a9e8b7e-bd6b-4f68-9305-c1008b409f51" Status="enabled" Name="Single Metric Example" Description="Example Description" SyntaxVersion="3" DataModelVersion="13">
+    <Object>source</Object>
+    <Platforms>
+        <Platform>windows</Platform>
+    </Platforms>
+    <Compute>
+        <Count CountingStrategy="keepLastStatus" />
+    </Compute>
+    <Conditions>
+        <ObjectConditionList>
+            <ObjectCondition IsTemplate="false">
+                <Object>source</Object>
+                <Field>av2_display_name</Field>
+                <Comparer>!=</Comparer>
+                <Value>"Windows Defender"</Value>
+                <Operand>string</Operand>
+            </ObjectCondition>
+        </ObjectConditionList>
+        <ObjectsConditionsExpression>1</ObjectsConditionsExpression>
+    </Conditions>
+    <Options>
+        <ObjectsScope>active_only</ObjectsScope>
+        <Variation IsHigherBetter="false" />
+        <Thresholds Type="absolute">
+            <Value>1</Value>
+        </Thresholds>
+        <Breakdowns>
+            <Breakdown Type="category" Object="source">Remote Worker vs Office Worker Device</Breakdown>
+        </Breakdowns>
+        <GroupBy Type="hierarchy" />
+        <Ratio>
+            <ObjectConditionList />
+        </Ratio>
+        <Fields>
+            <Field IsMandatory="true" Type="field">name</Field>
+            <Field IsMandatory="false" Type="field">av2_display_name</Field>
+            <Field IsMandatory="true" Type="category">Remote Worker vs Office Worker Device</Field>
+        </Fields>
+    </Options>
+</Metric>

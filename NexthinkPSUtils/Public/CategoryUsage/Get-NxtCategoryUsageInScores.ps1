@@ -22,10 +22,14 @@ function Get-NxtCategoryUsageInScores {
     This must be the name of the category without any tags appended to it.
     For example "Hardware type/Laptop" would not return any results.
 
-.EXAMPLE
-    Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type"
+.PARAMETER CategoryType
+    Specifies the type of the category to search for.
+    Possible values: Device, User, Binary, Application, Package, Executable, Binary, Printer, Port, Destination,Domain
 
-    Look in the 'scores.xml' file for any references to the Category name 'Hardware type'.
+.EXAMPLE
+    Get-NxtCategoryUsageInScores -MetricTreeXMLPath "C:\Temp\scores.xml" -CategoryName "Hardware type" -CategoryType Device
+
+    Look in the 'scores.xml' file for any references to the device category with the name 'Hardware type'
 
 .INPUTS
    You cannot pipe input to Get-NxtCategoryUsageInScores.
@@ -50,8 +54,23 @@ function Get-NxtCategoryUsageInScores {
         [string]
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
-        $CategoryName
+        $CategoryName,
+
+        [string]
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [ValidateSet(
+            "Device", "User",
+            "Binary", "Application",
+            "Package", "Executable",
+            "Binary", "Printer",
+            "Port", "Destination",
+            "Domain" )]
+        $CategoryType
+
     )
+
+    $CategoryType = $CategoryType.ToLower()
 
     # Import data from XML
     [xml]$xmlContent = Import-XMLFile -Path $ScoreTreeXMLPath -ErrorAction Stop
@@ -59,14 +78,17 @@ function Get-NxtCategoryUsageInScores {
     $scoresToCheck = [System.Collections.Generic.List[System.Xml.XmlElement]]::new()
 
     # Check Computation Query
-    $xmlContent.SelectNodes("//Computation/Query[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object { $scoresToCheck.Add($_) }
+    $xmlContent.SelectNodes("//Computation/Query[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object {
+        if ($_.'#text' -match "\(\s*where\s*$CategoryType\s*\(\s*(ne|eq|lt|le|gt|ge)\s*#`"$CategoryName`"") { $scoresToCheck.Add($_) }
+    }
 
     # Check Scope Query
-    $xmlContent.SelectNodes("//ScopeQuery/Filtering[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object { $scoresToCheck.Add($_) }
+    $xmlContent.SelectNodes("//ScopeQuery/Filtering[contains(text(), '#`"$CategoryName`"')]") | ForEach-Object {
+        if ($_.'#text' -match "\(\s*where\s*$CategoryType\s*\(\s*(ne|eq|lt|le|gt|ge)\s*#`"$CategoryName`"") { $scoresToCheck.Add($_) }
+    }
 
     # Check Input Field
     $xmlContent.SelectNodes("//Input/Field[@Name='#$CategoryName']") | ForEach-Object { $scoresToCheck.Add($_) }
-
 
     return Get-RelatedScore -Scores $scoresToCheck
 }

@@ -22,47 +22,46 @@ function Get-RelatedScore {
                 $tempElement = $tempElement.ParentNode
             }
 
-            if (($index -eq 0) -and (($tempElement.PSObject.Properties.Name) -eq "Object")) {
-                $mainScore = $tempElement
-                continue
-            }
-
             # Grab the Leaf Score name
             if ($null -eq $leafScore) {
-                if ($tempElement.UID -and $tempElement.Name) {
+                if ($tempElement.LocalName -eq "LeafScore") {
                     $leafScore = $tempElement
                 }
             }
-            elseif ($null -eq $compositeScore) {
+
+            if ($null -eq $compositeScore) {
                 # Grab the Composite Score name
-                if ($tempElement.UID -and $tempElement.Name) {
+                if ($tempElement.LocalName -eq "CompositeScore") {
                     $compositeScore = $tempElement
                 }
             }
-            elseif ($null -eq $mainScore) {
+
+            if ($null -eq $mainScore) {
                 # Grab the score name
-                if ($tempElement.UID -and $tempElement.Name) {
+                if ($tempElement.LocalName -eq "ScoreDef") {
                     $mainScore = $tempElement
                 }
             }
             $index++
-        } until (($tempElement.PSObject.Properties.Name) -eq "Object" -or ($index -ge 250))
+        } until ((($tempElement.LocalName) -eq "#document") -or ($index -ge 250))
 
         if ($null -ne $mainScore) {
             $scorePath = $null
-            if ($mainScore.Name -and $compositeScore.Name -and $leafScore.Name) {
-                $scorePath = $mainScore.Name + "/" + $compositeScore.Name + "/" + $leafScore.Name
+            if ($mainScore.Name -and ($compositeScore.Name -or $leafScore.Name)) {
+                $scorePath = (Join-Path -Path $mainScore.Name -ChildPath $compositeScore.Name) | Join-Path -ChildPath $leafScore.Name
             }
 
             $result = [PSCustomObject]@{
                 ScoreName          = $mainScore.Name
-                ScoreUID           = $tempElement.UID
+                ScoreUID           = $mainScore.UID
                 CompositeScoreName = $compositeScore.Name
                 CompositeScoreUID  = $compositeScore.UID
                 LeafScoreName      = $leafScore.Name
                 LeafScoreUID       = $leafScore.UID
                 Status             = $mainScore.Status
                 ScorePath          = $scorePath
+                ObjectScope        = $mainScore.Object
+                InObjectView       = [bool]$mainScore.InObjectView
             }
             $results.Add($result)
         }
