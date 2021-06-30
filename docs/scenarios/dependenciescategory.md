@@ -1,26 +1,26 @@
 # Category Dependencies
 
 The following functions can be used to identify references to a Category in Nexthink:
-* `Get-NxtCategoryUsageInCampaigns`
-* `Get-NxtCategoryUsageInMetrics`
-* `Get-NxtCategoryUsageInScores`
+* Get-NxtCategoryUsageInCampaigns
+* Get-NxtCategoryUsageInMetrics
+* Get-NxtCategoryUsageInScores
 
 ## Usage Locations
 Locations where a Category may be referenced.
-* **Metrics**
+### Metrics
   * Breakdowns
   * Conditions
   * Output Fields
-* **Scores**
+### Scores
   * Scope Query
   * Computation Query
   * Input Field
-* **Campaigns**
+### Campaigns
   * Trigger Query
-* **Investigations**
+### Investigations
   * Conditions
   * Output Fields
-* **Alerts**
+### Alerts
   * Conditions
   * Output Fields
 

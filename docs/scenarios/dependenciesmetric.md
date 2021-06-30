@@ -1,12 +1,12 @@
 # Metric Dependencies
 
 The following functions can be used to identify references to a Metric in Nexthink:
-* `Get-NxtMetricUsageInDashboards`
-* `Get-NxtUnusedMetrics`
+* Get-NxtMetricUsageInDashboards
+* Get-NxtUnusedMetrics
 
 ## Usage Locations
 Locations where a Metric may be referenced.
-* **Dashboards**
+### Dashboards
   * Widgets
 
 # Searching for dependencies
