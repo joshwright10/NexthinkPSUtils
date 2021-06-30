@@ -1,9 +1,11 @@
 # Remote Action Dependencies
 
 The following functions can be used to identify references to a Remote Action in Nexthink:
-* Get-NxtRemoteActionUsageInRemoteActions
-* Get-NxtRemoteActionUsageInScores
-* Get-NxtRemoteActionUsageInMetrics
+
+  * Get-NxtRemoteActionSummary
+  * Get-NxtRemoteActionUsageInRemoteActions
+  * Get-NxtRemoteActionUsageInScores
+  * Get-NxtRemoteActionUsageInMetrics
 
 ## Usage Locations
 Locations where a Remote Action may be referenced.

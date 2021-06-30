@@ -1,9 +1,10 @@
 # Campaign Dependencies
 
 The following functions can be used to identify references to a Campaign in Nexthink:
-* Get-NxtCampaignUsageInRemoteActions
-* Get-NxtCampaignUsageInMetrics
-* Get-NxtCampaignUsageInScores
+
+  * Get-NxtCampaignUsageInRemoteActions
+  * Get-NxtCampaignUsageInMetrics
+  * Get-NxtCampaignUsageInScores
 
 ## Usage Locations
 Locations where a Campaign may be referenced.

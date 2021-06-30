@@ -1,8 +1,9 @@
 # Score Dependencies
 
 The following functions can be used to identify references to a Scores in Nexthink:
-* Get-NxtScoreUsageInMetrics
-* Get-NxtScoreUsageInScores
+
+  * Get-NxtScoreUsageInMetrics
+  * Get-NxtScoreUsageInScores
 
 ## Usage References
 Locations where a Scores may be referenced.
